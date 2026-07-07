@@ -1,0 +1,14 @@
+{
+  "name": "awesome-codex-skills",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "generate:readme": "node scripts/generate-readmes.mjs",
+    "generate:readme:all": "node scripts/generate-readmes.mjs --all",
+    "check:readme": "node scripts/generate-readmes.mjs --check"
+  }
+}

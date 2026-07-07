@@ -1,0 +1,93 @@
+name: Submit a Skill
+description: Share a useful Codex skill with the community
+title: "[Skill] "
+labels: ["skill-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Submit a Skill
+
+        Thank you for contributing! Please fill in the details below.
+
+        By submitting, you confirm the link is reachable and the information is accurate.
+
+  - type: input
+    id: name
+    attributes:
+      label: Skill Name
+      description: Short name of the skill (max 60 chars)
+      placeholder: "e.g., Vercel React Best Practices"
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Skill URL
+      description: Direct link to the skill page or repository
+      placeholder: "https://..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Which category does this skill belong to?
+      options:
+        - Agent Tooling
+        - Coding & Frontend
+        - Creative & Media
+        - Browser Automation & Testing
+        - Documents & Presentations
+        - Data & Visualization
+        - Marketing & Growth
+        - Industry & Compliance
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: Source Platform
+      description: Where is this skill hosted?
+      placeholder: "e.g., OrangeBot, GitHub openai/skills, ShadCN Docs, SkillMD.ai"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: One-sentence description of what this skill does
+      placeholder: "Helps Codex..."
+    validations:
+      required: true
+
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: 2-3 tags separated by commas
+      placeholder: "e.g., React, Frontend, Deployment"
+    validations:
+      required: true
+
+  - type: textarea
+    id: popularity
+    attributes:
+      label: Popularity Evidence
+      description: Weekly installs, stars, forks, or other metrics that show usage
+      placeholder: "e.g., 256.2k weekly installs, 3,285 stars on OrangeBot"
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes (Optional)
+      description: Any special requirements, API keys needed, or risk warnings
+      placeholder: "e.g., Requires external API configuration"
+    validations:
+      required: false

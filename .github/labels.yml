@@ -1,0 +1,27 @@
+- name: skill-submission
+  color: '#3f74ea'
+  description: 'Community-submitted skill'
+
+- name: approved
+  color: '#65e00d'
+  description: 'Reviewed and approved'
+
+- name: bug
+  color: '#d73a4a'
+  description: 'Broken link or incorrect info'
+
+- name: duplicate
+  color: '#cfd3d7'
+  description: 'Duplicate submission'
+
+- name: enhancement
+  color: '#a2eeef'
+  description: 'New feature or improvement suggestion'
+
+- name: good first issue
+  color: '#7057ff'
+  description: 'Good for newcomers'
+
+- name: help wanted
+  color: '#008672'
+  description: 'Extra attention is needed'

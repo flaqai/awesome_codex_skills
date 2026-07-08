@@ -1,0 +1,1626 @@
+{
+  "updatedAt": "2026-07-07",
+  "ui": {
+    "en": {
+      "title": "Guide: Custom Codex Skills",
+      "subtitle": "Learn how to create, adapt, and install SKILL.md workflows for OpenAI Codex.",
+      "toc": "Table of Contents",
+      "backToReadme": "Back to Skill List",
+      "skillList": "Skill List",
+      "verificationNote": "Paths and commands in this guide were verified against openai/skills and common Codex workflows. They may change as tooling evolves.",
+      "generatedNote": "Generated from data/custom-skill-guide.json. Run npm run generate:guide:all"
+    },
+    "zh": {
+      "title": "指南：自定义 Codex 技能",
+      "subtitle": "学习如何为 OpenAI Codex 创建、改编并安装 SKILL.md 工作流。",
+      "toc": "目录",
+      "backToReadme": "返回技能列表",
+      "skillList": "技能列表",
+      "verificationNote": "本指南中的路径与命令已对照 openai/skills 及常见 Codex 工作流验证，可能随工具更新而变化。",
+      "generatedNote": "由 data/custom-skill-guide.json 生成。运行 npm run generate:guide:all"
+    },
+    "tw": {
+      "title": "指南：自訂 Codex 技能",
+      "subtitle": "學習如何為 OpenAI Codex 建立、改編並安裝 SKILL.md 工作流程。",
+      "toc": "目錄",
+      "backToReadme": "返回技能列表",
+      "skillList": "技能列表",
+      "verificationNote": "本指南中的路徑與指令已對照 openai/skills 及常見 Codex 工作流程驗證，可能隨工具更新而變更。",
+      "generatedNote": "由 data/custom-skill-guide.json 產生。執行 npm run generate:guide:all"
+    },
+    "ja": {
+      "title": "ガイド：カスタム Codex スキル",
+      "subtitle": "OpenAI Codex 向けに SKILL.md ワークフローを作成・改変・インストールする方法を学びます。",
+      "toc": "目次",
+      "backToReadme": "スキル一覧に戻る",
+      "skillList": "スキル一覧",
+      "verificationNote": "本ガイドのパスとコマンドは openai/skills および一般的な Codex ワークフローに照らして検証済みです。ツールの進化に伴い変更される場合があります。",
+      "generatedNote": "data/custom-skill-guide.json から生成。npm run generate:guide:all を実行"
+    },
+    "ko": {
+      "title": "가이드: 커스텀 Codex 스킬",
+      "subtitle": "OpenAI Codex용 SKILL.md 워크플로를 만들고, 수정하고, 설치하는 방법을 배웁니다.",
+      "toc": "목차",
+      "backToReadme": "스킬 목록으로 돌아가기",
+      "skillList": "스킬 목록",
+      "verificationNote": "이 가이드의 경로와 명령은 openai/skills 및 일반적인 Codex 워크플로를 기준으로 검증되었으며, 도구가 발전하면 변경될 수 있습니다.",
+      "generatedNote": "data/custom-skill-guide.json에서 생성됨. npm run generate:guide:all 실행"
+    },
+    "th": {
+      "title": "คู่มือ: สกิล Codex แบบกำหนดเอง",
+      "subtitle": "เรียนรู้วิธีสร้าง ปรับใช้ และติดตั้งเวิร์กโฟลว์ SKILL.md สำหรับ OpenAI Codex",
+      "toc": "สารบัญ",
+      "backToReadme": "กลับไปรายการสกิล",
+      "skillList": "รายการสกิล",
+      "verificationNote": "เส้นทางและคำสั่งในคู่มือนี้ได้รับการตรวจสอบกับ openai/skills และเวิร์กโฟลว์ Codex ทั่วไป อาจเปลี่ยนแปลงตามการพัฒนาเครื่องมือ",
+      "generatedNote": "สร้างจาก data/custom-skill-guide.json รัน npm run generate:guide:all"
+    },
+    "vi": {
+      "title": "Hướng dẫn: Skill Codex tùy chỉnh",
+      "subtitle": "Học cách tạo, chỉnh sửa và cài đặt quy trình SKILL.md cho OpenAI Codex.",
+      "toc": "Mục lục",
+      "backToReadme": "Quay lại danh sách skill",
+      "skillList": "Danh sách skill",
+      "verificationNote": "Đường dẫn và lệnh trong hướng dẫn đã được xác minh với openai/skills và quy trình Codex phổ biến; có thể thay đổi khi công cụ phát triển.",
+      "generatedNote": "Được tạo từ data/custom-skill-guide.json. Chạy npm run generate:guide:all"
+    },
+    "id": {
+      "title": "Panduan: Skill Codex Kustom",
+      "subtitle": "Pelajari cara membuat, menyesuaikan, dan menginstal alur kerja SKILL.md untuk OpenAI Codex.",
+      "toc": "Daftar Isi",
+      "backToReadme": "Kembali ke Daftar Skill",
+      "skillList": "Daftar Skill",
+      "verificationNote": "Path dan perintah dalam panduan ini diverifikasi terhadap openai/skills dan alur kerja Codex umum; dapat berubah seiring evolusi alat.",
+      "generatedNote": "Dibuat dari data/custom-skill-guide.json. Jalankan npm run generate:guide:all"
+    },
+    "es": {
+      "title": "Guía: Skills personalizados de Codex",
+      "subtitle": "Aprende a crear, adaptar e instalar flujos de trabajo SKILL.md para OpenAI Codex.",
+      "toc": "Tabla de contenidos",
+      "backToReadme": "Volver a la lista de skills",
+      "skillList": "Lista de skills",
+      "verificationNote": "Las rutas y comandos de esta guía se verificaron con openai/skills y flujos comunes de Codex; pueden cambiar a medida que evolucionen las herramientas.",
+      "generatedNote": "Generado desde data/custom-skill-guide.json. Ejecuta npm run generate:guide:all"
+    },
+    "fr": {
+      "title": "Guide : Skills Codex personnalisés",
+      "subtitle": "Apprenez à créer, adapter et installer des workflows SKILL.md pour OpenAI Codex.",
+      "toc": "Table des matières",
+      "backToReadme": "Retour à la liste des skills",
+      "skillList": "Liste des skills",
+      "verificationNote": "Les chemins et commandes de ce guide ont été vérifiés avec openai/skills et les workflows Codex courants ; ils peuvent évoluer avec les outils.",
+      "generatedNote": "Généré depuis data/custom-skill-guide.json. Exécutez npm run generate:guide:all"
+    },
+    "de": {
+      "title": "Leitfaden: Eigene Codex-Skills",
+      "subtitle": "Lernen Sie, SKILL.md-Workflows für OpenAI Codex zu erstellen, anzupassen und zu installieren.",
+      "toc": "Inhaltsverzeichnis",
+      "backToReadme": "Zurück zur Skill-Liste",
+      "skillList": "Skill-Liste",
+      "verificationNote": "Pfade und Befehle in diesem Leitfaden wurden anhand von openai/skills und gängigen Codex-Workflows geprüft; sie können sich mit der Tool-Entwicklung ändern.",
+      "generatedNote": "Erzeugt aus data/custom-skill-guide.json. Führen Sie npm run generate:guide:all aus"
+    },
+    "it": {
+      "title": "Guida: Skill Codex personalizzate",
+      "subtitle": "Impara a creare, adattare e installare workflow SKILL.md per OpenAI Codex.",
+      "toc": "Indice",
+      "backToReadme": "Torna all'elenco skill",
+      "skillList": "Elenco skill",
+      "verificationNote": "Percorsi e comandi in questa guida sono stati verificati con openai/skills e workflow Codex comuni; possono cambiare con l'evoluzione degli strumenti.",
+      "generatedNote": "Generato da data/custom-skill-guide.json. Esegui npm run generate:guide:all"
+    },
+    "pt": {
+      "title": "Guia: Skills Codex personalizados",
+      "subtitle": "Aprenda a criar, adaptar e instalar fluxos de trabalho SKILL.md para OpenAI Codex.",
+      "toc": "Índice",
+      "backToReadme": "Voltar à lista de skills",
+      "skillList": "Lista de skills",
+      "verificationNote": "Caminhos e comandos deste guia foram verificados com openai/skills e fluxos comuns do Codex; podem mudar conforme as ferramentas evoluem.",
+      "generatedNote": "Gerado a partir de data/custom-skill-guide.json. Execute npm run generate:guide:all"
+    },
+    "ru": {
+      "title": "Руководство: пользовательские навыки Codex",
+      "subtitle": "Узнайте, как создавать, адаптировать и устанавливать рабочие процессы SKILL.md для OpenAI Codex.",
+      "toc": "Содержание",
+      "backToReadme": "Назад к списку навыков",
+      "skillList": "Список навыков",
+      "verificationNote": "Пути и команды в этом руководстве проверены по openai/skills и типичным рабочим процессам Codex; они могут меняться по мере развития инструментов.",
+      "generatedNote": "Сгенерировано из data/custom-skill-guide.json. Запустите npm run generate:guide:all"
+    },
+    "ar": {
+      "title": "دليل: مهارات Codex المخصصة",
+      "subtitle": "تعلّم كيفية إنشاء وتعديل وتثبيت سير عمل SKILL.md لـ OpenAI Codex.",
+      "toc": "جدول المحتويات",
+      "backToReadme": "العودة إلى قائمة المهارات",
+      "skillList": "قائمة المهارات",
+      "verificationNote": "تم التحقق من المسارات والأوامر في هذا الدليل مقابل openai/skills وسير عمل Codex الشائع؛ وقد تتغير مع تطور الأدوات.",
+      "generatedNote": "تم إنشاؤه من data/custom-skill-guide.json. شغّل npm run generate:guide:all"
+    }
+  },
+  "sections": [
+    {
+      "id": "what-is-a-skill",
+      "title": {
+        "en": "What is a Codex Skill?",
+        "zh": "什么是 Codex 技能？",
+        "tw": "什麼是 Codex 技能？",
+        "ja": "Codex スキルとは？",
+        "ko": "Codex 스킬이란?",
+        "th": "สกิล Codex คืออะไร",
+        "vi": "Skill Codex là gì?",
+        "id": "Apa itu Skill Codex?",
+        "es": "¿Qué es un skill de Codex?",
+        "fr": "Qu'est-ce qu'un skill Codex ?",
+        "de": "Was ist ein Codex-Skill?",
+        "it": "Cos'è una skill Codex?",
+        "pt": "O que é um skill Codex?",
+        "ru": "Что такое навык Codex?",
+        "ar": "ما هي مهارة Codex؟"
+      },
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "A Codex skill is a folder containing SKILL.md plus optional scripts, references, and assets. Codex reads the YAML frontmatter and body when a task matches the skill's description, giving the agent durable, reusable instructions instead of one-off prompts.",
+            "zh": "Codex 技能是一个包含 SKILL.md 及可选脚本、参考资料和资源的文件夹。当任务与技能描述匹配时，Codex 会读取 YAML 前置元数据和正文，为 Agent 提供可复用的持久指令，而非一次性提示。",
+            "tw": "Codex 技能是一個包含 SKILL.md 及可選腳本、參考資料和資源的資料夾。當任務與技能描述相符時，Codex 會讀取 YAML 前置中繼資料和正文，為 Agent 提供可重複使用的持久指令，而非一次性提示。",
+            "ja": "Codex スキルは SKILL.md と任意のスクリプト・参照資料・アセットを含むフォルダです。タスクが description に一致すると YAML フロントマターと本文を読み込み、再利用可能な指示を与えます。",
+            "ko": "Codex 스킬은 SKILL.md와 선택적 스크립트·참고 자료·에셋이 있는 폴더입니다. 작업이 description과 일치하면 YAML frontmatter와 본문을 읽어 재사용 가능한 지침을 제공합니다.",
+            "th": "สกิล Codex คือโฟลเดอร์ที่มี SKILL.md พร้อมสคริปต์ อ้างอิง และไฟล์ประกอบ (ถ้ามี) เมื่องานตรงคำอธิบาย Codex จะอ่าน YAML frontmatter และเนื้อหาเพื่อให้คำสั่งที่ใช้ซ้ำได้",
+            "vi": "Skill Codex là thư mục chứa SKILL.md cùng script, tài liệu tham khảo và tài nguyên tùy chọn. Khi tác vụ khớp mô tả, Codex đọc YAML frontmatter và nội dung để cung cấp hướng dẫn tái sử dụng.",
+            "id": "Skill Codex adalah folder berisi SKILL.md plus skrip, referensi, dan aset opsional. Saat tugas cocok deskripsi, Codex membaca YAML frontmatter dan isi untuk instruksi yang dapat dipakai ulang.",
+            "es": "Un skill de Codex es una carpeta con SKILL.md y scripts, referencias y recursos opcionales. Cuando la tarea coincide, Codex lee el frontmatter YAML y el cuerpo para instrucciones reutilizables.",
+            "fr": "Un skill Codex est un dossier contenant SKILL.md plus scripts, références et ressources optionnels. Quand la tâche correspond, Codex lit le frontmatter YAML et le corps.",
+            "de": "Ein Codex-Skill ist ein Ordner mit SKILL.md sowie optionalen Skripten, Referenzen und Assets. Bei passender Aufgabe liest Codex YAML-Frontmatter und Inhalt.",
+            "it": "Una skill Codex è una cartella con SKILL.md e script, riferimenti e asset opzionali. Quando l'attività corrisponde, Codex legge frontmatter YAML e corpo.",
+            "pt": "Um skill Codex é uma pasta com SKILL.md e scripts, referências e recursos opcionais. Quando a tarefa corresponde, o Codex lê frontmatter YAML e corpo.",
+            "ru": "Навык Codex — папка с SKILL.md и необязательными скриптами, справочниками и ресурсами. При совпадении задачи Codex читает YAML frontmatter и текст.",
+            "ar": "مهارة Codex هي مجلد يحتوي على SKILL.md مع سكربتات ومراجع وموارد اختيارية. عند تطابق المهمة يقرأ Codex بيانات YAML والمحتوى."
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "Use a skill when a workflow repeats across sessions (deploy, PDF export, brand checks).",
+              "zh": "当某工作流在多次会话中重复出现时使用技能（如部署、PDF 导出、品牌检查）。",
+              "tw": "當某工作流程在多個工作階段中重複出現時使用技能（如部署、PDF 匯出、品牌檢查）。",
+              "ja": "デプロイ、PDF 出力、ブランドチェックなど、セッションをまたぐ繰り返しワークフロー向け。",
+              "ko": "배포, PDF 내보내기, 브랜드 검사처럼 세션마다 반복되는 워크플로에 사용합니다.",
+              "th": "ใช้เมื่อเวิร์กโฟลว์ซ้ำข้ามเซสชัน เช่น deploy, ส่งออก PDF, ตรวจแบรนด์",
+              "vi": "Dùng khi quy trình lặp lại qua nhiều phiên (triển khai, xuất PDF, kiểm tra thương hiệu).",
+              "id": "Gunakan saat alur kerja berulang antar sesi (deploy, ekspor PDF, cek merek).",
+              "es": "Úsalo cuando un flujo se repite entre sesiones (deploy, exportar PDF, revisión de marca).",
+              "fr": "À utiliser quand un workflow se répète entre sessions (déploiement, export PDF, contrôle de marque).",
+              "de": "Nutzen, wenn ein Workflow über Sitzungen hinweg wiederkehrt (Deploy, PDF-Export, Markenprüfung).",
+              "it": "Usala quando un workflow si ripete tra sessioni (deploy, export PDF, controllo brand).",
+              "pt": "Use quando um fluxo se repete entre sessões (deploy, exportar PDF, verificação de marca).",
+              "ru": "Используйте, когда процесс повторяется между сессиями (деплой, экспорт PDF, проверка бренда).",
+              "ar": "استخدمها عندما يتكرر سير العمل عبر الجلسات (النشر، تصدير PDF، فحص العلامة)."
+            },
+            {
+              "en": "Use prompts for one-off questions; use Cursor rules for editor-wide conventions.",
+              "zh": "一次性问题用提示；编辑器全局约定用 Cursor 规则。",
+              "tw": "一次性問題用提示；編輯器全域慣例用 Cursor 規則。",
+              "ja": "一度きりの質問はプロンプト、エディタ全体の規約は Cursor ルール。",
+              "ko": "일회성 질문은 프롬프트, 에디터 전역 규칙은 Cursor rules.",
+              "th": "คำถามครั้งเดียวใช้พรอมpt์ ข้อตกลงทั้งโปรเจกต์ใช้กฎ Cursor",
+              "vi": "Câu hỏi một lần dùng prompt; quy ước toàn editor dùng rule Cursor.",
+              "id": "Pertanyaan sekali pakai pakai prompt; konvensi editor pakai aturan Cursor.",
+              "es": "Preguntas puntuales: prompts; convenciones del editor: reglas de Cursor.",
+              "fr": "Questions ponctuelles : prompts ; conventions éditeur : règles Cursor.",
+              "de": "Einmalige Fragen: Prompts; Editor-weite Konventionen: Cursor-Regeln.",
+              "it": "Domande una tantum: prompt; convenzioni editor: regole Cursor.",
+              "pt": "Perguntas pontuais: prompts; convenções do editor: regras Cursor.",
+              "ru": "Разовые вопросы — промпты; соглашения редактора — правила Cursor.",
+              "ar": "الأسئلة لمرة واحدة: مطالبات؛ اتفاقيات المحرر: قواعد Cursor."
+            },
+            {
+              "en": "Skills travel with teams via Git and install into $CODEX_HOME/skills or project .codex/skills.",
+              "zh": "技能可通过 Git 在团队间共享，并安装到 $CODEX_HOME/skills 或项目 .codex/skills。",
+              "tw": "技能可透過 Git 在團隊間共享，並安裝到 $CODEX_HOME/skills 或專案 .codex/skills。",
+              "ja": "スキルは Git で共有し、$CODEX_HOME/skills またはプロジェクト .codex/skills にインストール。",
+              "ko": "스킬은 Git으로 공유하고 $CODEX_HOME/skills 또는 프로젝트 .codex/skills에 설치합니다.",
+              "th": "แชร์สกิลผ่าน Git และติดตั้งที่ $CODEX_HOME/skills หรือ .codex/skills ในโปรเจกต์",
+              "vi": "Skill chia sẻ qua Git và cài vào $CODEX_HOME/skills hoặc .codex/skills trong dự án.",
+              "id": "Skill dibagikan lewat Git dan diinstal ke $CODEX_HOME/skills atau .codex/skills proyek.",
+              "es": "Los skills se comparten por Git e instalan en $CODEX_HOME/skills o .codex/skills del proyecto.",
+              "fr": "Les skills se partagent via Git et s'installent dans $CODEX_HOME/skills ou .codex/skills du projet.",
+              "de": "Skills werden per Git geteilt und in $CODEX_HOME/skills oder Projekt-.codex/skills installiert.",
+              "it": "Le skill si condividono via Git e si installano in $CODEX_HOME/skills o .codex/skills di progetto.",
+              "pt": "Skills compartilhados via Git e instalados em $CODEX_HOME/skills ou .codex/skills do projeto.",
+              "ru": "Навыки распространяются через Git и устанавливаются в $CODEX_HOME/skills или .codex/skills проекта.",
+              "ar": "تُشارك المهارات عبر Git وتُثبَّت في $CODEX_HOME/skills أو .codex/skills للمشروع."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "file-structure",
+      "title": {
+        "en": "File Structure and SKILL.md",
+        "zh": "文件结构与 SKILL.md",
+        "tw": "檔案結構與 SKILL.md",
+        "ja": "ファイル構成と SKILL.md",
+        "ko": "파일 구조와 SKILL.md",
+        "th": "โครงสร้างไฟล์และ SKILL.md",
+        "vi": "Cấu trúc tệp và SKILL.md",
+        "id": "Struktur File dan SKILL.md",
+        "es": "Estructura de archivos y SKILL.md",
+        "fr": "Structure des fichiers et SKILL.md",
+        "de": "Dateistruktur und SKILL.md",
+        "it": "Struttura file e SKILL.md",
+        "pt": "Estrutura de arquivos e SKILL.md",
+        "ru": "Структура файлов и SKILL.md",
+        "ar": "بنية الملفات و SKILL.md"
+      },
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Every skill is a directory. SKILL.md is required; scripts/, references/, and assets/ are optional companions that keep the main file focused.",
+            "zh": "每个技能是一个目录。SKILL.md 为必需；scripts/、references/ 和 assets/ 为可选配套，使主文件保持精简。",
+            "tw": "每個技能是一個目錄。SKILL.md 為必需；scripts/、references/ 和 assets/ 為可選配套，使主檔保持精簡。",
+            "ja": "各スキルはディレクトリです。SKILL.md は必須。scripts/、references/、assets/ は任意で、本体を簡潔に保ちます。",
+            "ko": "각 스킬은 디렉터리입니다. SKILL.md는 필수이고 scripts/, references/, assets/는 선택 사항입니다.",
+            "th": "แต่ละสกิลคือโฟลเดอร์ ต้องมี SKILL.md ส่วน scripts/, references/, assets/ เป็นตัวเลือก",
+            "vi": "Mỗi skill là một thư mục. SKILL.md bắt buộc; scripts/, references/, assets/ tùy chọn.",
+            "id": "Setiap skill adalah direktori. SKILL.md wajib; scripts/, references/, assets/ opsional.",
+            "es": "Cada skill es un directorio. SKILL.md es obligatorio; scripts/, references/ y assets/ son opcionales.",
+            "fr": "Chaque skill est un dossier. SKILL.md est requis ; scripts/, references/ et assets/ sont optionnels.",
+            "de": "Jeder Skill ist ein Verzeichnis. SKILL.md ist Pflicht; scripts/, references/ und assets/ optional.",
+            "it": "Ogni skill è una directory. SKILL.md è obbligatorio; scripts/, references/ e assets/ opzionali.",
+            "pt": "Cada skill é um diretório. SKILL.md é obrigatório; scripts/, references/ e assets/ opcionais.",
+            "ru": "Каждый навык — каталог. SKILL.md обязателен; scripts/, references/ и assets/ опциональны.",
+            "ar": "كل مهارة مجلد. SKILL.md مطلوب؛ scripts/ و references/ و assets/ اختيارية."
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "YAML frontmatter: name (kebab-case) and description (trigger sentence for Codex).",
+              "zh": "YAML 前置元数据：name（kebab-case）和 description（Codex 触发句）。",
+              "tw": "YAML 前置中繼資料：name（kebab-case）和 description（Codex 觸發句）。",
+              "ja": "YAML フロントマター：name（kebab-case）と description（Codex 用トリガー文）。",
+              "ko": "YAML frontmatter: name(kebab-case)과 description(Codex 트리거 문장).",
+              "th": "YAML frontmatter: name (kebab-case) และ description (ประโยคทริกเกอร์)",
+              "vi": "YAML frontmatter: name (kebab-case) và description (câu kích hoạt).",
+              "id": "YAML frontmatter: name (kebab-case) dan description (kalimat pemicu).",
+              "es": "Frontmatter YAML: name (kebab-case) y description (frase disparadora).",
+              "fr": "Frontmatter YAML : name (kebab-case) et description (phrase déclencheuse).",
+              "de": "YAML-Frontmatter: name (kebab-case) und description (Trigger-Satz).",
+              "it": "Frontmatter YAML: name (kebab-case) e description (frase trigger).",
+              "pt": "Frontmatter YAML: name (kebab-case) e description (frase gatilho).",
+              "ru": "YAML frontmatter: name (kebab-case) и description (триггерная фраза).",
+              "ar": "YAML frontmatter: name (kebab-case) و description (جملة التفعيل)."
+            },
+            {
+              "en": "Body: headings for when to use, workflow steps, safety notes, and links to references/.",
+              "zh": "正文：包含何时使用、工作流步骤、安全说明及 references/ 链接等标题。",
+              "tw": "正文：包含何時使用、工作流程步驟、安全說明及 references/ 連結等標題。",
+              "ja": "本文：使用条件、ワークフロー手順、安全注意、references/ へのリンク。",
+              "ko": "본문: 사용 시점, 워크플로 단계, 안전 주의, references/ 링크.",
+              "th": "เนื้อหา: เมื่อใดใช้ ขั้นตอน ความปลอดภัย ลิงก์ references/",
+              "vi": "Nội dung: khi nào dùng, các bước, an toàn, liên kết references/.",
+              "id": "Isi: kapan dipakai, langkah alur, catatan keamanan, tautan references/.",
+              "es": "Cuerpo: cuándo usar, pasos, seguridad y enlaces a references/.",
+              "fr": "Corps : quand utiliser, étapes, sécurité et liens references/.",
+              "de": "Inhalt: Wann nutzen, Workflow-Schritte, Sicherheit, references/-Links.",
+              "it": "Corpo: quando usare, passi, sicurezza e link a references/.",
+              "pt": "Corpo: quando usar, passos, segurança e links para references/.",
+              "ru": "Тело: когда использовать, шаги, безопасность, ссылки на references/.",
+              "ar": "المحتوى: متى تُستخدم، الخطوات، الأمان، روابط references/."
+            },
+            {
+              "en": "Optional scripts/ for repeatable shell or Python helpers Codex can invoke.",
+              "zh": "可选 scripts/ 存放 Codex 可调用的可重复 shell 或 Python 辅助脚本。",
+              "tw": "可選 scripts/ 存放 Codex 可呼叫的可重複 shell 或 Python 輔助腳本。",
+              "ja": "任意の scripts/ に Codex が呼び出すシェル/Python ヘルパーを置く。",
+              "ko": "선택적 scripts/에 Codex가 호출할 shell/Python 헬퍼.",
+              "th": "scripts/ (ถ้ามี) สำหรับสคริปต์ shell/Python ที่ Codex เรียกได้",
+              "vi": "scripts/ tùy chọn cho shell/Python helper Codex có thể gọi.",
+              "id": "scripts/ opsional untuk helper shell/Python yang bisa dipanggil Codex.",
+              "es": "scripts/ opcional para helpers shell o Python invocables.",
+              "fr": "scripts/ optionnel pour helpers shell ou Python invocables.",
+              "de": "Optionale scripts/ für wiederholbare Shell-/Python-Helfer.",
+              "it": "scripts/ opzionale per helper shell/Python invocabili.",
+              "pt": "scripts/ opcional para helpers shell ou Python.",
+              "ru": "Опциональный scripts/ для shell/Python, которые вызывает Codex.",
+              "ar": "scripts/ اختياري لمساعدات shell/Python يستدعيها Codex."
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "language": "markdown",
+          "content": "---\nname: my-deploy-skill\ndescription: Deploy the app to staging when the user asks to ship, release, or deploy. Use when working with CI/CD or release workflows.\n---\n\n# Deploy to Staging\n\n## When to use\n- User mentions deploy, release, ship, or staging\n- Working in repos with GitHub Actions or Vercel\n\n## Steps\n1. Confirm target environment\n2. Run tests\n3. Trigger deployment pipeline\n"
+        }
+      ]
+    },
+    {
+      "id": "installation-paths",
+      "title": {
+        "en": "Installation Paths",
+        "zh": "安装路径",
+        "tw": "安裝路徑",
+        "ja": "インストール先",
+        "ko": "설치 경로",
+        "th": "เส้นทางการติดตั้ง",
+        "vi": "Đường dẫn cài đặt",
+        "id": "Path Instalasi",
+        "es": "Rutas de instalación",
+        "fr": "Chemins d'installation",
+        "de": "Installationspfade",
+        "it": "Percorsi di installazione",
+        "pt": "Caminhos de instalação",
+        "ru": "Пути установки",
+        "ar": "مسارات التثبيت"
+      },
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Codex discovers skills from user-global and project-local directories. Cursor uses a parallel .cursor/skills path for IDE agents.",
+            "zh": "Codex 从用户全局和项目本地目录发现技能。Cursor 为 IDE Agent 使用平行的 .cursor/skills 路径。",
+            "tw": "Codex 從使用者全域和專案本機目錄發現技能。Cursor 為 IDE Agent 使用平行的 .cursor/skills 路徑。",
+            "ja": "Codex はユーザー全体とプロジェクトローカルからスキルを検出。Cursor は .cursor/skills を IDE エージェント用に使います。",
+            "ko": "Codex는 사용자 전역 및 프로젝트 로컬 디렉터리에서 스킬을 찾습니다. Cursor는 IDE 에이전트용 .cursor/skills를 사용합니다.",
+            "th": "Codex ค้นหาสกิลจากโฟลเดอร์ผู้ใช้และโปรเจกต์ Cursor ใช้ .cursor/skills สำหรับ IDE agent",
+            "vi": "Codex tìm skill từ thư mục toàn cục và cục bộ dự án. Cursor dùng .cursor/skills cho agent IDE.",
+            "id": "Codex menemukan skill dari direktori global pengguna dan proyek lokal. Cursor memakai .cursor/skills untuk agent IDE.",
+            "es": "Codex descubre skills en directorios globales y locales del proyecto. Cursor usa .cursor/skills para agentes IDE.",
+            "fr": "Codex découvre les skills dans des dossiers globaux et locaux au projet. Cursor utilise .cursor/skills pour les agents IDE.",
+            "de": "Codex findet Skills in benutzerweiten und projektlokalen Verzeichnissen. Cursor nutzt .cursor/skills für IDE-Agenten.",
+            "it": "Codex scopre skill da directory globali e locali di progetto. Cursor usa .cursor/skills per agent IDE.",
+            "pt": "O Codex descobre skills em diretórios globais e locais do projeto. O Cursor usa .cursor/skills para agentes IDE.",
+            "ru": "Codex находит навыки в глобальных и локальных каталогах проекта. Cursor использует .cursor/skills для IDE-агентов.",
+            "ar": "يكتشف Codex المهارات من مجلدات المستخدم والمشروع. Cursor يستخدم .cursor/skills لوكلاء IDE."
+          }
+        },
+        {
+          "type": "table",
+          "headers": [
+            {
+              "en": "Location",
+              "zh": "位置",
+              "tw": "位置",
+              "ja": "場所",
+              "ko": "위치",
+              "th": "ตำแหน่ง",
+              "vi": "Vị trí",
+              "id": "Lokasi",
+              "es": "Ubicación",
+              "fr": "Emplacement",
+              "de": "Speicherort",
+              "it": "Percorso",
+              "pt": "Local",
+              "ru": "Расположение",
+              "ar": "الموقع"
+            },
+            {
+              "en": "Scope",
+              "zh": "作用域",
+              "tw": "作用域",
+              "ja": "スコープ",
+              "ko": "범위",
+              "th": "ขอบเขต",
+              "vi": "Phạm vi",
+              "id": "Cakupan",
+              "es": "Alcance",
+              "fr": "Portée",
+              "de": "Geltungsbereich",
+              "it": "Ambito",
+              "pt": "Escopo",
+              "ru": "Область",
+              "ar": "النطاق"
+            },
+            {
+              "en": "Best for",
+              "zh": "最适合",
+              "tw": "最適合",
+              "ja": "最適",
+              "ko": "적합",
+              "th": "เหมาะสำหรับ",
+              "vi": "Phù hợp nhất",
+              "id": "Terbaik untuk",
+              "es": "Ideal para",
+              "fr": "Idéal pour",
+              "de": "Am besten für",
+              "it": "Ideale per",
+              "pt": "Melhor para",
+              "ru": "Лучше всего для",
+              "ar": "الأفضل لـ"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "en": "$CODEX_HOME/skills (~/.codex/skills)",
+                "zh": "$CODEX_HOME/skills (~/.codex/skills)",
+                "tw": "$CODEX_HOME/skills (~/.codex/skills)",
+                "ja": "$CODEX_HOME/skills (~/.codex/skills)",
+                "ko": "$CODEX_HOME/skills (~/.codex/skills)",
+                "th": "$CODEX_HOME/skills (~/.codex/skills)",
+                "vi": "$CODEX_HOME/skills (~/.codex/skills)",
+                "id": "$CODEX_HOME/skills (~/.codex/skills)",
+                "es": "$CODEX_HOME/skills (~/.codex/skills)",
+                "fr": "$CODEX_HOME/skills (~/.codex/skills)",
+                "de": "$CODEX_HOME/skills (~/.codex/skills)",
+                "it": "$CODEX_HOME/skills (~/.codex/skills)",
+                "pt": "$CODEX_HOME/skills (~/.codex/skills)",
+                "ru": "$CODEX_HOME/skills (~/.codex/skills)",
+                "ar": "$CODEX_HOME/skills (~/.codex/skills)"
+              },
+              {
+                "en": "User-global",
+                "zh": "用户全局",
+                "tw": "使用者全域",
+                "ja": "ユーザー全体",
+                "ko": "사용자 전역",
+                "th": "ผู้ใช้ทั้งระบบ",
+                "vi": "Toàn cục người dùng",
+                "id": "Global pengguna",
+                "es": "Global del usuario",
+                "fr": "Global utilisateur",
+                "de": "Benutzerweit",
+                "it": "Globale utente",
+                "pt": "Global do usuário",
+                "ru": "Глобально для пользователя",
+                "ar": "على مستوى المستخدم"
+              },
+              {
+                "en": "Personal skills you reuse everywhere",
+                "zh": "随处复用的个人技能",
+                "tw": "到處重複使用的個人技能",
+                "ja": "どこでも使う個人スキル",
+                "ko": "어디서나 쓰는 개인 스킬",
+                "th": "สกิลส่วนตัวที่ใช้ทุกที่",
+                "vi": "Skill cá nhân dùng mọi nơi",
+                "id": "Skill pribadi untuk semua proyek",
+                "es": "Skills personales reutilizables",
+                "fr": "Skills personnels réutilisables",
+                "de": "Persönliche Skills überall",
+                "it": "Skill personali riutilizzabili",
+                "pt": "Skills pessoais reutilizáveis",
+                "ru": "Личные навыки для всех проектов",
+                "ar": "مهارات شخصية لكل المشاريع"
+              }
+            ],
+            [
+              {
+                "en": ".codex/skills (project root)",
+                "zh": ".codex/skills（项目根目录）",
+                "tw": ".codex/skills（專案根目錄）",
+                "ja": ".codex/skills（プロジェクトルート）",
+                "ko": ".codex/skills(프로젝트 루트)",
+                "th": ".codex/skills (รากโปรเจกต์)",
+                "vi": ".codex/skills (gốc dự án)",
+                "id": ".codex/skills (root proyek)",
+                "es": ".codex/skills (raíz del proyecto)",
+                "fr": ".codex/skills (racine projet)",
+                "de": ".codex/skills (Projektroot)",
+                "it": ".codex/skills (root progetto)",
+                "pt": ".codex/skills (raiz do projeto)",
+                "ru": ".codex/skills (корень проекта)",
+                "ar": ".codex/skills (جذر المشروع)"
+              },
+              {
+                "en": "Project-local",
+                "zh": "项目本地",
+                "tw": "專案本機",
+                "ja": "プロジェクトローカル",
+                "ko": "프로젝트 로컬",
+                "th": "เฉพาะโปรเจกต์",
+                "vi": "Cục bộ dự án",
+                "id": "Lokal proyek",
+                "es": "Local del proyecto",
+                "fr": "Local au projet",
+                "de": "Projektlokal",
+                "it": "Locale progetto",
+                "pt": "Local do projeto",
+                "ru": "Локально в проекте",
+                "ar": "محلي للمشروع"
+              },
+              {
+                "en": "Repo-specific deploy or compliance workflows",
+                "zh": "仓库特定的部署或合规工作流",
+                "tw": "儲存庫特定的部署或合規工作流程",
+                "ja": "リポジトリ固有のデプロイ・コンプライアンス",
+                "ko": "저장소별 배포·컴플라이언스 워크플로",
+                "th": "เวิร์กโฟลว์ deploy/ compliance เฉพาะ repo",
+                "vi": "Quy trình triển khai/tuân thủ theo repo",
+                "id": "Alur deploy/compliance khusus repo",
+                "es": "Flujos de deploy o cumplimiento del repo",
+                "fr": "Workflows deploy/conformité du dépôt",
+                "de": "Repo-spezifische Deploy-/Compliance-Workflows",
+                "it": "Workflow deploy/compliance del repo",
+                "pt": "Fluxos de deploy/compliance do repositório",
+                "ru": "Деплой и compliance для конкретного репо",
+                "ar": "سير نشر/امتثال خاص بالمستودع"
+              }
+            ],
+            [
+              {
+                "en": ".cursor/skills (Cursor IDE)",
+                "zh": ".cursor/skills（Cursor IDE）",
+                "tw": ".cursor/skills（Cursor IDE）",
+                "ja": ".cursor/skills（Cursor IDE）",
+                "ko": ".cursor/skills (Cursor IDE)",
+                "th": ".cursor/skills (Cursor IDE)",
+                "vi": ".cursor/skills (Cursor IDE)",
+                "id": ".cursor/skills (Cursor IDE)",
+                "es": ".cursor/skills (Cursor IDE)",
+                "fr": ".cursor/skills (Cursor IDE)",
+                "de": ".cursor/skills (Cursor IDE)",
+                "it": ".cursor/skills (Cursor IDE)",
+                "pt": ".cursor/skills (Cursor IDE)",
+                "ru": ".cursor/skills (Cursor IDE)",
+                "ar": ".cursor/skills (Cursor IDE)"
+              },
+              {
+                "en": "Cursor agent",
+                "zh": "Cursor Agent",
+                "tw": "Cursor Agent",
+                "ja": "Cursor エージェント",
+                "ko": "Cursor 에이전트",
+                "th": "Cursor agent",
+                "vi": "Agent Cursor",
+                "id": "Agent Cursor",
+                "es": "Agente Cursor",
+                "fr": "Agent Cursor",
+                "de": "Cursor-Agent",
+                "it": "Agent Cursor",
+                "pt": "Agente Cursor",
+                "ru": "Агент Cursor",
+                "ar": "وكيل Cursor"
+              },
+              {
+                "en": "IDE workflows; adapt naming/triggers for Codex if porting",
+                "zh": "IDE 工作流；移植时需调整命名/触发器以适配 Codex",
+                "tw": "IDE 工作流程；移植時需調整命名/觸發器以適配 Codex",
+                "ja": "IDE 用。Codex へ移植時は名前・トリガーを調整",
+                "ko": "IDE 워크플로; Codex 이식 시 이름/트리거 조정",
+                "th": "เวิร์กโฟลว์ IDE ปรับชื่อ/ทริกเกอร์เมื่อย้ายไป Codex",
+                "vi": "Quy trình IDE; chỉnh tên/trigger khi chuyển sang Codex",
+                "id": "Alur IDE; sesuaikan nama/trigger saat port ke Codex",
+                "es": "Flujos IDE; adapta nombre/disparadores al portar a Codex",
+                "fr": "Workflows IDE ; adapter nom/déclencheurs pour Codex",
+                "de": "IDE-Workflows; Name/Trigger für Codex anpassen",
+                "it": "Workflow IDE; adatta nome/trigger per Codex",
+                "pt": "Fluxos IDE; adapte nome/gatilhos ao portar para Codex",
+                "ru": "IDE-процессы; при переносе в Codex настройте имя/триггеры",
+                "ar": "سير IDE؛ عدّل الاسم/المحفزات عند النقل إلى Codex"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "writing-triggers",
+      "title": {
+        "en": "Writing Triggers (name and description)",
+        "zh": "编写触发器（name 与 description）",
+        "tw": "撰寫觸發器（name 與 description）",
+        "ja": "トリガー記述（name と description）",
+        "ko": "트리거 작성 (name 및 description)",
+        "th": "เขียนทริกเกอร์ (name และ description)",
+        "vi": "Viết trigger (name và description)",
+        "id": "Menulis trigger (name dan description)",
+        "es": "Escribir disparadores (name y description)",
+        "fr": "Rédiger les déclencheurs (name et description)",
+        "de": "Trigger schreiben (name und description)",
+        "it": "Scrivere trigger (name e description)",
+        "pt": "Escrever gatilhos (name e description)",
+        "ru": "Написание триггеров (name и description)",
+        "ar": "كتابة محفزات (name و description)"
+      },
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Codex loads a skill when the user task semantically matches the description field. Write triggers as WHEN clauses with user phrases, file types, and workflows—not feature lists.",
+            "zh": "当用户任务在语义上与 description 匹配时，Codex 会加载技能。触发器应写为 WHEN 从句，包含用户短语、文件类型和工作流，而非功能列表。",
+            "tw": "當使用者任務在語意上與 description 相符時，Codex 會載入技能。觸發器應寫成 WHEN 子句，包含使用者片語、檔案類型和工作流程，而非功能列表。",
+            "ja": "ユーザータスクが description に意味的に一致すると Codex がスキルを読み込みます。トリガーは機能一覧ではなく、ユーザー表現・ファイル種別・ワークフローを含む WHEN 句で書きます。",
+            "ko": "사용자 작업이 description과 의미적으로 일치하면 Codex가 스킬을 로드합니다. 트리거는 기능 목록이 아니라 WHEN 절로 작성하세요.",
+            "th": "Codex โหลดสกิลเมื่องานตรงกับ description ทางความหมาย เขียนทริกเกอร์เป็น WHEN พร้อมวลี ไฟล์ และเวิร์กโฟลว์",
+            "vi": "Codex tải skill khi tác vụ khớp ngữ nghĩa với description. Viết trigger dạng WHEN với cụm từ, loại tệp và quy trình.",
+            "id": "Codex memuat skill saat tugas cocok secara semantik dengan description. Tulis trigger sebagai WHEN dengan frasa, tipe file, dan alur kerja.",
+            "es": "Codex carga el skill cuando la tarea coincide semánticamente con description. Escribe disparadores como WHEN con frases, tipos de archivo y flujos.",
+            "fr": "Codex charge le skill quand la tâche correspond sémantiquement à description. Rédigez des WHEN avec phrases, types de fichiers et workflows.",
+            "de": "Codex lädt den Skill bei semantischer Übereinstimmung mit description. Trigger als WHEN mit Nutzerphrasen, Dateitypen und Workflows.",
+            "it": "Codex carica la skill quando l'attività corrisponde semanticamente a description. Scrivi trigger WHEN con frasi, tipi file e workflow.",
+            "pt": "O Codex carrega o skill quando a tarefa corresponde semanticamente a description. Escreva gatilhos WHEN com frases, tipos de arquivo e fluxos.",
+            "ru": "Codex загружает навык при семантическом совпадении с description. Пишите триггеры как WHEN с фразами, типами файлов и процессами.",
+            "ar": "يحمّل Codex المهارة عند تطابق المهمة دلاليًا مع description. اكتب محفزات WHEN بعبارات المستخدم وأنواع الملفات وسير العمل."
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "Good: \"Deploy to staging when the user asks to ship, release, or run CI for frontend apps.\"",
+              "zh": "好：\"当用户要求发布、上线或为前端应用运行 CI 时部署到 staging。\"",
+              "tw": "好：\"當使用者要求發布、上線或為前端應用執行 CI 時部署到 staging。\"",
+              "ja": "良い例：「ship、release、フロント CI と言われたら staging へデプロイ。」",
+              "ko": "좋음: \"사용자가 ship, release, 프론트 CI를 요청하면 staging에 배포.\"",
+              "th": "ดี: \"deploy ไป staging เมื่อผู้ใช้ขอ ship, release หรือรัน CI ฝั่ง frontend\"",
+              "vi": "Tốt: \"Triển khai staging khi người dùng yêu cầu ship, release hoặc chạy CI frontend.\"",
+              "id": "Baik: \"Deploy ke staging saat pengguna minta ship, release, atau jalankan CI frontend.\"",
+              "es": "Bueno: \"Despliega a staging cuando pidan ship, release o CI frontend.\"",
+              "fr": "Bon : « Déployer en staging quand l'utilisateur demande ship, release ou CI frontend. »",
+              "de": "Gut: \"Bei ship, release oder Frontend-CI nach staging deployen.\"",
+              "it": "Buono: \"Deploy su staging quando chiedono ship, release o CI frontend.\"",
+              "pt": "Bom: \"Faça deploy em staging quando pedirem ship, release ou CI frontend.\"",
+              "ru": "Хорошо: «Деплой в staging при запросе ship, release или CI фронтенда.»",
+              "ar": "جيد: \"انشر إلى staging عند طلب ship أو release أو CI للواجهة.\""
+            },
+            {
+              "en": "Bad: \"A skill for deployment and DevOps tasks.\" (too vague—Codex may load it everywhere or nowhere).",
+              "zh": "差：\"用于部署和 DevOps 任务的技能。\"（过于模糊，Codex 可能到处加载或从不加载）。",
+              "tw": "差：\"用於部署和 DevOps 任務的技能。\"（過於模糊，Codex 可能到處載入或從不載入）。",
+              "ja": "悪い例：「デプロイと DevOps 用スキル」（曖昧すぎて読み込みが不安定）。",
+              "ko": "나쁨: \"배포 및 DevOps 스킬.\" (모호해서 로드가 불안정).",
+              "th": "ไม่ดี: \"สกิลสำหรับ deploy และ DevOps\" (กว้างเกินไป)",
+              "vi": "Kém: \"Skill cho deploy và DevOps.\" (mơ hồ, load không ổn định).",
+              "id": "Buruk: \"Skill untuk deploy dan DevOps.\" (terlalu umum).",
+              "es": "Malo: \"Skill para deploy y DevOps.\" (demasiado vago).",
+              "fr": "Mauvais : « Skill pour déploiement et DevOps » (trop vague).",
+              "de": "Schlecht: \"Skill für Deployment und DevOps.\" (zu vage).",
+              "it": "Cattivo: \"Skill per deploy e DevOps.\" (troppo vago).",
+              "pt": "Ruim: \"Skill para deploy e DevOps.\" (vago demais).",
+              "ru": "Плохо: «Навык для деплоя и DevOps.» (слишком расплывчато).",
+              "ar": "سيء: \"مهارة للنشر و DevOps.\" (غامض جدًا)."
+            },
+            {
+              "en": "name must be kebab-case, stable, and match the folder name (my-deploy-skill).",
+              "zh": "name 必须为 kebab-case、稳定且与文件夹名一致（my-deploy-skill）。",
+              "tw": "name 必須為 kebab-case、穩定且與資料夾名稱一致（my-deploy-skill）。",
+              "ja": "name は kebab-case で安定し、フォルダ名と一致（my-deploy-skill）。",
+              "ko": "name은 kebab-case, 안정적, 폴더명과 일치(my-deploy-skill).",
+              "th": "name ต้องเป็น kebab-case คงที่ และตรงชื่อโฟลเดอร์",
+              "vi": "name phải kebab-case, ổn định, khớp tên thư mục.",
+              "id": "name harus kebab-case, stabil, cocok nama folder.",
+              "es": "name en kebab-case, estable y igual al nombre de carpeta.",
+              "fr": "name en kebab-case, stable et identique au dossier.",
+              "de": "name in kebab-case, stabil, gleich Ordnername.",
+              "it": "name in kebab-case, stabile, uguale alla cartella.",
+              "pt": "name em kebab-case, estável, igual ao nome da pasta.",
+              "ru": "name в kebab-case, стабильный, совпадает с папкой.",
+              "ar": "name بصيغة kebab-case ومطابق لاسم المجلد."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "create-from-scratch",
+      "title": {
+        "en": "Create a Skill from Scratch",
+        "zh": "从零创建技能",
+        "tw": "從零建立技能",
+        "ja": "ゼロからスキルを作成",
+        "ko": "처음부터 스킬 만들기",
+        "th": "สร้างสกิลตั้งแต่ต้น",
+        "vi": "Tạo skill từ đầu",
+        "id": "Buat skill dari nol",
+        "es": "Crear un skill desde cero",
+        "fr": "Créer un skill from scratch",
+        "de": "Skill von Grund auf erstellen",
+        "it": "Creare una skill da zero",
+        "pt": "Criar um skill do zero",
+        "ru": "Создать навык с нуля",
+        "ar": "إنشاء مهارة من الصفر"
+      },
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Follow these steps to turn a repeatable team workflow into an installed Codex skill.",
+            "zh": "按以下步骤将可重复的团队工作流转化为已安装的 Codex 技能。",
+            "tw": "依下列步驟將可重複的團隊工作流程轉為已安裝的 Codex 技能。",
+            "ja": "繰り返しチームワークフローをインストール済み Codex スキルにする手順です。",
+            "ko": "반복되는 팀 워크플로를 설치된 Codex 스킬로 만드는 단계입니다.",
+            "th": "ขั้นตอนเปลี่ยนเวิร์กโฟลว์ทีมที่ทำซ้ำเป็นสกิล Codex ที่ติดตั้งแล้ว",
+            "vi": "Các bước biến quy trình nhóm lặp lại thành skill Codex đã cài.",
+            "id": "Langkah mengubah alur kerja tim berulang menjadi skill Codex terinstal.",
+            "es": "Pasos para convertir un flujo repetible del equipo en un skill instalado.",
+            "fr": "Étapes pour transformer un workflow d'équipe répétitif en skill installé.",
+            "de": "Schritte, um wiederholbare Team-Workflows in installierte Codex-Skills zu verwandeln.",
+            "it": "Passi per trasformare un workflow di team ripetibile in skill Codex installata.",
+            "pt": "Passos para transformar fluxo repetível da equipe em skill Codex instalado.",
+            "ru": "Шаги превращения повторяемого командного процесса в установленный навык Codex.",
+            "ar": "خطوات تحويل سير عمل الفريق المتكرر إلى مهارة Codex مثبتة."
+          }
+        },
+        {
+          "type": "steps",
+          "steps": [
+            {
+              "title": {
+                "en": "Pick one repeatable workflow",
+                "zh": "选定一个可重复工作流",
+                "tw": "選定一個可重複工作流程",
+                "ja": "繰り返しワークフローを1つ選ぶ",
+                "ko": "반복 워크플로 하나 선택",
+                "th": "เลือกเวิร์กโฟลว์ที่ทำซ้ำ",
+                "vi": "Chọn một quy trình lặp lại",
+                "id": "Pilih satu alur kerja berulang",
+                "es": "Elige un flujo repetible",
+                "fr": "Choisir un workflow répétitif",
+                "de": "Einen wiederholbaren Workflow wählen",
+                "it": "Scegli un workflow ripetibile",
+                "pt": "Escolha um fluxo repetível",
+                "ru": "Выберите повторяемый процесс",
+                "ar": "اختر سير عمل متكرر"
+              },
+              "body": {
+                "en": "Example: release checklist for a Next.js app.",
+                "zh": "示例：Next.js 应用的发布检查清单。",
+                "tw": "範例：Next.js 應用的發布檢查清單。",
+                "ja": "例：Next.js アプリのリリースチェックリスト。",
+                "ko": "예: Next.js 앱 릴리스 체크리스트.",
+                "th": "ตัวอย่าง: checklist ปล่อยแอป Next.js",
+                "vi": "Ví dụ: checklist phát hành app Next.js.",
+                "id": "Contoh: checklist rilis app Next.js.",
+                "es": "Ejemplo: checklist de release para Next.js.",
+                "fr": "Exemple : checklist de release Next.js.",
+                "de": "Beispiel: Release-Checkliste für Next.js.",
+                "it": "Esempio: checklist release Next.js.",
+                "pt": "Exemplo: checklist de release Next.js.",
+                "ru": "Пример: чеклист релиза Next.js.",
+                "ar": "مثال: قائمة تحقق إصدار لتطبيق Next.js."
+              }
+            },
+            {
+              "title": {
+                "en": "Draft the trigger sentence",
+                "zh": "起草触发句",
+                "tw": "起草觸發句",
+                "ja": "トリガー文を書く",
+                "ko": "트리거 문장 작성",
+                "th": "ร่างประโยคทริกเกอร์",
+                "vi": "Soạn câu trigger",
+                "id": "Buat kalimat trigger",
+                "es": "Redacta la frase disparadora",
+                "fr": "Rédiger la phrase déclencheuse",
+                "de": "Trigger-Satz entwerfen",
+                "it": "Bozza la frase trigger",
+                "pt": "Rascunhe a frase gatilho",
+                "ru": "Напишите триггерную фразу",
+                "ar": "اكتب جملة التفعيل"
+              },
+              "body": {
+                "en": "List exact user phrases and repo signals that should activate the skill.",
+                "zh": "列出应激活技能的确切用户短语和仓库信号。",
+                "tw": "列出應啟動技能的确切使用者片語和儲存庫信號。",
+                "ja": "スキルを有効にするユーザー表現とリポジトリ信号を列挙。",
+                "ko": "스킬을 활성화할 사용자 표현과 repo 신호를 나열.",
+                "th": "ระบุวลีผู้ใช้และสัญญาณ repo ที่ควรเปิดสกิล",
+                "vi": "Liệt kê cụm từ người dùng và tín hiệu repo kích hoạt skill.",
+                "id": "Daftar frasa pengguna dan sinyal repo yang mengaktifkan skill.",
+                "es": "Lista frases de usuario y señales del repo que activan el skill.",
+                "fr": "Lister phrases utilisateur et signaux repo qui activent le skill.",
+                "de": "Nutzerphrasen und Repo-Signale auflisten.",
+                "it": "Elenca frasi utente e segnali repo che attivano la skill.",
+                "pt": "Liste frases do usuário e sinais do repo.",
+                "ru": "Перечислите фразы пользователя и сигналы репо.",
+                "ar": "اذكر عبارات المستخدم وإشارات المستودع."
+              }
+            },
+            {
+              "title": {
+                "en": "Write SKILL.md sections",
+                "zh": "编写 SKILL.md 各节",
+                "tw": "撰寫 SKILL.md 各節",
+                "ja": "SKILL.md の各セクションを書く",
+                "ko": "SKILL.md 섹션 작성",
+                "th": "เขียนส่วน SKILL.md",
+                "vi": "Viết các phần SKILL.md",
+                "id": "Tulis bagian SKILL.md",
+                "es": "Escribe secciones de SKILL.md",
+                "fr": "Rédiger les sections SKILL.md",
+                "de": "SKILL.md-Abschnitte schreiben",
+                "it": "Scrivi sezioni SKILL.md",
+                "pt": "Escreva seções do SKILL.md",
+                "ru": "Напишите разделы SKILL.md",
+                "ar": "اكتب أقسام SKILL.md"
+              },
+              "body": {
+                "en": "Include when to use, ordered steps, verification, and safety boundaries.",
+                "zh": "包含何时使用、有序步骤、验证方式和安全边界。",
+                "tw": "包含何時使用、有序步驟、驗證方式和安全邊界。",
+                "ja": "使用条件、手順、検証、安全境界を含める。",
+                "ko": "사용 시점, 순서 단계, 검증, 안전 경계 포함.",
+                "th": "รวมเมื่อใดใช้ ขั้นตอน การตรวจ และขอบเขตความปลอดภัย",
+                "vi": "Gồm khi nào dùng, bước, xác minh và ranh giới an toàn.",
+                "id": "Sertakan kapan dipakai, langkah, verifikasi, batas keamanan.",
+                "es": "Incluye cuándo usar, pasos, verificación y límites de seguridad.",
+                "fr": "Inclure quand utiliser, étapes, vérification et limites de sécurité.",
+                "de": "Wann nutzen, Schritte, Verifikation, Sicherheitsgrenzen.",
+                "it": "Includi quando usare, passi, verifica e limiti di sicurezza.",
+                "pt": "Inclua quando usar, passos, verificação e limites.",
+                "ru": "Включите когда использовать, шаги, проверку и границы безопасности.",
+                "ar": "ضمّن متى تُستخدم والخطوات والتحقق وحدود الأمان."
+              }
+            },
+            {
+              "title": {
+                "en": "Add optional scripts or references",
+                "zh": "添加可选脚本或参考资料",
+                "tw": "新增可選腳本或參考資料",
+                "ja": "任意で scripts や references を追加",
+                "ko": "선택적 scripts/references 추가",
+                "th": "เพิ่ม scripts หรือ references (ถ้ามี)",
+                "vi": "Thêm script hoặc tài liệu tham khảo",
+                "id": "Tambah skrip atau referensi opsional",
+                "es": "Añade scripts o referencias opcionales",
+                "fr": "Ajouter scripts ou références optionnels",
+                "de": "Optionale Skripte/Referenzen hinzufügen",
+                "it": "Aggiungi script o riferimenti opzionali",
+                "pt": "Adicione scripts ou referências",
+                "ru": "Добавьте скрипты или справочники",
+                "ar": "أضف سكربتات أو مراجع"
+              },
+              "body": {
+                "en": "Keep SKILL.md under ~500 lines; move long docs to references/.",
+                "zh": "保持 SKILL.md 在约 500 行以内；长文档移至 references/。",
+                "tw": "保持 SKILL.md 在約 500 行以內；長文件移至 references/。",
+                "ja": "SKILL.md は約500行以内。長文は references/ へ。",
+                "ko": "SKILL.md ~500줄 이내, 긴 문서는 references/.",
+                "th": "SKILL.md ไม่เกิน ~500 บรรทัด เอกสารยาวไป references/",
+                "vi": "Giữ SKILL.md ~500 dòng; tài liệu dài vào references/.",
+                "id": "SKILL.md ~500 baris; dokumen panjang ke references/.",
+                "es": "SKILL.md ~500 líneas; docs largos en references/.",
+                "fr": "SKILL.md ~500 lignes ; docs longs dans references/.",
+                "de": "SKILL.md ~500 Zeilen; lange Docs nach references/.",
+                "it": "SKILL.md ~500 righe; documenti lunghi in references/.",
+                "pt": "SKILL.md ~500 linhas; docs longos em references/.",
+                "ru": "SKILL.md ~500 строк; длинные docs в references/.",
+                "ar": "SKILL.md ~500 سطر؛ المستندات الطويلة في references/."
+              }
+            },
+            {
+              "title": {
+                "en": "Create the folder and install",
+                "zh": "创建文件夹并安装",
+                "tw": "建立資料夾並安裝",
+                "ja": "フォルダ作成とインストール",
+                "ko": "폴더 생성 및 설치",
+                "th": "สร้างโฟลเดอร์และติดตั้ง",
+                "vi": "Tạo thư mục và cài đặt",
+                "id": "Buat folder dan instal",
+                "es": "Crea carpeta e instala",
+                "fr": "Créer le dossier et installer",
+                "de": "Ordner anlegen und installieren",
+                "it": "Crea cartella e installa",
+                "pt": "Crie pasta e instale",
+                "ru": "Создайте папку и установите",
+                "ar": "أنشئ المجلد وثبّت"
+              },
+              "body": {
+                "en": "Use ~/.codex/skills for personal skills or .codex/skills for repo-specific ones.",
+                "zh": "个人技能用 ~/.codex/skills，仓库专用用 .codex/skills。",
+                "tw": "個人技能用 ~/.codex/skills，儲存庫專用用 .codex/skills。",
+                "ja": "個人は ~/.codex/skills、リポジトリ固有は .codex/skills。",
+                "ko": "개인: ~/.codex/skills, repo: .codex/skills.",
+                "th": "ส่วนตัว ~/.codex/skills โปรเจกต์ .codex/skills",
+                "vi": "Cá nhân: ~/.codex/skills; repo: .codex/skills.",
+                "id": "Pribadi: ~/.codex/skills; repo: .codex/skills.",
+                "es": "Personal: ~/.codex/skills; repo: .codex/skills.",
+                "fr": "Perso : ~/.codex/skills ; repo : .codex/skills.",
+                "de": "Persönlich: ~/.codex/skills; Repo: .codex/skills.",
+                "it": "Personale: ~/.codex/skills; repo: .codex/skills.",
+                "pt": "Pessoal: ~/.codex/skills; repo: .codex/skills.",
+                "ru": "Личные: ~/.codex/skills; репо: .codex/skills.",
+                "ar": "شخصي: ~/.codex/skills؛ المشروع: .codex/skills."
+              }
+            },
+            {
+              "title": {
+                "en": "Test with a realistic prompt",
+                "zh": "用真实提示测试",
+                "tw": "用真實提示測試",
+                "ja": "現実的なプロンプトでテスト",
+                "ko": "현실적인 프롬프트로 테스트",
+                "th": "ทดสอบด้วยพรอมpt์จริง",
+                "vi": "Thử với prompt thực tế",
+                "id": "Uji dengan prompt realistis",
+                "es": "Prueba con un prompt realista",
+                "fr": "Tester avec un prompt réaliste",
+                "de": "Mit realistischem Prompt testen",
+                "it": "Testa con prompt realistico",
+                "pt": "Teste com prompt realista",
+                "ru": "Проверьте реалистичным промптом",
+                "ar": "اختبر بمطالبة واقعية"
+              },
+              "body": {
+                "en": "Ask Codex to perform the workflow and confirm it loads your skill.",
+                "zh": "让 Codex 执行工作流并确认加载了你的技能。",
+                "tw": "讓 Codex 執行工作流程並確認載入了你的技能。",
+                "ja": "Codex にワークフローを実行させ、スキル読み込みを確認。",
+                "ko": "Codex에 워크플로 실행 후 스킬 로드 확인.",
+                "th": "ให้ Codex ทำเวิร์กโฟลว์และยืนยันว่าโหลดสกิล",
+                "vi": "Yêu cầu Codex thực hiện quy trình và xác nhận load skill.",
+                "id": "Minta Codex jalankan alur dan pastikan skill dimuat.",
+                "es": "Pide a Codex el flujo y confirma que carga el skill.",
+                "fr": "Demander à Codex le workflow et confirmer le chargement.",
+                "de": "Codex Workflow ausführen lassen und Skill-Laden prüfen.",
+                "it": "Chiedi a Codex il workflow e verifica il caricamento.",
+                "pt": "Peça ao Codex o fluxo e confirme o carregamento.",
+                "ru": "Попросите Codex выполнить процесс и проверьте загрузку.",
+                "ar": "اطلب من Codex تنفيذ سير العمل وتأكد من تحميل المهارة."
+              }
+            },
+            {
+              "title": {
+                "en": "Commit and share",
+                "zh": "提交并分享",
+                "tw": "提交並分享",
+                "ja": "コミットして共有",
+                "ko": "커밋하고 공유",
+                "th": "commit และแชร์",
+                "vi": "Commit và chia sẻ",
+                "id": "Commit dan bagikan",
+                "es": "Commit y comparte",
+                "fr": "Committer et partager",
+                "de": "Committen und teilen",
+                "it": "Commit e condividi",
+                "pt": "Commit e compartilhe",
+                "ru": "Закоммитьте и поделитесь",
+                "ar": "احفظ وشارك"
+              },
+              "body": {
+                "en": "Version the skill in Git; publish or submit to awesome_codex_skills.",
+                "zh": "用 Git 版本管理；发布或提交到 awesome_codex_skills。",
+                "tw": "用 Git 版本管理；發布或提交到 awesome_codex_skills。",
+                "ja": "Git で版管理し、公開または awesome_codex_skills に提出。",
+                "ko": "Git으로 버전 관리 후 공개 또는 awesome_codex_skills 제출.",
+                "th": "ใช้ Git และเผยแพร่หรือส่ง awesome_codex_skills",
+                "vi": "Quản lý bằng Git; xuất bản hoặc gửi awesome_codex_skills.",
+                "id": "Versikan di Git; publikasikan atau kirim ke awesome_codex_skills.",
+                "es": "Versiona en Git; publica o envía a awesome_codex_skills.",
+                "fr": "Versionner dans Git ; publier ou soumettre à awesome_codex_skills.",
+                "de": "In Git versionieren; veröffentlichen oder an awesome_codex_skills senden.",
+                "it": "Versiona in Git; pubblica o invia a awesome_codex_skills.",
+                "pt": "Versione no Git; publique ou envie ao awesome_codex_skills.",
+                "ru": "Версионируйте в Git; опубликуйте или отправьте в awesome_codex_skills.",
+                "ar": "أدرج في Git؛ انشر أو أرسل إلى awesome_codex_skills."
+              }
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "language": "bash",
+          "content": "# Create a local skill folder\nmkdir -p ~/.codex/skills/my-deploy-skill\ncd ~/.codex/skills/my-deploy-skill\n\n# Write SKILL.md (edit with your editor)\ncat > SKILL.md << 'EOF'\n---\nname: my-deploy-skill\ndescription: Deploy the app when the user asks to ship or release.\n---\n# My Deploy Skill\n...\nEOF\n\n# Option A: copy into $CODEX_HOME/skills (default ~/.codex/skills)\ncp -r . \"$CODEX_HOME/skills/my-deploy-skill\"\n\n# Option B: install from a GitHub repo (when available)\nnpx skills add owner/repo/my-deploy-skill\n\n# Option C: project-scoped skill\nmkdir -p .codex/skills/my-deploy-skill\ncp SKILL.md .codex/skills/my-deploy-skill/\n"
+        }
+      ]
+    },
+    {
+      "id": "adapt-existing",
+      "title": {
+        "en": "Adapt an Existing Skill",
+        "zh": "改造现有技能",
+        "tw": "改造現有技能",
+        "ja": "既存スキルを適応させる",
+        "ko": "기존 스킬 적응하기",
+        "th": "ปรับใช้สกิลที่มีอยู่",
+        "vi": "Chỉnh sửa skill có sẵn",
+        "id": "Adaptasi skill yang ada",
+        "es": "Adaptar un skill existente",
+        "fr": "Adapter un skill existant",
+        "de": "Bestehenden Skill anpassen",
+        "it": "Adattare una skill esistente",
+        "pt": "Adaptar um skill existente",
+        "ru": "Адаптировать существующий навык",
+        "ar": "تكييف مهارة موجودة"
+      },
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Fork skills from GitHub (openai/skills), OrangeBot, SkillsCat, or SkillsMP, then audit and adapt them for your Codex environment.",
+            "zh": "从 GitHub（openai/skills）、OrangeBot、SkillsCat 或 SkillsMP fork 技能，然后审计并适配到你的 Codex 环境。",
+            "tw": "從 GitHub（openai/skills）、OrangeBot、SkillsCat 或 SkillsMP fork 技能，然後審計並適配到你的 Codex 環境。",
+            "ja": "GitHub（openai/skills）、OrangeBot、SkillsCat、SkillsMP からフォークし、Codex 環境向けに監査・適応します。",
+            "ko": "GitHub(openai/skills), OrangeBot, SkillsCat, SkillsMP에서 fork한 뒤 Codex 환경에 맞게 감사·적응합니다.",
+            "th": "fork จาก GitHub, OrangeBot, SkillsCat หรือ SkillsMP แล้วตรวจและปรับให้เข้ากับ Codex",
+            "vi": "Fork từ GitHub, OrangeBot, SkillsCat hoặc SkillsMP, rồi kiểm tra và chỉnh cho môi trường Codex.",
+            "id": "Fork dari GitHub, OrangeBot, SkillsCat, atau SkillsMP, lalu audit dan sesuaikan untuk Codex.",
+            "es": "Haz fork desde GitHub, OrangeBot, SkillsCat o SkillsMP y audita para tu entorno Codex.",
+            "fr": "Forkez depuis GitHub, OrangeBot, SkillsCat ou SkillsMP puis auditez pour Codex.",
+            "de": "Forke von GitHub, OrangeBot, SkillsCat oder SkillsMP und für Codex auditieren/anpassen.",
+            "it": "Fai fork da GitHub, OrangeBot, SkillsCat o SkillsMP e adatta per Codex.",
+            "pt": "Faça fork do GitHub, OrangeBot, SkillsCat ou SkillsMP e adapte ao Codex.",
+            "ru": "Форкните с GitHub, OrangeBot, SkillsCat или SkillsMP и адаптируйте под Codex.",
+            "ar": "انسخ من GitHub أو OrangeBot أو SkillsCat أو SkillsMP ثم راجعها لبيئة Codex."
+          }
+        },
+        {
+          "type": "steps",
+          "steps": [
+            {
+              "title": {
+                "en": "Locate the source SKILL.md",
+                "zh": "定位源 SKILL.md",
+                "tw": "定位來源 SKILL.md",
+                "ja": "ソース SKILL.md を特定",
+                "ko": "소스 SKILL.md 찾기",
+                "th": "หา SKILL.md ต้นฉบับ",
+                "vi": "Tìm SKILL.md nguồn",
+                "id": "Temukan SKILL.md sumber",
+                "es": "Localiza el SKILL.md fuente",
+                "fr": "Localiser le SKILL.md source",
+                "de": "Quell-SKILL.md finden",
+                "it": "Trova SKILL.md sorgente",
+                "pt": "Localize o SKILL.md fonte",
+                "ru": "Найдите исходный SKILL.md",
+                "ar": "حدد SKILL.md المصدر"
+              },
+              "body": {
+                "en": "Open the linked repo path and read frontmatter, scripts, and license.",
+                "zh": "打开链接仓库路径，阅读 frontmatter、脚本和许可证。",
+                "tw": "開啟連結儲存庫路徑，閱讀 frontmatter、腳本和授權。",
+                "ja": "リンク先リポジトリで frontmatter、スクリプト、ライセンスを確認。",
+                "ko": "링크된 repo에서 frontmatter, scripts, license 확인.",
+                "th": "เปิด repo อ่าน frontmatter scripts และ license",
+                "vi": "Mở repo liên kết, đọc frontmatter, script và license.",
+                "id": "Buka repo tautan, baca frontmatter, skrip, lisensi.",
+                "es": "Abre el repo enlazado y revisa frontmatter, scripts y licencia.",
+                "fr": "Ouvrir le dépôt lié et lire frontmatter, scripts et licence.",
+                "de": "Verlinktes Repo öffnen: Frontmatter, Skripte, Lizenz.",
+                "it": "Apri repo collegato: frontmatter, script, licenza.",
+                "pt": "Abra o repositório e leia frontmatter, scripts e licença.",
+                "ru": "Откройте репозиторий: frontmatter, scripts, license.",
+                "ar": "افتح المستودع واقرأ frontmatter والسكربتات والترخيص."
+              }
+            },
+            {
+              "title": {
+                "en": "Run a security audit",
+                "zh": "进行安全审计",
+                "tw": "進行安全審計",
+                "ja": "セキュリティ監査",
+                "ko": "보안 감사 실행",
+                "th": "ตรวจสอบความปลอดภัย",
+                "vi": "Kiểm tra bảo mật",
+                "id": "Audit keamanan",
+                "es": "Auditoría de seguridad",
+                "fr": "Audit de sécurité",
+                "de": "Sicherheitsaudit",
+                "it": "Audit di sicurezza",
+                "pt": "Auditoria de segurança",
+                "ru": "Проверка безопасности",
+                "ar": "تدقيق أمني"
+              },
+              "body": {
+                "en": "Check for shell commands, network calls, API keys, browser control, and file writes.",
+                "zh": "检查 shell 命令、网络调用、API Key、浏览器控制和文件写入。",
+                "tw": "檢查 shell 指令、網路呼叫、API Key、瀏覽器控制和檔案寫入。",
+                "ja": "シェル、ネットワーク、API キー、ブラウザ操作、ファイル書き込みを確認。",
+                "ko": "shell, 네트워크, API 키, 브라우저, 파일 쓰기 확인.",
+                "th": "ตรวจ shell เครือข่าย API key บrowser และการเขียนไฟล์",
+                "vi": "Kiểm tra shell, mạng, API key, trình duyệt, ghi file.",
+                "id": "Periksa shell, jaringan, API key, browser, tulis file.",
+                "es": "Revisa shell, red, API keys, navegador y escrituras.",
+                "fr": "Vérifier shell, réseau, clés API, navigateur, écritures.",
+                "de": "Shell, Netzwerk, API-Keys, Browser, Schreibzugriffe prüfen.",
+                "it": "Controlla shell, rete, API key, browser, scritture.",
+                "pt": "Verifique shell, rede, API keys, browser, gravações.",
+                "ru": "Проверьте shell, сеть, API keys, браузер, запись файлов.",
+                "ar": "تحقق من shell والشبكة ومفاتيح API والمتصفح وكتابة الملفات."
+              }
+            },
+            {
+              "title": {
+                "en": "Rewrite the description for your triggers",
+                "zh": "为你的触发器重写 description",
+                "tw": "為你的觸發器重寫 description",
+                "ja": "自環境のトリガーに description を書き換え",
+                "ko": "환경에 맞게 description 재작성",
+                "th": "เขียน description ใหม่ให้ตรงทริกเกอร์",
+                "vi": "Viết lại description cho trigger của bạn",
+                "id": "Tulis ulang description untuk trigger Anda",
+                "es": "Reescribe description para tus disparadores",
+                "fr": "Réécrire description pour vos déclencheurs",
+                "de": "description für eigene Trigger umschreiben",
+                "it": "Riscrivi description per i tuoi trigger",
+                "pt": "Reescreva description para seus gatilhos",
+                "ru": "Перепишите description под ваши триггеры",
+                "ar": "أعد كتابة description لمحفزاتك"
+              },
+              "body": {
+                "en": "Keep upstream workflow steps but align user phrases with your team vocabulary.",
+                "zh": "保留上游工作流步骤，但将用户短语与团队用语对齐。",
+                "tw": "保留上游工作流程步驟，但將使用者片語與團隊用語對齊。",
+                "ja": "上流の手順は残し、ユーザー表現をチーム用語に合わせる。",
+                "ko": "상류 워크플로는 유지하고 사용자 표현을 팀 용어에 맞춤.",
+                "th": "คงขั้นตอนเดิม ปรับวลีให้ตรงทีม",
+                "vi": "Giữ bước upstream, căn cụm từ theo từ vựng nhóm.",
+                "id": "Pertahankan langkah upstream, selaraskan frasa tim.",
+                "es": "Conserva pasos upstream y alinea frases del equipo.",
+                "fr": "Garder les étapes upstream et aligner le vocabulaire.",
+                "de": "Upstream-Schritte behalten, Nutzerphrasen anpassen.",
+                "it": "Mantieni passi upstream, allinea frasi del team.",
+                "pt": "Mantenha passos upstream, alinhe frases da equipe.",
+                "ru": "Сохраните шаги upstream, подстройте фразы команды.",
+                "ar": "احتفظ بخطوات المصدر ووائم العبارات مع فريقك."
+              }
+            },
+            {
+              "title": {
+                "en": "Install locally and regression-test",
+                "zh": "本地安装并回归测试",
+                "tw": "本機安裝並迴歸測試",
+                "ja": "ローカルインストールと回帰テスト",
+                "ko": "로컬 설치 및 회귀 테스트",
+                "th": "ติดตั้งท้องถิ่นและทดสอบ regression",
+                "vi": "Cài cục bộ và kiểm thử hồi quy",
+                "id": "Instal lokal dan uji regresi",
+                "es": "Instala localmente y prueba regresión",
+                "fr": "Installer localement et tester régression",
+                "de": "Lokal installieren und Regressionstest",
+                "it": "Installa localmente e test di regressione",
+                "pt": "Instale localmente e teste regressão",
+                "ru": "Установите локально и регрессионный тест",
+                "ar": "ثبّت محليًا واختبر regression"
+              },
+              "body": {
+                "en": "Verify the skill loads on positive and negative prompts.",
+                "zh": "验证技能在正向和负向提示下是否正确加载。",
+                "tw": "驗證技能在正向和負向提示下是否正確載入。",
+                "ja": "肯定・否定プロンプトで読み込みを確認。",
+                "ko": "긍정·부정 프롬프트에서 로드 확인.",
+                "th": "ทดสอบ prompt บวกและลบ",
+                "vi": "Xác minh load với prompt dương và âm.",
+                "id": "Verifikasi load pada prompt positif/negatif.",
+                "es": "Verifica carga con prompts positivos y negativos.",
+                "fr": "Vérifier le chargement avec prompts positifs/négatifs.",
+                "de": "Laden bei positiven/negativen Prompts prüfen.",
+                "it": "Verifica caricamento con prompt positivi/negativi.",
+                "pt": "Verifique carregamento com prompts positivos/negativos.",
+                "ru": "Проверьте загрузку на позитивных/негативных промптах.",
+                "ar": "تحقق من التحميل بمطالبات إيجابية وسلبية."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quality-security",
+      "title": {
+        "en": "Quality and Security Checklist",
+        "zh": "质量与安全清单",
+        "tw": "品質與安全清單",
+        "ja": "品質・セキュリティチェックリスト",
+        "ko": "품질 및 보안 체크리스트",
+        "th": "รายการตรวจคุณภาพและความปลอดภัย",
+        "vi": "Danh sách chất lượng và bảo mật",
+        "id": "Daftar kualitas dan keamanan",
+        "es": "Lista de calidad y seguridad",
+        "fr": "Liste qualité et sécurité",
+        "de": "Qualitäts- und Sicherheits-Checkliste",
+        "it": "Checklist qualità e sicurezza",
+        "pt": "Checklist de qualidade e segurança",
+        "ru": "Чеклист качества и безопасности",
+        "ar": "قائمة الجودة والأمان"
+      },
+      "blocks": [
+        {
+          "type": "callout",
+          "label": {
+            "en": "Warning",
+            "zh": "警告",
+            "tw": "警告",
+            "ja": "警告",
+            "ko": "경고",
+            "th": "คำเตือน",
+            "vi": "Cảnh báo",
+            "id": "Peringatan",
+            "es": "Advertencia",
+            "fr": "Avertissement",
+            "de": "Warnung",
+            "it": "Avviso",
+            "pt": "Aviso",
+            "ru": "Предупреждение",
+            "ar": "تحذير"
+          },
+          "text": {
+            "en": "Skills that run shell commands, control browsers, or call paid APIs can cause data loss or unexpected charges. Review every script before preinstalling in production.",
+            "zh": "运行 shell 命令、控制浏览器或调用付费 API 的技能可能导致数据丢失或意外费用。生产环境预装前务必审查每个脚本。",
+            "tw": "執行 shell 指令、控制瀏覽器或呼叫付費 API 的技能可能導致資料遺失或意外費用。正式環境預裝前務必審查每個腳本。",
+            "ja": "シェル実行、ブラウザ操作、有料 API 呼び出しはデータ損失や課金リスクがあります。本番前に全スクリプトを確認してください。",
+            "ko": "shell, 브라우저, 유료 API 스킬은 데이터 손실·요금 위험이 있습니다. 프로덕션 전 모든 스크립트를 검토하세요.",
+            "th": "สกิลที่รัน shell ควบคุมเบราว์เซอร์ หรือเรียก API เสียเงิน อาจสูญเสียข้อมูลหรือมีค่าใช้จ่าย ตรวจสคริปต์ก่อนใช้ production",
+            "vi": "Skill chạy shell, điều khiển trình duyệt hoặc API trả phí có thể gây mất dữ liệu hoặc phí. Rà soát script trước production.",
+            "id": "Skill yang menjalankan shell, browser, atau API berbayar berisiko kehilangan data/biaya. Tinjau skrip sebelum produksi.",
+            "es": "Skills con shell, navegador o APIs de pago pueden causar pérdida de datos o cargos. Revisa scripts antes de producción.",
+            "fr": "Les skills shell/navigateur/API payantes peuvent entraîner perte de données ou frais. Revoyez les scripts avant prod.",
+            "de": "Skills mit Shell/Browser/kostenpflichtigen APIs können Datenverlust/Kosten verursachen. Skripte vor Prod prüfen.",
+            "it": "Skill con shell, browser o API a pagamento possono causare perdite o costi. Rivedi script prima della prod.",
+            "pt": "Skills com shell, browser ou APIs pagas podem causar perda de dados ou custos. Revise scripts antes da produção.",
+            "ru": "Навыки с shell, браузером или платными API могут привести к потере данных или счетам. Проверьте скрипты.",
+            "ar": "المهارات التي تشغّل shell أو المتصفح أو APIs مدفوعة قد تسبب فقدان بيانات أو رسوم. راجع السكربتات قبل الإنتاج."
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "Document required API keys and never commit secrets.",
+              "zh": "记录所需 API Key，切勿提交密钥。",
+              "tw": "記錄所需 API Key，切勿提交金鑰。",
+              "ja": "必要 API キーを文書化し、秘密情報をコミットしない。",
+              "ko": "필요 API 키 문서화, 비밀 커밋 금지.",
+              "th": "บันทึก API key ที่ต้องใช้ อย่า commit secret",
+              "vi": "Ghi API key cần thiết, không commit secret.",
+              "id": "Dokumentasikan API key, jangan commit rahasia.",
+              "es": "Documenta API keys; nunca subas secretos.",
+              "fr": "Documenter les clés API ; ne jamais committer de secrets.",
+              "de": "API-Keys dokumentieren; keine Secrets committen.",
+              "it": "Documenta API key; non committare segreti.",
+              "pt": "Documente API keys; nunca commite segredos.",
+              "ru": "Документируйте API keys; не коммитьте секреты.",
+              "ar": "وثّق مفاتيح API ولا ترفع الأسرار."
+            },
+            {
+              "en": "Prefer read-only operations unless the user explicitly requests writes.",
+              "zh": "除非用户明确要求，否则优先只读操作。",
+              "tw": "除非使用者明確要求，否則優先唯讀操作。",
+              "ja": "明示的な依頼がない限り読み取り専用を優先。",
+              "ko": "사용자 명시 없으면 읽기 전용 우선.",
+              "th": "เน้น read-only จนกว่าผู้ใช้จะขอเขียน",
+              "vi": "Ưu tiên chỉ đọc trừ khi người dùng yêu cầu ghi.",
+              "id": "Utamakan read-only kecuali pengguna minta tulis.",
+              "es": "Prioriza solo lectura salvo petición explícita.",
+              "fr": "Privilégier lecture seule sauf demande explicite.",
+              "de": "Read-only bevorzugen ohne explizite Schreibbitte.",
+              "it": "Preferisci read-only salvo richiesta esplicita.",
+              "pt": "Priorize somente leitura salvo pedido explícito.",
+              "ru": "Предпочитайте read-only без явной просьбы писать.",
+              "ar": "فضّل القراءة فقط ما لم يطلب المستخدم الكتابة."
+            },
+            {
+              "en": "Add disclaimers for healthcare, finance, and legal advice domains.",
+              "zh": "医疗、金融和法律建议领域需添加免责声明。",
+              "tw": "醫療、金融和法律建議領域需新增免責聲明。",
+              "ja": "医療・金融・法務アドバイスには免責事項を追加。",
+              "ko": "의료·금융·법률 조언에는 면책 고지 추가.",
+              "th": "เพิ่ม disclaimer สำหรับสุขภาพ การเงิน กฎหมาย",
+              "vi": "Thêm tuyên bố miễn trừ cho y tế, tài chính, pháp lý.",
+              "id": "Tambahkan disclaimer untuk kesehatan, keuangan, hukum.",
+              "es": "Añade descargos para salud, finanzas y legal.",
+              "fr": "Ajouter des avertissements santé/finance/juridique.",
+              "de": "Disclaimer für Gesundheit/Finanzen/Recht.",
+              "it": "Disclaimer per sanità/finanza/legale.",
+              "pt": "Adicione avisos para saúde, finanças e jurídico.",
+              "ru": "Дисклеймеры для медицины, финансов, права.",
+              "ar": "أضف تنبيهات للرعاية الصحية والمالية والقانون."
+            },
+            {
+              "en": "Keep SKILL.md focused; link long references instead of inlining.",
+              "zh": "保持 SKILL.md 精简；长内容用链接而非内联。",
+              "tw": "保持 SKILL.md 精簡；長內容用連結而非內嵌。",
+              "ja": "SKILL.md は簡潔に。長文はリンクで。",
+              "ko": "SKILL.md 간결히; 긴 내용은 링크.",
+              "th": "SKILL.md กระชับ ลิงก์แทน inline ยาว",
+              "vi": "Giữ SKILL.md gọn; liên kết tài liệu dài.",
+              "id": "SKILL.md ringkas; tautkan referensi panjang.",
+              "es": "SKILL.md conciso; enlaza referencias largas.",
+              "fr": "SKILL.md concis ; lier les longues références.",
+              "de": "SKILL.md fokussiert; lange Referenzen verlinken.",
+              "it": "SKILL.md conciso; linka riferimenti lunghi.",
+              "pt": "SKILL.md focado; linke referências longas.",
+              "ru": "SKILL.md компактный; длинные refs — ссылками.",
+              "ar": "اجعل SKILL.md مركزًا؛ اربط المراجع الطويلة."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "test-and-debug",
+      "title": {
+        "en": "Test and Debug",
+        "zh": "测试与调试",
+        "tw": "測試與除錯",
+        "ja": "テストとデバッグ",
+        "ko": "테스트 및 디버깅",
+        "th": "ทดสอบและดีบัก",
+        "vi": "Kiểm thử và gỡ lỗi",
+        "id": "Uji dan debug",
+        "es": "Pruebas y depuración",
+        "fr": "Tests et débogage",
+        "de": "Testen und Debuggen",
+        "it": "Test e debug",
+        "pt": "Teste e depuração",
+        "ru": "Тестирование и отладка",
+        "ar": "الاختبار والتصحيح"
+      },
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Validate that Codex loads your skill on intended prompts and ignores it otherwise.",
+            "zh": "验证 Codex 在预期提示下加载技能，在其他情况下忽略它。",
+            "tw": "驗證 Codex 在預期提示下載入技能，在其他情況下忽略它。",
+            "ja": "意図したプロンプトで Codex がスキルを読み込み、それ以外では無視することを確認します。",
+            "ko": "의도한 프롬프트에서 Codex가 스킬을 로드하고 그 외에는 무시하는지 확인합니다.",
+            "th": "ตรวจว่า Codex โหลดสกิลเมื่อ prompt ตรงและไม่โหลดเมื่อไม่ตรง",
+            "vi": "Xác minh Codex load skill khi prompt đúng và bỏ qua khi không đúng.",
+            "id": "Pastikan Codex memuat skill pada prompt yang dimaksud dan mengabaikannya jika tidak.",
+            "es": "Verifica que Codex carga el skill en prompts previstos y lo ignora en otros casos.",
+            "fr": "Vérifiez que Codex charge le skill sur les prompts prévus et l'ignore sinon.",
+            "de": "Prüfen Sie, ob Codex den Skill bei passenden Prompts lädt und sonst ignoriert.",
+            "it": "Verifica che Codex carichi la skill sui prompt previsti e la ignori altrimenti.",
+            "pt": "Verifique se o Codex carrega o skill nos prompts corretos e ignora nos demais.",
+            "ru": "Проверьте, что Codex загружает навык на нужных промптах и игнорирует иначе.",
+            "ar": "تحقق أن Codex يحمّل المهارة عند المطالبات المقصودة ويتجاهلها خلاف ذلك."
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "Positive test: use phrases from your description verbatim.",
+              "zh": "正向测试：逐字使用 description 中的短语。",
+              "tw": "正向測試：逐字使用 description 中的片語。",
+              "ja": "肯定テスト：description のフレーズをそのまま使う。",
+              "ko": "긍정 테스트: description 문구 그대로 사용.",
+              "th": "ทดสอบบวก: ใช้วลีจาก description ตรงๆ",
+              "vi": "Test dương: dùng đúng cụm từ trong description.",
+              "id": "Tes positif: gunakan frasa dari description.",
+              "es": "Prueba positiva: frases literales de description.",
+              "fr": "Test positif : phrases exactes de description.",
+              "de": "Positivtest: Phrasen aus description wörtlich.",
+              "it": "Test positivo: frasi esatte da description.",
+              "pt": "Teste positivo: frases literais de description.",
+              "ru": "Позитивный тест: фразы из description дословно.",
+              "ar": "اختبار إيجابي: عبارات من description حرفيًا."
+            },
+            {
+              "en": "Negative test: ask unrelated tasks and confirm no skill bleed.",
+              "zh": "负向测试：提出无关任务，确认无技能泄漏。",
+              "tw": "負向測試：提出無關任務，確認無技能洩漏。",
+              "ja": "否定テスト：無関係タスクでスキル漏れがないか確認。",
+              "ko": "부정 테스트: 무관 작업에서 skill bleed 없음 확인.",
+              "th": "ทดสอบลบ: งานไม่เกี่ยวข้อง ไม่มี skill bleed",
+              "vi": "Test âm: tác vụ không liên quan, không bleed skill.",
+              "id": "Tes negatif: tugas tidak terkait, tanpa skill bleed.",
+              "es": "Prueba negativa: tareas no relacionadas sin bleed.",
+              "fr": "Test négatif : tâches non liées sans fuite de skill.",
+              "de": "Negativtest: unrelated tasks ohne Skill-Bleed.",
+              "it": "Test negativo: task non correlati senza bleed.",
+              "pt": "Teste negativo: tarefas não relacionadas sem bleed.",
+              "ru": "Негативный test: несвязанные задачи без bleed.",
+              "ar": "اختبار سلبي: مهام غير مرتبطة بدون تسرب."
+            },
+            {
+              "en": "If Codex never loads the skill, broaden triggers or split into smaller skills.",
+              "zh": "若 Codex 从不加载，扩大触发器或拆分为更小技能。",
+              "tw": "若 Codex 從不載入，擴大觸發器或拆分為更小技能。",
+              "ja": "読み込まれない場合はトリガーを広げるかスキルを分割。",
+              "ko": "로드되지 않으면 트리거 확장 또는 스킬 분할.",
+              "th": "ถ้าไม่โหลด ขยายทริกเกอร์หรือแยกสกิล",
+              "vi": "Nếu không load, mở rộng trigger hoặc tách skill.",
+              "id": "Jika tidak dimuat, perluas trigger atau pecah skill.",
+              "es": "Si no carga, amplía disparadores o divide skills.",
+              "fr": "Si pas de chargement, élargir triggers ou diviser.",
+              "de": "Bei keinem Laden Trigger erweitern oder splitten.",
+              "it": "Se non carica, amplia trigger o dividi skill.",
+              "pt": "Se não carregar, amplie gatilhos ou divida.",
+              "ru": "Если не загружается — расширьте триггеры или разделите.",
+              "ar": "إن لم تُحمّل، وسّع المحفزات أو قسّم المهارة."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "publish-and-share",
+      "title": {
+        "en": "Publish and Share",
+        "zh": "发布与分享",
+        "tw": "發布與分享",
+        "ja": "公開と共有",
+        "ko": "게시 및 공유",
+        "th": "เผยแพร่และแชร์",
+        "vi": "Xuất bản và chia sẻ",
+        "id": "Publikasikan dan bagikan",
+        "es": "Publicar y compartir",
+        "fr": "Publier et partager",
+        "de": "Veröffentlichen und teilen",
+        "it": "Pubblicare e condividere",
+        "pt": "Publicar e compartilhar",
+        "ru": "Публикация и распространение",
+        "ar": "النشر والمشاركة"
+      },
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Share skills via Git, public directories, or by submitting to the awesome_codex_skills list.",
+            "zh": "通过 Git、公开目录或提交到 awesome_codex_skills 列表分享技能。",
+            "tw": "透過 Git、公開目錄或提交到 awesome_codex_skills 列表分享技能。",
+            "ja": "Git、公開ディレクトリ、または awesome_codex_skills への提出で共有します。",
+            "ko": "Git, 공개 디렉터리 또는 awesome_codex_skills 제출로 공유합니다.",
+            "th": "แชร์ผ่าน Git ไดเรกทอรีสาธารณะ หรือส่ง awesome_codex_skills",
+            "vi": "Chia sẻ qua Git, thư mục công khai hoặc gửi awesome_codex_skills.",
+            "id": "Bagikan via Git, direktori publik, atau kirim ke awesome_codex_skills.",
+            "es": "Comparte vía Git, directorios públicos o enviando a awesome_codex_skills.",
+            "fr": "Partagez via Git, annuaires publics ou soumission à awesome_codex_skills.",
+            "de": "Teilen via Git, öffentliche Verzeichnisse oder awesome_codex_skills.",
+            "it": "Condividi via Git, directory pubbliche o invio a awesome_codex_skills.",
+            "pt": "Compartilhe via Git, diretórios públicos ou envio ao awesome_codex_skills.",
+            "ru": "Делитесь через Git, каталоги или отправку в awesome_codex_skills.",
+            "ar": "شارك عبر Git أو أدلة عامة أو الإرسال إلى awesome_codex_skills."
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "Push to GitHub with LICENSE, README, and reachable SKILL.md path.",
+              "zh": "推送到 GitHub，含 LICENSE、README 和可访问的 SKILL.md 路径。",
+              "tw": "推送到 GitHub，含 LICENSE、README 和可存取的 SKILL.md 路徑。",
+              "ja": "LICENSE、README、到達可能な SKILL.md パス付きで GitHub に push。",
+              "ko": "LICENSE, README, SKILL.md 경로와 함께 GitHub push.",
+              "th": "push GitHub พร้อม LICENSE README และ path SKILL.md",
+              "vi": "Push GitHub kèm LICENSE, README và đường dẫn SKILL.md.",
+              "id": "Push ke GitHub dengan LICENSE, README, path SKILL.md.",
+              "es": "Sube a GitHub con LICENSE, README y ruta SKILL.md.",
+              "fr": "Pousser sur GitHub avec LICENSE, README et chemin SKILL.md.",
+              "de": "Auf GitHub mit LICENSE, README, SKILL.md-Pfad.",
+              "it": "Push su GitHub con LICENSE, README, path SKILL.md.",
+              "pt": "Push no GitHub com LICENSE, README, path SKILL.md.",
+              "ru": "Push на GitHub с LICENSE, README, путём SKILL.md.",
+              "ar": "ارفع إلى GitHub مع LICENSE وREADME ومسار SKILL.md."
+            },
+            {
+              "en": "List on OrangeBot, SkillsCat, SkillsMP, or SkillMD.ai when eligible.",
+              "zh": "符合条件时可收录到 OrangeBot、SkillsCat、SkillsMP 或 SkillMD.ai。",
+              "tw": "符合條件時可收錄到 OrangeBot、SkillsCat、SkillsMP 或 SkillMD.ai。",
+              "ja": "条件を満たせば OrangeBot、SkillsCat、SkillsMP、SkillMD.ai に掲載。",
+              "ko": "자격 되면 OrangeBot, SkillsCat, SkillsMP, SkillMD.ai 등록.",
+              "th": "ลง OrangeBot SkillsCat SkillsMP SkillMD.ai เมื่อเหมาะสม",
+              "vi": "Liệt kê trên OrangeBot, SkillsCat, SkillsMP, SkillMD.ai nếu đủ điều kiện.",
+              "id": "Cantumkan di OrangeBot, SkillsCat, SkillsMP, SkillMD.ai jika memenuhi.",
+              "es": "Publica en OrangeBot, SkillsCat, SkillsMP o SkillMD.ai si aplica.",
+              "fr": "Référencer sur OrangeBot, SkillsCat, SkillsMP ou SkillMD.ai.",
+              "de": "Bei Eignung auf OrangeBot, SkillsCat, SkillsMP, SkillMD.ai listen.",
+              "it": "Elenca su OrangeBot, SkillsCat, SkillsMP, SkillMD.ai se idoneo.",
+              "pt": "Liste em OrangeBot, SkillsCat, SkillsMP, SkillMD.ai se elegível.",
+              "ru": "Разместите на OrangeBot, SkillsCat, SkillsMP, SkillMD.ai.",
+              "ar": "أدرج على OrangeBot أو SkillsCat أو SkillsMP أو SkillMD.ai."
+            },
+            {
+              "en": "Submit to awesome_codex_skills via the GitHub Issue template with popularity evidence.",
+              "zh": "通过 GitHub Issue 模板提交到 awesome_codex_skills，并提供热度依据。",
+              "tw": "透過 GitHub Issue 模板提交到 awesome_codex_skills，並提供熱度依據。",
+              "ja": "GitHub Issue テンプレートで awesome_codex_skills に提出（人気の根拠付き）。",
+              "ko": "GitHub Issue 템플릿으로 awesome_codex_skills 제출(인기 근거 포함).",
+              "th": "ส่ง awesome_codex_skills ผ่าน GitHub Issue พร้อมหลักฐานความนิยม",
+              "vi": "Gửi awesome_codex_skills qua Issue GitHub kèm bằng chứng độ phổ biến.",
+              "id": "Kirim ke awesome_codex_skills via Issue GitHub dengan bukti popularitas.",
+              "es": "Envía a awesome_codex_skills vía Issue con evidencia de popularidad.",
+              "fr": "Soumettre à awesome_codex_skills via Issue GitHub avec preuves.",
+              "de": "Über GitHub Issue an awesome_codex_skills mit Popularitätsnachweis.",
+              "it": "Invia a awesome_codex_skills via Issue GitHub con prove.",
+              "pt": "Envie ao awesome_codex_skills via Issue com evidências.",
+              "ru": "Отправьте в awesome_codex_skills через Issue с доказательствами популярности.",
+              "ar": "أرسل إلى awesome_codex_skills عبر Issue مع دليل الشعبية."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "appendix",
+      "title": {
+        "en": "Appendix: Template, FAQ, and Links",
+        "zh": "附录：模板、FAQ 与链接",
+        "tw": "附錄：模板、FAQ 與連結",
+        "ja": "付録：テンプレート、FAQ、リンク",
+        "ko": "부록: 템플릿, FAQ, 링크",
+        "th": "ภาคผนวก: เทมเพลต FAQ และลิงก์",
+        "vi": "Phụ lục: Mẫu, FAQ và liên kết",
+        "id": "Lampiran: Template, FAQ, Tautan",
+        "es": "Apéndice: plantilla, FAQ y enlaces",
+        "fr": "Annexe : modèle, FAQ et liens",
+        "de": "Anhang: Vorlage, FAQ und Links",
+        "it": "Appendice: template, FAQ e link",
+        "pt": "Apêndice: modelo, FAQ e links",
+        "ru": "Приложение: шаблон, FAQ и ссылки",
+        "ar": "الملحق: قالب وأسئلة شائعة وروابط"
+      },
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Minimal SKILL.md template you can copy into a new skill folder:",
+            "zh": "可复制到新技能文件夹的最小 SKILL.md 模板：",
+            "tw": "可複製到新技能資料夾的最小 SKILL.md 模板：",
+            "ja": "新規スキルフォルダにコピーできる最小 SKILL.md テンプレート：",
+            "ko": "새 스킬 폴더에 복사할 최소 SKILL.md 템플릿:",
+            "th": "เทมเพลต SKILL.md ขั้นต่ำสำหรับคัดลอกไปโฟลเดอร์สกิลใหม่:",
+            "vi": "Mẫu SKILL.md tối thiểu để sao chép vào thư mục skill mới:",
+            "id": "Template SKILL.md minimal untuk folder skill baru:",
+            "es": "Plantilla mínima de SKILL.md para copiar en una carpeta nueva:",
+            "fr": "Modèle SKILL.md minimal à copier dans un nouveau dossier :",
+            "de": "Minimale SKILL.md-Vorlage zum Kopieren in einen neuen Ordner:",
+            "it": "Template SKILL.md minimale da copiare in una nuova cartella:",
+            "pt": "Modelo mínimo de SKILL.md para copiar em pasta nova:",
+            "ru": "Минимальный шаблон SKILL.md для новой папки:",
+            "ar": "قالب SKILL.md minimal للنسخ إلى مجلد مهارة جديد:"
+          }
+        },
+        {
+          "type": "code",
+          "language": "markdown",
+          "content": "---\nname: example-skill\ndescription: >\n  Short trigger sentence describing WHEN Codex should load this skill.\n  Mention user phrases, file types, and workflows explicitly.\n---\n\n# Example Skill\n\n## Overview\nExplain what this skill helps Codex do and what it should not do.\n\n## When to use\n- Trigger phrase or scenario 1\n- Trigger phrase or scenario 2\n\n## Workflow\n1. Step one with concrete commands or checks\n2. Step two with expected outputs\n3. Step three with rollback or verification\n\n## References\n- Link to internal docs or `references/guide.md` in this folder\n\n## Safety\n- Never expose secrets in logs\n- Ask before destructive shell commands\n"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "FAQ: Why is my skill not loading? → Rewrite description with explicit WHEN triggers.",
+              "zh": "FAQ：技能为何不加载？→ 用明确的 WHEN 触发器重写 description。",
+              "tw": "FAQ：技能為何不載入？→ 用明確的 WHEN 觸發器重寫 description。",
+              "ja": "FAQ: 読み込まれない？→ description を WHEN 明示で書き直す。",
+              "ko": "FAQ: 로드 안 됨? → WHEN 트리거로 description 재작성.",
+              "th": "FAQ: ไม่โหลด? → เขียน description ใหม่ด้วย WHEN",
+              "vi": "FAQ: Không load? → Viết lại description với WHEN.",
+              "id": "FAQ: Tidak dimuat? → Tulis ulang description dengan WHEN.",
+              "es": "FAQ: ¿No carga? → Reescribe description con WHEN.",
+              "fr": "FAQ : ne charge pas ? → Réécrire description avec WHEN.",
+              "de": "FAQ: Lädt nicht? → description mit WHEN neu schreiben.",
+              "it": "FAQ: non carica? → Riscrivi description con WHEN.",
+              "pt": "FAQ: não carrega? → Reescreva description com WHEN.",
+              "ru": "FAQ: не загружается? → Перепишите description с WHEN.",
+              "ar": "FAQ: لا تُحمّل؟ → أعد كتابة description بـ WHEN."
+            },
+            {
+              "en": "FAQ: Can I use Cursor skills in Codex? → Yes, adapt paths and triggers; test in Codex.",
+              "zh": "FAQ：Cursor 技能可用于 Codex 吗？→ 可以，适配路径和触发器并在 Codex 测试。",
+              "tw": "FAQ：Cursor 技能可用於 Codex 嗎？→ 可以，適配路徑和觸發器並在 Codex 測試。",
+              "ja": "FAQ: Cursor スキルを Codex で？→ パスとトリガーを適応し Codex でテスト。",
+              "ko": "FAQ: Cursor 스킬을 Codex에서? → 경로·트리거 적응 후 Codex 테스트.",
+              "th": "FAQ: ใช้ skill Cursor ใน Codex ได้ไหม? → ได้ ปรับ path/trigger แล้วทดสอบ",
+              "vi": "FAQ: Dùng skill Cursor trong Codex? → Có, chỉnh path/trigger và test.",
+              "id": "FAQ: Skill Cursor di Codex? → Ya, adaptasi path/trigger dan uji.",
+              "es": "FAQ: ¿Skills de Cursor en Codex? → Sí, adapta rutas/disparadores.",
+              "fr": "FAQ : skills Cursor dans Codex ? → Oui, adapter chemins/triggers.",
+              "de": "FAQ: Cursor-Skills in Codex? → Ja, Pfade/Trigger anpassen.",
+              "it": "FAQ: skill Cursor in Codex? → Sì, adatta path/trigger.",
+              "pt": "FAQ: skills Cursor no Codex? → Sim, adapte paths/gatilhos.",
+              "ru": "FAQ: Cursor skills в Codex? → Да, адаптируйте paths/triggers.",
+              "ar": "FAQ: مهارات Cursor في Codex? → نعم، كيّف المسارات والمحفزات."
+            },
+            {
+              "en": "Official references: github.com/openai/skills, OrangeBot Skill Creator, OpenAI Docs skill.",
+              "zh": "官方参考：github.com/openai/skills、OrangeBot Skill Creator、OpenAI Docs skill。",
+              "tw": "官方參考：github.com/openai/skills、OrangeBot Skill Creator、OpenAI Docs skill。",
+              "ja": "公式参照：github.com/openai/skills、OrangeBot Skill Creator、OpenAI Docs skill。",
+              "ko": "공식 참고: github.com/openai/skills, OrangeBot Skill Creator, OpenAI Docs skill.",
+              "th": "อ้างอิง: github.com/openai/skills, OrangeBot Skill Creator, OpenAI Docs",
+              "vi": "Tham khảo: github.com/openai/skills, OrangeBot Skill Creator, OpenAI Docs.",
+              "id": "Referensi: github.com/openai/skills, OrangeBot Skill Creator, OpenAI Docs.",
+              "es": "Referencias: github.com/openai/skills, OrangeBot Skill Creator, OpenAI Docs.",
+              "fr": "Références : github.com/openai/skills, OrangeBot Skill Creator, OpenAI Docs.",
+              "de": "Offizielle Referenzen: github.com/openai/skills, OrangeBot Skill Creator, OpenAI Docs.",
+              "it": "Riferimenti: github.com/openai/skills, OrangeBot Skill Creator, OpenAI Docs.",
+              "pt": "Referências: github.com/openai/skills, OrangeBot Skill Creator, OpenAI Docs.",
+              "ru": "Ссылки: github.com/openai/skills, OrangeBot Skill Creator, OpenAI Docs.",
+              "ar": "مراجع: github.com/openai/skills وOrangeBot Skill Creator وOpenAI Docs."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

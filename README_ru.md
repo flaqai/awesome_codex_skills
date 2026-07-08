@@ -5,10 +5,13 @@
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 [![GitHub stars](https://img.shields.io/github/stars/flaqai/awesome_codex_skills?style=social)](https://github.com/flaqai/awesome_codex_skills)
 [![Submit Skills via Issues](https://img.shields.io/badge/Submit%20Skills-via%20Issues-brightgreen.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml)
+[![Китайский Skill](https://img.shields.io/badge/%D0%9A%D0%B8%D1%82%D0%B0%D0%B9%D1%81%D0%BA%D0%B8%D0%B9%20Skill-via%20Issues-orange.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml)
 
 > Кураторский многоязычный awesome-список практичных Codex Skills для креатива, кода, автоматизации, документов и отраслевых workflows.
 
 > Skills собраны из публичных каталогов и репозиториев для поиска и обучения. Если ссылка сломана или запись нужно удалить, откройте issue.
+
+> **[Руководство по Custom Skill →](GUIDE_ru.md)** Узнайте, как создавать, адаптировать и устанавливать собственные Codex Skills.
 
 ---
 
@@ -22,7 +25,9 @@
 - [Просмотр по категориям](#просмотр-по-категориям)
 - [Статистика](#статистика)
 - [Избранные Skills](#избранные-skills)
+- [Китайскоязычные Skills](#китайскоязычные-skills)
 - [Все Skills](#все-skills)
+- [Руководство по Custom Skill](#руководство-по-custom-skill)
 - [Как внести вклад](#как-внести-вклад)
 - [Критерии отбора](#критерии-отбора)
 - [Лицензия](#лицензия)
@@ -48,9 +53,10 @@
 
 | Metric | Count |
 |---|---:|
-| Всего Skills | 26 |
+| Всего Skills | 87 |
 | Категории | 8 |
-| Последнее обновление | 2026-07-07 |
+| Китайскоязычные Skills | 20 |
+| Последнее обновление | 2026-07-08 |
 
 ## Избранные Skills
 
@@ -111,6 +117,185 @@
   Теги: `Security` `Review` `Engineering`  
   Источник: GitHub openai/skills · Популярность: Official OpenAI curated skill from the openai/skills repository.
 
+- **[Playwright Interactive](https://github.com/openai/skills/tree/main/skills/.curated/playwright-interactive)**  
+  Интерактивный Skill автоматизации браузера Playwright для навигации, взаимодействия, скриншотов и проверки UI.  
+  Теги: `Browser` `Playwright` `Testing`  
+  Источник: GitHub openai/skills · Популярность: Официальный curated Skill из репозитория openai/skills（~23.3k stars）.
+
+- **[Figma Generate Design](https://github.com/openai/skills/tree/main/skills/.curated/figma-generate-design)**  
+  Генерирует концепции дизайна Figma, layouts, компоненты и визуальные системы из требований продукта.  
+  Теги: `Figma` `Design` `UI`  
+  Источник: GitHub openai/skills · Популярность: Официальный curated Skill из репозитория openai/skills（~23.3k stars）.
+
+- **[OpenAI Docs](https://github.com/openai/skills/tree/main/skills/.curated/openai-docs)**  
+  Помогает Codex работать с документацией OpenAI, API, SDK и паттернами интеграции.  
+  Теги: `OpenAI` `Documentation` `API`  
+  Источник: GitHub openai/skills · Популярность: Официальный curated Skill из репозитория openai/skills（~23.3k stars）.
+
+- **[Web Design Guidelines](https://orangebot.ai/s/web-design-guidelines)**  
+  Руководство по веб-дизайну: layout, типографика, цвет, доступность и responsive UI.  
+  Теги: `Web Design` `UI` `UX`  
+  Источник: OrangeBot · Популярность: OrangeBot: 206.0k weekly installs, 24.0k stars.
+
+- **[Brainstorming](https://orangebot.ai/s/brainstorming)**  
+  Структурированный brainstorming для продуктовых идей, функций, кампаний и креативного решения задач.  
+  Теги: `Ideation` `Planning` `Creativity`  
+  Источник: OrangeBot · Популярность: OrangeBot: 77.2k weekly installs, 118.4k stars.
+
+- **[Browser Use](https://orangebot.ai/s/browser-use)**  
+  Browser-use Skill для автономной навигации, форм, извлечения данных и agent-driven browsing.  
+  Теги: `Browser` `Automation` `Agent`  
+  Источник: OrangeBot · Популярность: OrangeBot: 57.4k weekly installs, 84.8k stars.
+
+- **[ImageGen](https://skillsmp.com/zh/creators/openai/skills/skills-system-imagegen)**  
+  OpenAI Skill генерации изображений для промптов, стилей, правок, вариаций и визуальных активов.  
+  Теги: `Image` `Generation` `OpenAI`  
+  Источник: SkillsMP · Популярность: SkillsMP: 23,095 stars, 1,565 forks.
+
+## Китайскоязычные Skills
+
+Skills с китайскоязычными SKILL.md и workflow для документации, ревью, письма, науки, финтеха, продуктового планирования и DevOps.
+
+- **[Chinese Documentation](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-documentation)**  
+  Китайские стандарты оформления и написания документации: пробелы китайский/английский, пунктуация, терминология, ссылки и читаемость техтекста.  
+  Теги: `Chinese-Native` `Documentation` `Technical Writing`  
+  Источник: SkillsMP · Популярность: SkillsMP: около 6 213 stars у jnMetaCode/superpowers-zh.  
+  Установка: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-documentation -a codex -g`  
+  Заметки: Справка каталога: SkillsMP Chinese Documentation. Перед предустановкой проверьте лицензию репозитория.
+
+- **[Chinese Commit Conventions](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-commit-conventions)**  
+  Китайский гайд по Conventional Commits, changelog, commitlint, Husky и Commitizen для инженерных команд.  
+  Теги: `Chinese-Native` `Git` `DevOps`  
+  Источник: SkillsMP · Популярность: SkillsMP: около 6 213 stars у исходного репозитория.  
+  Установка: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-commit-conventions -a codex -g`  
+  Заметки: Подходит для стандартизации командного процесса; перед отправкой сверяйте сгенерированные коммиты с правилами проекта.
+
+- **[Chinese Code Review](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-code-review)**  
+  Китайские шаблоны коммуникации для code review: уровни критичности, формулировки замечаний и паттерны командной работы.  
+  Теги: `Chinese-Native` `Code Review` `Collaboration`  
+  Источник: SkillsMP · Популярность: SkillsMP: около 6 213 stars у исходного репозитория.  
+  Установка: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-code-review -a codex -g`  
+  Заметки: Выводы ревью должны опираться на реальные diff и результаты тестов.
+
+- **[Deep Research ZH](https://github.com/LeoYeAI/openclaw-master-skills/tree/main/skills/deep-research-zh)**  
+  Китайский deep-research workflow для отраслевых исследований, анализа конкурентов, policy-исследований, PDF-выгрузки и автодоставки.  
+  Теги: `Chinese-Native` `Research` `Reports`  
+  Источник: SkillsMP · Популярность: SkillsMP: около 2 076 stars у LeoYeAI/openclaw-master-skills.  
+  Установка: `npx skills add https://github.com/LeoYeAI/openclaw-master-skills --skill deep-research-zh -a codex -g`  
+  Заметки: Перед предустановкой проверьте зависимости Tavily, Feishu, PDF-скрипты, сетевой доступ и API-ключи.
+
+- **[Quant Trader Daily](https://github.com/LeoYeAI/openclaw-master-skills/tree/main/skills/trader-daily)**  
+  Ежедневный китайский workflow для количественной торговли: мониторинг позиций, риск-алерты, отчеты и торговый журнал.  
+  Теги: `Chinese-Native` `Finance` `Quant`  
+  Источник: SkillsMP · Популярность: SkillsMP: около 2 076 stars у исходного репозитория.  
+  Установка: `npx skills add https://github.com/LeoYeAI/openclaw-master-skills --skill trader-daily -a codex -g`  
+  Заметки: Финансовая область. Не является инвестсоветом; перед использованием или предустановкой нужна проверка соответствия.
+
+- **[ZH Code Reviewer](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-code-reviewer)**  
+  Китайский эксперт по code review со структурированными выводами по корректности, качеству, производительности, безопасности и дизайну.  
+  Теги: `Chinese-Native` `Code Review` `Quality`  
+  Источник: SkillsMP · Популярность: SkillsMP: около 504 stars у laolaoshiren/claude-code-skills-zh.  
+  Установка: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-code-reviewer -a codex -g`  
+  Заметки: Используйте как помощник ревью; перед merge мейнтейнеры должны проверить выводы.
+
+- **[ZH README](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-readme)**  
+  Анализирует проект и генерирует качественный README на китайском для open-source, внутренних инструментов и AI-продуктов.  
+  Теги: `Chinese-Native` `README` `Developer Experience`  
+  Источник: SkillsMP · Популярность: SkillsMP: около 504 stars у исходного репозитория.  
+  Установка: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-readme -a codex -g`  
+  Заметки: Сгенерированную документацию нужно проверить по install-командам, тексту лицензии и проектным формулировкам.
+
+- **[ZH Docgen](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-docgen)**  
+  Генерирует китайскую техдокументацию из кодовой базы: API-доки, дизайн модулей и эксплуатационные руководства.  
+  Теги: `Chinese-Native` `Documentation` `Codebase`  
+  Источник: SkillsMP · Популярность: SkillsMP: около 504 stars у исходного репозитория.  
+  Установка: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-docgen -a codex -g`  
+  Заметки: Сгенерированную документацию нужно сверять с фактическим текущим состоянием репозитория.
+
+- **[De-AI Writing](https://github.com/OUBIGFA/De-AI-Prompt-Enhancer-Writer-Booster-SKILL)**  
+  Китайский workflow по переписыванию, полировке, переводу и ревью для снижения шаблонности и "AI-стиля" текста.  
+  Теги: `Chinese-Native` `Writing` `Humanization`  
+  Источник: SkillsMP · Популярность: SkillsMP: около 488 stars у исходного репозитория.  
+  Установка: `npx skills add https://github.com/OUBIGFA/De-AI-Prompt-Enhancer-Writer-Booster-SKILL -a codex -g`  
+  Заметки: В академических или регламентированных сценариях нужна проверка добросовестности; нельзя использовать для обхода политик детекции.
+
+- **[Chinese Writing](https://github.com/miantiao-me/aigc-weekly)**  
+  Китайский гайд по письму для рассылок, блогов и техстатей с акцентом на ясность, человечность и низкую "AI-окраску".  
+  Теги: `Chinese-Native` `Writing` `Newsletter`  
+  Источник: SkillsMP · Популярность: SkillsMP: около 544 stars у miantiao-me/aigc-weekly.  
+  Установка: `npx skills add https://github.com/miantiao-me/aigc-weekly --skill chinese-writing -a codex -g`  
+  Заметки: Поскольку публичный индексный путь может меняться, здесь источником выбран основной репозиторий.
+
+- **[Tech Doc Style Chinese](https://github.com/Fenng/Tech-Doc-Style-Chinese)**  
+  Сдержанный и точный стиль китайской техдокументации: product copy, API-доки, терминология, пунктуация и сканируемое письмо.  
+  Теги: `Chinese-Native` `Technical Writing` `Style Guide`  
+  Источник: SkillsMP · Популярность: SkillsMP: около 365 stars у Fenng/Tech-Doc-Style-Chinese.  
+  Установка: `npx skills add https://github.com/Fenng/Tech-Doc-Style-Chinese -a codex -g`  
+  Заметки: Используйте как редакционный гайд; литералы кода, API-пути и юридический текст сохраняйте без изменений.
+
+- **[LaTeX Thesis ZH](https://github.com/bahayonghang/academic-writing-skills/tree/main/academic-writing-skills/latex-thesis-zh)**  
+  Китайский LaTeX-помощник для диссертаций: диагностика сборки, ссылки GB/T 7714, структура, формулы и единообразие терминов.  
+  Теги: `Chinese-Native` `LaTeX` `Academic`  
+  Источник: SkillsMP · Популярность: SkillsMP: около 365 stars у bahayonghang/academic-writing-skills.  
+  Установка: `npx skills add https://github.com/bahayonghang/academic-writing-skills --skill latex-thesis-zh -a codex -g`  
+  Заметки: Академическое письмо требует соблюдения правил вуза и ручной проверки цитирований.
+
+- **[Paper Write](https://github.com/xstongxue/best-skills/tree/main/skills/paper-write)**  
+  Китайский workflow для бакалаврских и магистерских работ: план, структура, источники, полировка, расширение, сокращение и перевод.  
+  Теги: `Chinese-Native` `Academic` `Writing`  
+  Источник: SkillsCat · Популярность: SkillsCat: около 2 149 stars у xstongxue/best-skills.  
+  Установка: `npx skillscat add xstongxue/best-skills/paper-write`  
+  Заметки: Перед использованием обязательно проверить академическую добросовестность и точность цитирований.
+
+- **[Humanize Chinese](https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/main/skills/49-voidborne-d-humanize-chinese)**  
+  Китайский workflow по гуманизации и детекции AI-текста: правила, статистические признаки и академические шаблоны переработки.  
+  Теги: `Chinese-Native` `Writing` `Academic`  
+  Источник: SkillsCat · Популярность: SkillsCat: около 2 677 stars у brycewang-stanford/auto-empirical-research-skills.  
+  Установка: `npx skillscat add brycewang-stanford/auto-empirical-research-skills/humanize-chinese`  
+  Заметки: Высокая комплаенс-чувствительность; нельзя использовать для обхода академических или платформенных политик детекции.
+
+- **[EconFin Idea Finder ZH](https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/main/skills/67-econfin-workflow-toolkit)**  
+  Китайский воронкообразный инструмент для идей исследований в экономике и корпоративных финансах: гипотезы, датасеты и эмпирические планы.  
+  Теги: `Chinese-Native` `Finance` `Research`  
+  Источник: SkillsCat · Популярность: SkillsCat: около 2 677 stars у исходного репозитория.  
+  Установка: `npx skillscat add brycewang-stanford/auto-empirical-research-skills/econfin-idea-finder`  
+  Заметки: Финансово-исследовательская область; требуется комплаенс-проверка и верификация источников.
+
+- **[Boss](https://github.com/echovic/boss-skill)**  
+  Китайский BMAD-стиль multi-agent workflow поставки ПО через роли PM, архитектуры, дизайна, разработки, QA и DevOps.  
+  Теги: `Chinese-Native` `Multi-Agent` `Project Management`  
+  Источник: SkillsCat · Популярность: Публичная страница SkillsCat доступна；исходный репозиторий ~550 stars.  
+  Установка: `npx skillscat add echovic/boss-skill`  
+  Заметки: SkillsCat отмечает средний риск безопасности; перед предустановкой проверьте автоматизацию, выполнение команд, запись файлов и оркестрацию агентов.
+
+- **[Requirement Analyst](https://github.com/CaoMeiYouRen/momei/tree/master/.github/skills/requirement-analyst)**  
+  Китайский skill анализа требований: уточнение требований, извлечение намерений, выравнивание roadmap и оценка приоритетов.  
+  Теги: `Chinese-Native` `Requirements` `Product`  
+  Источник: SkillMD.ai · Популярность: SkillMD.ai: 1 483 просмотра, 265 загрузок；GitHub-источник публичен.  
+  Установка: `npx skills add https://github.com/CaoMeiYouRen/momei --skill requirement-analyst -a codex -g`  
+  Заметки: Справка каталога: SkillMD.ai Requirement Analyst. Продуктовые гипотезы нужно подтверждать со стейкхолдерами.
+
+- **[OB](https://github.com/NeverSight/learn-skills.dev/blob/main/data/skills-md/aibangjuxin/knowledge/ob/SKILL.md)**  
+  Китайский архитектурный skill по onboarding GCP API-платформы: GitOps, пайплайны, Firestore, BigQuery и аудируемый rollout.  
+  Теги: `Chinese-Native` `DevOps` `GCP`  
+  Источник: SkillMD.ai · Популярность: SkillMD.ai: 1 178 просмотров, 309 загрузок；AgentSkill API указывает на публичный GitHub.  
+  Установка: `npx skills add https://github.com/NeverSight/learn-skills.dev --skill ob -a codex -g`  
+  Заметки: Узкий корпоративный GCP-домен; перед предустановкой проверьте cloud-права, действия pipeline и инструкции rollback.
+
+- **[NSFC Abstract](https://github.com/huangwb8/ChineseResearchLaTeX)**  
+  Помощник по китайско-английскому abstract для NSFC: структурированное резюме на китайском, точный перевод, варианты заголовка и проверка длины.  
+  Теги: `Chinese-Native` `Academic` `Grant`  
+  Источник: Skills Directory · Популярность: Skills Directory: исходный репозиторий ~1 626 stars, оценка безопасности A.  
+  Установка: `npx skills add https://github.com/huangwb8/ChineseResearchLaTeX -a codex -g`  
+  Заметки: Заявки на гранты требуют проверки профильным экспертом и строгого соблюдения правил подачи.
+
+- **[Paper Translation](https://github.com/APLaS-Plus/paper-translation)**  
+  Workflow перевода академических PDF в китайский Markdown на базе MinerU с сохранением формул, изображений, таблиц, кода и терминов.  
+  Теги: `Chinese-Native` `Translation` `Academic`  
+  Источник: Skills Directory · Популярность: Публичная страница Skills Directory доступна, оценка безопасности A.  
+  Установка: `npx skills add https://github.com/APLaS-Plus/paper-translation -a codex -g`  
+  Заметки: Требуется MinerU API Token; нужно проверить риски внешней загрузки, приватности, авторских прав и точности перевода.
+
 ## Все Skills
 
 ### Инструменты агентов
@@ -127,6 +312,31 @@
   Мета-Skill для превращения повторяемых командных процессов в переиспользуемые ресурсы SKILL.md.  
   Теги: `Skill Authoring` `SKILL.md` `Workflow`  
   Источник: OrangeBot · Популярность: 112.1k weekly installs, 21,445 stars, 1,698 forks on OrangeBot.
+
+- **[Project Planner](https://orangebot.ai/s/project-planner)**  
+  Разбивает сложные задачи, контент-планы, функции или кампании на этапы, шаги, риски и deliverables.  
+  Теги: `Planning` `Project Management` `Workflow`  
+  Источник: OrangeBot · Популярность: Страница Skill на OrangeBot с weekly installs, stars и forks.
+
+- **[Eve](https://skills.cat/skills/vercel/eve)**  
+  Skill фреймворка Vercel AI Agent для AI-native приложений, backend, frontend и прототипов.  
+  Теги: `AI Agent` `Vercel` `SaaS`  
+  Источник: SkillsCat · Популярность: Страница SkillsCat с GitHub-источником и CLI-установкой.
+
+- **[CLI Creator](https://github.com/openai/skills/tree/main/skills/.curated/cli-creator)**  
+  Создаёт CLI-инструменты с парсингом аргументов, help, subcommands и UX для разработчиков.  
+  Теги: `CLI` `Terminal` `Tooling`  
+  Источник: GitHub openai/skills · Популярность: Официальный curated Skill из репозитория openai/skills（~23.3k stars）.
+
+- **[Brainstorming](https://orangebot.ai/s/brainstorming)**  
+  Структурированный brainstorming для продуктовых идей, функций, кампаний и креативного решения задач.  
+  Теги: `Ideation` `Planning` `Creativity`  
+  Источник: OrangeBot · Популярность: OrangeBot: 77.2k weekly installs, 118.4k stars.
+
+- **[Writing Plans](https://orangebot.ai/s/writing-plans)**  
+  Пишет структурированные планы внедрения, спецификации, декомпозицию задач и roadmaps.  
+  Теги: `Planning` `Writing` `Workflow`  
+  Источник: OrangeBot · Популярность: OrangeBot: 41.4k weekly installs, 118.4k stars.
 
 ### Разработка и фронтенд
 
@@ -157,6 +367,78 @@ Skill для фронтенда, UI, деплоя, понимания репоз
   Теги: `Repository` `Codebase` `Explanation`  
   Источник: OrangeBot · Популярность: 27.4k weekly installs, 3,285 stars, 495 forks on OrangeBot.
 
+- **[Next.js Master](https://www.skillsdirectory.com/skills/fratilanico-nextjs-master)**  
+  Next.js Skill для структуры приложения, API routes, компонентов, деплоя и best practices.  
+  Теги: `Next.js` `React` `Frontend`  
+  Источник: Skills Directory · Популярность: Публичная страница Skills Directory с рейтингом безопасности и сигналами использования.
+
+- **[Figma Generate Design](https://github.com/openai/skills/tree/main/skills/.curated/figma-generate-design)**  
+  Генерирует концепции дизайна Figma, layouts, компоненты и визуальные системы из требований продукта.  
+  Теги: `Figma` `Design` `UI`  
+  Источник: GitHub openai/skills · Популярность: Официальный curated Skill из репозитория openai/skills（~23.3k stars）.
+
+- **[Figma Implement Design](https://github.com/openai/skills/tree/main/skills/.curated/figma-implement-design)**  
+  Переводит дизайн Figma во frontend-код, структуры компонентов, spacing и заметки по реализации.  
+  Теги: `Figma` `Design` `Frontend`  
+  Источник: GitHub openai/skills · Популярность: Официальный curated Skill из репозитория openai/skills（~23.3k stars）.
+
+- **[OpenAI Docs](https://github.com/openai/skills/tree/main/skills/.curated/openai-docs)**  
+  Помогает Codex работать с документацией OpenAI, API, SDK и паттернами интеграции.  
+  Теги: `OpenAI` `Documentation` `API`  
+  Источник: GitHub openai/skills · Популярность: Официальный curated Skill из репозитория openai/skills（~23.3k stars）.
+
+- **[GitHub Fix CI](https://github.com/openai/skills/tree/main/skills/.curated/gh-fix-ci)**  
+  Диагностирует и исправляет сбои CI, конфигурацию workflow, ошибки тестов и проблемы build pipeline.  
+  Теги: `CI` `GitHub` `DevOps`  
+  Источник: GitHub openai/skills · Популярность: Официальный curated Skill из репозитория openai/skills（~23.3k stars）.
+
+- **[GitHub Address Comments](https://github.com/openai/skills/tree/main/skills/.curated/gh-address-comments)**  
+  Систематически обрабатывает комментарии PR, предложенные изменения и feedback ревьюеров.  
+  Теги: `GitHub` `Code Review` `PR`  
+  Источник: GitHub openai/skills · Популярность: Официальный curated Skill из репозитория openai/skills（~23.3k stars）.
+
+- **[GitHub CLI](https://crossaitools.com/skills/github/awesome-copilot/gh-cli)**  
+  Справочный Skill по GitHub CLI для управления репозиториями, issues, pull requests, Actions, проектами, releases, gists, Codespaces и организациями из терминала.  
+  Теги: `GitHub` `CLI` `Repository`  
+  Источник: Cross AI Tools · Популярность: Запись Cross AI Tools для github/awesome-copilot; GitHub показывает около 36 306 stars и 4 522 forks.  
+  Установка: `npx skills add https://github.com/github/awesome-copilot --skill gh-cli -a codex -g`  
+  Заметки: Требует знания GitHub CLI и может требовать GitHub-аутентификацию или токены; перед командами, меняющими репозитории, issues или PR, проверьте права.
+
+- **[Cloudflare Deploy](https://github.com/openai/skills/tree/main/skills/.curated/cloudflare-deploy)**  
+  Деплоит приложения и статические сайты на Cloudflare Workers, Pages и edge-инфраструктуру.  
+  Теги: `Cloudflare` `Deployment` `DevOps`  
+  Источник: GitHub openai/skills · Популярность: Официальный curated Skill из репозитория openai/skills（~23.3k stars）.
+
+- **[Netlify Deploy](https://github.com/openai/skills/tree/main/skills/.curated/netlify-deploy)**  
+  Деплоит frontend-приложения, landing pages и прототипы на Netlify с guidance по build и routing.  
+  Теги: `Netlify` `Deployment` `DevOps`  
+  Источник: GitHub openai/skills · Популярность: Официальный curated Skill из репозитория openai/skills（~23.3k stars）.
+
+- **[Sentry](https://github.com/openai/skills/tree/main/skills/.curated/sentry)**  
+  Интегрирует Sentry для мониторинга ошибок, performance tracing, release tracking и отладки инцидентов.  
+  Теги: `Sentry` `Monitoring` `Errors`  
+  Источник: GitHub openai/skills · Популярность: Официальный curated Skill из репозитория openai/skills（~23.3k stars）.
+
+- **[Web Design Guidelines](https://orangebot.ai/s/web-design-guidelines)**  
+  Руководство по веб-дизайну: layout, типографика, цвет, доступность и responsive UI.  
+  Теги: `Web Design` `UI` `UX`  
+  Источник: OrangeBot · Популярность: OrangeBot: 206.0k weekly installs, 24.0k stars.
+
+- **[Systematic Debugging](https://orangebot.ai/s/systematic-debugging)**  
+  Системный debugging workflow: воспроизведение, root cause, проверка fix и предотвращение регрессий.  
+  Теги: `Debugging` `Engineering` `Troubleshooting`  
+  Источник: OrangeBot · Популярность: OrangeBot: 42.5k weekly installs, 118.4k stars.
+
+- **[Next Best Practices](https://orangebot.ai/s/next-best-practices)**  
+  Best practices Next.js для routing, data fetching, rendering, performance и production.  
+  Теги: `Next.js` `Best Practices` `Frontend`  
+  Источник: OrangeBot · Популярность: OrangeBot: 46.4k weekly installs, 778 stars.
+
+- **[Supabase Postgres Best Practices](https://orangebot.ai/s/supabase-postgres-best-practices)**  
+  Best practices Supabase/Postgres для schema, RLS, запросов, миграций и backend-данных.  
+  Теги: `Supabase` `Postgres` `Database`  
+  Источник: OrangeBot · Популярность: OrangeBot: 54.0k weekly installs, 1.7k stars.
+
 ### Креатив и медиа
 
 Креативные Skill для изображений, аудио, видео, маркетинговых визуалов и медиапроизводства.
@@ -171,6 +453,13 @@ Skill для фронтенда, UI, деплоя, понимания репоз
   Лучшие практики для программируемого видео, motion graphics, демо продуктов, автоматических shorts и data-видео на React.  
   Теги: `Video` `React` `Remotion`  
   Источник: OrangeBot · Популярность: 181.8k weekly installs, 867 stars, 24 forks on OrangeBot.
+
+- **[HyperFrames](https://github.com/heygen-com/hyperframes/blob/main/skills/hyperframes/SKILL.md)**  
+  Входной Skill для HyperFrames, HTML-to-video фреймворка, который маршрутизирует workflows видео, анимации, motion graphics, промо продукта, website-to-video, субтитров, слайдов и миграции Remotion.  
+  Теги: `Video` `Animation` `HTML`  
+  Источник: GitHub · Популярность: Официальный репозиторий heygen-com/hyperframes: около 33 674 stars и 3 144 forks на GitHub.  
+  Установка: `npx skills add heygen-com/hyperframes --skill hyperframes`  
+  Заметки: Требует workflow HyperFrames/skills CLI и может использовать браузерный рендеринг, медиа-ассеты, инструменты типа FFmpeg/Puppeteer и сетевые проверки; перед предустановкой проверьте права проекта.
 
 - **[P Video](https://orangebot.ai/s/p-video)**  
   Преобразует сценарии, ассеты и параметры в исполняемые workflows генерации или редактирования видео.  
@@ -187,6 +476,37 @@ Skill для фронтенда, UI, деплоя, понимания репоз
   Улучшает интерфейсы через пути пользователя, состояния компонентов, визуальную иерархию, доступность и feedback.  
   Теги: `UI/UX` `Design` `Product`  
   Источник: OrangeBot · Популярность: 85.9k weekly installs, 1,491 stars, 150 forks on OrangeBot.
+
+- **[Transcribe](https://github.com/openai/skills/tree/main/skills/.curated/transcribe)**  
+  Транскрибирует аудио и речь в текст для встреч, интервью, подкастов и медиа-workflows.  
+  Теги: `Audio` `Transcription` `Speech`  
+  Источник: GitHub openai/skills · Популярность: Официальный curated Skill из репозитория openai/skills（~23.3k stars）.
+
+- **[Speech](https://github.com/openai/skills/tree/main/skills/.curated/speech)**  
+  Генерирует естественную речь из текста для озвучки, ассистентов, доступности и медиапроизводства.  
+  Теги: `TTS` `Speech` `Audio`  
+  Источник: GitHub openai/skills · Популярность: Официальный curated Skill из репозитория openai/skills（~23.3k stars）.
+
+- **[AI Video Generation](https://orangebot.ai/s/ai-video-generation)**  
+  Генерирует AI-видео из промптов, сценариев и storyboard для маркетинга и креатива.  
+  Теги: `Video` `AI` `Generation`  
+  Источник: OrangeBot · Популярность: OrangeBot: 111.3k weekly installs, 235 stars.  
+  Заметки: Зависит от внешних моделей/API; проверьте стоимость, ключи и условия провайдера.
+
+- **[ImageGen](https://skillsmp.com/zh/creators/openai/skills/skills-system-imagegen)**  
+  OpenAI Skill генерации изображений для промптов, стилей, правок, вариаций и визуальных активов.  
+  Теги: `Image` `Generation` `OpenAI`  
+  Источник: SkillsMP · Популярность: SkillsMP: 23,095 stars, 1,565 forks.
+
+- **[Canvas Design](https://skills.cat/skills/anthropics/skills/canvas-design)**  
+  Canvas Design Skill для layout, визуальной композиции, design systems и креативных активов.  
+  Теги: `Canvas` `Design` `Creative`  
+  Источник: SkillsCat · Популярность: Страница SkillsCat с GitHub-источником и CLI-установкой.
+
+- **[AI Video Editing](https://skillsmp.com/creators/arcasilesgroup/ai-engineering/codex-skills-ai-video-editing)**  
+  AI Skill редактирования видео: монтаж, переходы, субтитры, B-roll и постпродакшн.  
+  Теги: `Video` `Editing` `AI`  
+  Источник: SkillsMP · Популярность: SkillsMP: 52 stars, 3 forks.
 
 ### Автоматизация браузера и тестирование
 
@@ -207,6 +527,16 @@ Skill для управления браузером, скриншотов, пр
   Теги: `Screenshot` `UI QA` `Design`  
   Источник: GitHub openai/skills · Популярность: Official OpenAI curated skill from the openai/skills repository.
 
+- **[Playwright Interactive](https://github.com/openai/skills/tree/main/skills/.curated/playwright-interactive)**  
+  Интерактивный Skill автоматизации браузера Playwright для навигации, взаимодействия, скриншотов и проверки UI.  
+  Теги: `Browser` `Playwright` `Testing`  
+  Источник: GitHub openai/skills · Популярность: Официальный curated Skill из репозитория openai/skills（~23.3k stars）.
+
+- **[Browser Use](https://orangebot.ai/s/browser-use)**  
+  Browser-use Skill для автономной навигации, форм, извлечения данных и agent-driven browsing.  
+  Теги: `Browser` `Automation` `Agent`  
+  Источник: OrangeBot · Популярность: OrangeBot: 57.4k weekly installs, 84.8k stars.
+
 ### Документы и презентации
 
 Skill для PDF, слайдов, отчетов, предложений и структурированных документов.
@@ -226,6 +556,16 @@ Skill для PDF, слайдов, отчетов, предложений и ст
   Теги: `Word` `Documents` `Reports`  
   Источник: OrangeBot · Популярность: 42.0k weekly installs, 4,938 stars, 353 forks on OrangeBot.
 
+- **[Notion Research Documentation](https://github.com/openai/skills/tree/main/skills/.curated/notion-research-documentation)**  
+  Организует результаты исследований, цитаты, резюме и структурированную документацию в Notion.  
+  Теги: `Notion` `Research` `Documentation`  
+  Источник: GitHub openai/skills · Популярность: Официальный curated Skill из репозитория openai/skills（~23.3k stars）.
+
+- **[PDF (OpenAI Curated)](https://github.com/openai/skills/tree/main/skills/.curated/pdf)**  
+  Читает, извлекает, суммирует и обрабатывает PDF для отчётов, форм и структурированного контента.  
+  Теги: `PDF` `Documents` `Parsing`  
+  Источник: GitHub openai/skills · Популярность: Официальный curated Skill из репозитория openai/skills（~23.3k stars）.
+
 ### Данные и визуализация
 
 Skill для диаграмм, визуальных объяснений, аналитики и историй на основе данных.
@@ -234,6 +574,46 @@ Skill для диаграмм, визуальных объяснений, ана
   Помогает создавать диаграммы, визуальные объяснения, дорожные карты, архитектурные схемы и data stories.  
   Теги: `Charts` `Visualization` `Data`  
   Источник: OrangeBot · Популярность: OrangeBot skill page with usage, stars, and forks metadata.
+
+- **[Quant Analyst](https://www.skillsdirectory.com/skills/benjaminastera-quant-analyst)**  
+  Skill количественного анализа для рыночных данных, факторов, бэктестинга, метрик портфеля и финансового моделирования.  
+  Теги: `Quant` `Finance` `Analysis`  
+  Источник: Skills Directory · Популярность: Публичная страница Skills Directory с рейтингом безопасности и сигналами использования.
+
+- **[AI Volatility Prediction](https://www.skillsdirectory.com/skills/paulpas-ai-volatility-prediction)**  
+  Прогнозирует волатильность рынка с помощью AI для оценки рисков, хеджирования и quant-исследований.  
+  Теги: `Finance` `Risk` `ML`  
+  Источник: Skills Directory · Популярность: Публичная страница Skills Directory с рейтингом безопасности и сигналами использования.  
+  Заметки: Финансовая/рисковая область; нужны проверка соответствия и четкие disclaimers.
+
+- **[Apify Ecommerce](https://skillmd.ai/skills/apify-ecommerce/)**  
+  Ecommerce Skill с Apify для сбора товаров, цен, отзывов и конкурентной аналитики.  
+  Теги: `Ecommerce` `Scraping` `Apify`  
+  Источник: SkillMD.ai · Популярность: Страница SkillMD.ai с метаданными установки и сигналами использования.  
+  Заметки: Требует сетевого доступа и внешних API-учетных данных.
+
+- **[AfrexAI Personal Finance](https://skillmd.ai/skills/afrexai-personal-finance/)**  
+  Skill личных финансов для бюджета, расходов, накоплений, долгов и финансового здоровья.  
+  Теги: `Finance` `Personal Finance` `Budgeting`  
+  Источник: SkillMD.ai · Популярность: Страница SkillMD.ai с метаданными установки и сигналами использования.  
+  Заметки: Финансовая область; нужны проверка соответствия и четкие disclaimers.
+
+- **[Jupyter Notebook](https://github.com/openai/skills/tree/main/skills/.curated/jupyter-notebook)**  
+  Jupyter Notebook Skill для исследования данных, ячеек анализа, визуализации и воспроизводимых research workflows.  
+  Теги: `Jupyter` `Notebook` `Data`  
+  Источник: GitHub openai/skills · Популярность: Официальный curated Skill из репозитория openai/skills（~23.3k stars）.
+
+- **[Excel Author](https://skillsmp.com/creators/nousresearch/hermes-agent/optional-skills-finance-excel-author)**  
+  Excel Skill для финансовых моделей, формул, pivot, графиков и spreadsheet workflows.  
+  Теги: `Excel` `Finance` `Spreadsheet`  
+  Источник: SkillsMP · Популярность: Страница SkillsMP с GitHub stars, forks и метаданными установки.  
+  Заметки: Финансовая область; нужны проверка соответствия и четкие disclaimers.
+
+- **[EconFin Idea Finder](https://skills.cat/skills/brycewang-stanford/auto-empirical-research-skills/econfin-idea-finder)**  
+  Находит идеи исследований в экономике/финансах, гипотезы, датасеты и эмпирические направления.  
+  Теги: `Finance` `Research` `Economics`  
+  Источник: SkillsCat · Популярность: Страница SkillsCat с GitHub-источником и CLI-установкой.  
+  Заметки: Финансовая/исследовательская область; нужны проверка соответствия и четкие disclaimers.
 
 ### Маркетинг и рост
 
@@ -253,6 +633,21 @@ Skill для SEO, текстов, launch-материалов, кампаний 
   Пишет рекламные тексты, тексты лендингов, продуктовые сообщения, email-маркетинг, посты и видеосценарии.  
   Теги: `Copy` `Ads` `Content`  
   Источник: OrangeBot · Популярность: 49.9k weekly installs, 11,596 stars, 981 forks on OrangeBot.
+
+- **[Lottie Motion Builder](https://www.skillsdirectory.com/skills/markoblogo-lottie-motion-builder)**  
+  Превращает текстовые требования в mobile motion, empty states SaaS, brand motion, рекламные GIF и планы анимации.  
+  Теги: `Motion` `Lottie` `Animation`  
+  Источник: Skills Directory · Популярность: Публичная страница Skills Directory с рейтингом безопасности и сигналами использования.
+
+- **[Paid Ads](https://www.skillsdirectory.com/skills/benjaminastera-paid-ads)**  
+  Skill платной рекламы для структуры кампаний, таргетинга, копирайта, бюджета и оптимизации.  
+  Теги: `Ads` `PPC` `Marketing`  
+  Источник: Skills Directory · Популярность: Публичная страница Skills Directory с рейтингом безопасности и сигналами использования.
+
+- **[Campaign Plan](https://skillsmp.com/creators/anthropics/knowledge-work-plugins/marketing-skills-campaign-plan)**  
+  Skill планирования маркетинговых кампаний: цели, каналы, сообщения, сроки, бюджет.  
+  Теги: `Marketing` `Campaign` `Planning`  
+  Источник: SkillsMP · Популярность: Страница SkillsMP с GitHub stars, forks и метаданными установки.
 
 ### Отрасли и соответствие требованиям
 
@@ -279,9 +674,19 @@ Skill для SEO, текстов, launch-материалов, кампаний 
   Источник: SkillsCat · Популярность: SkillsCat entry with stars, token metadata, and CLI install support.  
   Заметки: Высокорисковая область; нужны проверка соответствия и четкие disclaimers.
 
+- **[Security Threat Model](https://github.com/openai/skills/tree/main/skills/.curated/security-threat-model)**  
+  Строит модели угроз, поверхности атак, меры смягчения и чеклисты безопасности.  
+  Теги: `Security` `Threat Model` `Compliance`  
+  Источник: GitHub openai/skills · Популярность: Официальный curated Skill из репозитория openai/skills（~23.3k stars）.
+
+## Руководство по Custom Skill
+
+- **[Руководство по Custom Skill →](GUIDE_ru.md)** — Узнайте, как создавать, адаптировать и устанавливать собственные Codex Skills.
+
 ## Как внести вклад
 
 - Откройте issue [Submit a Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml) с доступной ссылкой, кратким описанием, категорией, источником и доказательством популярности.
+- Для китайскоязычных Skills используйте шаблон [Submit a Chinese-Native Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml).
 - Отмечайте Skills, которым нужны API keys, управление браузером, выполнение команд или медицинская/финансовая/юридическая проверка.
 
 ## Критерии отбора
@@ -302,4 +707,4 @@ Skill для SEO, текстов, launch-материалов, кампаний 
 
 ---
 
-> Этот README сгенерирован из `data/skills.json`. Измените файл данных и выполните `npm run generate:readme`.
+> Этот README сгенерирован из `data/skills.json`. Измените файл данных и выполните `npm run generate:all`.

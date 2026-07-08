@@ -2,6 +2,10 @@
   color: '#3f74ea'
   description: 'Community-submitted skill'
 
+- name: chinese-skill
+  color: '#f9d0c4'
+  description: 'Chinese-native skill submission'
+
 - name: approved
   color: '#65e00d'
   description: 'Reviewed and approved'

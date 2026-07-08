@@ -1,28 +1,12 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { anchor, currentDateInTimeZone, languageSwitcher, languages, localized } from "./languages.mjs";
+import { readmeAllSectionTitle } from "./readme-section-anchors.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const rootDir = path.resolve(path.dirname(__filename), "..");
 const dataPath = path.join(rootDir, "data", "skills.json");
-
-const languages = [
-  { code: "en", file: "README.md", label: "English", current: "Current" },
-  { code: "zh", file: "README_zh.md", label: "简体中文", current: "当前" },
-  { code: "tw", file: "README_tw.md", label: "繁體中文", current: "目前" },
-  { code: "ja", file: "README_ja.md", label: "日本語", current: "Current" },
-  { code: "ko", file: "README_ko.md", label: "한국어", current: "Current" },
-  { code: "th", file: "README_th.md", label: "ไทย", current: "Current" },
-  { code: "vi", file: "README_vi.md", label: "Tiếng Việt", current: "Current" },
-  { code: "id", file: "README_id.md", label: "Bahasa Indonesia", current: "Current" },
-  { code: "es", file: "README_es.md", label: "Español", current: "Current" },
-  { code: "fr", file: "README_fr.md", label: "Français", current: "Current" },
-  { code: "de", file: "README_de.md", label: "Deutsch", current: "Current" },
-  { code: "it", file: "README_it.md", label: "Italiano", current: "Current" },
-  { code: "pt", file: "README_pt.md", label: "Português", current: "Current" },
-  { code: "ru", file: "README_ru.md", label: "Русский", current: "Current" },
-  { code: "ar", file: "README_ar.md", label: "العربية", current: "Current" }
-];
 
 const ui = {
   "en": {
@@ -38,13 +22,14 @@ const ui = {
     ],
     "browse": "Browse by Category",
     "featured": "Featured Skills",
-    "all": "All Skills",
     "stats": "Statistics",
     "contribute": "How to Contribute",
     "contributeBody": [
       "Open a [Submit a Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml) issue with a reachable skill link, a short description, category, source platform, and popularity evidence.",
+      "For Chinese-native skills, use [Submit a Chinese-Native Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml) instead.",
       "Please mark skills that require API keys, browser control, command execution, healthcare/finance/legal review, or other sensitive permissions."
     ],
+    "submitChineseSkillBadge": "[![Submit Chinese Skill](https://img.shields.io/badge/Submit%20Chinese%20Skill-via%20Issues-orange.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml)",
     "curation": "Curation Criteria",
     "curationItems": [
       "The link must be reachable and should not be a legacy error page.",
@@ -64,7 +49,9 @@ const ui = {
     "totalSkills": "Total skills",
     "categories": "Categories",
     "lastUpdated": "Last updated",
-    "readmeGenerated": "This README is generated from `data/skills.json`. Edit the data file, then run `npm run generate:readme`."
+    "customSkillGuide": "Custom Skill Guide",
+    "customSkillGuideBody": "Learn how to create, adapt, and install your own Codex skills.",
+    "readmeGenerated": "This README is generated from `data/skills.json`. Edit the data file, then run `npm run generate:all`."
   },
   "zh": {
     "title": "Awesome Codex Skills",
@@ -79,13 +66,14 @@ const ui = {
     ],
     "browse": "按分类浏览",
     "featured": "精选 Skill",
-    "all": "全部 Skill",
     "stats": "统计",
     "contribute": "如何贡献",
     "contributeBody": [
       "通过 [Submit a Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml) Issue 提交，请提供可访问链接、简短简介、分类、来源平台和热度依据。",
+      "中文原生 Skill 请使用 [Submit a Chinese-Native Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml) 专用模板。",
       "如果 Skill 需要 API Key、浏览器控制、命令执行，或涉及医疗/金融/法律等敏感场景，请明确标注。"
     ],
+    "submitChineseSkillBadge": "[![提交中文 Skill](https://img.shields.io/badge/%E6%8F%90%E4%BA%A4%E4%B8%AD%E6%96%87%20Skill-via%20Issues-orange.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml)",
     "curation": "收录标准",
     "curationItems": [
       "链接必须可访问，不能是 legacy 错误页。",
@@ -105,7 +93,9 @@ const ui = {
     "totalSkills": "Skill 总数",
     "categories": "分类数",
     "lastUpdated": "最后更新",
-    "readmeGenerated": "本文档由 `data/skills.json` 生成。请编辑数据文件后运行 `npm run generate:readme`。"
+    "customSkillGuide": "自定义 Skill 指南",
+    "customSkillGuideBody": "学习如何创建、改编并安装你自己的 Codex Skill。",
+    "readmeGenerated": "本文档由 `data/skills.json` 生成。请编辑数据文件后运行 `npm run generate:all`。"
   },
   "tw": {
     "title": "Awesome Codex Skills",
@@ -120,13 +110,14 @@ const ui = {
     ],
     "browse": "按分類瀏覽",
     "featured": "精選 Skill",
-    "all": "全部 Skill",
     "stats": "統計",
     "contribute": "如何貢獻",
     "contributeBody": [
       "透過 [Submit a Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml) Issue 提交，請提供可訪問連結、簡短介紹、分類、來源平台和熱度依據。",
+      "中文原生 Skill 請使用 [Submit a Chinese-Native Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml) 專用模板。",
       "如果 Skill 需要 API Key、瀏覽器控制、命令執行，或涉及醫療/金融/法律等敏感場景，請明確標註。"
     ],
+    "submitChineseSkillBadge": "[![提交中文 Skill](https://img.shields.io/badge/%E6%8F%90%E4%BA%A4%E4%B8%AD%E6%96%87%20Skill-via%20Issues-orange.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml)",
     "curation": "收錄標準",
     "curationItems": [
       "連結必須可訪問，不能是 legacy 錯誤頁。",
@@ -146,7 +137,9 @@ const ui = {
     "totalSkills": "Skill 總數",
     "categories": "分類數",
     "lastUpdated": "最後更新",
-    "readmeGenerated": "本文檔由 `data/skills.json` 生成。請編輯資料檔後執行 `npm run generate:readme`。"
+    "customSkillGuide": "自訂 Skill 指南",
+    "customSkillGuideBody": "學習如何建立、改編並安裝你自己的 Codex Skill。",
+    "readmeGenerated": "本文檔由 `data/skills.json` 生成。請編輯資料檔後執行 `npm run generate:all`。"
   },
   "ja": {
     "title": "Awesome Codex Skills",
@@ -161,13 +154,14 @@ const ui = {
     ],
     "browse": "カテゴリ別に見る",
     "featured": "注目 Skill",
-    "all": "すべての Skill",
     "stats": "統計",
     "contribute": "貢献方法",
     "contributeBody": [
       "[Submit a Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml) issue から、到達可能なリンク、短い説明、カテゴリ、提供元、人気指標を送ってください。",
+      "中国語ネイティブ Skill は [Submit a Chinese-Native Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml) 専用テンプレートを使用してください。",
       "API Key、ブラウザ制御、コマンド実行、医療/金融/法務レビューなどが必要な場合は明記してください。"
     ],
+    "submitChineseSkillBadge": "[![中国語Skill投稿](https://img.shields.io/badge/%E4%B8%AD%E5%9B%BD%E8%AA%9ESkill%E6%8A%95%E7%A8%BF-via%20Issues-orange.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml)",
     "curation": "収録基準",
     "curationItems": [
       "リンクは到達可能で、legacy エラーページでないこと。",
@@ -187,7 +181,9 @@ const ui = {
     "totalSkills": "Skill 数",
     "categories": "カテゴリ数",
     "lastUpdated": "最終更新",
-    "readmeGenerated": "この README は `data/skills.json` から生成されています。データを編集後、`npm run generate:readme` を実行してください。"
+    "customSkillGuide": "カスタム Skill ガイド",
+    "customSkillGuideBody": "自分用の Codex Skill を作成・改変・インストールする方法を学びます。",
+    "readmeGenerated": "この README は `data/skills.json` から生成されています。データを編集後、`npm run generate:all` を実行してください。"
   },
   "ko": {
     "title": "Awesome Codex Skills",
@@ -202,13 +198,14 @@ const ui = {
     ],
     "browse": "카테고리별 보기",
     "featured": "추천 Skill",
-    "all": "전체 Skill",
     "stats": "통계",
     "contribute": "기여 방법",
     "contributeBody": [
       "[Submit a Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml) issue로 접근 가능한 링크, 짧은 설명, 카테고리, 출처, 인기 근거를 제출하세요.",
+      "중국어 네이티브 Skill은 [Submit a Chinese-Native Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml) 전용 템플릿을 사용하세요.",
       "API Key, 브라우저 제어, 명령 실행, 의료/금융/법률 검토가 필요한 경우 명확히 표시하세요."
     ],
+    "submitChineseSkillBadge": "[![중국어 Skill 제출](https://img.shields.io/badge/%EC%A4%91%EA%B5%AD%EC%96%B4%20Skill%20%EC%A0%9C%EC%B6%9C-via%20Issues-orange.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml)",
     "curation": "선정 기준",
     "curationItems": [
       "링크는 접근 가능해야 하며 legacy 오류 페이지가 아니어야 합니다.",
@@ -228,7 +225,9 @@ const ui = {
     "totalSkills": "Skill 수",
     "categories": "카테고리 수",
     "lastUpdated": "마지막 업데이트",
-    "readmeGenerated": "이 README는 `data/skills.json`에서 생성됩니다. 데이터를 수정한 뒤 `npm run generate:readme`를 실행하세요."
+    "customSkillGuide": "커스텀 Skill 가이드",
+    "customSkillGuideBody": "나만의 Codex Skill을 만들고, 개조하고, 설치하는 방법을 배웁니다.",
+    "readmeGenerated": "이 README는 `data/skills.json`에서 생성됩니다. 데이터를 수정한 뒤 `npm run generate:all`를 실행하세요."
   },
   "th": {
     "title": "Awesome Codex Skills",
@@ -243,13 +242,14 @@ const ui = {
     ],
     "browse": "ดูตามหมวดหมู่",
     "featured": "Skill แนะนำ",
-    "all": "Skill ทั้งหมด",
     "stats": "สถิติ",
     "contribute": "วิธีมีส่วนร่วม",
     "contributeBody": [
       "เปิด [Submit a Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml) issue พร้อมลิงก์ที่เข้าถึงได้ คำอธิบายสั้น หมวดหมู่ แหล่งที่มา และหลักฐานความนิยม",
+      "Skill ภาษาจีนโดยกำเนิด ให้ใช้เทมเพลต [Submit a Chinese-Native Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml)",
       "โปรดระบุหาก Skill ต้องใช้ API key การควบคุมเบราว์เซอร์ การรันคำสั่ง หรือเกี่ยวข้องกับการแพทย์ การเงิน กฎหมาย หรือสิทธิ์อ่อนไหวอื่น ๆ"
     ],
+    "submitChineseSkillBadge": "[![ส่ง Skill จีน](https://img.shields.io/badge/%E0%B8%AA%E0%B9%88%E0%B8%87%20Skill%20%E0%B8%88%E0%B8%B5%E0%B8%99-via%20Issues-orange.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml)",
     "curation": "เกณฑ์การคัดเลือก",
     "curationItems": [
       "ลิงก์ต้องเข้าถึงได้และไม่ใช่หน้า legacy error",
@@ -269,7 +269,9 @@ const ui = {
     "totalSkills": "จำนวน Skill",
     "categories": "จำนวนหมวดหมู่",
     "lastUpdated": "อัปเดตล่าสุด",
-    "readmeGenerated": "README นี้สร้างจาก `data/skills.json` แก้ไขไฟล์ข้อมูลแล้วรัน `npm run generate:readme`"
+    "customSkillGuide": "คู่มือ Custom Skill",
+    "customSkillGuideBody": "เรียนรู้วิธีสร้าง ปรับ และติดตั้ง Codex Skill ของคุณเอง",
+    "readmeGenerated": "README นี้สร้างจาก `data/skills.json` แก้ไขไฟล์ข้อมูลแล้วรัน `npm run generate:all`"
   },
   "vi": {
     "title": "Awesome Codex Skills",
@@ -284,13 +286,14 @@ const ui = {
     ],
     "browse": "Duyệt theo danh mục",
     "featured": "Skill nổi bật",
-    "all": "Tất cả Skill",
     "stats": "Thống kê",
     "contribute": "Cách đóng góp",
     "contributeBody": [
       "Mở [Submit a Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml) issue với link truy cập được, mô tả ngắn, danh mục, nguồn và bằng chứng phổ biến.",
+      "Skill gốc tiếng Trung hãy dùng mẫu [Submit a Chinese-Native Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml).",
       "Hãy đánh dấu Skill cần API key, điều khiển trình duyệt, chạy lệnh, hoặc cần xem xét y tế/tài chính/pháp lý."
     ],
+    "submitChineseSkillBadge": "[![Gửi Skill tiếng Trung](https://img.shields.io/badge/G%E1%BB%ADi%20Skill%20ti%E1%BA%BFng%20Trung-via%20Issues-orange.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml)",
     "curation": "Tiêu chí tuyển chọn",
     "curationItems": [
       "Link phải truy cập được và không phải trang lỗi legacy.",
@@ -310,7 +313,9 @@ const ui = {
     "totalSkills": "Tổng số Skill",
     "categories": "Số danh mục",
     "lastUpdated": "Cập nhật cuối",
-    "readmeGenerated": "README này được tạo từ `data/skills.json`. Hãy sửa file dữ liệu rồi chạy `npm run generate:readme`."
+    "customSkillGuide": "Hướng dẫn Custom Skill",
+    "customSkillGuideBody": "Học cách tạo, chỉnh sửa và cài đặt Codex Skill của riêng bạn.",
+    "readmeGenerated": "README này được tạo từ `data/skills.json`. Hãy sửa file dữ liệu rồi chạy `npm run generate:all`."
   },
   "id": {
     "title": "Awesome Codex Skills",
@@ -325,13 +330,14 @@ const ui = {
     ],
     "browse": "Telusuri berdasarkan Kategori",
     "featured": "Skill Unggulan",
-    "all": "Semua Skill",
     "stats": "Statistik",
     "contribute": "Cara Berkontribusi",
     "contributeBody": [
       "Buka issue [Submit a Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml) dengan link yang dapat diakses, deskripsi singkat, kategori, platform sumber, dan bukti popularitas.",
+      "Untuk Skill native Tiongkok, gunakan template [Submit a Chinese-Native Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml).",
       "Tandai Skill yang memerlukan API key, kontrol browser, eksekusi command, atau review kesehatan/keuangan/hukum."
     ],
+    "submitChineseSkillBadge": "[![Kirim Skill Tiongkok](https://img.shields.io/badge/Kirim%20Skill%20Tiongkok-via%20Issues-orange.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml)",
     "curation": "Kriteria Kurasi",
     "curationItems": [
       "Link harus dapat diakses dan bukan halaman legacy error.",
@@ -351,7 +357,9 @@ const ui = {
     "totalSkills": "Total Skill",
     "categories": "Kategori",
     "lastUpdated": "Terakhir diperbarui",
-    "readmeGenerated": "README ini dibuat dari `data/skills.json`. Edit file data lalu jalankan `npm run generate:readme`."
+    "customSkillGuide": "Panduan Custom Skill",
+    "customSkillGuideBody": "Pelajari cara membuat, menyesuaikan, dan menginstal Codex Skill Anda sendiri.",
+    "readmeGenerated": "README ini dibuat dari `data/skills.json`. Edit file data lalu jalankan `npm run generate:all`."
   },
   "es": {
     "title": "Awesome Codex Skills",
@@ -366,13 +374,14 @@ const ui = {
     ],
     "browse": "Explorar por categoría",
     "featured": "Skills destacados",
-    "all": "Todos los Skills",
     "stats": "Estadísticas",
     "contribute": "Cómo contribuir",
     "contributeBody": [
       "Abre un issue [Submit a Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml) con un enlace accesible, descripción corta, categoría, plataforma fuente y evidencia de popularidad.",
+      "Para Skills nativos en chino, usa la plantilla [Submit a Chinese-Native Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml).",
       "Marca Skills que requieran API keys, control del navegador, ejecución de comandos o revisión médica/financiera/legal."
     ],
+    "submitChineseSkillBadge": "[![Enviar Skill chino](https://img.shields.io/badge/Enviar%20Skill%20chino-via%20Issues-orange.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml)",
     "curation": "Criterios de curación",
     "curationItems": [
       "El enlace debe ser accesible y no una página legacy de error.",
@@ -392,7 +401,9 @@ const ui = {
     "totalSkills": "Total de Skills",
     "categories": "Categorías",
     "lastUpdated": "Última actualización",
-    "readmeGenerated": "Este README se genera desde `data/skills.json`. Edita el archivo de datos y ejecuta `npm run generate:readme`."
+    "customSkillGuide": "Guía de Custom Skill",
+    "customSkillGuideBody": "Aprende a crear, adaptar e instalar tus propios Codex Skills.",
+    "readmeGenerated": "Este README se genera desde `data/skills.json`. Edita el archivo de datos y ejecuta `npm run generate:all`."
   },
   "fr": {
     "title": "Awesome Codex Skills",
@@ -407,13 +418,14 @@ const ui = {
     ],
     "browse": "Parcourir par catégorie",
     "featured": "Skills en vedette",
-    "all": "Tous les Skills",
     "stats": "Statistiques",
     "contribute": "Comment contribuer",
     "contributeBody": [
       "Ouvrez une issue [Submit a Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml) avec lien accessible, courte description, catégorie, source et preuve de popularité.",
+      "Pour les Skills natifs chinois, utilisez le modèle [Submit a Chinese-Native Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml).",
       "Signalez les Skills nécessitant API keys, contrôle navigateur, exécution de commandes ou revue santé/finance/juridique."
     ],
+    "submitChineseSkillBadge": "[![Soumettre Skill chinois](https://img.shields.io/badge/Soumettre%20Skill%20chinois-via%20Issues-orange.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml)",
     "curation": "Critères de sélection",
     "curationItems": [
       "Le lien doit être accessible et ne pas être une page legacy d’erreur.",
@@ -433,7 +445,9 @@ const ui = {
     "totalSkills": "Total Skills",
     "categories": "Catégories",
     "lastUpdated": "Dernière mise à jour",
-    "readmeGenerated": "Ce README est généré depuis `data/skills.json`. Modifiez le fichier de données puis exécutez `npm run generate:readme`."
+    "customSkillGuide": "Guide Custom Skill",
+    "customSkillGuideBody": "Apprenez à créer, adapter et installer vos propres Codex Skills.",
+    "readmeGenerated": "Ce README est généré depuis `data/skills.json`. Modifiez le fichier de données puis exécutez `npm run generate:all`."
   },
   "de": {
     "title": "Awesome Codex Skills",
@@ -448,13 +462,14 @@ const ui = {
     ],
     "browse": "Nach Kategorie durchsuchen",
     "featured": "Ausgewählte Skills",
-    "all": "Alle Skills",
     "stats": "Statistiken",
     "contribute": "Mitwirken",
     "contributeBody": [
       "Öffne ein [Submit a Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml) Issue mit erreichbarem Link, kurzer Beschreibung, Kategorie, Quelle und Popularitätsnachweis.",
+      "Für chinesisch-native Skills nutze die Vorlage [Submit a Chinese-Native Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml).",
       "Markiere Skills mit API Keys, Browsersteuerung, Befehlsausführung oder Gesundheits-/Finanz-/Rechtsprüfung."
     ],
+    "submitChineseSkillBadge": "[![Chinesisch Skill](https://img.shields.io/badge/Chinesisch%20Skill-via%20Issues-orange.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml)",
     "curation": "Kurationskriterien",
     "curationItems": [
       "Der Link muss erreichbar sein und darf keine Legacy-Fehlerseite sein.",
@@ -474,7 +489,9 @@ const ui = {
     "totalSkills": "Skills gesamt",
     "categories": "Kategorien",
     "lastUpdated": "Zuletzt aktualisiert",
-    "readmeGenerated": "Dieses README wird aus `data/skills.json` generiert. Bearbeite die Datendatei und führe `npm run generate:readme` aus."
+    "customSkillGuide": "Custom-Skill-Leitfaden",
+    "customSkillGuideBody": "Lerne, eigene Codex Skills zu erstellen, anzupassen und zu installieren.",
+    "readmeGenerated": "Dieses README wird aus `data/skills.json` generiert. Bearbeite die Datendatei und führe `npm run generate:all` aus."
   },
   "it": {
     "title": "Awesome Codex Skills",
@@ -489,13 +506,14 @@ const ui = {
     ],
     "browse": "Sfoglia per categoria",
     "featured": "Skill in evidenza",
-    "all": "Tutti gli Skill",
     "stats": "Statistiche",
     "contribute": "Come contribuire",
     "contributeBody": [
       "Apri una issue [Submit a Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml) con link raggiungibile, breve descrizione, categoria, fonte e prova di popolarità.",
+      "Per Skill native in cinese usa il template [Submit a Chinese-Native Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml).",
       "Segnala Skill che richiedono API key, controllo browser, esecuzione comandi o review medica/finanziaria/legale."
     ],
+    "submitChineseSkillBadge": "[![Invia Skill cinese](https://img.shields.io/badge/Invia%20Skill%20cinese-via%20Issues-orange.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml)",
     "curation": "Criteri di selezione",
     "curationItems": [
       "Il link deve essere raggiungibile e non una pagina legacy di errore.",
@@ -515,7 +533,9 @@ const ui = {
     "totalSkills": "Skill totali",
     "categories": "Categorie",
     "lastUpdated": "Ultimo aggiornamento",
-    "readmeGenerated": "Questo README è generato da `data/skills.json`. Modifica il file dati e poi esegui `npm run generate:readme`."
+    "customSkillGuide": "Guida Custom Skill",
+    "customSkillGuideBody": "Impara a creare, adattare e installare i tuoi Codex Skill.",
+    "readmeGenerated": "Questo README è generato da `data/skills.json`. Modifica il file dati e poi esegui `npm run generate:all`."
   },
   "pt": {
     "title": "Awesome Codex Skills",
@@ -530,13 +550,14 @@ const ui = {
     ],
     "browse": "Navegar por categoria",
     "featured": "Skills em destaque",
-    "all": "Todos os Skills",
     "stats": "Estatísticas",
     "contribute": "Como contribuir",
     "contributeBody": [
       "Abra uma issue [Submit a Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml) com link acessível, descrição curta, categoria, fonte e evidência de popularidade.",
+      "Para Skills nativos em chinês, use o template [Submit a Chinese-Native Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml).",
       "Marque Skills que exigem API keys, controle de navegador, execução de comandos ou revisão médica/financeira/legal."
     ],
+    "submitChineseSkillBadge": "[![Enviar Skill chinês](https://img.shields.io/badge/Enviar%20Skill%20chin%C3%AAs-via%20Issues-orange.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml)",
     "curation": "Critérios de curadoria",
     "curationItems": [
       "O link deve ser acessível e não uma página legacy de erro.",
@@ -556,7 +577,9 @@ const ui = {
     "totalSkills": "Total de Skills",
     "categories": "Categorias",
     "lastUpdated": "Última atualização",
-    "readmeGenerated": "Este README é gerado a partir de `data/skills.json`. Edite o arquivo de dados e execute `npm run generate:readme`."
+    "customSkillGuide": "Guia de Custom Skill",
+    "customSkillGuideBody": "Aprenda a criar, adaptar e instalar seus próprios Codex Skills.",
+    "readmeGenerated": "Este README é gerado a partir de `data/skills.json`. Edite o arquivo de dados e execute `npm run generate:all`."
   },
   "ru": {
     "title": "Awesome Codex Skills",
@@ -571,13 +594,14 @@ const ui = {
     ],
     "browse": "Просмотр по категориям",
     "featured": "Избранные Skills",
-    "all": "Все Skills",
     "stats": "Статистика",
     "contribute": "Как внести вклад",
     "contributeBody": [
       "Откройте issue [Submit a Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml) с доступной ссылкой, кратким описанием, категорией, источником и доказательством популярности.",
+      "Для китайскоязычных Skills используйте шаблон [Submit a Chinese-Native Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml).",
       "Отмечайте Skills, которым нужны API keys, управление браузером, выполнение команд или медицинская/финансовая/юридическая проверка."
     ],
+    "submitChineseSkillBadge": "[![Китайский Skill](https://img.shields.io/badge/%D0%9A%D0%B8%D1%82%D0%B0%D0%B9%D1%81%D0%BA%D0%B8%D0%B9%20Skill-via%20Issues-orange.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml)",
     "curation": "Критерии отбора",
     "curationItems": [
       "Ссылка должна быть доступна и не вести на legacy-страницу ошибки.",
@@ -597,7 +621,9 @@ const ui = {
     "totalSkills": "Всего Skills",
     "categories": "Категории",
     "lastUpdated": "Последнее обновление",
-    "readmeGenerated": "Этот README сгенерирован из `data/skills.json`. Измените файл данных и выполните `npm run generate:readme`."
+    "customSkillGuide": "Руководство по Custom Skill",
+    "customSkillGuideBody": "Узнайте, как создавать, адаптировать и устанавливать собственные Codex Skills.",
+    "readmeGenerated": "Этот README сгенерирован из `data/skills.json`. Измените файл данных и выполните `npm run generate:all`."
   },
   "ar": {
     "title": "Awesome Codex Skills",
@@ -612,13 +638,14 @@ const ui = {
     ],
     "browse": "تصفح حسب الفئة",
     "featured": "Skills مميزة",
-    "all": "كل Skills",
     "stats": "إحصائيات",
     "contribute": "كيفية المساهمة",
     "contributeBody": [
       "افتح issue من [Submit a Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml) مع رابط صالح ووصف قصير وفئة ومصدر ودليل شعبية.",
+      "Skills الصينية الأصلية تستخدم قالب [Submit a Chinese-Native Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml).",
       "يرجى توضيح Skills التي تتطلب API keys أو تحكمًا بالمتصفح أو تنفيذ أوامر أو مراجعة طبية/مالية/قانونية."
     ],
+    "submitChineseSkillBadge": "[![إرسال Skill صيني](https://img.shields.io/badge/%D8%A5%D8%B1%D8%B3%D8%A7%D9%84%20Skill%20%D8%B5%D9%8A%D9%86%D9%8A-via%20Issues-orange.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml)",
     "curation": "معايير الاختيار",
     "curationItems": [
       "يجب أن يكون الرابط متاحًا وألا يكون صفحة خطأ legacy.",
@@ -638,56 +665,141 @@ const ui = {
     "totalSkills": "إجمالي Skills",
     "categories": "الفئات",
     "lastUpdated": "آخر تحديث",
-    "readmeGenerated": "يتم إنشاء README هذا من `data/skills.json`. عدّل ملف البيانات ثم شغّل `npm run generate:readme`."
+    "customSkillGuide": "دليل Custom Skill",
+    "customSkillGuideBody": "تعلّم كيفية إنشاء وتعديل وتثبيت Codex Skills الخاصة بك.",
+    "readmeGenerated": "يتم إنشاء README هذا من `data/skills.json`. عدّل ملف البيانات ثم شغّل `npm run generate:all`."
   }
 };
-function localized(value, lang) {
-  if (value == null) return "";
-  if (typeof value === "string") return value;
-  return value[lang] ?? value.en ?? value.zh ?? "";
-}
+
+const chineseHubUi = {
+  en: {
+    chineseHub: "Chinese-Native Skills",
+    chineseHubIntro: "Skills with Chinese-native SKILL.md content and workflows for documentation, review, writing, academia, fintech, product planning, and DevOps.",
+    chineseHubCount: "Chinese-native skills",
+    chineseHubCallout: "For Chinese developers: see [Chinese-Native Skills](#chinese-native-skills).",
+    install: "Install"
+  },
+  zh: {
+    chineseHub: "中文 Skill 专区",
+    chineseHubIntro: "面向中文开发者与中文工作流的原生 Skill，覆盖文档排版、代码审查、写作润色、学术科研、金融量化、产品规划与 DevOps 等场景。",
+    chineseHubCount: "中文原生 Skill",
+    chineseHubCallout: "面向中文开发者：参见 [中文 Skill 专区](#中文-skill-专区)",
+    install: "安装"
+  },
+  tw: {
+    chineseHub: "中文 Skill 專區",
+    chineseHubIntro: "面向中文開發者與中文工作流的原生 Skill，涵蓋文件排版、程式碼審查、寫作潤飾、學術研究、金融量化、產品規劃與 DevOps。",
+    chineseHubCount: "中文原生 Skill",
+    chineseHubCallout: "面向中文開發者：參見 [中文 Skill 專區](#中文-skill-專區)",
+    install: "安裝"
+  },
+  ja: {
+    chineseHub: "中国語ネイティブ Skills",
+    chineseHubIntro: "中国語の SKILL.md とワークフローを持つ Skill。文書、レビュー、執筆、学術、フィンテック、プロダクト計画、DevOps を扱います。",
+    chineseHubCount: "中国語ネイティブ Skills",
+    chineseHubCallout: "",
+    install: "インストール"
+  },
+  ko: {
+    chineseHub: "중국어 네이티브 Skills",
+    chineseHubIntro: "중국어 SKILL.md와 워크플로를 갖춘 Skill로 문서, 리뷰, 글쓰기, 학술, 핀테크, 제품 기획, DevOps를 다룹니다.",
+    chineseHubCount: "중국어 네이티브 Skills",
+    chineseHubCallout: "",
+    install: "설치"
+  },
+  th: {
+    chineseHub: "Skills ภาษาจีนโดยกำเนิด",
+    chineseHubIntro: "Skill ที่มี SKILL.md และ workflow ภาษาจีน สำหรับเอกสาร รีวิวโค้ด งานเขียน วิชาการ ฟินเทค วางแผนผลิตภัณฑ์ และ DevOps",
+    chineseHubCount: "Skills ภาษาจีนโดยกำเนิด",
+    chineseHubCallout: "",
+    install: "ติดตั้ง"
+  },
+  vi: {
+    chineseHub: "Skills gốc tiếng Trung",
+    chineseHubIntro: "Skill có SKILL.md và workflow gốc tiếng Trung cho tài liệu, review, viết lách, học thuật, fintech, hoạch định sản phẩm và DevOps.",
+    chineseHubCount: "Skills gốc tiếng Trung",
+    chineseHubCallout: "",
+    install: "Cài đặt"
+  },
+  id: {
+    chineseHub: "Skills native Tiongkok",
+    chineseHubIntro: "Skill dengan SKILL.md dan workflow native berbahasa Tiongkok untuk dokumentasi, review, penulisan, akademik, fintech, perencanaan produk, dan DevOps.",
+    chineseHubCount: "Skills native Tiongkok",
+    chineseHubCallout: "",
+    install: "Instal"
+  },
+  es: {
+    chineseHub: "Skills nativos en chino",
+    chineseHubIntro: "Skills con SKILL.md y workflows nativos en chino para documentación, revisión, escritura, academia, fintech, planificación de producto y DevOps.",
+    chineseHubCount: "Skills nativos en chino",
+    chineseHubCallout: "",
+    install: "Instalar"
+  },
+  fr: {
+    chineseHub: "Skills natifs chinois",
+    chineseHubIntro: "Skills avec SKILL.md et workflows natifs chinois pour documentation, revue, rédaction, recherche, fintech, planification produit et DevOps.",
+    chineseHubCount: "Skills natifs chinois",
+    chineseHubCallout: "",
+    install: "Installer"
+  },
+  de: {
+    chineseHub: "Chinesisch-native Skills",
+    chineseHubIntro: "Skills mit chinesisch-nativen SKILL.md-Inhalten und Workflows für Dokumentation, Review, Schreiben, Forschung, Fintech, Produktplanung und DevOps.",
+    chineseHubCount: "Chinesisch-native Skills",
+    chineseHubCallout: "",
+    install: "Installation"
+  },
+  it: {
+    chineseHub: "Skills native in cinese",
+    chineseHubIntro: "Skill con SKILL.md e workflow nativi in cinese per documentazione, review, scrittura, accademia, fintech, pianificazione prodotto e DevOps.",
+    chineseHubCount: "Skills native in cinese",
+    chineseHubCallout: "",
+    install: "Installa"
+  },
+  pt: {
+    chineseHub: "Skills nativos em chinês",
+    chineseHubIntro: "Skills com SKILL.md e workflows nativos em chinês para documentação, revisão, escrita, academia, fintech, planejamento de produto e DevOps.",
+    chineseHubCount: "Skills nativos em chinês",
+    chineseHubCallout: "",
+    install: "Instalar"
+  },
+  ru: {
+    chineseHub: "Китайскоязычные Skills",
+    chineseHubIntro: "Skills с китайскоязычными SKILL.md и workflow для документации, ревью, письма, науки, финтеха, продуктового планирования и DevOps.",
+    chineseHubCount: "Китайскоязычные Skills",
+    chineseHubCallout: "",
+    install: "Установка"
+  },
+  ar: {
+    chineseHub: "Skills أصلية باللغة الصينية",
+    chineseHubIntro: "Skills بملفات SKILL.md وسير عمل أصلية باللغة الصينية للتوثيق والمراجعة والكتابة والبحث والتقنية المالية وتخطيط المنتج وDevOps.",
+    chineseHubCount: "Skills أصلية بالصينية",
+    chineseHubCallout: "",
+    install: "التثبيت"
+  }
+};
 
 function strings(lang) {
-  return ui[lang] ?? ui.en;
-}
-
-function anchor(text) {
-  return text
-    .toLowerCase()
-    .replace(/&/g, "")
-    .replace(/[^\p{L}\p{N}\s-]/gu, "")
-    .trim()
-    .replace(/\s+/g, "-");
+  return {
+    ...ui.en,
+    ...chineseHubUi.en,
+    ...(ui[lang] ?? {}),
+    ...(chineseHubUi[lang] ?? {})
+  };
 }
 
 function readData() {
   return JSON.parse(fs.readFileSync(dataPath, "utf8"));
 }
 
-function currentDate() {
-  return new Date().toISOString().slice(0, 10);
-}
-
 function writeData(data) {
   fs.writeFileSync(dataPath, `${JSON.stringify(data, null, 2)}\n`, "utf8");
 }
 
-function languageSwitcher(activeCode, availableCodes) {
-  return languages
-    .filter((lang) => availableCodes.includes(lang.code))
-    .map((lang) => {
-      const label = encodeURIComponent(lang.label).replace(/-/g, "--");
-      const badgeText = lang.code === activeCode ? lang.current : "View";
-      const color = lang.code === activeCode ? "brightgreen" : "lightgrey";
-      return `[![${lang.label}](https://img.shields.io/badge/${label}-${encodeURIComponent(badgeText)}-${color})](${lang.file})`;
-    })
-    .join(" ");
-}
-
-function renderSkill(skill, lang, t) {
-  const description = localized(skill.description, lang);
-  const popularity = localized(skill.popularity, lang);
-  const notes = localized(skill.notes, lang);
+function renderSkill(skill, langCode, t) {
+  const description = localized(skill.description, langCode);
+  const popularity = localized(skill.popularity, langCode);
+  const notes = localized(skill.notes, langCode);
   const tags = skill.tags.map((tag) => `\`${tag}\``).join(" ");
   const lines = [
     `- **[${skill.name}](${skill.url})**`,
@@ -695,23 +807,50 @@ function renderSkill(skill, lang, t) {
     `  ${t.tags}: ${tags}`,
     `  ${t.source}: ${skill.source} · ${t.popularity}: ${popularity}`
   ];
+  if (skill.install) lines.push(`  ${t.install}: \`${skill.install}\``);
   if (notes) lines.push(`  ${t.notes}: ${notes}`);
   return lines.join("  \n");
 }
 
-function renderReadme(data, lang, availableCodes) {
-  const t = strings(lang);
+function validateData(data) {
+  const categoryIds = new Set(data.categories.map((category) => category.id));
+  for (const skill of data.skills) {
+    if (!categoryIds.has(skill.category)) {
+      throw new Error(`Unknown category "${skill.category}" for skill "${skill.name}"`);
+    }
+    if (!skill.chineseHub) continue;
+    if (!skill.tags.includes("Chinese-Native")) {
+      throw new Error(`Chinese Hub skill "${skill.name}" must include the Chinese-Native tag`);
+    }
+    if (!localized(skill.description, "zh")) {
+      throw new Error(`Chinese Hub skill "${skill.name}" must include description.zh`);
+    }
+    if (!skill.url.startsWith("https://github.com/")) {
+      throw new Error(`Chinese Hub skill "${skill.name}" must use a GitHub URL`);
+    }
+    if (skill.featured === true) {
+      throw new Error(`Chinese Hub skill "${skill.name}" must not be featured`);
+    }
+  }
+}
+
+function renderReadme(data, langCode) {
+  const langMeta = languages.find((item) => item.code === langCode);
+  const t = strings(langCode);
+  const allSection = readmeAllSectionTitle(langCode);
   const categories = data.categories;
   const skills = data.skills;
   const featured = skills.filter((skill) => skill.featured);
-  const categoryById = new Map(categories.map((category) => [category.id, category]));
+  const chineseHubSkills = skills.filter((skill) => skill.chineseHub);
 
   const tocItems = [
     t.why,
     t.browse,
     t.stats,
     t.featured,
-    t.all,
+    t.chineseHub,
+    allSection,
+    t.customSkillGuide,
     t.contribute,
     t.curation,
     t.license,
@@ -726,20 +865,28 @@ function renderReadme(data, lang, availableCodes) {
     "[![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)",
     "[![GitHub stars](https://img.shields.io/github/stars/flaqai/awesome_codex_skills?style=social)](https://github.com/flaqai/awesome_codex_skills)",
     "[![Submit Skills via Issues](https://img.shields.io/badge/Submit%20Skills-via%20Issues-brightgreen.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml)",
+    t.submitChineseSkillBadge,
     "",
     `> ${t.tagline}`,
     "",
     `> ${t.notice}`,
+    ""
+  ];
+
+  if (t.chineseHubCallout) lines.push(`> ${t.chineseHubCallout}`, "");
+
+  lines.push(
+    `> **[${t.customSkillGuide} →](${langMeta.guideFile})** ${t.customSkillGuideBody}`,
     "",
     "---",
     "",
-    languageSwitcher(lang, availableCodes),
+    languageSwitcher(langCode, "readme"),
     "",
     "---",
     "",
     `## ${t.toc}`,
     ""
-  ];
+  );
 
   tocItems.forEach((item) => lines.push(`- [${item}](#${anchor(item)})`));
 
@@ -754,8 +901,8 @@ function renderReadme(data, lang, availableCodes) {
   );
 
   categories.forEach((category) => {
-    const name = localized(category.name, lang);
-    const description = localized(category.description, lang);
+    const name = localized(category.name, langCode);
+    const description = localized(category.description, langCode);
     lines.push(`- [${name}](#${anchor(name)}) - ${description}`);
   });
 
@@ -767,6 +914,7 @@ function renderReadme(data, lang, availableCodes) {
     "|---|---:|",
     `| ${t.totalSkills} | ${skills.length} |`,
     `| ${t.categories} | ${categories.length} |`,
+    `| ${t.chineseHubCount} | ${chineseHubSkills.length} |`,
     `| ${t.lastUpdated} | ${data.updatedAt} |`,
     "",
     `## ${t.featured}`,
@@ -774,23 +922,33 @@ function renderReadme(data, lang, availableCodes) {
   );
 
   featured.forEach((skill) => {
-    lines.push(renderSkill(skill, lang, t), "");
+    lines.push(renderSkill(skill, langCode, t), "");
   });
 
-  lines.push(`## ${t.all}`, "");
+  lines.push(`## ${t.chineseHub}`, "", t.chineseHubIntro, "");
+
+  chineseHubSkills.forEach((skill) => {
+    lines.push(renderSkill(skill, langCode, t), "");
+  });
+
+  lines.push(`## ${allSection}`, "");
 
   categories.forEach((category) => {
-    const categorySkills = skills.filter((skill) => skill.category === category.id);
+    const categorySkills = skills.filter((skill) => skill.category === category.id && !skill.chineseHub);
     if (!categorySkills.length) return;
-    const name = localized(category.name, lang);
-    const description = localized(category.description, lang);
+    const name = localized(category.name, langCode);
+    const description = localized(category.description, langCode);
     lines.push(`### ${name}`, "", description, "");
     categorySkills.forEach((skill) => {
-      lines.push(renderSkill(skill, lang, t), "");
+      lines.push(renderSkill(skill, langCode, t), "");
     });
   });
 
   lines.push(
+    `## ${t.customSkillGuide}`,
+    "",
+    `- **[${t.customSkillGuide} →](${langMeta.guideFile})** — ${t.customSkillGuideBody}`,
+    "",
     `## ${t.contribute}`,
     "",
     ...t.contributeBody.map((line) => `- ${line}`),
@@ -813,12 +971,6 @@ function renderReadme(data, lang, availableCodes) {
     ""
   );
 
-  for (const skill of skills) {
-    if (!categoryById.has(skill.category)) {
-      throw new Error(`Unknown category "${skill.category}" for skill "${skill.name}"`);
-    }
-  }
-
   return lines.join("\n");
 }
 
@@ -829,20 +981,20 @@ function targetLanguages() {
 
 function writeReadmes({ check = false } = {}) {
   const data = readData();
-  const today = currentDate();
-  const renderData = { ...data, updatedAt: today };
+  validateData(data);
+  const today = currentDateInTimeZone();
+  const renderData = check ? data : { ...data, updatedAt: today };
   const targets = targetLanguages();
 
   let changed = false;
   for (const code of targets) {
     const lang = languages.find((item) => item.code === code);
-    const allCodes = languages.map((l) => l.code);
-    const output = renderReadme(renderData, code, allCodes);
+    const output = renderReadme(renderData, code);
     const outPath = path.join(rootDir, lang.file);
     const existing = fs.existsSync(outPath) ? fs.readFileSync(outPath, "utf8") : "";
     if (check) {
       if (existing !== output) {
-        console.error(`${lang.file} is out of date. Run npm run generate:readme:all.`);
+        console.error(`${lang.file} is out of date. Run npm run generate:all.`);
         changed = true;
       }
     } else {

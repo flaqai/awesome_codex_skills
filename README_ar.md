@@ -5,10 +5,13 @@
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 [![GitHub stars](https://img.shields.io/github/stars/flaqai/awesome_codex_skills?style=social)](https://github.com/flaqai/awesome_codex_skills)
 [![Submit Skills via Issues](https://img.shields.io/badge/Submit%20Skills-via%20Issues-brightgreen.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml)
+[![إرسال Skill صيني](https://img.shields.io/badge/%D8%A5%D8%B1%D8%B3%D8%A7%D9%84%20Skill%20%D8%B5%D9%8A%D9%86%D9%8A-via%20Issues-orange.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml)
 
 > قائمة awesome منتقاة ومتعددة اللغات لمهارات Codex العملية للإبداع والبرمجة والأتمتة والمستندات وسير العمل المتخصص.
 
 > تُجمع Skills من أدلة ومستودعات عامة لأغراض الاكتشاف والتعلم. إذا كان الرابط معطلاً أو يجب حذف إدخال، افتح issue.
+
+> **[دليل Custom Skill →](GUIDE_ar.md)** تعلّم كيفية إنشاء وتعديل وتثبيت Codex Skills الخاصة بك.
 
 ---
 
@@ -22,7 +25,9 @@
 - [تصفح حسب الفئة](#تصفح-حسب-الفئة)
 - [إحصائيات](#إحصائيات)
 - [Skills مميزة](#skills-مميزة)
+- [Skills أصلية باللغة الصينية](#skills-أصلية-باللغة-الصينية)
 - [كل Skills](#كل-skills)
+- [دليل Custom Skill](#دليل-custom-skill)
 - [كيفية المساهمة](#كيفية-المساهمة)
 - [معايير الاختيار](#معايير-الاختيار)
 - [الترخيص](#الترخيص)
@@ -48,9 +53,10 @@
 
 | Metric | Count |
 |---|---:|
-| إجمالي Skills | 26 |
+| إجمالي Skills | 87 |
 | الفئات | 8 |
-| آخر تحديث | 2026-07-07 |
+| Skills أصلية بالصينية | 20 |
+| آخر تحديث | 2026-07-08 |
 
 ## Skills مميزة
 
@@ -111,6 +117,185 @@
   الوسوم: `Security` `Review` `Engineering`  
   المصدر: GitHub openai/skills · الشعبية: Official OpenAI curated skill from the openai/skills repository.
 
+- **[Playwright Interactive](https://github.com/openai/skills/tree/main/skills/.curated/playwright-interactive)**  
+  مهارة أتمتة متصفح تفاعلية بـ Playwright للتنقل والتفاعل مع العناصر واللقطات والتحقق من الواجهة.  
+  الوسوم: `Browser` `Playwright` `Testing`  
+  المصدر: GitHub openai/skills · الشعبية: مهارة curated رسمية من مستودع openai/skills（~23.3k stars）.
+
+- **[Figma Generate Design](https://github.com/openai/skills/tree/main/skills/.curated/figma-generate-design)**  
+  ينشئ مفاهيم تصميم Figma وتخطيطات ومكونات وأنظمة بصرية من متطلبات المنتج.  
+  الوسوم: `Figma` `Design` `UI`  
+  المصدر: GitHub openai/skills · الشعبية: مهارة curated رسمية من مستودع openai/skills（~23.3k stars）.
+
+- **[OpenAI Docs](https://github.com/openai/skills/tree/main/skills/.curated/openai-docs)**  
+  يساعد Codex على تصفح وثائق OpenAI ومراجع API واستخدام SDK وأنماط التكامل.  
+  الوسوم: `OpenAI` `Documentation` `API`  
+  المصدر: GitHub openai/skills · الشعبية: مهارة curated رسمية من مستودع openai/skills（~23.3k stars）.
+
+- **[Web Design Guidelines](https://orangebot.ai/s/web-design-guidelines)**  
+  يرشد قرارات تصميم الويب للتخطيط والطباعة والألوان وإمكانية الوصول وواجهات responsive.  
+  الوسوم: `Web Design` `UI` `UX`  
+  المصدر: OrangeBot · الشعبية: OrangeBot يعرض 206.0k weekly installs و24.0k stars.
+
+- **[Brainstorming](https://orangebot.ai/s/brainstorming)**  
+  عصف ذهني منظم لأفكار المنتجات والميزات والحملات وحل المشكلات الإبداعي.  
+  الوسوم: `Ideation` `Planning` `Creativity`  
+  المصدر: OrangeBot · الشعبية: OrangeBot يعرض 77.2k weekly installs و118.4k stars.
+
+- **[Browser Use](https://orangebot.ai/s/browser-use)**  
+  مهارة browser-use للتصفح الذاتي وملء النماذج واستخراج البيانات والتصفح الموجّه بالوكيل.  
+  الوسوم: `Browser` `Automation` `Agent`  
+  المصدر: OrangeBot · الشعبية: OrangeBot يعرض 57.4k weekly installs و84.8k stars.
+
+- **[ImageGen](https://skillsmp.com/zh/creators/openai/skills/skills-system-imagegen)**  
+  مهارة توليد صور OpenAI للمطالبات والأنماط والتعديلات والت variations وأصول الصور.  
+  الوسوم: `Image` `Generation` `OpenAI`  
+  المصدر: SkillsMP · الشعبية: SkillsMP يعرض 23,095 stars و1,565 forks.
+
+## Skills أصلية باللغة الصينية
+
+Skills بملفات SKILL.md وسير عمل أصلية باللغة الصينية للتوثيق والمراجعة والكتابة والبحث والتقنية المالية وتخطيط المنتج وDevOps.
+
+- **[Chinese Documentation](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-documentation)**  
+  معايير تنسيق وكتابة الوثائق الصينية، وتشمل المسافات بين الصينية والإنجليزية، وعلامات الترقيم، والمصطلحات، والروابط، وقابلية قراءة المحتوى التقني.  
+  الوسوم: `Chinese-Native` `Documentation` `Technical Writing`  
+  المصدر: SkillsMP · الشعبية: SkillsMP يبلغ عن نحو 6,213 stars لـ jnMetaCode/superpowers-zh.  
+  التثبيت: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-documentation -a codex -g`  
+  ملاحظات: مرجع الدليل: SkillsMP Chinese Documentation. راجع ترخيص المستودع قبل التثبيت المسبق.
+
+- **[Chinese Commit Conventions](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-commit-conventions)**  
+  دليل هندسي صيني لفِرق التطوير يشمل Conventional Commits وchangelog وcommitlint وHusky وCommitizen.  
+  الوسوم: `Chinese-Native` `Git` `DevOps`  
+  المصدر: SkillsMP · الشعبية: SkillsMP يبلغ عن نحو 6,213 stars للمستودع المصدر.  
+  التثبيت: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-commit-conventions -a codex -g`  
+  ملاحظات: مفيد لتوحيد سير عمل الفريق؛ لكن يجب مراجعة رسائل الالتزام المُولَّدة وفق قواعد المشروع قبل الإرسال.
+
+- **[Chinese Code Review](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-code-review)**  
+  قوالب تواصل لمراجعة الكود بالصينية تشمل تصنيفات الشدة وصياغات المراجعة وأنماط التعاون.  
+  الوسوم: `Chinese-Native` `Code Review` `Collaboration`  
+  المصدر: SkillsMP · الشعبية: SkillsMP يبلغ عن نحو 6,213 stars للمستودع المصدر.  
+  التثبيت: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-code-review -a codex -g`  
+  ملاحظات: يجب أن تستند نتائج المراجعة إلى فروقات حقيقية ونتائج اختبارات فعلية.
+
+- **[Deep Research ZH](https://github.com/LeoYeAI/openclaw-master-skills/tree/main/skills/deep-research-zh)**  
+  سير عمل بحث عميق بالصينية للبحث الصناعي وتحليل المنافسين وأبحاث السياسات وإخراج PDF والتسليم الآلي.  
+  الوسوم: `Chinese-Native` `Research` `Reports`  
+  المصدر: SkillsMP · الشعبية: SkillsMP يبلغ عن نحو 2,076 stars لـ LeoYeAI/openclaw-master-skills.  
+  التثبيت: `npx skills add https://github.com/LeoYeAI/openclaw-master-skills --skill deep-research-zh -a codex -g`  
+  ملاحظات: قبل التثبيت المسبق، يجب مراجعة تبعيات Tavily وFeishu وسكربتات PDF وإتاحة الشبكة ومفاتيح API.
+
+- **[Quant Trader Daily](https://github.com/LeoYeAI/openclaw-master-skills/tree/main/skills/trader-daily)**  
+  سير عمل يومي بالصينية للتداول الكمي يشمل مراقبة المراكز وتنبيهات المخاطر والتقارير وسجل التداول.  
+  الوسوم: `Chinese-Native` `Finance` `Quant`  
+  المصدر: SkillsMP · الشعبية: SkillsMP يبلغ عن نحو 2,076 stars للمستودع المصدر.  
+  التثبيت: `npx skills add https://github.com/LeoYeAI/openclaw-master-skills --skill trader-daily -a codex -g`  
+  ملاحظات: مجال مالي. ليس نصيحة استثمارية؛ ويتطلب مراجعة امتثال قبل الاستخدام أو التثبيت المسبق.
+
+- **[ZH Code Reviewer](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-code-reviewer)**  
+  خبير مراجعة كود بالصينية يقدّم نتائج منظمة حول الصحة والجودة والأداء والأمان والتصميم.  
+  الوسوم: `Chinese-Native` `Code Review` `Quality`  
+  المصدر: SkillsMP · الشعبية: SkillsMP يبلغ عن نحو 504 stars لـ laolaoshiren/claude-code-skills-zh.  
+  التثبيت: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-code-reviewer -a codex -g`  
+  ملاحظات: يُستخدم كمساعد للمراجعة فقط؛ ويجب على المشرفين التحقق من النتائج قبل الدمج.
+
+- **[ZH README](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-readme)**  
+  يحلّل المشروع وينشئ README صينيًا عالي الجودة مناسبًا للمشاريع مفتوحة المصدر والأدوات الداخلية ومنتجات الذكاء الاصطناعي.  
+  الوسوم: `Chinese-Native` `README` `Developer Experience`  
+  المصدر: SkillsMP · الشعبية: SkillsMP يبلغ عن نحو 504 stars للمستودع المصدر.  
+  التثبيت: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-readme -a codex -g`  
+  ملاحظات: يجب مراجعة الوثائق المُولَّدة من حيث أوامر التثبيت ونص الترخيص والادعاءات الخاصة بالمشروع.
+
+- **[ZH Docgen](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-docgen)**  
+  ينشئ وثائق تقنية صينية من قاعدة الشيفرة، بما يشمل توثيق API وتصميم الوحدات وأدلة التشغيل.  
+  الوسوم: `Chinese-Native` `Documentation` `Codebase`  
+  المصدر: SkillsMP · الشعبية: SkillsMP يبلغ عن نحو 504 stars للمستودع المصدر.  
+  التثبيت: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-docgen -a codex -g`  
+  ملاحظات: يجب مراجعة الوثائق المُولَّدة وفق الحالة الفعلية الحالية للمستودع.
+
+- **[De-AI Writing](https://github.com/OUBIGFA/De-AI-Prompt-Enhancer-Writer-Booster-SKILL)**  
+  سير عمل صيني لإعادة الصياغة والتحرير والترجمة والمراجعة بهدف تقليل العبارات القالبية والأسلوب الشبيه بالنصوص المولدة بالذكاء الاصطناعي.  
+  الوسوم: `Chinese-Native` `Writing` `Humanization`  
+  المصدر: SkillsMP · الشعبية: SkillsMP يبلغ عن نحو 488 stars للمستودع المصدر.  
+  التثبيت: `npx skills add https://github.com/OUBIGFA/De-AI-Prompt-Enhancer-Writer-Booster-SKILL -a codex -g`  
+  ملاحظات: في السياقات الأكاديمية أو المقيدة بسياسات، يلزم فحص النزاهة؛ ولا يجوز استخدامه للتحايل على سياسات الكشف.
+
+- **[Chinese Writing](https://github.com/miantiao-me/aigc-weekly)**  
+  دليل كتابة صيني للنشرات والمدونات والمقالات التقنية يركز على الوضوح والطابع الإنساني وتقليل الأسلوب الآلي.  
+  الوسوم: `Chinese-Native` `Writing` `Newsletter`  
+  المصدر: SkillsMP · الشعبية: SkillsMP يبلغ عن نحو 544 stars لـ miantiao-me/aigc-weekly.  
+  التثبيت: `npx skills add https://github.com/miantiao-me/aigc-weekly --skill chinese-writing -a codex -g`  
+  ملاحظات: نظرًا لاحتمال تغيّر مسار الفهرسة العام، يُستخدم هنا المستودع الرئيسي كمصدر.
+
+- **[Tech Doc Style Chinese](https://github.com/Fenng/Tech-Doc-Style-Chinese)**  
+  أسلوب كتابة تقني صيني دقيق ومقتصد يغطي نصوص المنتج ووثائق API والمصطلحات وعلامات الترقيم والكتابة سهلة المسح.  
+  الوسوم: `Chinese-Native` `Technical Writing` `Style Guide`  
+  المصدر: SkillsMP · الشعبية: SkillsMP يبلغ عن نحو 365 stars لـ Fenng/Tech-Doc-Style-Chinese.  
+  التثبيت: `npx skills add https://github.com/Fenng/Tech-Doc-Style-Chinese -a codex -g`  
+  ملاحظات: يُستخدم كدليل تحريري؛ ويجب الإبقاء على literals الشيفرة ومسارات API والنصوص القانونية كما هي.
+
+- **[LaTeX Thesis ZH](https://github.com/bahayonghang/academic-writing-skills/tree/main/academic-writing-skills/latex-thesis-zh)**  
+  مساعد صيني لرسائل LaTeX يغطي تشخيص التجميع ومراجع GB/T 7714 وبنية الفصول والمعادلات واتساق المصطلحات.  
+  الوسوم: `Chinese-Native` `LaTeX` `Academic`  
+  المصدر: SkillsMP · الشعبية: SkillsMP يبلغ عن نحو 365 stars لـ bahayonghang/academic-writing-skills.  
+  التثبيت: `npx skills add https://github.com/bahayonghang/academic-writing-skills --skill latex-thesis-zh -a codex -g`  
+  ملاحظات: الكتابة الأكاديمية تتطلب الالتزام بسياسات المؤسسة والتحقق اليدوي من الاستشهادات.
+
+- **[Paper Write](https://github.com/xstongxue/best-skills/tree/main/skills/paper-write)**  
+  سير عمل صيني لكتابة رسائل البكالوريوس والماجستير يدعم المخطط والبنية والمراجع والتحرير والتوسيع والاختصار والترجمة.  
+  الوسوم: `Chinese-Native` `Academic` `Writing`  
+  المصدر: SkillsCat · الشعبية: SkillsCat يبلغ عن نحو 2,149 stars لـ xstongxue/best-skills.  
+  التثبيت: `npx skillscat add xstongxue/best-skills/paper-write`  
+  ملاحظات: قبل الاستخدام يجب مراجعة النزاهة الأكاديمية ودقة الاستشهادات.
+
+- **[Humanize Chinese](https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/main/skills/49-voidborne-d-humanize-chinese)**  
+  سير عمل صيني لأنسنة نصوص الذكاء الاصطناعي وكشفها، يتضمن قواعد وسمات إحصائية وأنماط إعادة صياغة أكاديمية.  
+  الوسوم: `Chinese-Native` `Writing` `Academic`  
+  المصدر: SkillsCat · الشعبية: SkillsCat يبلغ عن نحو 2,677 stars لـ brycewang-stanford/auto-empirical-research-skills.  
+  التثبيت: `npx skillscat add brycewang-stanford/auto-empirical-research-skills/humanize-chinese`  
+  ملاحظات: حساسية امتثال مرتفعة؛ ويُحظر استخدامه للتحايل على سياسات الكشف الأكاديمية أو سياسات المنصات.
+
+- **[EconFin Idea Finder ZH](https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/main/skills/67-econfin-workflow-toolkit)**  
+  أداة صينية بأسلوب القمع لاكتشاف أفكار بحث الاقتصاد والتمويل المؤسسي، وتوليد الفرضيات ومجموعات البيانات وخطط البحث التجريبي.  
+  الوسوم: `Chinese-Native` `Finance` `Research`  
+  المصدر: SkillsCat · الشعبية: SkillsCat يبلغ عن نحو 2,677 stars للمستودع المصدر.  
+  التثبيت: `npx skillscat add brycewang-stanford/auto-empirical-research-skills/econfin-idea-finder`  
+  ملاحظات: مجال مالي وبحثي؛ ويتطلب مراجعة امتثال والتحقق من المصادر.
+
+- **[Boss](https://github.com/echovic/boss-skill)**  
+  سير عمل صيني لتسليم البرمجيات بأسلوب BMAD متعدد الوكلاء، يغطي PM والهندسة المعمارية والتصميم والتطوير وQA وDevOps.  
+  الوسوم: `Chinese-Native` `Multi-Agent` `Project Management`  
+  المصدر: SkillsCat · الشعبية: صفحة SkillsCat العامة متاحة；المستودع المصدر نحو 550 stars.  
+  التثبيت: `npx skillscat add echovic/boss-skill`  
+  ملاحظات: يصنّف SkillsCat المخاطر الأمنية على أنها متوسطة؛ وقبل التثبيت المسبق يجب مراجعة الأتمتة وتنفيذ الأوامر وكتابة الملفات وتنسيق الوكلاء.
+
+- **[Requirement Analyst](https://github.com/CaoMeiYouRen/momei/tree/master/.github/skills/requirement-analyst)**  
+  مهارة تحليل متطلبات بالصينية لتوضيح المتطلبات واستخراج نية المستخدم ومواءمة خارطة الطريق وتقييم الأولويات.  
+  الوسوم: `Chinese-Native` `Requirements` `Product`  
+  المصدر: SkillMD.ai · الشعبية: SkillMD.ai يبلغ عن 1,483 مشاهدة و265 تنزيلًا；مسار GitHub عام.  
+  التثبيت: `npx skills add https://github.com/CaoMeiYouRen/momei --skill requirement-analyst -a codex -g`  
+  ملاحظات: مرجع الدليل: SkillMD.ai Requirement Analyst. يجب التحقق من فرضيات المنتج مع أصحاب المصلحة.
+
+- **[OB](https://github.com/NeverSight/learn-skills.dev/blob/main/data/skills-md/aibangjuxin/knowledge/ob/SKILL.md)**  
+  مهارة معمارية صينية لتهيئة منصة GCP API، تشمل GitOps وPipelines وFirestore وBigQuery وتصميم نشر قابل للتدقيق.  
+  الوسوم: `Chinese-Native` `DevOps` `GCP`  
+  المصدر: SkillMD.ai · الشعبية: SkillMD.ai يبلغ عن 1,178 مشاهدة و309 تنزيلات；AgentSkill API يشير إلى GitHub عام.  
+  التثبيت: `npx skills add https://github.com/NeverSight/learn-skills.dev --skill ob -a codex -g`  
+  ملاحظات: مجال مؤسسي متخصص في GCP؛ وقبل التثبيت المسبق يجب مراجعة صلاحيات السحابة وإجراءات الـPipeline وإرشادات التراجع.
+
+- **[NSFC Abstract](https://github.com/huangwb8/ChineseResearchLaTeX)**  
+  مساعد ملخصات صيني-إنجليزي لمنح NSFC يدعم الملخص الصيني المنظّم والترجمة الإنجليزية الأمينة واقتراح العنوان وفحص الطول.  
+  الوسوم: `Chinese-Native` `Academic` `Grant`  
+  المصدر: Skills Directory · الشعبية: Skills Directory يبلغ عن المستودع المصدر ~1,626 stars وتقييم أمان A.  
+  التثبيت: `npx skills add https://github.com/huangwb8/ChineseResearchLaTeX -a codex -g`  
+  ملاحظات: تتطلب كتابة طلبات المنح مراجعة خبراء المجال والالتزام الصارم بقواعد التقديم.
+
+- **[Paper Translation](https://github.com/APLaS-Plus/paper-translation)**  
+  سير عمل لترجمة PDF الأكاديمي إلى Markdown صيني باستخدام MinerU مع الحفاظ على المعادلات والصور والجداول والشفرة والمصطلحات.  
+  الوسوم: `Chinese-Native` `Translation` `Academic`  
+  المصدر: Skills Directory · الشعبية: صفحة Skills Directory العامة متاحة وتعرض تقييم أمان A.  
+  التثبيت: `npx skills add https://github.com/APLaS-Plus/paper-translation -a codex -g`  
+  ملاحظات: يتطلب MinerU API Token؛ ويجب مراجعة مخاطر الرفع الخارجي والخصوصية وحقوق النشر ودقة الترجمة.
+
 ## كل Skills
 
 ### أدوات الوكلاء
@@ -127,6 +312,31 @@
   مهارة فوقية لتحويل سير عمل الفريق المتكرر إلى أصول SKILL.md قابلة لإعادة الاستخدام.  
   الوسوم: `Skill Authoring` `SKILL.md` `Workflow`  
   المصدر: OrangeBot · الشعبية: 112.1k weekly installs, 21,445 stars, 1,698 forks on OrangeBot.
+
+- **[Project Planner](https://orangebot.ai/s/project-planner)**  
+  يقسم المهام المعقدة وخطط المحتوى والميزات أو الحملات إلى مراحل وخطوات ومخاطر ومخرجات.  
+  الوسوم: `Planning` `Project Management` `Workflow`  
+  المصدر: OrangeBot · الشعبية: صفحة Skill على OrangeBot تعرض weekly installs وstars وforks.
+
+- **[Eve](https://skills.cat/skills/vercel/eve)**  
+  مهارة إطار Vercel AI Agent لبناء تطبيقات AI-native وbackend وfrontend ونماذج أولية قابلة للنشر.  
+  الوسوم: `AI Agent` `Vercel` `SaaS`  
+  المصدر: SkillsCat · الشعبية: صفحة SkillsCat قابلة للبحث مع مصدر GitHub وCLI install.
+
+- **[CLI Creator](https://github.com/openai/skills/tree/main/skills/.curated/cli-creator)**  
+  ينشئ أدوات CLI مع تحليل الوسائط ونص المساعدة والأوامر الفرعية وتجربة مناسبة للمطورين.  
+  الوسوم: `CLI` `Terminal` `Tooling`  
+  المصدر: GitHub openai/skills · الشعبية: مهارة curated رسمية من مستودع openai/skills（~23.3k stars）.
+
+- **[Brainstorming](https://orangebot.ai/s/brainstorming)**  
+  عصف ذهني منظم لأفكار المنتجات والميزات والحملات وحل المشكلات الإبداعي.  
+  الوسوم: `Ideation` `Planning` `Creativity`  
+  المصدر: OrangeBot · الشعبية: OrangeBot يعرض 77.2k weekly installs و118.4k stars.
+
+- **[Writing Plans](https://orangebot.ai/s/writing-plans)**  
+  يكتب خطط تنفيذ منظمة ومواصفات وتقسيم مهام وخرائط طريق للتنفيذ.  
+  الوسوم: `Planning` `Writing` `Workflow`  
+  المصدر: OrangeBot · الشعبية: OrangeBot يعرض 41.4k weekly installs و118.4k stars.
 
 ### البرمجة والواجهات الأمامية
 
@@ -157,6 +367,78 @@
   الوسوم: `Repository` `Codebase` `Explanation`  
   المصدر: OrangeBot · الشعبية: 27.4k weekly installs, 3,285 stars, 495 forks on OrangeBot.
 
+- **[Next.js Master](https://www.skillsdirectory.com/skills/fratilanico-nextjs-master)**  
+  مهارة Next.js لتطوير هيكل التطبيق ومسارات API والمكونات والنشر وأفضل الممارسات.  
+  الوسوم: `Next.js` `React` `Frontend`  
+  المصدر: Skills Directory · الشعبية: صفحة Skills Directory عامة مع الشعبية وتقييم الأمان وإشارات الاستخدام.
+
+- **[Figma Generate Design](https://github.com/openai/skills/tree/main/skills/.curated/figma-generate-design)**  
+  ينشئ مفاهيم تصميم Figma وتخطيطات ومكونات وأنظمة بصرية من متطلبات المنتج.  
+  الوسوم: `Figma` `Design` `UI`  
+  المصدر: GitHub openai/skills · الشعبية: مهارة curated رسمية من مستودع openai/skills（~23.3k stars）.
+
+- **[Figma Implement Design](https://github.com/openai/skills/tree/main/skills/.curated/figma-implement-design)**  
+  يحوّل تصاميم Figma إلى كود frontend وهياكل مكونات وأنظمة تباعد وملاحظات تنفيذ.  
+  الوسوم: `Figma` `Design` `Frontend`  
+  المصدر: GitHub openai/skills · الشعبية: مهارة curated رسمية من مستودع openai/skills（~23.3k stars）.
+
+- **[OpenAI Docs](https://github.com/openai/skills/tree/main/skills/.curated/openai-docs)**  
+  يساعد Codex على تصفح وثائق OpenAI ومراجع API واستخدام SDK وأنماط التكامل.  
+  الوسوم: `OpenAI` `Documentation` `API`  
+  المصدر: GitHub openai/skills · الشعبية: مهارة curated رسمية من مستودع openai/skills（~23.3k stars）.
+
+- **[GitHub Fix CI](https://github.com/openai/skills/tree/main/skills/.curated/gh-fix-ci)**  
+  يشخّص ويصلح فشل CI ومشاكل إعداد سير العمل وأخطاء الاختبار ومشاكل خط أنابيب البناء.  
+  الوسوم: `CI` `GitHub` `DevOps`  
+  المصدر: GitHub openai/skills · الشعبية: مهارة curated رسمية من مستودع openai/skills（~23.3k stars）.
+
+- **[GitHub Address Comments](https://github.com/openai/skills/tree/main/skills/.curated/gh-address-comments)**  
+  يعالج تعليقات مراجعة PR والتغييرات المقترحة وملاحظات المراجعين بشكل منظم.  
+  الوسوم: `GitHub` `Code Review` `PR`  
+  المصدر: GitHub openai/skills · الشعبية: مهارة curated رسمية من مستودع openai/skills（~23.3k stars）.
+
+- **[GitHub CLI](https://crossaitools.com/skills/github/awesome-copilot/gh-cli)**  
+  مهارة مرجعية لـ GitHub CLI لإدارة المستودعات وIssues وPull Requests وActions والمشاريع والإصدارات وGists وCodespaces والمؤسسات من الطرفية.  
+  الوسوم: `GitHub` `CLI` `Repository`  
+  المصدر: Cross AI Tools · الشعبية: إدراج Cross AI Tools لـ github/awesome-copilot؛ يعرض GitHub نحو 36,306 stars و4,522 forks.  
+  التثبيت: `npx skills add https://github.com/github/awesome-copilot --skill gh-cli -a codex -g`  
+  ملاحظات: يتطلب معرفة GitHub CLI وقد يحتاج إلى مصادقة GitHub أو رموز وصول؛ راجع الصلاحيات قبل تشغيل أوامر تعدّل المستودعات أو Issues أو Pull Requests.
+
+- **[Cloudflare Deploy](https://github.com/openai/skills/tree/main/skills/.curated/cloudflare-deploy)**  
+  ينشر التطبيقات والمواقع الثابتة على Cloudflare Workers وPages والبنية edge.  
+  الوسوم: `Cloudflare` `Deployment` `DevOps`  
+  المصدر: GitHub openai/skills · الشعبية: مهارة curated رسمية من مستودع openai/skills（~23.3k stars）.
+
+- **[Netlify Deploy](https://github.com/openai/skills/tree/main/skills/.curated/netlify-deploy)**  
+  ينشر تطبيقات frontend وصفحات الهبوط والنماذج الأولية على Netlify مع إرشادات البناء والتوجيه.  
+  الوسوم: `Netlify` `Deployment` `DevOps`  
+  المصدر: GitHub openai/skills · الشعبية: مهارة curated رسمية من مستودع openai/skills（~23.3k stars）.
+
+- **[Sentry](https://github.com/openai/skills/tree/main/skills/.curated/sentry)**  
+  يدمج Sentry لمراقبة الأخطاء وتتبع الأداء والإصدارات وتصحيح الحوادث.  
+  الوسوم: `Sentry` `Monitoring` `Errors`  
+  المصدر: GitHub openai/skills · الشعبية: مهارة curated رسمية من مستودع openai/skills（~23.3k stars）.
+
+- **[Web Design Guidelines](https://orangebot.ai/s/web-design-guidelines)**  
+  يرشد قرارات تصميم الويب للتخطيط والطباعة والألوان وإمكانية الوصول وواجهات responsive.  
+  الوسوم: `Web Design` `UI` `UX`  
+  المصدر: OrangeBot · الشعبية: OrangeBot يعرض 206.0k weekly installs و24.0k stars.
+
+- **[Systematic Debugging](https://orangebot.ai/s/systematic-debugging)**  
+  سير عمل تصحيح منظم لإعادة إنتاج الأخطاء وعزل الأسباب والتحقق من الإصلاحات ومنع التراجع.  
+  الوسوم: `Debugging` `Engineering` `Troubleshooting`  
+  المصدر: OrangeBot · الشعبية: OrangeBot يعرض 42.5k weekly installs و118.4k stars.
+
+- **[Next Best Practices](https://orangebot.ai/s/next-best-practices)**  
+  أفضل ممارسات Next.js للتوجيه وجلب البيانات وأنماط العرض والأداء والجاهزية للإنتاج.  
+  الوسوم: `Next.js` `Best Practices` `Frontend`  
+  المصدر: OrangeBot · الشعبية: OrangeBot يعرض 46.4k weekly installs و778 stars.
+
+- **[Supabase Postgres Best Practices](https://orangebot.ai/s/supabase-postgres-best-practices)**  
+  أفضل ممارسات Supabase وPostgres لتصميم المخطط وRLS والاستعلامات والترحيل وسير عمل البيانات.  
+  الوسوم: `Supabase` `Postgres` `Database`  
+  المصدر: OrangeBot · الشعبية: OrangeBot يعرض 54.0k weekly installs و1.7k stars.
+
 ### الإبداع والوسائط
 
 مهارات إبداعية للصور والصوت والفيديو والمواد التسويقية وإنتاج الوسائط.
@@ -171,6 +453,13 @@
   أفضل ممارسات للفيديو البرمجي والموشن جرافيك وعروض المنتجات والمقاطع القصيرة الآلية وفيديوهات البيانات باستخدام React.  
   الوسوم: `Video` `React` `Remotion`  
   المصدر: OrangeBot · الشعبية: 181.8k weekly installs, 867 stars, 24 forks on OrangeBot.
+
+- **[HyperFrames](https://github.com/heygen-com/hyperframes/blob/main/skills/hyperframes/SKILL.md)**  
+  مهارة دخول لـ HyperFrames، وهو إطار HTML-to-video يوجّه سير عمل الفيديو والرسوم المتحركة والموشن جرافيك وترويج المنتجات وتحويل المواقع إلى فيديو والترجمات والعروض التقديمية وترحيل Remotion.  
+  الوسوم: `Video` `Animation` `HTML`  
+  المصدر: GitHub · الشعبية: المستودع الرسمي heygen-com/hyperframes على GitHub مع نحو 33,674 stars و3,144 forks.  
+  التثبيت: `npx skills add heygen-com/hyperframes --skill hyperframes`  
+  ملاحظات: يتطلب سير عمل HyperFrames/skills CLI وقد يستخدم عرض المتصفح وأصول الوسائط وأدوات شبيهة بـ FFmpeg/Puppeteer وفحوصات الشبكة؛ راجع صلاحيات المشروع قبل التثبيت المسبق.
 
 - **[P Video](https://orangebot.ai/s/p-video)**  
   يحوّل النصوص الإبداعية والأصول والمعلمات إلى سير عمل قابل للتنفيذ لإنشاء الفيديو أو تحريره.  
@@ -187,6 +476,37 @@
   يحسّن الواجهات عبر رحلات المستخدم وحالات المكوّنات والتسلسل البصري وإمكانية الوصول وملاحظات التفاعل.  
   الوسوم: `UI/UX` `Design` `Product`  
   المصدر: OrangeBot · الشعبية: 85.9k weekly installs, 1,491 stars, 150 forks on OrangeBot.
+
+- **[Transcribe](https://github.com/openai/skills/tree/main/skills/.curated/transcribe)**  
+  ينسخ الصوت والكلام إلى نص للاجتماعات والمقابلات والبودكasts وسير عمل الوسائط.  
+  الوسوم: `Audio` `Transcription` `Speech`  
+  المصدر: GitHub openai/skills · الشعبية: مهارة curated رسمية من مستودع openai/skills（~23.3k stars）.
+
+- **[Speech](https://github.com/openai/skills/tree/main/skills/.curated/speech)**  
+  ينشئ كلامًا طبيعيًا من النص للتعليق الصوتي والمساعدين وإمكانية الوصول وإنتاج الوسائط.  
+  الوسوم: `TTS` `Speech` `Audio`  
+  المصدر: GitHub openai/skills · الشعبية: مهارة curated رسمية من مستودع openai/skills（~23.3k stars）.
+
+- **[AI Video Generation](https://orangebot.ai/s/ai-video-generation)**  
+  ينشئ فيديو AI من المطالبات والنصوص ولوحات القصة للتسويق ووسائل التواصل والإنتاج الإبداعي.  
+  الوسوم: `Video` `AI` `Generation`  
+  المصدر: OrangeBot · الشعبية: OrangeBot يعرض 111.3k weekly installs و235 stars.  
+  ملاحظات: يعتمد على نماذج/APIs خارجية؛ تحقق من التكلفة والمفاتيح وشروط المزود.
+
+- **[ImageGen](https://skillsmp.com/zh/creators/openai/skills/skills-system-imagegen)**  
+  مهارة توليد صور OpenAI للمطالبات والأنماط والتعديلات والت variations وأصول الصور.  
+  الوسوم: `Image` `Generation` `OpenAI`  
+  المصدر: SkillsMP · الشعبية: SkillsMP يعرض 23,095 stars و1,565 forks.
+
+- **[Canvas Design](https://skills.cat/skills/anthropics/skills/canvas-design)**  
+  مهارة تصميم Canvas للتخطيط والتركيب البصري وأنظمة التصميم والأصول الإبداعية.  
+  الوسوم: `Canvas` `Design` `Creative`  
+  المصدر: SkillsCat · الشعبية: صفحة SkillsCat قابلة للبحث مع مصدر GitHub وCLI install.
+
+- **[AI Video Editing](https://skillsmp.com/creators/arcasilesgroup/ai-engineering/codex-skills-ai-video-editing)**  
+  مهارة تحرير فيديو AI للقص والانتقالات والترجمات واقتراحات B-roll وسير عمل ما بعد الإنتاج.  
+  الوسوم: `Video` `Editing` `AI`  
+  المصدر: SkillsMP · الشعبية: SkillsMP يعرض 52 stars و3 forks.
 
 ### أتمتة المتصفح والاختبار
 
@@ -207,6 +527,16 @@
   الوسوم: `Screenshot` `UI QA` `Design`  
   المصدر: GitHub openai/skills · الشعبية: Official OpenAI curated skill from the openai/skills repository.
 
+- **[Playwright Interactive](https://github.com/openai/skills/tree/main/skills/.curated/playwright-interactive)**  
+  مهارة أتمتة متصفح تفاعلية بـ Playwright للتنقل والتفاعل مع العناصر واللقطات والتحقق من الواجهة.  
+  الوسوم: `Browser` `Playwright` `Testing`  
+  المصدر: GitHub openai/skills · الشعبية: مهارة curated رسمية من مستودع openai/skills（~23.3k stars）.
+
+- **[Browser Use](https://orangebot.ai/s/browser-use)**  
+  مهارة browser-use للتصفح الذاتي وملء النماذج واستخراج البيانات والتصفح الموجّه بالوكيل.  
+  الوسوم: `Browser` `Automation` `Agent`  
+  المصدر: OrangeBot · الشعبية: OrangeBot يعرض 57.4k weekly installs و84.8k stars.
+
 ### المستندات والعروض
 
 مهارات لملفات PDF والشرائح والتقارير والمقترحات والمستندات المنظمة.
@@ -226,6 +556,16 @@
   الوسوم: `Word` `Documents` `Reports`  
   المصدر: OrangeBot · الشعبية: 42.0k weekly installs, 4,938 stars, 353 forks on OrangeBot.
 
+- **[Notion Research Documentation](https://github.com/openai/skills/tree/main/skills/.curated/notion-research-documentation)**  
+  ينظم نتائج البحث والاستشهادات والملخصات والتوثيق المنظم في Notion.  
+  الوسوم: `Notion` `Research` `Documentation`  
+  المصدر: GitHub openai/skills · الشعبية: مهارة curated رسمية من مستودع openai/skills（~23.3k stars）.
+
+- **[PDF (OpenAI Curated)](https://github.com/openai/skills/tree/main/skills/.curated/pdf)**  
+  يقرأ ويستخرج ويلخص ويعالج ملفات PDF للتقارير والنماذج والمحتوى المنظم.  
+  الوسوم: `PDF` `Documents` `Parsing`  
+  المصدر: GitHub openai/skills · الشعبية: مهارة curated رسمية من مستودع openai/skills（~23.3k stars）.
+
 ### البيانات والتصور
 
 مهارات للرسوم البيانية والشرح المرئي والتحليلات والسرد المعتمد على البيانات.
@@ -234,6 +574,46 @@
   يساعد في إنشاء الرسوم البيانية والشرح المرئي وخرائط الطريق ومخططات البنية وسرد البيانات.  
   الوسوم: `Charts` `Visualization` `Data`  
   المصدر: OrangeBot · الشعبية: OrangeBot skill page with usage, stars, and forks metadata.
+
+- **[Quant Analyst](https://www.skillsdirectory.com/skills/benjaminastera-quant-analyst)**  
+  مهارة التحليل الكمي لبيانات السوق وعوامل الاستثمار والاختبار الرجعي ومقاييس المحفظة والنمذجة المالية.  
+  الوسوم: `Quant` `Finance` `Analysis`  
+  المصدر: Skills Directory · الشعبية: صفحة Skills Directory عامة مع الشعبية وتقييم الأمان وإشارات الاستخدام.
+
+- **[AI Volatility Prediction](https://www.skillsdirectory.com/skills/paulpas-ai-volatility-prediction)**  
+  يتنبأ بأنماط تقلب السوق باستخدام AI لتقييم المخاطر والتحوط والبحث الكمي.  
+  الوسوم: `Finance` `Risk` `ML`  
+  المصدر: Skills Directory · الشعبية: صفحة Skills Directory عامة مع الشعبية وتقييم الأمان وإشارات الاستخدام.  
+  ملاحظات: مجال مالي/مخاطر؛ يتطلب مراجعة امتثال وتنبيهات إخلاء مسؤولية واضحة.
+
+- **[Apify Ecommerce](https://skillmd.ai/skills/apify-ecommerce/)**  
+  مهارة بيانات التجارة الإلكترونية باستخدام Apify لجمع المنتجات والأسعار والمراجعات والمعلومات التنافسية.  
+  الوسوم: `Ecommerce` `Scraping` `Apify`  
+  المصدر: SkillMD.ai · الشعبية: صفحة SkillMD.ai مع بيانات التثبيت وإشارات الاستخدام.  
+  ملاحظات: يتطلب الوصول إلى الشبكة وبيانات اعتماد API خارجية.
+
+- **[AfrexAI Personal Finance](https://skillmd.ai/skills/afrexai-personal-finance/)**  
+  مهارة التمويل الشخصي للميزانية وتتبع النفقات وأهداف الادخار وتخطيط الديون وتحليل الصحة المالية.  
+  الوسوم: `Finance` `Personal Finance` `Budgeting`  
+  المصدر: SkillMD.ai · الشعبية: صفحة SkillMD.ai مع بيانات التثبيت وإشارات الاستخدام.  
+  ملاحظات: مجال مالي؛ يتطلب مراجعة امتثال وتنبيهات إخلاء مسؤولية واضحة.
+
+- **[Jupyter Notebook](https://github.com/openai/skills/tree/main/skills/.curated/jupyter-notebook)**  
+  مهارة Jupyter Notebook لاستكشاف البيانات وخلايا التحليل والتصور وسير عمل بحث قابل للتكرار.  
+  الوسوم: `Jupyter` `Notebook` `Data`  
+  المصدر: GitHub openai/skills · الشعبية: مهارة curated رسمية من مستودع openai/skills（~23.3k stars）.
+
+- **[Excel Author](https://skillsmp.com/creators/nousresearch/hermes-agent/optional-skills-finance-excel-author)**  
+  مهارة إنشاء Excel للنماذج المالية والصيغ والجداول المحورية والمخططات وجداول البيانات.  
+  الوسوم: `Excel` `Finance` `Spreadsheet`  
+  المصدر: SkillsMP · الشعبية: صفحة SkillsMP مع GitHub stars وforks وبيانات التثبيت.  
+  ملاحظات: مجال مالي؛ يتطلب مراجعة امتثال وتنبيهات إخلاء مسؤولية واضحة.
+
+- **[EconFin Idea Finder](https://skills.cat/skills/brycewang-stanford/auto-empirical-research-skills/econfin-idea-finder)**  
+  يجد أفكار بحث في الاقتصاد والمالية وفرضيات ومجموعات بيانات واتجاهات دراسة تجريبية.  
+  الوسوم: `Finance` `Research` `Economics`  
+  المصدر: SkillsCat · الشعبية: صفحة SkillsCat قابلة للبحث مع مصدر GitHub وCLI install.  
+  ملاحظات: مجال مالي/بحثي؛ يتطلب مراجعة امتثال وتنبيهات إخلاء مسؤولية واضحة.
 
 ### التسويق والنمو
 
@@ -253,6 +633,21 @@
   يكتب نصوص الإعلانات وصفحات الهبوط ورسائل المنتج والتسويق بالبريد ومنشورات التواصل ونصوص الفيديو.  
   الوسوم: `Copy` `Ads` `Content`  
   المصدر: OrangeBot · الشعبية: 49.9k weekly installs, 11,596 stars, 981 forks on OrangeBot.
+
+- **[Lottie Motion Builder](https://www.skillsdirectory.com/skills/markoblogo-lottie-motion-builder)**  
+  يحوّل المتطلبات النصية إلى حركة للجوال وحالات فارغة SaaS وحركة العلامة وGIF إعلانية وخطط رسوم متحركة.  
+  الوسوم: `Motion` `Lottie` `Animation`  
+  المصدر: Skills Directory · الشعبية: صفحة Skills Directory عامة مع الشعبية وتقييم الأمان وإشارات الاستخدام.
+
+- **[Paid Ads](https://www.skillsdirectory.com/skills/benjaminastera-paid-ads)**  
+  مهارة الإعلانات المدفوعة لهيكل الحملات والاستهداف والنصوص وتوزيع الميزانية وتحسين الأداء.  
+  الوسوم: `Ads` `PPC` `Marketing`  
+  المصدر: Skills Directory · الشعبية: صفحة Skills Directory عامة مع الشعبية وتقييم الأمان وإشارات الاستخدام.
+
+- **[Campaign Plan](https://skillsmp.com/creators/anthropics/knowledge-work-plugins/marketing-skills-campaign-plan)**  
+  مهارة تخطيط الحملات التسويقية للأهداف والقنوات والرسائل والجداول والميزانيات.  
+  الوسوم: `Marketing` `Campaign` `Planning`  
+  المصدر: SkillsMP · الشعبية: صفحة SkillsMP مع GitHub stars وforks وبيانات التثبيت.
 
 ### الصناعات والامتثال
 
@@ -279,9 +674,19 @@
   المصدر: SkillsCat · الشعبية: SkillsCat entry with stars, token metadata, and CLI install support.  
   ملاحظات: مجال عالي المخاطر؛ يتطلب مراجعة امتثال وتنبيهات إخلاء مسؤولية واضحة.
 
+- **[Security Threat Model](https://github.com/openai/skills/tree/main/skills/.curated/security-threat-model)**  
+  يبني نماذج التهديد وأسطح الهجوم والتخفيفات وقوائم مراجعة الأمان.  
+  الوسوم: `Security` `Threat Model` `Compliance`  
+  المصدر: GitHub openai/skills · الشعبية: مهارة curated رسمية من مستودع openai/skills（~23.3k stars）.
+
+## دليل Custom Skill
+
+- **[دليل Custom Skill →](GUIDE_ar.md)** — تعلّم كيفية إنشاء وتعديل وتثبيت Codex Skills الخاصة بك.
+
 ## كيفية المساهمة
 
 - افتح issue من [Submit a Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml) مع رابط صالح ووصف قصير وفئة ومصدر ودليل شعبية.
+- Skills الصينية الأصلية تستخدم قالب [Submit a Chinese-Native Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml).
 - يرجى توضيح Skills التي تتطلب API keys أو تحكمًا بالمتصفح أو تنفيذ أوامر أو مراجعة طبية/مالية/قانونية.
 
 ## معايير الاختيار
@@ -302,4 +707,4 @@
 
 ---
 
-> يتم إنشاء README هذا من `data/skills.json`. عدّل ملف البيانات ثم شغّل `npm run generate:readme`.
+> يتم إنشاء README هذا من `data/skills.json`. عدّل ملف البيانات ثم شغّل `npm run generate:all`.

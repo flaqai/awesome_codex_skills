@@ -1,0 +1,132 @@
+name: Submit a Chinese-Native Skill
+description: Share a public Chinese-native Codex skill with the community
+title: "[Chinese Skill] "
+labels: ["skill-submission", "chinese-skill"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Submit a Chinese-Native Skill
+
+        Please use this form for skills whose `SKILL.md` content and primary workflow are written for Chinese users.
+
+        By submitting, you confirm the skill is public, reachable, and useful for Codex or easy to adapt into a Codex workflow.
+
+  - type: input
+    id: name
+    attributes:
+      label: Skill Name
+      description: Stable public name of the skill
+      placeholder: "e.g., ZH Code Reviewer"
+    validations:
+      required: true
+
+  - type: input
+    id: github_url
+    attributes:
+      label: GitHub Source URL
+      description: Direct GitHub repository, folder, or SKILL.md link
+      placeholder: "https://github.com/owner/repo/tree/main/skills/example"
+    validations:
+      required: true
+
+  - type: input
+    id: directory_url
+    attributes:
+      label: Directory Page URL
+      description: Optional SkillsMP, SkillsCat, SkillMD.ai, Skills Directory, or other listing page
+      placeholder: "https://..."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Which existing category should this skill map to?
+      options:
+        - Agent Tooling
+        - Coding & Frontend
+        - Creative & Media
+        - Browser Automation & Testing
+        - Documents & Presentations
+        - Data & Visualization
+        - Marketing & Growth
+        - Industry & Compliance
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: Source Platform
+      description: Where did you find this skill?
+      placeholder: "e.g., SkillsMP, SkillsCat, SkillMD.ai, GitHub"
+    validations:
+      required: true
+
+  - type: textarea
+    id: chinese_description
+    attributes:
+      label: Chinese Description
+      description: One short paragraph describing what the skill does in Chinese
+      placeholder: "这个 Skill 用于..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: english_description
+    attributes:
+      label: English Description
+      description: Optional English summary for multilingual README generation
+      placeholder: "This skill helps Codex..."
+    validations:
+      required: false
+
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: Include Chinese-Native plus 2-3 usage tags
+      placeholder: "Chinese-Native, Code Review, Documentation"
+    validations:
+      required: true
+
+  - type: textarea
+    id: popularity
+    attributes:
+      label: Popularity Evidence
+      description: Stars, downloads, views, installs, official listing, or other public evidence
+      placeholder: "e.g., 504 GitHub stars; 265 downloads on SkillMD.ai"
+    validations:
+      required: true
+
+  - type: input
+    id: install
+    attributes:
+      label: Install Command
+      description: Optional Codex-compatible install command, if available
+      placeholder: "npx skills add https://github.com/owner/repo --skill example -a codex -g"
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Risk Notes
+      description: Required if the skill needs API keys, command execution, browser/cloud access, file writes, or touches finance, healthcare, legal, academic integrity, or other sensitive domains
+      placeholder: "Requires external API key; review network access before preinstalling."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: The link is public and reachable.
+          required: true
+        - label: The skill is useful for Codex or easy to adapt into a Codex workflow.
+          required: true
+        - label: The skill's primary content or workflow is Chinese-native.
+          required: true

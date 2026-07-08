@@ -5,10 +5,13 @@
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 [![GitHub stars](https://img.shields.io/github/stars/flaqai/awesome_codex_skills?style=social)](https://github.com/flaqai/awesome_codex_skills)
 [![Submit Skills via Issues](https://img.shields.io/badge/Submit%20Skills-via%20Issues-brightgreen.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml)
+[![Invia Skill cinese](https://img.shields.io/badge/Invia%20Skill%20cinese-via%20Issues-orange.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml)
 
 > Una lista awesome, curata e multilingue di Skill Codex pratici per creatività, coding, automazione, documenti e workflow di settore.
 
 > Gli Skill sono raccolti da directory e repository pubblici per scoperta e apprendimento. Se un link è rotto o va rimosso, apri una issue.
+
+> **[Guida Custom Skill →](GUIDE_it.md)** Impara a creare, adattare e installare i tuoi Codex Skill.
 
 ---
 
@@ -22,7 +25,9 @@
 - [Sfoglia per categoria](#sfoglia-per-categoria)
 - [Statistiche](#statistiche)
 - [Skill in evidenza](#skill-in-evidenza)
+- [Skills native in cinese](#skills-native-in-cinese)
 - [Tutti gli Skill](#tutti-gli-skill)
+- [Guida Custom Skill](#guida-custom-skill)
 - [Come contribuire](#come-contribuire)
 - [Criteri di selezione](#criteri-di-selezione)
 - [Licenza](#licenza)
@@ -48,9 +53,10 @@
 
 | Metric | Count |
 |---|---:|
-| Skill totali | 26 |
+| Skill totali | 87 |
 | Categorie | 8 |
-| Ultimo aggiornamento | 2026-07-07 |
+| Skills native in cinese | 20 |
+| Ultimo aggiornamento | 2026-07-08 |
 
 ## Skill in evidenza
 
@@ -111,6 +117,185 @@
   Tag: `Security` `Review` `Engineering`  
   Fonte: GitHub openai/skills · Popolarità: Official OpenAI curated skill from the openai/skills repository.
 
+- **[Playwright Interactive](https://github.com/openai/skills/tree/main/skills/.curated/playwright-interactive)**  
+  Skill automazione browser interattiva Playwright per navigazione, interazione, screenshot e validazione UI.  
+  Tag: `Browser` `Playwright` `Testing`  
+  Fonte: GitHub openai/skills · Popolarità: Skill curated ufficiale dal repository openai/skills（~23.3k stars）.
+
+- **[Figma Generate Design](https://github.com/openai/skills/tree/main/skills/.curated/figma-generate-design)**  
+  Genera concept design Figma, layout, componenti e sistemi visivi dai requisiti prodotto.  
+  Tag: `Figma` `Design` `UI`  
+  Fonte: GitHub openai/skills · Popolarità: Skill curated ufficiale dal repository openai/skills（~23.3k stars）.
+
+- **[OpenAI Docs](https://github.com/openai/skills/tree/main/skills/.curated/openai-docs)**  
+  Aiuta Codex a consultare documentazione OpenAI, riferimenti API, SDK e pattern di integrazione.  
+  Tag: `OpenAI` `Documentation` `API`  
+  Fonte: GitHub openai/skills · Popolarità: Skill curated ufficiale dal repository openai/skills（~23.3k stars）.
+
+- **[Web Design Guidelines](https://orangebot.ai/s/web-design-guidelines)**  
+  Guida design web per layout, tipografia, colore, accessibilità e UI responsive.  
+  Tag: `Web Design` `UI` `UX`  
+  Fonte: OrangeBot · Popolarità: OrangeBot mostra 206.0k weekly installs, 24.0k stars.
+
+- **[Brainstorming](https://orangebot.ai/s/brainstorming)**  
+  Brainstorming strutturato per idee prodotto, feature, campagne e problem solving creativo.  
+  Tag: `Ideation` `Planning` `Creativity`  
+  Fonte: OrangeBot · Popolarità: OrangeBot mostra 77.2k weekly installs, 118.4k stars.
+
+- **[Browser Use](https://orangebot.ai/s/browser-use)**  
+  Skill browser-use per navigazione autonoma, form, estrazione dati e browsing guidato da agent.  
+  Tag: `Browser` `Automation` `Agent`  
+  Fonte: OrangeBot · Popolarità: OrangeBot mostra 57.4k weekly installs, 84.8k stars.
+
+- **[ImageGen](https://skillsmp.com/zh/creators/openai/skills/skills-system-imagegen)**  
+  Skill generazione immagini OpenAI per prompt, stili, edit, variazioni e asset visivi.  
+  Tag: `Image` `Generation` `OpenAI`  
+  Fonte: SkillsMP · Popolarità: SkillsMP mostra 23,095 stars, 1,565 forks.
+
+## Skills native in cinese
+
+Skill con SKILL.md e workflow nativi in cinese per documentazione, review, scrittura, accademia, fintech, pianificazione prodotto e DevOps.
+
+- **[Chinese Documentation](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-documentation)**  
+  Linee guida cinesi per impaginazione e scrittura tecnica: spaziatura cinese/inglese, punteggiatura, terminologia, link e leggibilità.  
+  Tag: `Chinese-Native` `Documentation` `Technical Writing`  
+  Fonte: SkillsMP · Popolarità: SkillsMP riporta circa 6.213 stars per jnMetaCode/superpowers-zh.  
+  Installa: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-documentation -a codex -g`  
+  Note: Riferimento directory: SkillsMP Chinese Documentation. Verifica la licenza del repository prima della preinstallazione.
+
+- **[Chinese Commit Conventions](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-commit-conventions)**  
+  Guida per team di ingegneria su Conventional Commits in cinese, changelog, commitlint, Husky e Commitizen.  
+  Tag: `Chinese-Native` `Git` `DevOps`  
+  Fonte: SkillsMP · Popolarità: SkillsMP riporta circa 6.213 stars per il repository sorgente.  
+  Installa: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-commit-conventions -a codex -g`  
+  Note: Utile per standardizzare il workflow del team; verifica i commit generati rispetto alle regole del progetto prima del push.
+
+- **[Chinese Code Review](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-code-review)**  
+  Template di comunicazione per code review in cinese con livelli di severità, formulazioni di review e pattern collaborativi.  
+  Tag: `Chinese-Native` `Code Review` `Collaboration`  
+  Fonte: SkillsMP · Popolarità: SkillsMP riporta circa 6.213 stars per il repository sorgente.  
+  Installa: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-code-review -a codex -g`  
+  Note: Le conclusioni della review devono basarsi su diff reali e risultati dei test.
+
+- **[Deep Research ZH](https://github.com/LeoYeAI/openclaw-master-skills/tree/main/skills/deep-research-zh)**  
+  Workflow di deep research in cinese per ricerca di settore, analisi competitor, ricerca normativa, output PDF e consegna automatizzata.  
+  Tag: `Chinese-Native` `Research` `Reports`  
+  Fonte: SkillsMP · Popolarità: SkillsMP riporta circa 2.076 stars per LeoYeAI/openclaw-master-skills.  
+  Installa: `npx skills add https://github.com/LeoYeAI/openclaw-master-skills --skill deep-research-zh -a codex -g`  
+  Note: Prima della preinstallazione, verificare dipendenze Tavily, Feishu, script PDF, accesso rete e API key.
+
+- **[Quant Trader Daily](https://github.com/LeoYeAI/openclaw-master-skills/tree/main/skills/trader-daily)**  
+  Workflow quotidiano in cinese per il trading quantitativo: monitoraggio posizioni, alert rischio, report e diario di trading.  
+  Tag: `Chinese-Native` `Finance` `Quant`  
+  Fonte: SkillsMP · Popolarità: SkillsMP riporta circa 2.076 stars per il repository sorgente.  
+  Installa: `npx skills add https://github.com/LeoYeAI/openclaw-master-skills --skill trader-daily -a codex -g`  
+  Note: Dominio finanziario. Non è consulenza d'investimento; serve revisione compliance prima di uso o preinstallazione.
+
+- **[ZH Code Reviewer](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-code-reviewer)**  
+  Esperto di code review in cinese con rilievi strutturati su correttezza, qualità, performance, sicurezza e design.  
+  Tag: `Chinese-Native` `Code Review` `Quality`  
+  Fonte: SkillsMP · Popolarità: SkillsMP riporta circa 504 stars per laolaoshiren/claude-code-skills-zh.  
+  Installa: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-code-reviewer -a codex -g`  
+  Note: Usalo come supporto alla review; i maintainer devono verificare i risultati prima del merge.
+
+- **[ZH README](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-readme)**  
+  Analizza il progetto e genera README in cinese di alta qualità per open source, strumenti interni e prodotti AI.  
+  Tag: `Chinese-Native` `README` `Developer Experience`  
+  Fonte: SkillsMP · Popolarità: SkillsMP riporta circa 504 stars per il repository sorgente.  
+  Installa: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-readme -a codex -g`  
+  Note: La documentazione generata va verificata su comandi di installazione, testo licenza e affermazioni specifiche del progetto.
+
+- **[ZH Docgen](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-docgen)**  
+  Genera documentazione tecnica in cinese dal codebase, incluse docs API, design moduli e manuali operativi.  
+  Tag: `Chinese-Native` `Documentation` `Codebase`  
+  Fonte: SkillsMP · Popolarità: SkillsMP riporta circa 504 stars per il repository sorgente.  
+  Installa: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-docgen -a codex -g`  
+  Note: La documentazione generata va verificata rispetto allo stato reale corrente del repository.
+
+- **[De-AI Writing](https://github.com/OUBIGFA/De-AI-Prompt-Enhancer-Writer-Booster-SKILL)**  
+  Workflow in cinese di riscrittura, rifinitura, traduzione e revisione per ridurre frasi template e stile artificiale da AI.  
+  Tag: `Chinese-Native` `Writing` `Humanization`  
+  Fonte: SkillsMP · Popolarità: SkillsMP riporta circa 488 stars per il repository sorgente.  
+  Installa: `npx skills add https://github.com/OUBIGFA/De-AI-Prompt-Enhancer-Writer-Booster-SKILL -a codex -g`  
+  Note: In ambiti accademici o regolati serve una revisione d'integrità; non usare per aggirare policy di rilevamento.
+
+- **[Chinese Writing](https://github.com/miantiao-me/aigc-weekly)**  
+  Guida di scrittura in cinese per newsletter, blog e articoli tech, con enfasi su chiarezza, tono umano e bassa impronta AI.  
+  Tag: `Chinese-Native` `Writing` `Newsletter`  
+  Fonte: SkillsMP · Popolarità: SkillsMP riporta circa 544 stars per miantiao-me/aigc-weekly.  
+  Installa: `npx skills add https://github.com/miantiao-me/aigc-weekly --skill chinese-writing -a codex -g`  
+  Note: Poiché il percorso dell'indicizzatore pubblico può variare, qui si usa il repository principale come fonte.
+
+- **[Tech Doc Style Chinese](https://github.com/Fenng/Tech-Doc-Style-Chinese)**  
+  Stile di documentazione tecnica cinese sobrio e preciso: copy prodotto, doc API, terminologia, punteggiatura e scrittura scansionabile.  
+  Tag: `Chinese-Native` `Technical Writing` `Style Guide`  
+  Fonte: SkillsMP · Popolarità: SkillsMP riporta circa 365 stars per Fenng/Tech-Doc-Style-Chinese.  
+  Installa: `npx skills add https://github.com/Fenng/Tech-Doc-Style-Chinese -a codex -g`  
+  Note: Usalo come guida editoriale; mantieni invariati letterali di codice, path API e testi legali.
+
+- **[LaTeX Thesis ZH](https://github.com/bahayonghang/academic-writing-skills/tree/main/academic-writing-skills/latex-thesis-zh)**  
+  Assistente tesi LaTeX in cinese per diagnosi compilazione, riferimenti GB/T 7714, struttura, formule e coerenza terminologica.  
+  Tag: `Chinese-Native` `LaTeX` `Academic`  
+  Fonte: SkillsMP · Popolarità: SkillsMP riporta circa 365 stars per bahayonghang/academic-writing-skills.  
+  Installa: `npx skills add https://github.com/bahayonghang/academic-writing-skills --skill latex-thesis-zh -a codex -g`  
+  Note: La scrittura accademica richiede verifica delle policy istituzionali e controllo manuale delle citazioni.
+
+- **[Paper Write](https://github.com/xstongxue/best-skills/tree/main/skills/paper-write)**  
+  Workflow in cinese per tesi triennali/magistrali: scaletta, struttura, riferimenti, revisione, espansione, sintesi e traduzione.  
+  Tag: `Chinese-Native` `Academic` `Writing`  
+  Fonte: SkillsCat · Popolarità: SkillsCat riporta circa 2.149 stars per xstongxue/best-skills.  
+  Installa: `npx skillscat add xstongxue/best-skills/paper-write`  
+  Note: Prima dell'uso, vanno verificate integrità accademica e accuratezza delle citazioni.
+
+- **[Humanize Chinese](https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/main/skills/49-voidborne-d-humanize-chinese)**  
+  Workflow in cinese per umanizzazione e rilevamento di testo AI con regole, feature statistiche e pattern di revisione accademica.  
+  Tag: `Chinese-Native` `Writing` `Academic`  
+  Fonte: SkillsCat · Popolarità: SkillsCat riporta circa 2.677 stars per brycewang-stanford/auto-empirical-research-skills.  
+  Installa: `npx skillscat add brycewang-stanford/auto-empirical-research-skills/humanize-chinese`  
+  Note: Alta sensibilità compliance; non usare per aggirare policy di rilevamento accademiche o di piattaforma.
+
+- **[EconFin Idea Finder ZH](https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/main/skills/67-econfin-workflow-toolkit)**  
+  Strumento in cinese a imbuto per idee di ricerca empirica in economia/finanza aziendale: ipotesi, dataset e piani empirici.  
+  Tag: `Chinese-Native` `Finance` `Research`  
+  Fonte: SkillsCat · Popolarità: SkillsCat riporta circa 2.677 stars per il repository sorgente.  
+  Installa: `npx skillscat add brycewang-stanford/auto-empirical-research-skills/econfin-idea-finder`  
+  Note: Dominio finanza e ricerca; richiede revisione compliance e verifica delle fonti.
+
+- **[Boss](https://github.com/echovic/boss-skill)**  
+  Workflow in cinese di delivery software multi-agent stile BMAD, copre PM, architettura, design, sviluppo, QA e DevOps.  
+  Tag: `Chinese-Native` `Multi-Agent` `Project Management`  
+  Fonte: SkillsCat · Popolarità: La pagina pubblica SkillsCat è accessibile；repo sorgente circa 550 stars.  
+  Installa: `npx skillscat add echovic/boss-skill`  
+  Note: SkillsCat segnala rischio sicurezza medio; prima della preinstallazione verificare automazione, esecuzione comandi, scrittura file e orchestrazione agent.
+
+- **[Requirement Analyst](https://github.com/CaoMeiYouRen/momei/tree/master/.github/skills/requirement-analyst)**  
+  Skill di analisi requisiti in cinese per chiarimento, estrazione intenti, allineamento roadmap e scoring priorità.  
+  Tag: `Chinese-Native` `Requirements` `Product`  
+  Fonte: SkillMD.ai · Popolarità: SkillMD.ai riporta 1.483 views e 265 downloads；percorso GitHub pubblico.  
+  Installa: `npx skills add https://github.com/CaoMeiYouRen/momei --skill requirement-analyst -a codex -g`  
+  Note: Riferimento directory: SkillMD.ai Requirement Analyst. Le ipotesi di prodotto vanno confermate con gli stakeholder.
+
+- **[OB](https://github.com/NeverSight/learn-skills.dev/blob/main/data/skills-md/aibangjuxin/knowledge/ob/SKILL.md)**  
+  Skill architetto onboarding piattaforma GCP API in cinese: GitOps, pipeline, Firestore, BigQuery e rollout auditabile.  
+  Tag: `Chinese-Native` `DevOps` `GCP`  
+  Fonte: SkillMD.ai · Popolarità: SkillMD.ai riporta 1.178 views e 309 downloads；AgentSkill API punta a GitHub pubblico.  
+  Installa: `npx skills add https://github.com/NeverSight/learn-skills.dev --skill ob -a codex -g`  
+  Note: Dominio enterprise GCP verticale; prima della preinstallazione verificare permessi cloud, azioni pipeline e guida rollback.
+
+- **[NSFC Abstract](https://github.com/huangwb8/ChineseResearchLaTeX)**  
+  Assistente abstract cinese-inglese per NSFC con sintesi cinese strutturata, traduzione inglese fedele, suggerimenti titolo e controllo lunghezza.  
+  Tag: `Chinese-Native` `Academic` `Grant`  
+  Fonte: Skills Directory · Popolarità: Skills Directory riporta repo sorgente ~1.626 stars, punteggio sicurezza A.  
+  Installa: `npx skills add https://github.com/huangwb8/ChineseResearchLaTeX -a codex -g`  
+  Note: La stesura di domande di finanziamento richiede revisione esperta e rigoroso rispetto delle regole di candidatura.
+
+- **[Paper Translation](https://github.com/APLaS-Plus/paper-translation)**  
+  Workflow di traduzione PDF accademico in Markdown cinese con MinerU, preservando formule, immagini, tabelle, codice e terminologia.  
+  Tag: `Chinese-Native` `Translation` `Academic`  
+  Fonte: Skills Directory · Popolarità: La pagina pubblica Skills Directory è accessibile, punteggio sicurezza A.  
+  Installa: `npx skills add https://github.com/APLaS-Plus/paper-translation -a codex -g`  
+  Note: Richiede token API MinerU; valutare rischi di upload esterno, privacy, copyright e accuratezza della traduzione.
+
 ## Tutti gli Skill
 
 ### Strumenti Agent
@@ -127,6 +312,31 @@ Skill di base che aiutano Codex a trovare, combinare o creare altri Skill.
   Meta-skill per trasformare workflow ripetibili del team in asset SKILL.md riutilizzabili.  
   Tag: `Skill Authoring` `SKILL.md` `Workflow`  
   Fonte: OrangeBot · Popolarità: 112.1k weekly installs, 21,445 stars, 1,698 forks on OrangeBot.
+
+- **[Project Planner](https://orangebot.ai/s/project-planner)**  
+  Suddivide compiti complessi, piani contenuto, funzionalità o campagne in fasi, passi, rischi e deliverable.  
+  Tag: `Planning` `Project Management` `Workflow`  
+  Fonte: OrangeBot · Popolarità: Pagina Skill su OrangeBot con weekly installs, stars e forks.
+
+- **[Eve](https://skills.cat/skills/vercel/eve)**  
+  Skill framework Vercel AI Agent per app AI-native, backend, frontend e prototipi deployabili.  
+  Tag: `AI Agent` `Vercel` `SaaS`  
+  Fonte: SkillsCat · Popolarità: Pagina SkillsCat ricercabile con sorgente GitHub e installazione CLI.
+
+- **[CLI Creator](https://github.com/openai/skills/tree/main/skills/.curated/cli-creator)**  
+  Crea strumenti CLI con parsing argomenti, help, subcommand e UX developer-friendly.  
+  Tag: `CLI` `Terminal` `Tooling`  
+  Fonte: GitHub openai/skills · Popolarità: Skill curated ufficiale dal repository openai/skills（~23.3k stars）.
+
+- **[Brainstorming](https://orangebot.ai/s/brainstorming)**  
+  Brainstorming strutturato per idee prodotto, feature, campagne e problem solving creativo.  
+  Tag: `Ideation` `Planning` `Creativity`  
+  Fonte: OrangeBot · Popolarità: OrangeBot mostra 77.2k weekly installs, 118.4k stars.
+
+- **[Writing Plans](https://orangebot.ai/s/writing-plans)**  
+  Scrive piani di implementazione, spec, breakdown task e roadmap strutturati.  
+  Tag: `Planning` `Writing` `Workflow`  
+  Fonte: OrangeBot · Popolarità: OrangeBot mostra 41.4k weekly installs, 118.4k stars.
 
 ### Sviluppo e frontend
 
@@ -157,6 +367,78 @@ Skill per frontend, UI, deploy, comprensione dei repository e workflow tecnici.
   Tag: `Repository` `Codebase` `Explanation`  
   Fonte: OrangeBot · Popolarità: 27.4k weekly installs, 3,285 stars, 495 forks on OrangeBot.
 
+- **[Next.js Master](https://www.skillsdirectory.com/skills/fratilanico-nextjs-master)**  
+  Skill Next.js per struttura app, route API, componenti pagina, deploy e best practice.  
+  Tag: `Next.js` `React` `Frontend`  
+  Fonte: Skills Directory · Popolarità: Pagina pubblica Skills Directory con visibilità, punteggio sicurezza e segnali d'uso.
+
+- **[Figma Generate Design](https://github.com/openai/skills/tree/main/skills/.curated/figma-generate-design)**  
+  Genera concept design Figma, layout, componenti e sistemi visivi dai requisiti prodotto.  
+  Tag: `Figma` `Design` `UI`  
+  Fonte: GitHub openai/skills · Popolarità: Skill curated ufficiale dal repository openai/skills（~23.3k stars）.
+
+- **[Figma Implement Design](https://github.com/openai/skills/tree/main/skills/.curated/figma-implement-design)**  
+  Traduce design Figma in codice frontend, strutture componenti, spacing e note di implementazione.  
+  Tag: `Figma` `Design` `Frontend`  
+  Fonte: GitHub openai/skills · Popolarità: Skill curated ufficiale dal repository openai/skills（~23.3k stars）.
+
+- **[OpenAI Docs](https://github.com/openai/skills/tree/main/skills/.curated/openai-docs)**  
+  Aiuta Codex a consultare documentazione OpenAI, riferimenti API, SDK e pattern di integrazione.  
+  Tag: `OpenAI` `Documentation` `API`  
+  Fonte: GitHub openai/skills · Popolarità: Skill curated ufficiale dal repository openai/skills（~23.3k stars）.
+
+- **[GitHub Fix CI](https://github.com/openai/skills/tree/main/skills/.curated/gh-fix-ci)**  
+  Diagnostica e corregge fallimenti CI, configurazione workflow, errori test e problemi pipeline build.  
+  Tag: `CI` `GitHub` `DevOps`  
+  Fonte: GitHub openai/skills · Popolarità: Skill curated ufficiale dal repository openai/skills（~23.3k stars）.
+
+- **[GitHub Address Comments](https://github.com/openai/skills/tree/main/skills/.curated/gh-address-comments)**  
+  Gestisce sistematicamente commenti PR, modifiche suggerite e feedback dei reviewer.  
+  Tag: `GitHub` `Code Review` `PR`  
+  Fonte: GitHub openai/skills · Popolarità: Skill curated ufficiale dal repository openai/skills（~23.3k stars）.
+
+- **[GitHub CLI](https://crossaitools.com/skills/github/awesome-copilot/gh-cli)**  
+  Skill di riferimento GitHub CLI per gestire repository, issue, pull request, Actions, progetti, release, gist, Codespaces e organizzazioni dal terminale.  
+  Tag: `GitHub` `CLI` `Repository`  
+  Fonte: Cross AI Tools · Popolarità: Listing Cross AI Tools per github/awesome-copilot; GitHub riporta circa 36.306 stars e 4.522 forks.  
+  Installa: `npx skills add https://github.com/github/awesome-copilot --skill gh-cli -a codex -g`  
+  Note: Richiede conoscenza di GitHub CLI e può richiedere autenticazione o token GitHub; verificare i permessi prima di comandi che modificano repository, issue o pull request.
+
+- **[Cloudflare Deploy](https://github.com/openai/skills/tree/main/skills/.curated/cloudflare-deploy)**  
+  Distribuisce app e siti statici su Cloudflare Workers, Pages e infrastruttura edge.  
+  Tag: `Cloudflare` `Deployment` `DevOps`  
+  Fonte: GitHub openai/skills · Popolarità: Skill curated ufficiale dal repository openai/skills（~23.3k stars）.
+
+- **[Netlify Deploy](https://github.com/openai/skills/tree/main/skills/.curated/netlify-deploy)**  
+  Distribuisce app frontend, landing page e prototipi su Netlify con guida build e routing.  
+  Tag: `Netlify` `Deployment` `DevOps`  
+  Fonte: GitHub openai/skills · Popolarità: Skill curated ufficiale dal repository openai/skills（~23.3k stars）.
+
+- **[Sentry](https://github.com/openai/skills/tree/main/skills/.curated/sentry)**  
+  Integra Sentry per monitoraggio errori, tracing performance, release tracking e debug incidenti.  
+  Tag: `Sentry` `Monitoring` `Errors`  
+  Fonte: GitHub openai/skills · Popolarità: Skill curated ufficiale dal repository openai/skills（~23.3k stars）.
+
+- **[Web Design Guidelines](https://orangebot.ai/s/web-design-guidelines)**  
+  Guida design web per layout, tipografia, colore, accessibilità e UI responsive.  
+  Tag: `Web Design` `UI` `UX`  
+  Fonte: OrangeBot · Popolarità: OrangeBot mostra 206.0k weekly installs, 24.0k stars.
+
+- **[Systematic Debugging](https://orangebot.ai/s/systematic-debugging)**  
+  Workflow debug sistematico per riprodurre bug, isolare cause, verificare fix e prevenire regressioni.  
+  Tag: `Debugging` `Engineering` `Troubleshooting`  
+  Fonte: OrangeBot · Popolarità: OrangeBot mostra 42.5k weekly installs, 118.4k stars.
+
+- **[Next Best Practices](https://orangebot.ai/s/next-best-practices)**  
+  Best practice Next.js per routing, data fetching, rendering, performance e production.  
+  Tag: `Next.js` `Best Practices` `Frontend`  
+  Fonte: OrangeBot · Popolarità: OrangeBot mostra 46.4k weekly installs, 778 stars.
+
+- **[Supabase Postgres Best Practices](https://orangebot.ai/s/supabase-postgres-best-practices)**  
+  Best practice Supabase/Postgres per schema, RLS, query, migrazioni e dati backend.  
+  Tag: `Supabase` `Postgres` `Database`  
+  Fonte: OrangeBot · Popolarità: OrangeBot mostra 54.0k weekly installs, 1.7k stars.
+
 ### Creatività e media
 
 Skill creativi per immagini, audio, video, visual marketing e produzione media.
@@ -171,6 +453,13 @@ Skill creativi per immagini, audio, video, visual marketing e produzione media.
   Best practice per video programmabili, motion graphics, demo prodotto, shorts automatici e video dati con React.  
   Tag: `Video` `React` `Remotion`  
   Fonte: OrangeBot · Popolarità: 181.8k weekly installs, 867 stars, 24 forks on OrangeBot.
+
+- **[HyperFrames](https://github.com/heygen-com/hyperframes/blob/main/skills/hyperframes/SKILL.md)**  
+  Skill di ingresso per HyperFrames, framework HTML-to-video che instrada workflow video, animazione, motion graphics, promo prodotto, website-to-video, sottotitoli, slideshow e migrazione Remotion.  
+  Tag: `Video` `Animation` `HTML`  
+  Fonte: GitHub · Popolarità: Repository ufficiale heygen-com/hyperframes con circa 33.674 stars e 3.144 forks su GitHub.  
+  Installa: `npx skills add heygen-com/hyperframes --skill hyperframes`  
+  Note: Richiede il workflow HyperFrames/skills CLI e può usare rendering browser, asset media, strumenti tipo FFmpeg/Puppeteer e controlli di rete; verificare i permessi prima della preinstallazione.
 
 - **[P Video](https://orangebot.ai/s/p-video)**  
   Trasforma script creativi, asset e parametri in workflow eseguibili di generazione o editing video.  
@@ -187,6 +476,37 @@ Skill creativi per immagini, audio, video, visual marketing e produzione media.
   Migliora le interfacce tramite journey utente, stati dei componenti, gerarchia visuale, accessibilità e feedback.  
   Tag: `UI/UX` `Design` `Product`  
   Fonte: OrangeBot · Popolarità: 85.9k weekly installs, 1,491 stars, 150 forks on OrangeBot.
+
+- **[Transcribe](https://github.com/openai/skills/tree/main/skills/.curated/transcribe)**  
+  Trascrive audio e voce in testo per riunioni, interviste, podcast e workflow media.  
+  Tag: `Audio` `Transcription` `Speech`  
+  Fonte: GitHub openai/skills · Popolarità: Skill curated ufficiale dal repository openai/skills（~23.3k stars）.
+
+- **[Speech](https://github.com/openai/skills/tree/main/skills/.curated/speech)**  
+  Genera voce naturale da testo per voiceover, assistenti, accessibilità e produzione media.  
+  Tag: `TTS` `Speech` `Audio`  
+  Fonte: GitHub openai/skills · Popolarità: Skill curated ufficiale dal repository openai/skills（~23.3k stars）.
+
+- **[AI Video Generation](https://orangebot.ai/s/ai-video-generation)**  
+  Genera video AI da prompt, script e storyboard per marketing, social e produzione creativa.  
+  Tag: `Video` `AI` `Generation`  
+  Fonte: OrangeBot · Popolarità: OrangeBot mostra 111.3k weekly installs, 235 stars.  
+  Note: Dipende da modelli/API esterni; verificare costi, chiavi e termini del provider.
+
+- **[ImageGen](https://skillsmp.com/zh/creators/openai/skills/skills-system-imagegen)**  
+  Skill generazione immagini OpenAI per prompt, stili, edit, variazioni e asset visivi.  
+  Tag: `Image` `Generation` `OpenAI`  
+  Fonte: SkillsMP · Popolarità: SkillsMP mostra 23,095 stars, 1,565 forks.
+
+- **[Canvas Design](https://skills.cat/skills/anthropics/skills/canvas-design)**  
+  Skill design Canvas per layout, composizione visiva, design system e asset creativi.  
+  Tag: `Canvas` `Design` `Creative`  
+  Fonte: SkillsCat · Popolarità: Pagina SkillsCat ricercabile con sorgente GitHub e installazione CLI.
+
+- **[AI Video Editing](https://skillsmp.com/creators/arcasilesgroup/ai-engineering/codex-skills-ai-video-editing)**  
+  Skill editing video AI per tagli, transizioni, sottotitoli, b-roll e post-produzione.  
+  Tag: `Video` `Editing` `AI`  
+  Fonte: SkillsMP · Popolarità: SkillsMP mostra 52 stars, 3 forks.
 
 ### Automazione browser e test
 
@@ -207,6 +527,16 @@ Skill per controllo browser, screenshot, controlli UI e validazione delle intera
   Tag: `Screenshot` `UI QA` `Design`  
   Fonte: GitHub openai/skills · Popolarità: Official OpenAI curated skill from the openai/skills repository.
 
+- **[Playwright Interactive](https://github.com/openai/skills/tree/main/skills/.curated/playwright-interactive)**  
+  Skill automazione browser interattiva Playwright per navigazione, interazione, screenshot e validazione UI.  
+  Tag: `Browser` `Playwright` `Testing`  
+  Fonte: GitHub openai/skills · Popolarità: Skill curated ufficiale dal repository openai/skills（~23.3k stars）.
+
+- **[Browser Use](https://orangebot.ai/s/browser-use)**  
+  Skill browser-use per navigazione autonoma, form, estrazione dati e browsing guidato da agent.  
+  Tag: `Browser` `Automation` `Agent`  
+  Fonte: OrangeBot · Popolarità: OrangeBot mostra 57.4k weekly installs, 84.8k stars.
+
 ### Documenti e presentazioni
 
 Skill per PDF, slide, report, proposte e documenti strutturati.
@@ -226,6 +556,16 @@ Skill per PDF, slide, report, proposte e documenti strutturati.
   Tag: `Word` `Documents` `Reports`  
   Fonte: OrangeBot · Popolarità: 42.0k weekly installs, 4,938 stars, 353 forks on OrangeBot.
 
+- **[Notion Research Documentation](https://github.com/openai/skills/tree/main/skills/.curated/notion-research-documentation)**  
+  Organizza risultati di ricerca, citazioni, riassunti e documentazione strutturata in Notion.  
+  Tag: `Notion` `Research` `Documentation`  
+  Fonte: GitHub openai/skills · Popolarità: Skill curated ufficiale dal repository openai/skills（~23.3k stars）.
+
+- **[PDF (OpenAI Curated)](https://github.com/openai/skills/tree/main/skills/.curated/pdf)**  
+  Legge, estrae, riassume e manipola PDF per report, moduli e contenuti strutturati.  
+  Tag: `PDF` `Documents` `Parsing`  
+  Fonte: GitHub openai/skills · Popolarità: Skill curated ufficiale dal repository openai/skills（~23.3k stars）.
+
 ### Dati e visualizzazione
 
 Skill per grafici, spiegazioni visuali, analisi e narrazioni basate sui dati.
@@ -234,6 +574,46 @@ Skill per grafici, spiegazioni visuali, analisi e narrazioni basate sui dati.
   Aiuta a creare grafici, spiegazioni visuali, roadmap, diagrammi architetturali e narrazioni dati.  
   Tag: `Charts` `Visualization` `Data`  
   Fonte: OrangeBot · Popolarità: OrangeBot skill page with usage, stars, and forks metadata.
+
+- **[Quant Analyst](https://www.skillsdirectory.com/skills/benjaminastera-quant-analyst)**  
+  Skill analisi quantitativa per dati di mercato, fattori, backtesting, metriche portafoglio e modellazione finanziaria.  
+  Tag: `Quant` `Finance` `Analysis`  
+  Fonte: Skills Directory · Popolarità: Pagina pubblica Skills Directory con visibilità, punteggio sicurezza e segnali d'uso.
+
+- **[AI Volatility Prediction](https://www.skillsdirectory.com/skills/paulpas-ai-volatility-prediction)**  
+  Prevede la volatilità di mercato con AI per valutazione del rischio, hedging e trading quantitativo.  
+  Tag: `Finance` `Risk` `ML`  
+  Fonte: Skills Directory · Popolarità: Pagina pubblica Skills Directory con visibilità, punteggio sicurezza e segnali d'uso.  
+  Note: Dominio finanza/rischio; richiede revisione compliance e disclaimer chiari.
+
+- **[Apify Ecommerce](https://skillmd.ai/skills/apify-ecommerce/)**  
+  Skill dati ecommerce con Apify per prodotti, prezzi, recensioni e intelligence competitiva.  
+  Tag: `Ecommerce` `Scraping` `Apify`  
+  Fonte: SkillMD.ai · Popolarità: Pagina SkillMD.ai con metadati installazione e segnali d'uso.  
+  Note: Richiede accesso di rete e credenziali API esterne.
+
+- **[AfrexAI Personal Finance](https://skillmd.ai/skills/afrexai-personal-finance/)**  
+  Skill finanza personale per budget, spese, risparmio, debiti e salute finanziaria.  
+  Tag: `Finance` `Personal Finance` `Budgeting`  
+  Fonte: SkillMD.ai · Popolarità: Pagina SkillMD.ai con metadati installazione e segnali d'uso.  
+  Note: Dominio finanza; richiede revisione compliance e disclaimer chiari.
+
+- **[Jupyter Notebook](https://github.com/openai/skills/tree/main/skills/.curated/jupyter-notebook)**  
+  Skill Jupyter Notebook per esplorazione dati, celle di analisi, visualizzazione e workflow di ricerca riproducibili.  
+  Tag: `Jupyter` `Notebook` `Data`  
+  Fonte: GitHub openai/skills · Popolarità: Skill curated ufficiale dal repository openai/skills（~23.3k stars）.
+
+- **[Excel Author](https://skillsmp.com/creators/nousresearch/hermes-agent/optional-skills-finance-excel-author)**  
+  Skill authoring Excel per modelli finanziari, formule, pivot, grafici e fogli di calcolo.  
+  Tag: `Excel` `Finance` `Spreadsheet`  
+  Fonte: SkillsMP · Popolarità: Pagina SkillsMP con GitHub stars, forks e metadati installazione.  
+  Note: Dominio finanza; richiede revisione compliance e disclaimer chiari.
+
+- **[EconFin Idea Finder](https://skills.cat/skills/brycewang-stanford/auto-empirical-research-skills/econfin-idea-finder)**  
+  Trova idee di ricerca economia/finanza, ipotesi, dataset e direzioni empiriche.  
+  Tag: `Finance` `Research` `Economics`  
+  Fonte: SkillsCat · Popolarità: Pagina SkillsCat ricercabile con sorgente GitHub e installazione CLI.  
+  Note: Dominio finanza/ricerca; richiede revisione compliance e disclaimer chiari.
 
 ### Marketing e crescita
 
@@ -253,6 +633,21 @@ Skill per SEO, copy, asset di lancio, campagne e workflow di crescita.
   Scrive copy per annunci, landing page, messaggi prodotto, email marketing, post social e script video.  
   Tag: `Copy` `Ads` `Content`  
   Fonte: OrangeBot · Popolarità: 49.9k weekly installs, 11,596 stars, 981 forks on OrangeBot.
+
+- **[Lottie Motion Builder](https://www.skillsdirectory.com/skills/markoblogo-lottie-motion-builder)**  
+  Trasforma requisiti testuali in motion mobile, empty state SaaS, motion brand, GIF pubblicitari e piani animazione.  
+  Tag: `Motion` `Lottie` `Animation`  
+  Fonte: Skills Directory · Popolarità: Pagina pubblica Skills Directory con visibilità, punteggio sicurezza e segnali d'uso.
+
+- **[Paid Ads](https://www.skillsdirectory.com/skills/benjaminastera-paid-ads)**  
+  Skill pubblicità a pagamento per struttura campagna, targeting, copy, budget e ottimizzazione.  
+  Tag: `Ads` `PPC` `Marketing`  
+  Fonte: Skills Directory · Popolarità: Pagina pubblica Skills Directory con visibilità, punteggio sicurezza e segnali d'uso.
+
+- **[Campaign Plan](https://skillsmp.com/creators/anthropics/knowledge-work-plugins/marketing-skills-campaign-plan)**  
+  Skill pianificazione campagne per obiettivi, canali, messaggi, timeline e budget.  
+  Tag: `Marketing` `Campaign` `Planning`  
+  Fonte: SkillsMP · Popolarità: Pagina SkillsMP con GitHub stars, forks e metadati installazione.
 
 ### Settori e conformità
 
@@ -279,9 +674,19 @@ Skill verticali per sanità, accessibilità, sicurezza, localizzazione e altri d
   Fonte: SkillsCat · Popolarità: SkillsCat entry with stars, token metadata, and CLI install support.  
   Note: Dominio ad alto rischio; richiede revisione compliance e disclaimer chiari.
 
+- **[Security Threat Model](https://github.com/openai/skills/tree/main/skills/.curated/security-threat-model)**  
+  Costruisce threat model, superfici di attacco, mitigazioni e checklist di sicurezza.  
+  Tag: `Security` `Threat Model` `Compliance`  
+  Fonte: GitHub openai/skills · Popolarità: Skill curated ufficiale dal repository openai/skills（~23.3k stars）.
+
+## Guida Custom Skill
+
+- **[Guida Custom Skill →](GUIDE_it.md)** — Impara a creare, adattare e installare i tuoi Codex Skill.
+
 ## Come contribuire
 
 - Apri una issue [Submit a Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml) con link raggiungibile, breve descrizione, categoria, fonte e prova di popolarità.
+- Per Skill native in cinese usa il template [Submit a Chinese-Native Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml).
 - Segnala Skill che richiedono API key, controllo browser, esecuzione comandi o review medica/finanziaria/legale.
 
 ## Criteri di selezione
@@ -302,4 +707,4 @@ Grazie ai creatori di directory Skill, maintainer open-source e community Codex 
 
 ---
 
-> Questo README è generato da `data/skills.json`. Modifica il file dati e poi esegui `npm run generate:readme`.
+> Questo README è generato da `data/skills.json`. Modifica il file dati e poi esegui `npm run generate:all`.

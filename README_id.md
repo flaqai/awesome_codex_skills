@@ -5,10 +5,13 @@
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 [![GitHub stars](https://img.shields.io/github/stars/flaqai/awesome_codex_skills?style=social)](https://github.com/flaqai/awesome_codex_skills)
 [![Submit Skills via Issues](https://img.shields.io/badge/Submit%20Skills-via%20Issues-brightgreen.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml)
+[![Kirim Skill Tiongkok](https://img.shields.io/badge/Kirim%20Skill%20Tiongkok-via%20Issues-orange.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml)
 
 > Daftar Codex Skill pilihan dan multibahasa untuk kerja kreatif, coding, otomasi, dokumen, dan workflow industri.
 
 > Skill dikumpulkan dari direktori dan repositori publik untuk discovery dan edukasi. Jika link rusak atau perlu dihapus, buka issue.
+
+> **[Panduan Custom Skill →](GUIDE_id.md)** Pelajari cara membuat, menyesuaikan, dan menginstal Codex Skill Anda sendiri.
 
 ---
 
@@ -22,7 +25,9 @@
 - [Telusuri berdasarkan Kategori](#telusuri-berdasarkan-kategori)
 - [Statistik](#statistik)
 - [Skill Unggulan](#skill-unggulan)
+- [Skills native Tiongkok](#skills-native-tiongkok)
 - [Semua Skill](#semua-skill)
+- [Panduan Custom Skill](#panduan-custom-skill)
 - [Cara Berkontribusi](#cara-berkontribusi)
 - [Kriteria Kurasi](#kriteria-kurasi)
 - [Lisensi](#lisensi)
@@ -36,21 +41,22 @@
 ## Telusuri berdasarkan Kategori
 
 - [Peralatan Agent](#peralatan-agent) - Skill dasar yang membantu Codex menemukan, menyusun, atau membuat Skill lain.
-- [Coding & Frontend](#coding-frontend) - Skill untuk frontend, UI, deployment, pemahaman repositori, dan workflow engineering.
-- [Kreatif & Media](#kreatif-media) - Skill kreatif untuk gambar, audio, video, visual marketing, dan produksi media.
-- [Otomasi Browser & Pengujian](#otomasi-browser-pengujian) - Skill untuk kontrol browser, screenshot, pemeriksaan UI, dan validasi interaksi.
-- [Dokumen & Presentasi](#dokumen-presentasi) - Skill untuk PDF, slide, laporan, proposal, dan dokumen terstruktur.
-- [Data & Visualisasi](#data-visualisasi) - Skill untuk bagan, penjelasan visual, analitik, dan cerita berbasis data.
-- [Pemasaran & Pertumbuhan](#pemasaran-pertumbuhan) - Skill untuk SEO, copy, aset peluncuran, kampanye, dan workflow pertumbuhan.
-- [Industri & Kepatuhan](#industri-kepatuhan) - Skill domain untuk kesehatan, aksesibilitas, keamanan, lokalisasi, dan bidang lain.
+- [Coding & Frontend](#coding--frontend) - Skill untuk frontend, UI, deployment, pemahaman repositori, dan workflow engineering.
+- [Kreatif & Media](#kreatif--media) - Skill kreatif untuk gambar, audio, video, visual marketing, dan produksi media.
+- [Otomasi Browser & Pengujian](#otomasi-browser--pengujian) - Skill untuk kontrol browser, screenshot, pemeriksaan UI, dan validasi interaksi.
+- [Dokumen & Presentasi](#dokumen--presentasi) - Skill untuk PDF, slide, laporan, proposal, dan dokumen terstruktur.
+- [Data & Visualisasi](#data--visualisasi) - Skill untuk bagan, penjelasan visual, analitik, dan cerita berbasis data.
+- [Pemasaran & Pertumbuhan](#pemasaran--pertumbuhan) - Skill untuk SEO, copy, aset peluncuran, kampanye, dan workflow pertumbuhan.
+- [Industri & Kepatuhan](#industri--kepatuhan) - Skill domain untuk kesehatan, aksesibilitas, keamanan, lokalisasi, dan bidang lain.
 
 ## Statistik
 
 | Metric | Count |
 |---|---:|
-| Total Skill | 26 |
+| Total Skill | 87 |
 | Kategori | 8 |
-| Terakhir diperbarui | 2026-07-07 |
+| Skills native Tiongkok | 20 |
+| Terakhir diperbarui | 2026-07-08 |
 
 ## Skill Unggulan
 
@@ -111,6 +117,185 @@
   Tag: `Security` `Review` `Engineering`  
   Sumber: GitHub openai/skills · Popularitas: Official OpenAI curated skill from the openai/skills repository.
 
+- **[Playwright Interactive](https://github.com/openai/skills/tree/main/skills/.curated/playwright-interactive)**  
+  Skill otomasi browser interaktif Playwright untuk navigasi, interaksi elemen, screenshot, dan validasi UI.  
+  Tag: `Browser` `Playwright` `Testing`  
+  Sumber: GitHub openai/skills · Popularitas: Skill curated resmi dari repositori openai/skills（~23.3k stars）.
+
+- **[Figma Generate Design](https://github.com/openai/skills/tree/main/skills/.curated/figma-generate-design)**  
+  Menghasilkan konsep desain Figma, layout, komponen, dan sistem visual dari kebutuhan produk.  
+  Tag: `Figma` `Design` `UI`  
+  Sumber: GitHub openai/skills · Popularitas: Skill curated resmi dari repositori openai/skills（~23.3k stars）.
+
+- **[OpenAI Docs](https://github.com/openai/skills/tree/main/skills/.curated/openai-docs)**  
+  Membantu Codex menavigasi dokumentasi OpenAI, referensi API, SDK, dan pola integrasi.  
+  Tag: `OpenAI` `Documentation` `API`  
+  Sumber: GitHub openai/skills · Popularitas: Skill curated resmi dari repositori openai/skills（~23.3k stars）.
+
+- **[Web Design Guidelines](https://orangebot.ai/s/web-design-guidelines)**  
+  Panduan desain web untuk layout, typography, warna, accessibility, dan UI responsif.  
+  Tag: `Web Design` `UI` `UX`  
+  Sumber: OrangeBot · Popularitas: OrangeBot menampilkan 206.0k weekly installs, 24.0k stars.
+
+- **[Brainstorming](https://orangebot.ai/s/brainstorming)**  
+  Brainstorming terstruktur untuk ide produk, fitur, kampanye, dan pemecahan masalah kreatif.  
+  Tag: `Ideation` `Planning` `Creativity`  
+  Sumber: OrangeBot · Popularitas: OrangeBot menampilkan 77.2k weekly installs, 118.4k stars.
+
+- **[Browser Use](https://orangebot.ai/s/browser-use)**  
+  Skill browser-use untuk navigasi web otonom, isi form, ekstraksi data, dan browsing berbasis agent.  
+  Tag: `Browser` `Automation` `Agent`  
+  Sumber: OrangeBot · Popularitas: OrangeBot menampilkan 57.4k weekly installs, 84.8k stars.
+
+- **[ImageGen](https://skillsmp.com/zh/creators/openai/skills/skills-system-imagegen)**  
+  Skill generasi gambar OpenAI untuk prompt, gaya, edit, variasi, dan aset visual.  
+  Tag: `Image` `Generation` `OpenAI`  
+  Sumber: SkillsMP · Popularitas: SkillsMP menampilkan 23,095 stars, 1,565 forks.
+
+## Skills native Tiongkok
+
+Skill dengan SKILL.md dan workflow native berbahasa Tiongkok untuk dokumentasi, review, penulisan, akademik, fintech, perencanaan produk, dan DevOps.
+
+- **[Chinese Documentation](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-documentation)**  
+  Standar tata letak dan penulisan dokumentasi berbahasa Tionghoa, mencakup spasi Tionghoa/Inggris, tanda baca, terminologi, tautan, dan keterbacaan konten teknis.  
+  Tag: `Chinese-Native` `Documentation` `Technical Writing`  
+  Sumber: SkillsMP · Popularitas: SkillsMP melaporkan jnMetaCode/superpowers-zh sekitar 6,213 stars.  
+  Instal: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-documentation -a codex -g`  
+  Catatan: Referensi direktori: SkillsMP Chinese Documentation. Tinjau lisensi repositori sebelum prainstal.
+
+- **[Chinese Commit Conventions](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-commit-conventions)**  
+  Panduan engineering tim untuk Chinese Conventional Commits, changelog, commitlint, Husky, dan Commitizen.  
+  Tag: `Chinese-Native` `Git` `DevOps`  
+  Sumber: SkillsMP · Popularitas: SkillsMP melaporkan repo sumber sekitar 6,213 stars.  
+  Instal: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-commit-conventions -a codex -g`  
+  Catatan: Cocok untuk standarisasi workflow tim; tetap verifikasi pesan commit yang dihasilkan terhadap aturan proyek.
+
+- **[Chinese Code Review](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-code-review)**  
+  Template komunikasi code review berbahasa Tionghoa dengan label tingkat keparahan, gaya komentar, dan pola kolaborasi tim.  
+  Tag: `Chinese-Native` `Code Review` `Collaboration`  
+  Sumber: SkillsMP · Popularitas: SkillsMP melaporkan repo sumber sekitar 6,213 stars.  
+  Instal: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-code-review -a codex -g`  
+  Catatan: Kesimpulan review harus tetap berdasarkan diff nyata dan hasil pengujian.
+
+- **[Deep Research ZH](https://github.com/LeoYeAI/openclaw-master-skills/tree/main/skills/deep-research-zh)**  
+  Workflow riset mendalam berbahasa Tionghoa untuk riset industri, analisis kompetitor, riset kebijakan, output PDF, dan delivery otomatis.  
+  Tag: `Chinese-Native` `Research` `Reports`  
+  Sumber: SkillsMP · Popularitas: SkillsMP melaporkan LeoYeAI/openclaw-master-skills sekitar 2,076 stars.  
+  Instal: `npx skills add https://github.com/LeoYeAI/openclaw-master-skills --skill deep-research-zh -a codex -g`  
+  Catatan: Sebelum prainstal, tinjau dependensi Tavily, Feishu, skrip PDF, akses jaringan, dan API Key.
+
+- **[Quant Trader Daily](https://github.com/LeoYeAI/openclaw-master-skills/tree/main/skills/trader-daily)**  
+  Workflow harian quant trading berbahasa Tionghoa untuk monitoring posisi, pengingat risiko, laporan, dan jurnal trading.  
+  Tag: `Chinese-Native` `Finance` `Quant`  
+  Sumber: SkillsMP · Popularitas: SkillsMP melaporkan repo sumber sekitar 2,076 stars.  
+  Instal: `npx skills add https://github.com/LeoYeAI/openclaw-master-skills --skill trader-daily -a codex -g`  
+  Catatan: Domain keuangan. Bukan nasihat investasi; perlu tinjauan kepatuhan sebelum digunakan atau prainstal.
+
+- **[ZH Code Reviewer](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-code-reviewer)**  
+  Ahli code review berbahasa Tionghoa dengan temuan terstruktur pada correctness, quality, performance, security, dan design.  
+  Tag: `Chinese-Native` `Code Review` `Quality`  
+  Sumber: SkillsMP · Popularitas: SkillsMP melaporkan laolaoshiren/claude-code-skills-zh sekitar 504 stars.  
+  Instal: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-code-reviewer -a codex -g`  
+  Catatan: Gunakan sebagai bantuan review; maintainer tetap harus memverifikasi temuan sebelum merge.
+
+- **[ZH README](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-readme)**  
+  Menganalisis proyek dan menghasilkan README Tionghoa berkualitas tinggi untuk open-source, tools internal, dan produk AI.  
+  Tag: `Chinese-Native` `README` `Developer Experience`  
+  Sumber: SkillsMP · Popularitas: SkillsMP melaporkan repo sumber sekitar 504 stars.  
+  Instal: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-readme -a codex -g`  
+  Catatan: Dokumen yang dihasilkan perlu ditinjau untuk perintah instalasi, teks lisensi, dan klaim khusus proyek.
+
+- **[ZH Docgen](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-docgen)**  
+  Menghasilkan dokumentasi teknis berbahasa Tionghoa dari codebase, termasuk dokumentasi API, desain modul, dan manual operasi.  
+  Tag: `Chinese-Native` `Documentation` `Codebase`  
+  Sumber: SkillsMP · Popularitas: SkillsMP melaporkan repo sumber sekitar 504 stars.  
+  Instal: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-docgen -a codex -g`  
+  Catatan: Dokumen yang dihasilkan harus ditinjau terhadap kondisi repository saat ini.
+
+- **[De-AI Writing](https://github.com/OUBIGFA/De-AI-Prompt-Enhancer-Writer-Booster-SKILL)**  
+  Workflow bahasa Tionghoa untuk menulis ulang, polishing, menerjemahkan, dan review guna mengurangi frasa template serta gaya mirip AI.  
+  Tag: `Chinese-Native` `Writing` `Humanization`  
+  Sumber: SkillsMP · Popularitas: SkillsMP melaporkan repo sumber sekitar 488 stars.  
+  Instal: `npx skills add https://github.com/OUBIGFA/De-AI-Prompt-Enhancer-Writer-Booster-SKILL -a codex -g`  
+  Catatan: Untuk konteks akademik atau terikat kebijakan, wajib ada tinjauan integritas; jangan gunakan untuk menghindari kebijakan deteksi.
+
+- **[Chinese Writing](https://github.com/miantiao-me/aigc-weekly)**  
+  Panduan menulis bahasa Tionghoa untuk newsletter, blog, dan artikel teknologi dengan fokus pada kejelasan, nuansa manusiawi, dan minim gaya AI.  
+  Tag: `Chinese-Native` `Writing` `Newsletter`  
+  Sumber: SkillsMP · Popularitas: SkillsMP melaporkan miantiao-me/aigc-weekly sekitar 544 stars.  
+  Instal: `npx skills add https://github.com/miantiao-me/aigc-weekly --skill chinese-writing -a codex -g`  
+  Catatan: Karena path indeks publik bisa berubah, sumber yang dipakai di sini adalah jalur utama repositori.
+
+- **[Tech Doc Style Chinese](https://github.com/Fenng/Tech-Doc-Style-Chinese)**  
+  Gaya dokumentasi teknis Tionghoa yang ringkas dan presisi untuk product copy, dokumen API, terminologi, tanda baca, dan tulisan mudah dipindai.  
+  Tag: `Chinese-Native` `Technical Writing` `Style Guide`  
+  Sumber: SkillsMP · Popularitas: SkillsMP melaporkan Fenng/Tech-Doc-Style-Chinese sekitar 365 stars.  
+  Instal: `npx skills add https://github.com/Fenng/Tech-Doc-Style-Chinese -a codex -g`  
+  Catatan: Gunakan sebagai panduan editorial; pertahankan code literal, path API, dan teks legal apa adanya.
+
+- **[LaTeX Thesis ZH](https://github.com/bahayonghang/academic-writing-skills/tree/main/academic-writing-skills/latex-thesis-zh)**  
+  Asisten tesis LaTeX berbahasa Tionghoa untuk diagnosis kompilasi, referensi GB/T 7714, struktur bab, persamaan, dan konsistensi terminologi.  
+  Tag: `Chinese-Native` `LaTeX` `Academic`  
+  Sumber: SkillsMP · Popularitas: SkillsMP melaporkan bahayonghang/academic-writing-skills sekitar 365 stars.  
+  Instal: `npx skills add https://github.com/bahayonghang/academic-writing-skills --skill latex-thesis-zh -a codex -g`  
+  Catatan: Penulisan akademik harus mengikuti kebijakan institusi dan memverifikasi sitasi secara manual.
+
+- **[Paper Write](https://github.com/xstongxue/best-skills/tree/main/skills/paper-write)**  
+  Workflow bahasa Tionghoa untuk skripsi/tesis S1-S2, mendukung outline, struktur, referensi, polishing, ekspansi, ringkasan, dan terjemahan.  
+  Tag: `Chinese-Native` `Academic` `Writing`  
+  Sumber: SkillsCat · Popularitas: SkillsCat melaporkan xstongxue/best-skills sekitar 2,149 stars.  
+  Instal: `npx skillscat add xstongxue/best-skills/paper-write`  
+  Catatan: Sebelum digunakan, integritas akademik dan akurasi sitasi wajib ditinjau.
+
+- **[Humanize Chinese](https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/main/skills/49-voidborne-d-humanize-chinese)**  
+  Workflow Tionghoa untuk humanisasi dan deteksi teks AI, mencakup aturan, fitur statistik, dan pola revisi akademik.  
+  Tag: `Chinese-Native` `Writing` `Academic`  
+  Sumber: SkillsCat · Popularitas: SkillsCat melaporkan brycewang-stanford/auto-empirical-research-skills sekitar 2,677 stars.  
+  Instal: `npx skillscat add brycewang-stanford/auto-empirical-research-skills/humanize-chinese`  
+  Catatan: Sensitivitas kepatuhan tinggi; jangan gunakan untuk mengakali kebijakan deteksi akademik atau platform.
+
+- **[EconFin Idea Finder ZH](https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/main/skills/67-econfin-workflow-toolkit)**  
+  Alat pencari ide riset ekonomi/keuangan korporat berbahasa Tionghoa berbasis funnel untuk membuat hipotesis, dataset, dan rencana empiris.  
+  Tag: `Chinese-Native` `Finance` `Research`  
+  Sumber: SkillsCat · Popularitas: SkillsCat melaporkan repo sumber sekitar 2,677 stars.  
+  Instal: `npx skillscat add brycewang-stanford/auto-empirical-research-skills/econfin-idea-finder`  
+  Catatan: Domain keuangan dan riset; memerlukan tinjauan kepatuhan serta verifikasi sumber.
+
+- **[Boss](https://github.com/echovic/boss-skill)**  
+  Workflow delivery software multi-agent gaya BMAD berbahasa Tionghoa yang mencakup PM, arsitektur, desain, development, QA, dan DevOps.  
+  Tag: `Chinese-Native` `Multi-Agent` `Project Management`  
+  Sumber: SkillsCat · Popularitas: Halaman SkillsCat publik dapat diakses；repo sumber sekitar 550 stars.  
+  Instal: `npx skillscat add echovic/boss-skill`  
+  Catatan: SkillsCat menandai risiko keamanan menengah; sebelum prainstal, tinjau otomasi, eksekusi perintah, penulisan file, dan orkestrasi agent.
+
+- **[Requirement Analyst](https://github.com/CaoMeiYouRen/momei/tree/master/.github/skills/requirement-analyst)**  
+  Skill analisis kebutuhan berbahasa Tionghoa untuk klarifikasi requirement, ekstraksi intent pengguna, penyelarasan roadmap, dan scoring prioritas.  
+  Tag: `Chinese-Native` `Requirements` `Product`  
+  Sumber: SkillMD.ai · Popularitas: SkillMD.ai melaporkan 1,483 views dan 265 downloads；path GitHub publik.  
+  Instal: `npx skills add https://github.com/CaoMeiYouRen/momei --skill requirement-analyst -a codex -g`  
+  Catatan: Referensi direktori: SkillMD.ai Requirement Analyst. Asumsi produk harus diverifikasi dengan para pemangku kepentingan.
+
+- **[OB](https://github.com/NeverSight/learn-skills.dev/blob/main/data/skills-md/aibangjuxin/knowledge/ob/SKILL.md)**  
+  Skill arsitek onboarding platform GCP API berbahasa Tionghoa, mencakup GitOps, pipeline, Firestore, BigQuery, dan desain rilis yang dapat diaudit.  
+  Tag: `Chinese-Native` `DevOps` `GCP`  
+  Sumber: SkillMD.ai · Popularitas: SkillMD.ai melaporkan 1,178 views dan 309 downloads；AgentSkill API menunjuk ke GitHub publik.  
+  Instal: `npx skills add https://github.com/NeverSight/learn-skills.dev --skill ob -a codex -g`  
+  Catatan: Domain enterprise GCP yang spesifik; sebelum prainstal, tinjau izin cloud, aksi pipeline, dan panduan rollback.
+
+- **[NSFC Abstract](https://github.com/huangwb8/ChineseResearchLaTeX)**  
+  Asisten abstrak Tionghoa-Inggris untuk proposal NSFC dengan ringkasan terstruktur, terjemahan Inggris yang setia, saran judul, dan cek panjang.  
+  Tag: `Chinese-Native` `Academic` `Grant`  
+  Sumber: Skills Directory · Popularitas: Skills Directory melaporkan repo sumber ~1,626 stars, skor keamanan A.  
+  Instal: `npx skills add https://github.com/huangwb8/ChineseResearchLaTeX -a codex -g`  
+  Catatan: Penulisan proposal hibah memerlukan review ahli domain dan kepatuhan ketat pada aturan pengajuan.
+
+- **[Paper Translation](https://github.com/APLaS-Plus/paper-translation)**  
+  Workflow terjemahan PDF akademik ke Markdown Tionghoa berbasis MinerU dengan mempertahankan rumus, gambar, tabel, kode, dan terminologi.  
+  Tag: `Chinese-Native` `Translation` `Academic`  
+  Sumber: Skills Directory · Popularitas: Halaman Skills Directory publik dapat diakses, skor keamanan A.  
+  Instal: `npx skills add https://github.com/APLaS-Plus/paper-translation -a codex -g`  
+  Catatan: Membutuhkan MinerU API Token; tinjau risiko upload eksternal, privasi, hak cipta, dan akurasi terjemahan.
+
 ## Semua Skill
 
 ### Peralatan Agent
@@ -127,6 +312,31 @@ Skill dasar yang membantu Codex menemukan, menyusun, atau membuat Skill lain.
   Meta-skill untuk mengubah workflow tim yang berulang menjadi aset SKILL.md yang dapat digunakan ulang.  
   Tag: `Skill Authoring` `SKILL.md` `Workflow`  
   Sumber: OrangeBot · Popularitas: 112.1k weekly installs, 21,445 stars, 1,698 forks on OrangeBot.
+
+- **[Project Planner](https://orangebot.ai/s/project-planner)**  
+  Memecah tugas kompleks, rencana konten, fitur, atau kampanye menjadi fase, langkah, risiko, dan deliverable.  
+  Tag: `Planning` `Project Management` `Workflow`  
+  Sumber: OrangeBot · Popularitas: Halaman Skill OrangeBot menampilkan weekly installs, stars, dan forks.
+
+- **[Eve](https://skills.cat/skills/vercel/eve)**  
+  Skill framework Vercel AI Agent untuk aplikasi AI-native, backend, frontend, dan prototipe deployable.  
+  Tag: `AI Agent` `Vercel` `SaaS`  
+  Sumber: SkillsCat · Popularitas: Halaman SkillsCat dapat dicari dengan sumber GitHub dan CLI install.
+
+- **[CLI Creator](https://github.com/openai/skills/tree/main/skills/.curated/cli-creator)**  
+  Membuat alat CLI dengan parsing argumen, teks bantuan, subcommand, dan UX ramah developer.  
+  Tag: `CLI` `Terminal` `Tooling`  
+  Sumber: GitHub openai/skills · Popularitas: Skill curated resmi dari repositori openai/skills（~23.3k stars）.
+
+- **[Brainstorming](https://orangebot.ai/s/brainstorming)**  
+  Brainstorming terstruktur untuk ide produk, fitur, kampanye, dan pemecahan masalah kreatif.  
+  Tag: `Ideation` `Planning` `Creativity`  
+  Sumber: OrangeBot · Popularitas: OrangeBot menampilkan 77.2k weekly installs, 118.4k stars.
+
+- **[Writing Plans](https://orangebot.ai/s/writing-plans)**  
+  Menulis rencana implementasi, spesifikasi, pembagian tugas, dan roadmap eksekusi terstruktur.  
+  Tag: `Planning` `Writing` `Workflow`  
+  Sumber: OrangeBot · Popularitas: OrangeBot menampilkan 41.4k weekly installs, 118.4k stars.
 
 ### Coding & Frontend
 
@@ -157,6 +367,78 @@ Skill untuk frontend, UI, deployment, pemahaman repositori, dan workflow enginee
   Tag: `Repository` `Codebase` `Explanation`  
   Sumber: OrangeBot · Popularitas: 27.4k weekly installs, 3,285 stars, 495 forks on OrangeBot.
 
+- **[Next.js Master](https://www.skillsdirectory.com/skills/fratilanico-nextjs-master)**  
+  Skill Next.js untuk struktur app, API routes, komponen halaman, deployment, dan best practices.  
+  Tag: `Next.js` `React` `Frontend`  
+  Sumber: Skills Directory · Popularitas: Halaman Skills Directory publik dengan visibilitas, skor keamanan, dan sinyal penggunaan.
+
+- **[Figma Generate Design](https://github.com/openai/skills/tree/main/skills/.curated/figma-generate-design)**  
+  Menghasilkan konsep desain Figma, layout, komponen, dan sistem visual dari kebutuhan produk.  
+  Tag: `Figma` `Design` `UI`  
+  Sumber: GitHub openai/skills · Popularitas: Skill curated resmi dari repositori openai/skills（~23.3k stars）.
+
+- **[Figma Implement Design](https://github.com/openai/skills/tree/main/skills/.curated/figma-implement-design)**  
+  Menerjemahkan desain Figma ke kode frontend, struktur komponen, spacing, dan catatan implementasi.  
+  Tag: `Figma` `Design` `Frontend`  
+  Sumber: GitHub openai/skills · Popularitas: Skill curated resmi dari repositori openai/skills（~23.3k stars）.
+
+- **[OpenAI Docs](https://github.com/openai/skills/tree/main/skills/.curated/openai-docs)**  
+  Membantu Codex menavigasi dokumentasi OpenAI, referensi API, SDK, dan pola integrasi.  
+  Tag: `OpenAI` `Documentation` `API`  
+  Sumber: GitHub openai/skills · Popularitas: Skill curated resmi dari repositori openai/skills（~23.3k stars）.
+
+- **[GitHub Fix CI](https://github.com/openai/skills/tree/main/skills/.curated/gh-fix-ci)**  
+  Mendiagnosis dan memperbaiki kegagalan CI, konfigurasi workflow, error test, dan masalah pipeline build.  
+  Tag: `CI` `GitHub` `DevOps`  
+  Sumber: GitHub openai/skills · Popularitas: Skill curated resmi dari repositori openai/skills（~23.3k stars）.
+
+- **[GitHub Address Comments](https://github.com/openai/skills/tree/main/skills/.curated/gh-address-comments)**  
+  Menangani komentar review PR, perubahan yang disarankan, dan feedback reviewer secara sistematis.  
+  Tag: `GitHub` `Code Review` `PR`  
+  Sumber: GitHub openai/skills · Popularitas: Skill curated resmi dari repositori openai/skills（~23.3k stars）.
+
+- **[GitHub CLI](https://crossaitools.com/skills/github/awesome-copilot/gh-cli)**  
+  Skill referensi GitHub CLI untuk mengelola repository, issue, pull request, Actions, project, release, gist, Codespaces, dan organisasi dari terminal.  
+  Tag: `GitHub` `CLI` `Repository`  
+  Sumber: Cross AI Tools · Popularitas: Listing Cross AI Tools dari github/awesome-copilot; GitHub melaporkan sekitar 36.306 stars dan 4.522 forks.  
+  Instal: `npx skills add https://github.com/github/awesome-copilot --skill gh-cli -a codex -g`  
+  Catatan: Memerlukan pemahaman GitHub CLI dan mungkin membutuhkan autentikasi GitHub atau token; tinjau izin sebelum menjalankan perintah yang mengubah repository, issue, atau pull request.
+
+- **[Cloudflare Deploy](https://github.com/openai/skills/tree/main/skills/.curated/cloudflare-deploy)**  
+  Mendeploy aplikasi dan situs statis ke Cloudflare Workers, Pages, dan infrastruktur edge.  
+  Tag: `Cloudflare` `Deployment` `DevOps`  
+  Sumber: GitHub openai/skills · Popularitas: Skill curated resmi dari repositori openai/skills（~23.3k stars）.
+
+- **[Netlify Deploy](https://github.com/openai/skills/tree/main/skills/.curated/netlify-deploy)**  
+  Mendeploy app frontend, landing page, dan prototipe ke Netlify dengan panduan build dan routing.  
+  Tag: `Netlify` `Deployment` `DevOps`  
+  Sumber: GitHub openai/skills · Popularitas: Skill curated resmi dari repositori openai/skills（~23.3k stars）.
+
+- **[Sentry](https://github.com/openai/skills/tree/main/skills/.curated/sentry)**  
+  Mengintegrasikan Sentry untuk monitoring error, tracing performa, pelacakan release, dan debug insiden.  
+  Tag: `Sentry` `Monitoring` `Errors`  
+  Sumber: GitHub openai/skills · Popularitas: Skill curated resmi dari repositori openai/skills（~23.3k stars）.
+
+- **[Web Design Guidelines](https://orangebot.ai/s/web-design-guidelines)**  
+  Panduan desain web untuk layout, typography, warna, accessibility, dan UI responsif.  
+  Tag: `Web Design` `UI` `UX`  
+  Sumber: OrangeBot · Popularitas: OrangeBot menampilkan 206.0k weekly installs, 24.0k stars.
+
+- **[Systematic Debugging](https://orangebot.ai/s/systematic-debugging)**  
+  Workflow debugging sistematis untuk reproduksi bug, isolasi akar masalah, verifikasi fix, dan cegah regresi.  
+  Tag: `Debugging` `Engineering` `Troubleshooting`  
+  Sumber: OrangeBot · Popularitas: OrangeBot menampilkan 42.5k weekly installs, 118.4k stars.
+
+- **[Next Best Practices](https://orangebot.ai/s/next-best-practices)**  
+  Best practices Next.js untuk routing, data fetching, rendering, performa, dan production.  
+  Tag: `Next.js` `Best Practices` `Frontend`  
+  Sumber: OrangeBot · Popularitas: OrangeBot menampilkan 46.4k weekly installs, 778 stars.
+
+- **[Supabase Postgres Best Practices](https://orangebot.ai/s/supabase-postgres-best-practices)**  
+  Best practices Supabase/Postgres untuk schema, RLS, query, migrasi, dan workflow data backend.  
+  Tag: `Supabase` `Postgres` `Database`  
+  Sumber: OrangeBot · Popularitas: OrangeBot menampilkan 54.0k weekly installs, 1.7k stars.
+
 ### Kreatif & Media
 
 Skill kreatif untuk gambar, audio, video, visual marketing, dan produksi media.
@@ -171,6 +453,13 @@ Skill kreatif untuk gambar, audio, video, visual marketing, dan produksi media.
   Praktik terbaik untuk video terprogram, motion graphics, demo produk, shorts otomatis, dan video data dengan React.  
   Tag: `Video` `React` `Remotion`  
   Sumber: OrangeBot · Popularitas: 181.8k weekly installs, 867 stars, 24 forks on OrangeBot.
+
+- **[HyperFrames](https://github.com/heygen-com/hyperframes/blob/main/skills/hyperframes/SKILL.md)**  
+  Skill awal untuk HyperFrames, framework HTML-to-video yang merutekan workflow video, animasi, motion graphics, promo produk, website-to-video, caption, slideshow, dan migrasi Remotion.  
+  Tag: `Video` `Animation` `HTML`  
+  Sumber: GitHub · Popularitas: Repo resmi heygen-com/hyperframes dengan sekitar 33.674 stars dan 3.144 forks di GitHub.  
+  Instal: `npx skills add heygen-com/hyperframes --skill hyperframes`  
+  Catatan: Bergantung pada workflow HyperFrames/skills CLI dan dapat memakai browser rendering, aset media, tooling mirip FFmpeg/Puppeteer, serta pengecekan jaringan; tinjau izin proyek sebelum prainstal.
 
 - **[P Video](https://orangebot.ai/s/p-video)**  
   Mengubah skrip kreatif, aset, dan parameter menjadi workflow pembuatan atau editing video yang dapat dieksekusi.  
@@ -187,6 +476,37 @@ Skill kreatif untuk gambar, audio, video, visual marketing, dan produksi media.
   Meningkatkan antarmuka lewat user journey, state komponen, hierarki visual, aksesibilitas, dan feedback interaksi.  
   Tag: `UI/UX` `Design` `Product`  
   Sumber: OrangeBot · Popularitas: 85.9k weekly installs, 1,491 stars, 150 forks on OrangeBot.
+
+- **[Transcribe](https://github.com/openai/skills/tree/main/skills/.curated/transcribe)**  
+  Mentranskripsikan audio dan ucapan ke teks untuk rapat, wawancara, podcast, dan workflow media.  
+  Tag: `Audio` `Transcription` `Speech`  
+  Sumber: GitHub openai/skills · Popularitas: Skill curated resmi dari repositori openai/skills（~23.3k stars）.
+
+- **[Speech](https://github.com/openai/skills/tree/main/skills/.curated/speech)**  
+  Menghasilkan suara alami dari teks untuk voiceover, asisten, accessibility, dan produksi media.  
+  Tag: `TTS` `Speech` `Audio`  
+  Sumber: GitHub openai/skills · Popularitas: Skill curated resmi dari repositori openai/skills（~23.3k stars）.
+
+- **[AI Video Generation](https://orangebot.ai/s/ai-video-generation)**  
+  Menghasilkan video AI dari prompt, skrip, storyboard untuk marketing, sosial, dan produksi kreatif.  
+  Tag: `Video` `AI` `Generation`  
+  Sumber: OrangeBot · Popularitas: OrangeBot menampilkan 111.3k weekly installs, 235 stars.  
+  Catatan: Bergantung pada model/API eksternal; verifikasi biaya, kunci, dan ketentuan penyedia.
+
+- **[ImageGen](https://skillsmp.com/zh/creators/openai/skills/skills-system-imagegen)**  
+  Skill generasi gambar OpenAI untuk prompt, gaya, edit, variasi, dan aset visual.  
+  Tag: `Image` `Generation` `OpenAI`  
+  Sumber: SkillsMP · Popularitas: SkillsMP menampilkan 23,095 stars, 1,565 forks.
+
+- **[Canvas Design](https://skills.cat/skills/anthropics/skills/canvas-design)**  
+  Skill desain Canvas untuk layout, komposisi visual, design system, dan aset kreatif.  
+  Tag: `Canvas` `Design` `Creative`  
+  Sumber: SkillsCat · Popularitas: Halaman SkillsCat dapat dicari dengan sumber GitHub dan CLI install.
+
+- **[AI Video Editing](https://skillsmp.com/creators/arcasilesgroup/ai-engineering/codex-skills-ai-video-editing)**  
+  Skill editing video AI untuk potongan, transisi, caption, b-roll, dan post-production.  
+  Tag: `Video` `Editing` `AI`  
+  Sumber: SkillsMP · Popularitas: SkillsMP menampilkan 52 stars, 3 forks.
 
 ### Otomasi Browser & Pengujian
 
@@ -207,6 +527,16 @@ Skill untuk kontrol browser, screenshot, pemeriksaan UI, dan validasi interaksi.
   Tag: `Screenshot` `UI QA` `Design`  
   Sumber: GitHub openai/skills · Popularitas: Official OpenAI curated skill from the openai/skills repository.
 
+- **[Playwright Interactive](https://github.com/openai/skills/tree/main/skills/.curated/playwright-interactive)**  
+  Skill otomasi browser interaktif Playwright untuk navigasi, interaksi elemen, screenshot, dan validasi UI.  
+  Tag: `Browser` `Playwright` `Testing`  
+  Sumber: GitHub openai/skills · Popularitas: Skill curated resmi dari repositori openai/skills（~23.3k stars）.
+
+- **[Browser Use](https://orangebot.ai/s/browser-use)**  
+  Skill browser-use untuk navigasi web otonom, isi form, ekstraksi data, dan browsing berbasis agent.  
+  Tag: `Browser` `Automation` `Agent`  
+  Sumber: OrangeBot · Popularitas: OrangeBot menampilkan 57.4k weekly installs, 84.8k stars.
+
 ### Dokumen & Presentasi
 
 Skill untuk PDF, slide, laporan, proposal, dan dokumen terstruktur.
@@ -226,6 +556,16 @@ Skill untuk PDF, slide, laporan, proposal, dan dokumen terstruktur.
   Tag: `Word` `Documents` `Reports`  
   Sumber: OrangeBot · Popularitas: 42.0k weekly installs, 4,938 stars, 353 forks on OrangeBot.
 
+- **[Notion Research Documentation](https://github.com/openai/skills/tree/main/skills/.curated/notion-research-documentation)**  
+  Mengorganisir temuan riset, sitasi, ringkasan, dan dokumentasi terstruktur di Notion.  
+  Tag: `Notion` `Research` `Documentation`  
+  Sumber: GitHub openai/skills · Popularitas: Skill curated resmi dari repositori openai/skills（~23.3k stars）.
+
+- **[PDF (OpenAI Curated)](https://github.com/openai/skills/tree/main/skills/.curated/pdf)**  
+  Membaca, mengekstrak, merangkum, dan memanipulasi PDF untuk laporan, formulir, dan konten terstruktur.  
+  Tag: `PDF` `Documents` `Parsing`  
+  Sumber: GitHub openai/skills · Popularitas: Skill curated resmi dari repositori openai/skills（~23.3k stars）.
+
 ### Data & Visualisasi
 
 Skill untuk bagan, penjelasan visual, analitik, dan cerita berbasis data.
@@ -234,6 +574,46 @@ Skill untuk bagan, penjelasan visual, analitik, dan cerita berbasis data.
   Membantu membuat bagan, penjelasan visual, roadmap, diagram arsitektur, dan narasi data.  
   Tag: `Charts` `Visualization` `Data`  
   Sumber: OrangeBot · Popularitas: OrangeBot skill page with usage, stars, and forks metadata.
+
+- **[Quant Analyst](https://www.skillsdirectory.com/skills/benjaminastera-quant-analyst)**  
+  Skill analisis kuantitatif untuk data pasar, riset faktor, backtesting, metrik portofolio, dan pemodelan keuangan.  
+  Tag: `Quant` `Finance` `Analysis`  
+  Sumber: Skills Directory · Popularitas: Halaman Skills Directory publik dengan visibilitas, skor keamanan, dan sinyal penggunaan.
+
+- **[AI Volatility Prediction](https://www.skillsdirectory.com/skills/paulpas-ai-volatility-prediction)**  
+  Memprediksi volatilitas pasar dengan AI untuk penilaian risiko, hedging, dan riset trading kuantitatif.  
+  Tag: `Finance` `Risk` `ML`  
+  Sumber: Skills Directory · Popularitas: Halaman Skills Directory publik dengan visibilitas, skor keamanan, dan sinyal penggunaan.  
+  Catatan: Domain keuangan/risiko; perlu tinjauan kepatuhan dan disclaimer yang jelas.
+
+- **[Apify Ecommerce](https://skillmd.ai/skills/apify-ecommerce/)**  
+  Skill data ecommerce dengan Apify untuk scraping produk, harga, ulasan, dan intelijen kompetitif.  
+  Tag: `Ecommerce` `Scraping` `Apify`  
+  Sumber: SkillMD.ai · Popularitas: Halaman SkillMD.ai dengan metadata instalasi dan sinyal penggunaan.  
+  Catatan: Memerlukan akses jaringan dan kredensial API eksternal.
+
+- **[AfrexAI Personal Finance](https://skillmd.ai/skills/afrexai-personal-finance/)**  
+  Skill keuangan pribadi untuk anggaran, pelacakan pengeluaran, tabungan, utang, dan analisis kesehatan finansial.  
+  Tag: `Finance` `Personal Finance` `Budgeting`  
+  Sumber: SkillMD.ai · Popularitas: Halaman SkillMD.ai dengan metadata instalasi dan sinyal penggunaan.  
+  Catatan: Domain keuangan; perlu tinjauan kepatuhan dan disclaimer yang jelas.
+
+- **[Jupyter Notebook](https://github.com/openai/skills/tree/main/skills/.curated/jupyter-notebook)**  
+  Skill Jupyter Notebook untuk eksplorasi data, sel analisis, visualisasi, dan workflow riset reproduktif.  
+  Tag: `Jupyter` `Notebook` `Data`  
+  Sumber: GitHub openai/skills · Popularitas: Skill curated resmi dari repositori openai/skills（~23.3k stars）.
+
+- **[Excel Author](https://skillsmp.com/creators/nousresearch/hermes-agent/optional-skills-finance-excel-author)**  
+  Skill authoring Excel untuk model keuangan, formula, pivot, chart, dan workflow spreadsheet.  
+  Tag: `Excel` `Finance` `Spreadsheet`  
+  Sumber: SkillsMP · Popularitas: Halaman SkillsMP dengan GitHub stars, forks, dan metadata instalasi.  
+  Catatan: Domain keuangan; perlu tinjauan kepatuhan dan disclaimer yang jelas.
+
+- **[EconFin Idea Finder](https://skills.cat/skills/brycewang-stanford/auto-empirical-research-skills/econfin-idea-finder)**  
+  Menemukan ide riset ekonomi/keuangan, hipotesis, dataset, dan arah studi empiris.  
+  Tag: `Finance` `Research` `Economics`  
+  Sumber: SkillsCat · Popularitas: Halaman SkillsCat dapat dicari dengan sumber GitHub dan CLI install.  
+  Catatan: Domain keuangan/riset; perlu tinjauan kepatuhan dan disclaimer yang jelas.
 
 ### Pemasaran & Pertumbuhan
 
@@ -253,6 +633,21 @@ Skill untuk SEO, copy, aset peluncuran, kampanye, dan workflow pertumbuhan.
   Menulis copy iklan, landing page, pesan produk, email marketing, posting sosial, dan skrip video.  
   Tag: `Copy` `Ads` `Content`  
   Sumber: OrangeBot · Popularitas: 49.9k weekly installs, 11,596 stars, 981 forks on OrangeBot.
+
+- **[Lottie Motion Builder](https://www.skillsdirectory.com/skills/markoblogo-lottie-motion-builder)**  
+  Mengubah kebutuhan teks menjadi motion mobile, empty state SaaS, motion brand, GIF iklan, dan rencana animasi halaman.  
+  Tag: `Motion` `Lottie` `Animation`  
+  Sumber: Skills Directory · Popularitas: Halaman Skills Directory publik dengan visibilitas, skor keamanan, dan sinyal penggunaan.
+
+- **[Paid Ads](https://www.skillsdirectory.com/skills/benjaminastera-paid-ads)**  
+  Skill iklan berbayar untuk struktur kampanye, targeting, copy, alokasi anggaran, dan optimasi performa.  
+  Tag: `Ads` `PPC` `Marketing`  
+  Sumber: Skills Directory · Popularitas: Halaman Skills Directory publik dengan visibilitas, skor keamanan, dan sinyal penggunaan.
+
+- **[Campaign Plan](https://skillsmp.com/creators/anthropics/knowledge-work-plugins/marketing-skills-campaign-plan)**  
+  Skill perencanaan kampanye marketing untuk tujuan, saluran, pesan, timeline, anggaran, dan checklist.  
+  Tag: `Marketing` `Campaign` `Planning`  
+  Sumber: SkillsMP · Popularitas: Halaman SkillsMP dengan GitHub stars, forks, dan metadata instalasi.
 
 ### Industri & Kepatuhan
 
@@ -279,9 +674,19 @@ Skill domain untuk kesehatan, aksesibilitas, keamanan, lokalisasi, dan bidang la
   Sumber: SkillsCat · Popularitas: SkillsCat entry with stars, token metadata, and CLI install support.  
   Catatan: Domain berisiko tinggi; perlu tinjauan kepatuhan dan disclaimer yang jelas.
 
+- **[Security Threat Model](https://github.com/openai/skills/tree/main/skills/.curated/security-threat-model)**  
+  Membangun threat model, attack surface, mitigasi, dan checklist review keamanan.  
+  Tag: `Security` `Threat Model` `Compliance`  
+  Sumber: GitHub openai/skills · Popularitas: Skill curated resmi dari repositori openai/skills（~23.3k stars）.
+
+## Panduan Custom Skill
+
+- **[Panduan Custom Skill →](GUIDE_id.md)** — Pelajari cara membuat, menyesuaikan, dan menginstal Codex Skill Anda sendiri.
+
 ## Cara Berkontribusi
 
 - Buka issue [Submit a Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml) dengan link yang dapat diakses, deskripsi singkat, kategori, platform sumber, dan bukti popularitas.
+- Untuk Skill native Tiongkok, gunakan template [Submit a Chinese-Native Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml).
 - Tandai Skill yang memerlukan API key, kontrol browser, eksekusi command, atau review kesehatan/keuangan/hukum.
 
 ## Kriteria Kurasi
@@ -302,4 +707,4 @@ Terima kasih kepada pembuat direktori Skill, maintainer open-source, dan komunit
 
 ---
 
-> README ini dibuat dari `data/skills.json`. Edit file data lalu jalankan `npm run generate:readme`.
+> README ini dibuat dari `data/skills.json`. Edit file data lalu jalankan `npm run generate:all`.

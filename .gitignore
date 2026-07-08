@@ -2,6 +2,8 @@
 .idea/
 .vscode/
 
+.github/skills/awesome-codex-skills-maintainer/
+
 node_modules/
 npm-debug.log*
 yarn-debug.log*

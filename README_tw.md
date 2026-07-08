@@ -5,10 +5,15 @@
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 [![GitHub stars](https://img.shields.io/github/stars/flaqai/awesome_codex_skills?style=social)](https://github.com/flaqai/awesome_codex_skills)
 [![Submit Skills via Issues](https://img.shields.io/badge/Submit%20Skills-via%20Issues-brightgreen.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml)
+[![提交中文 Skill](https://img.shields.io/badge/%E6%8F%90%E4%BA%A4%E4%B8%AD%E6%96%87%20Skill-via%20Issues-orange.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml)
 
 > 精選、多語言、按場景分類的 Codex Skill 合集，幫助使用者快速找到適合創作、程式開發、自動化、文件與產業工作流的 Skill。
 
 > Skill 來自公開目錄和開源倉庫，僅用於探索和學習。如果連結失效或需要移除，請提交 issue。
+
+> 面向中文開發者：參見 [中文 Skill 專區](#中文-skill-專區)
+
+> **[自訂 Skill 指南 →](GUIDE_tw.md)** 學習如何建立、改編並安裝你自己的 Codex Skill。
 
 ---
 
@@ -22,7 +27,9 @@
 - [按分類瀏覽](#按分類瀏覽)
 - [統計](#統計)
 - [精選 Skill](#精選-skill)
+- [中文 Skill 專區](#中文-skill-專區)
 - [全部 Skill](#全部-skill)
+- [自訂 Skill 指南](#自訂-skill-指南)
 - [如何貢獻](#如何貢獻)
 - [收錄標準](#收錄標準)
 - [授權](#授權)
@@ -48,9 +55,10 @@
 
 | Metric | Count |
 |---|---:|
-| Skill 總數 | 26 |
+| Skill 總數 | 87 |
 | 分類數 | 8 |
-| 最後更新 | 2026-07-07 |
+| 中文原生 Skill | 20 |
+| 最後更新 | 2026-07-08 |
 
 ## 精選 Skill
 
@@ -111,6 +119,185 @@
   標籤: `Security` `Review` `Engineering`  
   來源: GitHub openai/skills · 熱度: Official OpenAI curated skill from the openai/skills repository.
 
+- **[Playwright Interactive](https://github.com/openai/skills/tree/main/skills/.curated/playwright-interactive)**  
+  互動式 Playwright 瀏覽器自動化 Skill，用於頁面導航、元素互動、截圖和 UI 驗證。  
+  標籤: `Browser` `Playwright` `Testing`  
+  來源: GitHub openai/skills · 熱度: OpenAI 官方 curated Skill，來自 openai/skills 倉庫（約 23.3k stars）。
+
+- **[Figma Generate Design](https://github.com/openai/skills/tree/main/skills/.curated/figma-generate-design)**  
+  根據產品需求生成 Figma 設計概念、版面、元件和視覺系統。  
+  標籤: `Figma` `Design` `UI`  
+  來源: GitHub openai/skills · 熱度: OpenAI 官方 curated Skill，來自 openai/skills 倉庫（約 23.3k stars）。
+
+- **[OpenAI Docs](https://github.com/openai/skills/tree/main/skills/.curated/openai-docs)**  
+  幫助 Codex 查閱 OpenAI 文件、API 參考、SDK 用法和整合模式。  
+  標籤: `OpenAI` `Documentation` `API`  
+  來源: GitHub openai/skills · 熱度: OpenAI 官方 curated Skill，來自 openai/skills 倉庫（約 23.3k stars）。
+
+- **[Web Design Guidelines](https://orangebot.ai/s/web-design-guidelines)**  
+  指導網頁設計的版面、排版、色彩、無障礙和響應式 UI 模式。  
+  標籤: `Web Design` `UI` `UX`  
+  來源: OrangeBot · 熱度: OrangeBot 顯示 206.0k weekly installs、24.0k stars。
+
+- **[Brainstorming](https://orangebot.ai/s/brainstorming)**  
+  結構化腦力激盪，用於產品創意、功能概念、行銷角度和創造性問題解決。  
+  標籤: `Ideation` `Planning` `Creativity`  
+  來源: OrangeBot · 熱度: OrangeBot 顯示 77.2k weekly installs、118.4k stars。
+
+- **[Browser Use](https://orangebot.ai/s/browser-use)**  
+  瀏覽器使用 Skill，用於自主網頁導航、表單填寫、資料提取和 agent 驅動瀏覽。  
+  標籤: `Browser` `Automation` `Agent`  
+  來源: OrangeBot · 熱度: OrangeBot 顯示 57.4k weekly installs、84.8k stars。
+
+- **[ImageGen](https://skillsmp.com/zh/creators/openai/skills/skills-system-imagegen)**  
+  OpenAI 圖像生成 Skill，用於提示詞、風格、編輯、變體和視覺資產工作流。  
+  標籤: `Image` `Generation` `OpenAI`  
+  來源: SkillsMP · 熱度: SkillsMP 顯示 23,095 stars、1,565 forks。
+
+## 中文 Skill 專區
+
+面向中文開發者與中文工作流的原生 Skill，涵蓋文件排版、程式碼審查、寫作潤飾、學術研究、金融量化、產品規劃與 DevOps。
+
+- **[Chinese Documentation](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-documentation)**  
+  中文文件排版與寫作規範，涵蓋中英文空格、標點、術語、連結與技術文案可讀性。  
+  標籤: `Chinese-Native` `Documentation` `Technical Writing`  
+  來源: SkillsMP · 熱度: SkillsMP 顯示 jnMetaCode/superpowers-zh 約 6,213 stars。  
+  安裝: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-documentation -a codex -g`  
+  注意: 目錄參考：SkillsMP Chinese Documentation。預裝前請審查倉庫授權。
+
+- **[Chinese Commit Conventions](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-commit-conventions)**  
+  中文 Conventional Commits、changelog、commitlint、Husky 與 Commitizen 工程規範指南。  
+  標籤: `Chinese-Native` `Git` `DevOps`  
+  來源: SkillsMP · 熱度: SkillsMP 顯示來源倉庫約 6,213 stars。  
+  安裝: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-commit-conventions -a codex -g`  
+  注意: 適合統一團隊工程流程；提交前仍需按專案規則複核生成資訊。
+
+- **[Chinese Code Review](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-code-review)**  
+  中文程式碼審查溝通模板，包含分級標註、評審話術與團隊協作模式。  
+  標籤: `Chinese-Native` `Code Review` `Collaboration`  
+  來源: SkillsMP · 熱度: SkillsMP 顯示來源倉庫約 6,213 stars。  
+  安裝: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-code-review -a codex -g`  
+  注意: 評審結論仍應基於真實 diff 與測試結果。
+
+- **[Deep Research ZH](https://github.com/LeoYeAI/openclaw-master-skills/tree/main/skills/deep-research-zh)**  
+  中文深度調研工作流，適用於產業研究、競品分析、政策研究、PDF 輸出與自動交付。  
+  標籤: `Chinese-Native` `Research` `Reports`  
+  來源: SkillsMP · 熱度: SkillsMP 顯示 LeoYeAI/openclaw-master-skills 約 2,076 stars。  
+  安裝: `npx skills add https://github.com/LeoYeAI/openclaw-master-skills --skill deep-research-zh -a codex -g`  
+  注意: 預裝前需審查 Tavily、飛書、PDF 腳本、網路存取與 API Key 依賴。
+
+- **[Quant Trader Daily](https://github.com/LeoYeAI/openclaw-master-skills/tree/main/skills/trader-daily)**  
+  量化交易日常中文工作流，涵蓋持倉監控、風控提醒、匯報與交易日誌。  
+  標籤: `Chinese-Native` `Finance` `Quant`  
+  來源: SkillsMP · 熱度: SkillsMP 顯示來源倉庫約 2,076 stars。  
+  安裝: `npx skills add https://github.com/LeoYeAI/openclaw-master-skills --skill trader-daily -a codex -g`  
+  注意: 金融領域。非投資建議；使用或預裝前需要合規審查。
+
+- **[ZH Code Reviewer](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-code-reviewer)**  
+  中文程式碼審查專家，按正確性、品質、效能、安全與設計輸出結構化評審。  
+  標籤: `Chinese-Native` `Code Review` `Quality`  
+  來源: SkillsMP · 熱度: SkillsMP 顯示 laolaoshiren/claude-code-skills-zh 約 504 stars。  
+  安裝: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-code-reviewer -a codex -g`  
+  注意: 作為評審輔助使用；合併前維護者仍需核實結論。
+
+- **[ZH README](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-readme)**  
+  分析專案結構並生成高品質中文 README，適合開源專案、內部工具與 AI 產品。  
+  標籤: `Chinese-Native` `README` `Developer Experience`  
+  來源: SkillsMP · 熱度: SkillsMP 顯示來源倉庫約 504 stars。  
+  安裝: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-readme -a codex -g`  
+  注意: 生成文件需複核安裝命令、授權文本與專案相關敘述。
+
+- **[ZH Docgen](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-docgen)**  
+  從程式碼庫生成中文技術文件，包括 API 說明、模組設計與運維手冊。  
+  標籤: `Chinese-Native` `Documentation` `Codebase`  
+  來源: SkillsMP · 熱度: SkillsMP 顯示來源倉庫約 504 stars。  
+  安裝: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-docgen -a codex -g`  
+  注意: 需依當前倉庫實際狀態複核生成文件。
+
+- **[De-AI Writing](https://github.com/OUBIGFA/De-AI-Prompt-Enhancer-Writer-Booster-SKILL)**  
+  中文改寫、潤飾、翻譯與審閱工作流，用於減少模板句式與 AI 味表達。  
+  標籤: `Chinese-Native` `Writing` `Humanization`  
+  來源: SkillsMP · 熱度: SkillsMP 顯示來源倉庫約 488 stars。  
+  安裝: `npx skills add https://github.com/OUBIGFA/De-AI-Prompt-Enhancer-Writer-Booster-SKILL -a codex -g`  
+  注意: 學術或受政策約束情境需做誠信審查，不應用於規避檢測規則。
+
+- **[Chinese Writing](https://github.com/miantiao-me/aigc-weekly)**  
+  中文寫作指南，適用於週刊、部落格與科技文章，強調清晰、人性化與低 AI 味。  
+  標籤: `Chinese-Native` `Writing` `Newsletter`  
+  來源: SkillsMP · 熱度: SkillsMP 顯示 miantiao-me/aigc-weekly 約 544 stars。  
+  安裝: `npx skills add https://github.com/miantiao-me/aigc-weekly --skill chinese-writing -a codex -g`  
+  注意: 因公開索引路徑可能變化，此處使用倉庫主鏈作為來源。
+
+- **[Tech Doc Style Chinese](https://github.com/Fenng/Tech-Doc-Style-Chinese)**  
+  克制精準的中文技術文件風格，覆蓋產品文案、API 文件、術語、標點與可掃讀寫作。  
+  標籤: `Chinese-Native` `Technical Writing` `Style Guide`  
+  來源: SkillsMP · 熱度: SkillsMP 顯示 Fenng/Tech-Doc-Style-Chinese 約 365 stars。  
+  安裝: `npx skills add https://github.com/Fenng/Tech-Doc-Style-Chinese -a codex -g`  
+  注意: 作為編輯風格指南使用；程式碼字面量、API 路徑與法律文本需原樣保留。
+
+- **[LaTeX Thesis ZH](https://github.com/bahayonghang/academic-writing-skills/tree/main/academic-writing-skills/latex-thesis-zh)**  
+  中文 LaTeX 學位論文助手，涵蓋編譯診斷、GB/T 7714、章節結構、公式與術語一致性。  
+  標籤: `Chinese-Native` `LaTeX` `Academic`  
+  來源: SkillsMP · 熱度: SkillsMP 顯示 bahayonghang/academic-writing-skills 約 365 stars。  
+  安裝: `npx skills add https://github.com/bahayonghang/academic-writing-skills --skill latex-thesis-zh -a codex -g`  
+  注意: 學術寫作需遵守學校政策，並人工核驗引用。
+
+- **[Paper Write](https://github.com/xstongxue/best-skills/tree/main/skills/paper-write)**  
+  本碩學位論文中文工作流，支援大綱、結構、參考文獻、潤飾、擴寫、縮寫與翻譯。  
+  標籤: `Chinese-Native` `Academic` `Writing`  
+  來源: SkillsCat · 熱度: SkillsCat 顯示 xstongxue/best-skills 約 2,149 stars。  
+  安裝: `npx skillscat add xstongxue/best-skills/paper-write`  
+  注意: 使用前必須審查學術誠信與引用準確性。
+
+- **[Humanize Chinese](https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/main/skills/49-voidborne-d-humanize-chinese)**  
+  中文 AI 文本人性化與檢測工作流，包含規則、統計特徵與學術改寫模式。  
+  標籤: `Chinese-Native` `Writing` `Academic`  
+  來源: SkillsCat · 熱度: SkillsCat 顯示 brycewang-stanford/auto-empirical-research-skills 約 2,677 stars。  
+  安裝: `npx skillscat add brycewang-stanford/auto-empirical-research-skills/humanize-chinese`  
+  注意: 合規敏感度高；不得用於規避學術或平台檢測政策。
+
+- **[EconFin Idea Finder ZH](https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/main/skills/67-econfin-workflow-toolkit)**  
+  中文漏斗式經濟金融實證選題工具，用於生成假設、資料集與實證研究計畫。  
+  標籤: `Chinese-Native` `Finance` `Research`  
+  來源: SkillsCat · 熱度: SkillsCat 顯示來源倉庫約 2,677 stars。  
+  安裝: `npx skillscat add brycewang-stanford/auto-empirical-research-skills/econfin-idea-finder`  
+  注意: 金融與研究領域；需要合規審查與來源核驗。
+
+- **[Boss](https://github.com/echovic/boss-skill)**  
+  中文 BMAD 式多 Agent 軟體交付工作流，覆蓋 PM、架構、設計、開發、QA 與 DevOps。  
+  標籤: `Chinese-Native` `Multi-Agent` `Project Management`  
+  來源: SkillsCat · 熱度: SkillsCat 公開頁可訪問；來源倉庫約 550 stars。  
+  安裝: `npx skillscat add echovic/boss-skill`  
+  注意: SkillsCat 標記中等安全風險；預裝前需審查自動化、命令執行、檔案寫入與 Agent 編排。
+
+- **[Requirement Analyst](https://github.com/CaoMeiYouRen/momei/tree/master/.github/skills/requirement-analyst)**  
+  中文需求分析 Skill，用於需求澄清、意圖抽離、roadmap 對齊與優先級評分。  
+  標籤: `Chinese-Native` `Requirements` `Product`  
+  來源: SkillMD.ai · 熱度: SkillMD.ai 顯示 1,483 次瀏覽、265 次下載；GitHub 源路徑公開可訪問。  
+  安裝: `npx skills add https://github.com/CaoMeiYouRen/momei --skill requirement-analyst -a codex -g`  
+  注意: 目錄參考：SkillMD.ai Requirement Analyst。產品假設需與相關方確認。
+
+- **[OB](https://github.com/NeverSight/learn-skills.dev/blob/main/data/skills-md/aibangjuxin/knowledge/ob/SKILL.md)**  
+  中文 GCP API 平台 Onboarding 架構 Skill，涵蓋 GitOps、Pipeline、Firestore、BigQuery 與可審計發布。  
+  標籤: `Chinese-Native` `DevOps` `GCP`  
+  來源: SkillMD.ai · 熱度: SkillMD.ai 顯示 1,178 次瀏覽、309 次下載；AgentSkill API 指向公開 GitHub 來源。  
+  安裝: `npx skills add https://github.com/NeverSight/learn-skills.dev --skill ob -a codex -g`  
+  注意: 垂直 GCP 企業場景；預裝前需審查雲權限、Pipeline 動作與回滾指引。
+
+- **[NSFC Abstract](https://github.com/huangwb8/ChineseResearchLaTeX)**  
+  NSFC 標書中英文摘要助手，支援中文摘要、忠實英文翻譯、標題建議與長度自檢。  
+  標籤: `Chinese-Native` `Academic` `Grant`  
+  來源: Skills Directory · 熱度: Skills Directory 顯示來源倉庫約 1,626 stars，安全評分 A。  
+  安裝: `npx skills add https://github.com/huangwb8/ChineseResearchLaTeX -a codex -g`  
+  注意: 基金申請需領域專家複核，並嚴格遵守申報規則。
+
+- **[Paper Translation](https://github.com/APLaS-Plus/paper-translation)**  
+  學術論文 PDF 中譯 Markdown 工作流，基於 MinerU 保留公式、圖片、表格、程式碼與術語。  
+  標籤: `Chinese-Native` `Translation` `Academic`  
+  來源: Skills Directory · 熱度: Skills Directory 公開頁可訪問，並顯示安全評分 A。  
+  安裝: `npx skills add https://github.com/APLaS-Plus/paper-translation -a codex -g`  
+  注意: 需要 MinerU API Token；需審查外部上傳、隱私、版權與翻譯準確性風險。
+
 ## 全部 Skill
 
 ### Agent 工具鏈
@@ -127,6 +314,31 @@
   將可重複的團隊流程轉換為可復用 SKILL.md 資產的元技能。  
   標籤: `Skill Authoring` `SKILL.md` `Workflow`  
   來源: OrangeBot · 熱度: 112.1k weekly installs, 21,445 stars, 1,698 forks on OrangeBot.
+
+- **[Project Planner](https://orangebot.ai/s/project-planner)**  
+  將複雜任務、內容計畫、產品功能或行銷活動拆分為階段目標、執行步驟、風險和交付物。  
+  標籤: `Planning` `Project Management` `Workflow`  
+  來源: OrangeBot · 熱度: OrangeBot 頁面展示 weekly installs、stars、forks 等使用量指標。
+
+- **[Eve](https://skills.cat/skills/vercel/eve)**  
+  Vercel AI Agent 框架 Skill，適合搭建 AI 原生應用、後端任務、前端整合和可部署原型。  
+  標籤: `AI Agent` `Vercel` `SaaS`  
+  來源: SkillsCat · 熱度: SkillsCat 可檢索頁面，提供 GitHub 來源與 CLI 安裝入口。
+
+- **[CLI Creator](https://github.com/openai/skills/tree/main/skills/.curated/cli-creator)**  
+  建立命令列工具，包含參數解析、說明文字、子命令和開發者友善體驗。  
+  標籤: `CLI` `Terminal` `Tooling`  
+  來源: GitHub openai/skills · 熱度: OpenAI 官方 curated Skill，來自 openai/skills 倉庫（約 23.3k stars）。
+
+- **[Brainstorming](https://orangebot.ai/s/brainstorming)**  
+  結構化腦力激盪，用於產品創意、功能概念、行銷角度和創造性問題解決。  
+  標籤: `Ideation` `Planning` `Creativity`  
+  來源: OrangeBot · 熱度: OrangeBot 顯示 77.2k weekly installs、118.4k stars。
+
+- **[Writing Plans](https://orangebot.ai/s/writing-plans)**  
+  撰寫結構化實施計畫、規格說明、任務拆分和工程執行路線圖。  
+  標籤: `Planning` `Writing` `Workflow`  
+  來源: OrangeBot · 熱度: OrangeBot 顯示 41.4k weekly installs、118.4k stars。
 
 ### 程式開發與前端
 
@@ -157,6 +369,78 @@
   標籤: `Repository` `Codebase` `Explanation`  
   來源: OrangeBot · 熱度: 27.4k weekly installs, 3,285 stars, 495 forks on OrangeBot.
 
+- **[Next.js Master](https://www.skillsdirectory.com/skills/fratilanico-nextjs-master)**  
+  Next.js 開發 Skill，適合生成 Web 應用結構、API 路由、頁面元件、部署建議和工程最佳實踐。  
+  標籤: `Next.js` `React` `Frontend`  
+  來源: Skills Directory · 熱度: Skills Directory 公開頁面，提供目錄熱度、安全評分和複製/使用類信號。
+
+- **[Figma Generate Design](https://github.com/openai/skills/tree/main/skills/.curated/figma-generate-design)**  
+  根據產品需求生成 Figma 設計概念、版面、元件和視覺系統。  
+  標籤: `Figma` `Design` `UI`  
+  來源: GitHub openai/skills · 熱度: OpenAI 官方 curated Skill，來自 openai/skills 倉庫（約 23.3k stars）。
+
+- **[Figma Implement Design](https://github.com/openai/skills/tree/main/skills/.curated/figma-implement-design)**  
+  將 Figma 設計稿轉換為前端程式碼、元件結構、間距系統和實作說明。  
+  標籤: `Figma` `Design` `Frontend`  
+  來源: GitHub openai/skills · 熱度: OpenAI 官方 curated Skill，來自 openai/skills 倉庫（約 23.3k stars）。
+
+- **[OpenAI Docs](https://github.com/openai/skills/tree/main/skills/.curated/openai-docs)**  
+  幫助 Codex 查閱 OpenAI 文件、API 參考、SDK 用法和整合模式。  
+  標籤: `OpenAI` `Documentation` `API`  
+  來源: GitHub openai/skills · 熱度: OpenAI 官方 curated Skill，來自 openai/skills 倉庫（約 23.3k stars）。
+
+- **[GitHub Fix CI](https://github.com/openai/skills/tree/main/skills/.curated/gh-fix-ci)**  
+  診斷並修復 CI 失敗、工作流配置問題、測試錯誤和建置流水線問題。  
+  標籤: `CI` `GitHub` `DevOps`  
+  來源: GitHub openai/skills · 熱度: OpenAI 官方 curated Skill，來自 openai/skills 倉庫（約 23.3k stars）。
+
+- **[GitHub Address Comments](https://github.com/openai/skills/tree/main/skills/.curated/gh-address-comments)**  
+  系統化處理 PR 審查意見、建議修改和 reviewer 回饋。  
+  標籤: `GitHub` `Code Review` `PR`  
+  來源: GitHub openai/skills · 熱度: OpenAI 官方 curated Skill，來自 openai/skills 倉庫（約 23.3k stars）。
+
+- **[GitHub CLI](https://crossaitools.com/skills/github/awesome-copilot/gh-cli)**  
+  GitHub CLI 參考 Skill，用於在終端管理倉庫、Issue、Pull Request、Actions、Projects、Releases、Gists、Codespaces 和組織。  
+  標籤: `GitHub` `CLI` `Repository`  
+  來源: Cross AI Tools · 熱度: Cross AI Tools 收錄自 github/awesome-copilot；GitHub 顯示約 36,306 stars、4,522 forks。  
+  安裝: `npx skills add https://github.com/github/awesome-copilot --skill gh-cli -a codex -g`  
+  注意: 需要 GitHub CLI 知識，可能依賴 GitHub 登入或 Token；執行會修改倉庫、Issue 或 PR 的命令前請審查權限。
+
+- **[Cloudflare Deploy](https://github.com/openai/skills/tree/main/skills/.curated/cloudflare-deploy)**  
+  將應用和靜態站點部署到 Cloudflare Workers、Pages 和邊緣基礎設施。  
+  標籤: `Cloudflare` `Deployment` `DevOps`  
+  來源: GitHub openai/skills · 熱度: OpenAI 官方 curated Skill，來自 openai/skills 倉庫（約 23.3k stars）。
+
+- **[Netlify Deploy](https://github.com/openai/skills/tree/main/skills/.curated/netlify-deploy)**  
+  將前端應用、落地頁和原型部署到 Netlify，並提供建置與路由指導。  
+  標籤: `Netlify` `Deployment` `DevOps`  
+  來源: GitHub openai/skills · 熱度: OpenAI 官方 curated Skill，來自 openai/skills 倉庫（約 23.3k stars）。
+
+- **[Sentry](https://github.com/openai/skills/tree/main/skills/.curated/sentry)**  
+  整合 Sentry 進行錯誤監控、效能追蹤、發布追蹤和事故除錯。  
+  標籤: `Sentry` `Monitoring` `Errors`  
+  來源: GitHub openai/skills · 熱度: OpenAI 官方 curated Skill，來自 openai/skills 倉庫（約 23.3k stars）。
+
+- **[Web Design Guidelines](https://orangebot.ai/s/web-design-guidelines)**  
+  指導網頁設計的版面、排版、色彩、無障礙和響應式 UI 模式。  
+  標籤: `Web Design` `UI` `UX`  
+  來源: OrangeBot · 熱度: OrangeBot 顯示 206.0k weekly installs、24.0k stars。
+
+- **[Systematic Debugging](https://orangebot.ai/s/systematic-debugging)**  
+  系統化除錯工作流，用於重現 bug、定位根因、驗證修復和防止回歸。  
+  標籤: `Debugging` `Engineering` `Troubleshooting`  
+  來源: OrangeBot · 熱度: OrangeBot 顯示 42.5k weekly installs、118.4k stars。
+
+- **[Next Best Practices](https://orangebot.ai/s/next-best-practices)**  
+  Next.js 最佳實踐，涵蓋路由、資料取得、渲染模式、效能和生產就緒。  
+  標籤: `Next.js` `Best Practices` `Frontend`  
+  來源: OrangeBot · 熱度: OrangeBot 顯示 46.4k weekly installs、778 stars。
+
+- **[Supabase Postgres Best Practices](https://orangebot.ai/s/supabase-postgres-best-practices)**  
+  Supabase 與 Postgres 最佳實踐，涵蓋 schema 設計、RLS、查詢、遷移和後端資料工作流。  
+  標籤: `Supabase` `Postgres` `Database`  
+  來源: OrangeBot · 熱度: OrangeBot 顯示 54.0k weekly installs、1.7k stars。
+
 ### 創作與媒體
 
 涵蓋圖片、音訊、影片、行銷視覺和媒體製作的創作類 Skill。
@@ -171,6 +455,13 @@
   使用 React 製作程式化影片、動態圖形、產品展示、自動短片和資料影片的最佳實踐。  
   標籤: `Video` `React` `Remotion`  
   來源: OrangeBot · 熱度: 181.8k weekly installs, 867 stars, 24 forks on OrangeBot.
+
+- **[HyperFrames](https://github.com/heygen-com/hyperframes/blob/main/skills/hyperframes/SKILL.md)**  
+  HyperFrames 入口 Skill，用於以 HTML 渲染影片，並路由影片、動畫、動態圖形、產品宣傳、網站轉影片、字幕、投影片和 Remotion 遷移工作流。  
+  標籤: `Video` `Animation` `HTML`  
+  來源: GitHub · 熱度: 官方 heygen-com/hyperframes 倉庫，GitHub 約 33,674 stars、3,144 forks。  
+  安裝: `npx skills add heygen-com/hyperframes --skill hyperframes`  
+  注意: 依賴 HyperFrames/skills CLI 工作流，可能使用瀏覽器渲染、媒體素材、FFmpeg/Puppeteer 類工具和網路檢查；預裝前請審查專案權限。
 
 - **[P Video](https://orangebot.ai/s/p-video)**  
   將創意腳本、素材和參數轉換為可執行的影片生成或剪輯工作流。  
@@ -187,6 +478,37 @@
   透過使用者旅程、元件狀態、視覺層級、可訪問性和互動回饋改進介面。  
   標籤: `UI/UX` `Design` `Product`  
   來源: OrangeBot · 熱度: 85.9k weekly installs, 1,491 stars, 150 forks on OrangeBot.
+
+- **[Transcribe](https://github.com/openai/skills/tree/main/skills/.curated/transcribe)**  
+  將音訊和語音轉錄為文字，適用於會議、採訪、播客和媒體工作流。  
+  標籤: `Audio` `Transcription` `Speech`  
+  來源: GitHub openai/skills · 熱度: OpenAI 官方 curated Skill，來自 openai/skills 倉庫（約 23.3k stars）。
+
+- **[Speech](https://github.com/openai/skills/tree/main/skills/.curated/speech)**  
+  將文字生成自然語音，用於旁白、助手、無障礙和媒體製作。  
+  標籤: `TTS` `Speech` `Audio`  
+  來源: GitHub openai/skills · 熱度: OpenAI 官方 curated Skill，來自 openai/skills 倉庫（約 23.3k stars）。
+
+- **[AI Video Generation](https://orangebot.ai/s/ai-video-generation)**  
+  根據提示詞、腳本和分鏡生成 AI 影片，用於行銷、社媒和創意製作。  
+  標籤: `Video` `AI` `Generation`  
+  來源: OrangeBot · 熱度: OrangeBot 顯示 111.3k weekly installs、235 stars。  
+  注意: 依賴外部模型/API，需確認成本、金鑰和供應商條款。
+
+- **[ImageGen](https://skillsmp.com/zh/creators/openai/skills/skills-system-imagegen)**  
+  OpenAI 圖像生成 Skill，用於提示詞、風格、編輯、變體和視覺資產工作流。  
+  標籤: `Image` `Generation` `OpenAI`  
+  來源: SkillsMP · 熱度: SkillsMP 顯示 23,095 stars、1,565 forks。
+
+- **[Canvas Design](https://skills.cat/skills/anthropics/skills/canvas-design)**  
+  Canvas 設計 Skill，用於版面、視覺構圖、設計系統和創意資產製作。  
+  標籤: `Canvas` `Design` `Creative`  
+  來源: SkillsCat · 熱度: SkillsCat 可檢索頁面，提供 GitHub 來源與 CLI 安裝入口。
+
+- **[AI Video Editing](https://skillsmp.com/creators/arcasilesgroup/ai-engineering/codex-skills-ai-video-editing)**  
+  AI 影片剪輯 Skill，用於剪切、轉場、字幕、B-roll 建議和後期製作工作流。  
+  標籤: `Video` `Editing` `AI`  
+  來源: SkillsMP · 熱度: SkillsMP 顯示 52 stars、3 forks。
 
 ### 瀏覽器自動化與測試
 
@@ -207,6 +529,16 @@
   標籤: `Screenshot` `UI QA` `Design`  
   來源: GitHub openai/skills · 熱度: Official OpenAI curated skill from the openai/skills repository.
 
+- **[Playwright Interactive](https://github.com/openai/skills/tree/main/skills/.curated/playwright-interactive)**  
+  互動式 Playwright 瀏覽器自動化 Skill，用於頁面導航、元素互動、截圖和 UI 驗證。  
+  標籤: `Browser` `Playwright` `Testing`  
+  來源: GitHub openai/skills · 熱度: OpenAI 官方 curated Skill，來自 openai/skills 倉庫（約 23.3k stars）。
+
+- **[Browser Use](https://orangebot.ai/s/browser-use)**  
+  瀏覽器使用 Skill，用於自主網頁導航、表單填寫、資料提取和 agent 驅動瀏覽。  
+  標籤: `Browser` `Automation` `Agent`  
+  來源: OrangeBot · 熱度: OrangeBot 顯示 57.4k weekly installs、84.8k stars。
+
 ### 文件與簡報
 
 用於 PDF、投影片、報告、提案和結構化文件的 Skill。
@@ -226,6 +558,16 @@
   標籤: `Word` `Documents` `Reports`  
   來源: OrangeBot · 熱度: 42.0k weekly installs, 4,938 stars, 353 forks on OrangeBot.
 
+- **[Notion Research Documentation](https://github.com/openai/skills/tree/main/skills/.curated/notion-research-documentation)**  
+  在 Notion 中整理研究發現、引用、摘要和結構化文件。  
+  標籤: `Notion` `Research` `Documentation`  
+  來源: GitHub openai/skills · 熱度: OpenAI 官方 curated Skill，來自 openai/skills 倉庫（約 23.3k stars）。
+
+- **[PDF (OpenAI Curated)](https://github.com/openai/skills/tree/main/skills/.curated/pdf)**  
+  讀取、提取、摘要和處理 PDF 文件，適用於報告、表單和結構化內容。  
+  標籤: `PDF` `Documents` `Parsing`  
+  來源: GitHub openai/skills · 熱度: OpenAI 官方 curated Skill，來自 openai/skills 倉庫（約 23.3k stars）。
+
 ### 資料與視覺化
 
 用於圖表、視覺化說明、資料分析和資料敘事的 Skill。
@@ -234,6 +576,46 @@
   協助建立圖表、視覺化說明、路線圖、架構圖和資料敘事。  
   標籤: `Charts` `Visualization` `Data`  
   來源: OrangeBot · 熱度: OrangeBot skill page with usage, stars, and forks metadata.
+
+- **[Quant Analyst](https://www.skillsdirectory.com/skills/benjaminastera-quant-analyst)**  
+  量化分析 Skill，適合市場資料、因子研究、回測思路、組合指標和財務建模工作流。  
+  標籤: `Quant` `Finance` `Analysis`  
+  來源: Skills Directory · 熱度: Skills Directory 公開頁面，提供目錄熱度、安全評分和複製/使用類信號。
+
+- **[AI Volatility Prediction](https://www.skillsdirectory.com/skills/paulpas-ai-volatility-prediction)**  
+  使用 AI 模型預測市場波動模式，用於風險評估、對沖思路和量化交易研究。  
+  標籤: `Finance` `Risk` `ML`  
+  來源: Skills Directory · 熱度: Skills Directory 公開頁面，提供目錄熱度、安全評分和複製/使用類信號。  
+  注意: 金融/風險領域，需要合規審查和明確免責聲明。
+
+- **[Apify Ecommerce](https://skillmd.ai/skills/apify-ecommerce/)**  
+  基於 Apify Actor 的電商資料 Skill，用於抓取商品列表、價格、評論和競品情報。  
+  標籤: `Ecommerce` `Scraping` `Apify`  
+  來源: SkillMD.ai · 熱度: SkillMD.ai 目錄頁面，提供安裝元資料和使用信號。  
+  注意: 需要網路存取和外部 API 憑證。
+
+- **[AfrexAI Personal Finance](https://skillmd.ai/skills/afrexai-personal-finance/)**  
+  個人理財 Skill，適合預算管理、支出追蹤、儲蓄目標、債務規劃和財務健康分析。  
+  標籤: `Finance` `Personal Finance` `Budgeting`  
+  來源: SkillMD.ai · 熱度: SkillMD.ai 目錄頁面，提供安裝元資料和使用信號。  
+  注意: 金融領域，需要合規審查和明確免責聲明。
+
+- **[Jupyter Notebook](https://github.com/openai/skills/tree/main/skills/.curated/jupyter-notebook)**  
+  Jupyter Notebook Skill，用於資料探索、分析儲存格、視覺化和可復現研究工作流。  
+  標籤: `Jupyter` `Notebook` `Data`  
+  來源: GitHub openai/skills · 熱度: OpenAI 官方 curated Skill，來自 openai/skills 倉庫（約 23.3k stars）。
+
+- **[Excel Author](https://skillsmp.com/creators/nousresearch/hermes-agent/optional-skills-finance-excel-author)**  
+  Excel 編寫 Skill，用於財務模型、公式、樞紐分析表、圖表和試算表工作流。  
+  標籤: `Excel` `Finance` `Spreadsheet`  
+  來源: SkillsMP · 熱度: SkillsMP 創作者頁面，提供 GitHub stars、forks 和安裝元資料。  
+  注意: 金融領域，需要合規審查和明確免責聲明。
+
+- **[EconFin Idea Finder](https://skills.cat/skills/brycewang-stanford/auto-empirical-research-skills/econfin-idea-finder)**  
+  發現經濟學與金融研究選題、假設、資料集和實證研究方向。  
+  標籤: `Finance` `Research` `Economics`  
+  來源: SkillsCat · 熱度: SkillsCat 可檢索頁面，提供 GitHub 來源與 CLI 安裝入口。  
+  注意: 金融/研究領域，需要合規審查和明確免責聲明。
 
 ### 行銷與成長
 
@@ -253,6 +635,21 @@
   撰寫廣告文案、落地頁文案、產品訊息、郵件行銷、社群貼文和影片腳本。  
   標籤: `Copy` `Ads` `Content`  
   來源: OrangeBot · 熱度: 49.9k weekly installs, 11,596 stars, 981 forks on OrangeBot.
+
+- **[Lottie Motion Builder](https://www.skillsdirectory.com/skills/markoblogo-lottie-motion-builder)**  
+  把文字需求轉成行動端動效、SaaS 空狀態、品牌動效、廣告動圖和互動頁面動畫的製作計畫。  
+  標籤: `Motion` `Lottie` `Animation`  
+  來源: Skills Directory · 熱度: Skills Directory 公開頁面，提供目錄熱度、安全評分和複製/使用類信號。
+
+- **[Paid Ads](https://www.skillsdirectory.com/skills/benjaminastera-paid-ads)**  
+  付費廣告 Skill，適合廣告結構、受眾定向、廣告文案、預算分配和效果優化。  
+  標籤: `Ads` `PPC` `Marketing`  
+  來源: Skills Directory · 熱度: Skills Directory 公開頁面，提供目錄熱度、安全評分和複製/使用類信號。
+
+- **[Campaign Plan](https://skillsmp.com/creators/anthropics/knowledge-work-plugins/marketing-skills-campaign-plan)**  
+  行銷活動規劃 Skill，用於目標、渠道、訊息、時間線、預算和上線清單。  
+  標籤: `Marketing` `Campaign` `Planning`  
+  來源: SkillsMP · 熱度: SkillsMP 創作者頁面，提供 GitHub stars、forks 和安裝元資料。
 
 ### 產業能力與合規
 
@@ -279,9 +676,19 @@
   來源: SkillsCat · 熱度: SkillsCat entry with stars, token metadata, and CLI install support.  
   注意: 高風險領域，需要合規審查和明確免責聲明。
 
+- **[Security Threat Model](https://github.com/openai/skills/tree/main/skills/.curated/security-threat-model)**  
+  為系統建構威脅模型、攻擊面、緩解措施和安全審查清單。  
+  標籤: `Security` `Threat Model` `Compliance`  
+  來源: GitHub openai/skills · 熱度: OpenAI 官方 curated Skill，來自 openai/skills 倉庫（約 23.3k stars）。
+
+## 自訂 Skill 指南
+
+- **[自訂 Skill 指南 →](GUIDE_tw.md)** — 學習如何建立、改編並安裝你自己的 Codex Skill。
+
 ## 如何貢獻
 
 - 透過 [Submit a Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml) Issue 提交，請提供可訪問連結、簡短介紹、分類、來源平台和熱度依據。
+- 中文原生 Skill 請使用 [Submit a Chinese-Native Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml) 專用模板。
 - 如果 Skill 需要 API Key、瀏覽器控制、命令執行，或涉及醫療/金融/法律等敏感場景，請明確標註。
 
 ## 收錄標準
@@ -302,4 +709,4 @@
 
 ---
 
-> 本文檔由 `data/skills.json` 生成。請編輯資料檔後執行 `npm run generate:readme`。
+> 本文檔由 `data/skills.json` 生成。請編輯資料檔後執行 `npm run generate:all`。

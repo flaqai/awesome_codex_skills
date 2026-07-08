@@ -80,11 +80,11 @@ Maintainers may mark selected skills as `featured` during review.
 ## Local Development
 
 ```bash
-# Verify README is in sync with data
-npm run check:readme
+# Verify generated README and GUIDE files are in sync with data
+npm run check:all
 
-# Regenerate READMEs after editing skills.json
-npm run generate:readme
+# Regenerate all README and GUIDE files after editing data
+npm run generate:all
 ```
 
 Requires Node.js 18+. No external dependencies to install.

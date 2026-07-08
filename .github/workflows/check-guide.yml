@@ -1,0 +1,30 @@
+name: Check Guide
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/custom-skill-guide.json'
+      - 'scripts/generate-guide.mjs'
+      - 'scripts/languages.mjs'
+      - 'GUIDE*.md'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'data/custom-skill-guide.json'
+      - 'scripts/generate-guide.mjs'
+      - 'scripts/languages.mjs'
+      - 'GUIDE*.md'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Check Guide is up to date
+        run: npm run check:guide

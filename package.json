@@ -9,6 +9,11 @@
   "scripts": {
     "generate:readme": "node scripts/generate-readmes.mjs",
     "generate:readme:all": "node scripts/generate-readmes.mjs --all",
-    "check:readme": "node scripts/generate-readmes.mjs --check"
+    "check:readme": "node scripts/generate-readmes.mjs --check --all",
+    "generate:guide": "node scripts/generate-guide.mjs",
+    "generate:guide:all": "node scripts/generate-guide.mjs --all",
+    "check:guide": "node scripts/generate-guide.mjs --check",
+    "generate:all": "npm run generate:readme:all && npm run generate:guide:all",
+    "check:all": "npm run check:readme && npm run check:guide"
   }
 }

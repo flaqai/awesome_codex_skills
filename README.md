@@ -5,13 +5,10 @@
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 [![GitHub stars](https://img.shields.io/github/stars/flaqai/awesome_codex_skills?style=social)](https://github.com/flaqai/awesome_codex_skills)
 [![Submit Skills via Issues](https://img.shields.io/badge/Submit%20Skills-via%20Issues-brightgreen.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml)
-[![Submit Chinese Skill](https://img.shields.io/badge/Submit%20Chinese%20Skill-via%20Issues-orange.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml)
 
 > A curated, multilingual awesome list of practical Codex skills for creative work, coding, automation, documents, and industry workflows.
 
 > Skills are collected from public directories and repositories for discovery and educational purposes. If a link is broken or a listing should be removed, please open an issue.
-
-> For Chinese developers: see [Chinese-Native Skills](#chinese-native-skills).
 
 > **[Custom Skill Guide →](GUIDE.md)** Learn how to create, adapt, and install your own Codex skills.
 
@@ -27,7 +24,6 @@
 - [Browse by Category](#browse-by-category)
 - [Statistics](#statistics)
 - [Featured Skills](#featured-skills)
-- [Chinese-Native Skills](#chinese-native-skills)
 - [All Skills](#all-skills)
 - [Custom Skill Guide](#custom-skill-guide)
 - [How to Contribute](#how-to-contribute)
@@ -55,9 +51,8 @@
 
 | Metric | Count |
 |---|---:|
-| Total skills | 87 |
+| Total skills | 67 |
 | Categories | 8 |
-| Chinese-native skills | 20 |
 | Last updated | 2026-07-08 |
 
 ## Featured Skills
@@ -153,150 +148,6 @@
   OpenAI image generation skill for prompts, styles, edits, variations, and visual asset workflows.  
   Tags: `Image` `Generation` `OpenAI`  
   Source: SkillsMP · Popularity: 23,095 stars, 1,565 forks on SkillsMP.
-
-## Chinese-Native Skills
-
-Skills with Chinese-native SKILL.md content and workflows for documentation, review, writing, academia, fintech, product planning, and DevOps.
-
-- **[Chinese Documentation](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-documentation)**  
-  Chinese typography and documentation conventions for spacing, punctuation, terminology, links, and readable technical copy.  
-  Tags: `Chinese-Native` `Documentation` `Technical Writing`  
-  Source: SkillsMP · Popularity: SkillsMP reports about 6,213 stars for jnMetaCode/superpowers-zh.  
-  Install: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-documentation -a codex -g`  
-  Notes: Directory reference: SkillsMP Chinese Documentation. Review repository license before preinstalling.
-
-- **[Chinese Commit Conventions](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-commit-conventions)**  
-  Chinese Conventional Commits, changelog, commitlint, Husky, and Commitizen guidance for engineering teams.  
-  Tags: `Chinese-Native` `Git` `DevOps`  
-  Source: SkillsMP · Popularity: SkillsMP reports about 6,213 stars for the source repository.  
-  Install: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-commit-conventions -a codex -g`  
-  Notes: Useful for team workflow standardization; verify generated commit messages against project rules.
-
-- **[Chinese Code Review](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-code-review)**  
-  Chinese code review communication templates with severity labels, review wording, and collaboration patterns.  
-  Tags: `Chinese-Native` `Code Review` `Collaboration`  
-  Source: SkillsMP · Popularity: SkillsMP reports about 6,213 stars for the source repository.  
-  Install: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-code-review -a codex -g`  
-  Notes: Review comments should remain grounded in actual diffs and tests.
-
-- **[Deep Research ZH](https://github.com/LeoYeAI/openclaw-master-skills/tree/main/skills/deep-research-zh)**  
-  Chinese deep research workflow for industry research, competitor analysis, policy research, PDF output, and delivery automation.  
-  Tags: `Chinese-Native` `Research` `Reports`  
-  Source: SkillsMP · Popularity: SkillsMP reports about 2,076 stars for LeoYeAI/openclaw-master-skills.  
-  Install: `npx skills add https://github.com/LeoYeAI/openclaw-master-skills --skill deep-research-zh -a codex -g`  
-  Notes: Requires preinstall review for Tavily, Feishu, PDF scripts, network access, and API keys.
-
-- **[Quant Trader Daily](https://github.com/LeoYeAI/openclaw-master-skills/tree/main/skills/trader-daily)**  
-  Chinese daily workflow for quant trading routines, position monitoring, risk reminders, reports, and trading journals.  
-  Tags: `Chinese-Native` `Finance` `Quant`  
-  Source: SkillsMP · Popularity: SkillsMP reports about 2,076 stars for the source repository.  
-  Install: `npx skills add https://github.com/LeoYeAI/openclaw-master-skills --skill trader-daily -a codex -g`  
-  Notes: Finance domain. Not investment advice; require compliance review before use or preinstall.
-
-- **[ZH Code Reviewer](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-code-reviewer)**  
-  Chinese code review expert for structured findings across correctness, quality, performance, security, and design.  
-  Tags: `Chinese-Native` `Code Review` `Quality`  
-  Source: SkillsMP · Popularity: SkillsMP reports about 504 stars for laolaoshiren/claude-code-skills-zh.  
-  Install: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-code-reviewer -a codex -g`  
-  Notes: Use as review assistance; maintainers should verify findings before merging.
-
-- **[ZH README](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-readme)**  
-  Analyzes a project and generates a high-quality Chinese README for open-source projects, internal tools, and AI products.  
-  Tags: `Chinese-Native` `README` `Developer Experience`  
-  Source: SkillsMP · Popularity: SkillsMP reports about 504 stars for the source repository.  
-  Install: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-readme -a codex -g`  
-  Notes: Generated docs should be reviewed for install commands, license text, and project-specific claims.
-
-- **[ZH Docgen](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-docgen)**  
-  Generates Chinese technical documentation from codebases, including API docs, module designs, and operations manuals.  
-  Tags: `Chinese-Native` `Documentation` `Codebase`  
-  Source: SkillsMP · Popularity: SkillsMP reports about 504 stars for the source repository.  
-  Install: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-docgen -a codex -g`  
-  Notes: Review generated documentation against the current repository state.
-
-- **[De-AI Writing](https://github.com/OUBIGFA/De-AI-Prompt-Enhancer-Writer-Booster-SKILL)**  
-  Chinese rewriting, polishing, translating, and reviewing workflow that reduces template phrasing and AI-like writing patterns.  
-  Tags: `Chinese-Native` `Writing` `Humanization`  
-  Source: SkillsMP · Popularity: SkillsMP reports about 488 stars for the source repository.  
-  Install: `npx skills add https://github.com/OUBIGFA/De-AI-Prompt-Enhancer-Writer-Booster-SKILL -a codex -g`  
-  Notes: Academic or policy-bound use requires integrity review; do not use to bypass detection policies.
-
-- **[Chinese Writing](https://github.com/miantiao-me/aigc-weekly)**  
-  Chinese writing guide for newsletters, blogs, and tech articles with clear, humane, low-AI-style output principles.  
-  Tags: `Chinese-Native` `Writing` `Newsletter`  
-  Source: SkillsMP · Popularity: SkillsMP reports about 544 stars for miantiao-me/aigc-weekly.  
-  Install: `npx skills add https://github.com/miantiao-me/aigc-weekly --skill chinese-writing -a codex -g`  
-  Notes: Repository-level source is used because the public skill path can vary by indexer.
-
-- **[Tech Doc Style Chinese](https://github.com/Fenng/Tech-Doc-Style-Chinese)**  
-  Restrained Chinese technical documentation style for product copy, API docs, terminology, punctuation, and scan-friendly writing.  
-  Tags: `Chinese-Native` `Technical Writing` `Style Guide`  
-  Source: SkillsMP · Popularity: SkillsMP reports about 365 stars for Fenng/Tech-Doc-Style-Chinese.  
-  Install: `npx skills add https://github.com/Fenng/Tech-Doc-Style-Chinese -a codex -g`  
-  Notes: Use as editorial guidance; preserve code literals, API paths, and legal text exactly.
-
-- **[LaTeX Thesis ZH](https://github.com/bahayonghang/academic-writing-skills/tree/main/academic-writing-skills/latex-thesis-zh)**  
-  Chinese LaTeX thesis assistant for compilation diagnostics, GB/T 7714 references, structure, equations, and terminology consistency.  
-  Tags: `Chinese-Native` `LaTeX` `Academic`  
-  Source: SkillsMP · Popularity: SkillsMP reports about 365 stars for bahayonghang/academic-writing-skills.  
-  Install: `npx skills add https://github.com/bahayonghang/academic-writing-skills --skill latex-thesis-zh -a codex -g`  
-  Notes: Academic writing requires institution policy review and manual verification of citations.
-
-- **[Paper Write](https://github.com/xstongxue/best-skills/tree/main/skills/paper-write)**  
-  Chinese undergraduate and master thesis workflow for outlines, structure, references, polishing, expansion, shortening, and translation.  
-  Tags: `Chinese-Native` `Academic` `Writing`  
-  Source: SkillsCat · Popularity: SkillsCat reports about 2,149 stars for xstongxue/best-skills.  
-  Install: `npx skillscat add xstongxue/best-skills/paper-write`  
-  Notes: Academic integrity and citation accuracy must be reviewed before use.
-
-- **[Humanize Chinese](https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/main/skills/49-voidborne-d-humanize-chinese)**  
-  Chinese AI-text humanization and detection workflow with rules, statistical features, and academic revision patterns.  
-  Tags: `Chinese-Native` `Writing` `Academic`  
-  Source: SkillsCat · Popularity: SkillsCat reports about 2,677 stars for brycewang-stanford/auto-empirical-research-skills.  
-  Install: `npx skillscat add brycewang-stanford/auto-empirical-research-skills/humanize-chinese`  
-  Notes: High compliance sensitivity; do not use to evade academic or platform detection policies.
-
-- **[EconFin Idea Finder ZH](https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/main/skills/67-econfin-workflow-toolkit)**  
-  Chinese funnel-style economics and corporate finance research idea finder for hypotheses, datasets, and empirical plans.  
-  Tags: `Chinese-Native` `Finance` `Research`  
-  Source: SkillsCat · Popularity: SkillsCat reports about 2,677 stars for the source repository.  
-  Install: `npx skillscat add brycewang-stanford/auto-empirical-research-skills/econfin-idea-finder`  
-  Notes: Finance and research domain; requires compliance review and source verification.
-
-- **[Boss](https://github.com/echovic/boss-skill)**  
-  Chinese BMAD-style multi-agent software delivery workflow across PM, architecture, design, development, QA, and DevOps roles.  
-  Tags: `Chinese-Native` `Multi-Agent` `Project Management`  
-  Source: SkillsCat · Popularity: SkillsCat listing is public; source repository reports about 550 stars.  
-  Install: `npx skillscat add echovic/boss-skill`  
-  Notes: SkillsCat flags medium security risk; review automation, command execution, file writes, and agent orchestration before preinstalling.
-
-- **[Requirement Analyst](https://github.com/CaoMeiYouRen/momei/tree/master/.github/skills/requirement-analyst)**  
-  Chinese requirement analysis skill for clarification, user intent extraction, roadmap alignment, and priority scoring.  
-  Tags: `Chinese-Native` `Requirements` `Product`  
-  Source: SkillMD.ai · Popularity: SkillMD.ai reports 1,483 views and 265 downloads; GitHub source path is public.  
-  Install: `npx skills add https://github.com/CaoMeiYouRen/momei --skill requirement-analyst -a codex -g`  
-  Notes: Directory reference: SkillMD.ai Requirement Analyst. Verify product assumptions with stakeholders.
-
-- **[OB](https://github.com/NeverSight/learn-skills.dev/blob/main/data/skills-md/aibangjuxin/knowledge/ob/SKILL.md)**  
-  Chinese GCP API Platform onboarding architect skill for GitOps, pipelines, Firestore, BigQuery, and auditable rollout design.  
-  Tags: `Chinese-Native` `DevOps` `GCP`  
-  Source: SkillMD.ai · Popularity: SkillMD.ai reports 1,178 views and 309 downloads; AgentSkill API links to a public GitHub source.  
-  Install: `npx skills add https://github.com/NeverSight/learn-skills.dev --skill ob -a codex -g`  
-  Notes: Narrow GCP enterprise domain; review cloud access, pipeline actions, and rollback guidance before preinstalling.
-
-- **[NSFC Abstract](https://github.com/huangwb8/ChineseResearchLaTeX)**  
-  NSFC Chinese and English abstract assistant with structured Chinese summary, faithful English translation, title suggestions, and length checks.  
-  Tags: `Chinese-Native` `Academic` `Grant`  
-  Source: Skills Directory · Popularity: Skills Directory reports source repository visibility, about 1,626 stars, and A security score.  
-  Install: `npx skills add https://github.com/huangwb8/ChineseResearchLaTeX -a codex -g`  
-  Notes: Grant writing requires domain expert review and strict compliance with application rules.
-
-- **[Paper Translation](https://github.com/APLaS-Plus/paper-translation)**  
-  Academic PDF-to-Chinese Markdown translation workflow using MinerU, preserving formulas, images, tables, code, and terminology.  
-  Tags: `Chinese-Native` `Translation` `Academic`  
-  Source: Skills Directory · Popularity: Skills Directory listing is public and reports an A security score.  
-  Install: `npx skills add https://github.com/APLaS-Plus/paper-translation -a codex -g`  
-  Notes: Requires MinerU API token and review of external upload, privacy, copyright, and translation accuracy risks.
 
 ## All Skills
 
@@ -688,7 +539,6 @@ Healthcare, accessibility, security, localization, and other domain-specific ski
 ## How to Contribute
 
 - Open a [Submit a Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml) issue with a reachable skill link, a short description, category, source platform, and popularity evidence.
-- For Chinese-native skills, use [Submit a Chinese-Native Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml) instead.
 - Please mark skills that require API keys, browser control, command execution, healthcare/finance/legal review, or other sensitive permissions.
 
 ## Curation Criteria

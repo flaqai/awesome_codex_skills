@@ -5,7 +5,6 @@
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 [![GitHub stars](https://img.shields.io/github/stars/flaqai/awesome_codex_skills?style=social)](https://github.com/flaqai/awesome_codex_skills)
 [![Submit Skills via Issues](https://img.shields.io/badge/Submit%20Skills-via%20Issues-brightgreen.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml)
-[![Gửi Skill tiếng Trung](https://img.shields.io/badge/G%E1%BB%ADi%20Skill%20ti%E1%BA%BFng%20Trung-via%20Issues-orange.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml)
 
 > Danh sách Codex Skill được tuyển chọn, đa ngôn ngữ, cho sáng tạo, lập trình, tự động hóa, tài liệu và workflow theo ngành.
 
@@ -25,7 +24,6 @@
 - [Duyệt theo danh mục](#duyệt-theo-danh-mục)
 - [Thống kê](#thống-kê)
 - [Skill nổi bật](#skill-nổi-bật)
-- [Skills gốc tiếng Trung](#skills-gốc-tiếng-trung)
 - [Tất cả Skill](#tất-cả-skill)
 - [Hướng dẫn Custom Skill](#hướng-dẫn-custom-skill)
 - [Cách đóng góp](#cách-đóng-góp)
@@ -53,9 +51,8 @@
 
 | Metric | Count |
 |---|---:|
-| Tổng số Skill | 87 |
+| Tổng số Skill | 67 |
 | Số danh mục | 8 |
-| Skills gốc tiếng Trung | 20 |
 | Cập nhật cuối | 2026-07-08 |
 
 ## Skill nổi bật
@@ -151,150 +148,6 @@
   Skill tạo ảnh OpenAI cho prompt, phong cách, chỉnh sửa, biến thể và tài sản hình ảnh.  
   Thẻ: `Image` `Generation` `OpenAI`  
   Nguồn: SkillsMP · Độ phổ biến: SkillsMP hiển thị 23,095 stars, 1,565 forks.
-
-## Skills gốc tiếng Trung
-
-Skill có SKILL.md và workflow gốc tiếng Trung cho tài liệu, review, viết lách, học thuật, fintech, hoạch định sản phẩm và DevOps.
-
-- **[Chinese Documentation](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-documentation)**  
-  Quy chuẩn dàn trang và viết tài liệu tiếng Trung, bao gồm khoảng trắng Trung/Anh, dấu câu, thuật ngữ, liên kết và độ dễ đọc của nội dung kỹ thuật.  
-  Thẻ: `Chinese-Native` `Documentation` `Technical Writing`  
-  Nguồn: SkillsMP · Độ phổ biến: SkillsMP báo cáo jnMetaCode/superpowers-zh khoảng 6,213 stars.  
-  Cài đặt: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-documentation -a codex -g`  
-  Ghi chú: Tham chiếu danh mục: SkillsMP Chinese Documentation. Hãy rà soát giấy phép repository trước khi cài đặt sẵn.
-
-- **[Chinese Commit Conventions](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-commit-conventions)**  
-  Hướng dẫn cho nhóm kỹ thuật về Chinese Conventional Commits, changelog, commitlint, Husky và Commitizen.  
-  Thẻ: `Chinese-Native` `Git` `DevOps`  
-  Nguồn: SkillsMP · Độ phổ biến: SkillsMP báo cáo kho repo nguồn khoảng 6,213 stars.  
-  Cài đặt: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-commit-conventions -a codex -g`  
-  Ghi chú: Phù hợp để chuẩn hóa workflow nhóm; vẫn cần đối chiếu commit message được tạo với quy tắc dự án trước khi gửi.
-
-- **[Chinese Code Review](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-code-review)**  
-  Mẫu giao tiếp code review tiếng Trung với nhãn mức độ, cách diễn đạt phản hồi và mô hình cộng tác nhóm.  
-  Thẻ: `Chinese-Native` `Code Review` `Collaboration`  
-  Nguồn: SkillsMP · Độ phổ biến: SkillsMP báo cáo kho repo nguồn khoảng 6,213 stars.  
-  Cài đặt: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-code-review -a codex -g`  
-  Ghi chú: Kết luận review cần dựa trên diff thực tế và kết quả kiểm thử.
-
-- **[Deep Research ZH](https://github.com/LeoYeAI/openclaw-master-skills/tree/main/skills/deep-research-zh)**  
-  Workflow deep research tiếng Trung cho nghiên cứu ngành, phân tích đối thủ, nghiên cứu chính sách, xuất PDF và bàn giao tự động.  
-  Thẻ: `Chinese-Native` `Research` `Reports`  
-  Nguồn: SkillsMP · Độ phổ biến: SkillsMP báo cáo LeoYeAI/openclaw-master-skills khoảng 2,076 stars.  
-  Cài đặt: `npx skills add https://github.com/LeoYeAI/openclaw-master-skills --skill deep-research-zh -a codex -g`  
-  Ghi chú: Trước khi cài đặt sẵn, cần rà soát phụ thuộc Tavily, Feishu, script PDF, quyền truy cập mạng và API Key.
-
-- **[Quant Trader Daily](https://github.com/LeoYeAI/openclaw-master-skills/tree/main/skills/trader-daily)**  
-  Workflow hằng ngày bằng tiếng Trung cho quant trading, gồm theo dõi vị thế, nhắc nhở rủi ro, báo cáo và nhật ký giao dịch.  
-  Thẻ: `Chinese-Native` `Finance` `Quant`  
-  Nguồn: SkillsMP · Độ phổ biến: SkillsMP báo cáo kho repo nguồn khoảng 2,076 stars.  
-  Cài đặt: `npx skills add https://github.com/LeoYeAI/openclaw-master-skills --skill trader-daily -a codex -g`  
-  Ghi chú: Lĩnh vực tài chính. Không phải tư vấn đầu tư; cần rà soát tuân thủ trước khi dùng hoặc cài sẵn.
-
-- **[ZH Code Reviewer](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-code-reviewer)**  
-  Chuyên gia code review tiếng Trung, đưa ra nhận định có cấu trúc về tính đúng đắn, chất lượng, hiệu năng, bảo mật và thiết kế.  
-  Thẻ: `Chinese-Native` `Code Review` `Quality`  
-  Nguồn: SkillsMP · Độ phổ biến: SkillsMP báo cáo laolaoshiren/claude-code-skills-zh khoảng 504 stars.  
-  Cài đặt: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-code-reviewer -a codex -g`  
-  Ghi chú: Dùng như trợ lý review; maintainer vẫn cần xác minh kết luận trước khi merge.
-
-- **[ZH README](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-readme)**  
-  Phân tích dự án và tạo README tiếng Trung chất lượng cao cho mã nguồn mở, công cụ nội bộ và sản phẩm AI.  
-  Thẻ: `Chinese-Native` `README` `Developer Experience`  
-  Nguồn: SkillsMP · Độ phổ biến: SkillsMP báo cáo kho repo nguồn khoảng 504 stars.  
-  Cài đặt: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-readme -a codex -g`  
-  Ghi chú: Tài liệu sinh ra cần được rà soát lệnh cài đặt, nội dung giấy phép và các tuyên bố riêng của dự án.
-
-- **[ZH Docgen](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-docgen)**  
-  Tạo tài liệu kỹ thuật tiếng Trung từ codebase, gồm tài liệu API, thiết kế module và sổ tay vận hành.  
-  Thẻ: `Chinese-Native` `Documentation` `Codebase`  
-  Nguồn: SkillsMP · Độ phổ biến: SkillsMP báo cáo kho repo nguồn khoảng 504 stars.  
-  Cài đặt: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-docgen -a codex -g`  
-  Ghi chú: Cần đối chiếu tài liệu tạo ra với trạng thái thực tế hiện tại của repository.
-
-- **[De-AI Writing](https://github.com/OUBIGFA/De-AI-Prompt-Enhancer-Writer-Booster-SKILL)**  
-  Workflow tiếng Trung cho viết lại, biên tập, dịch và rà soát nhằm giảm văn phong khuôn mẫu và cảm giác do AI tạo.  
-  Thẻ: `Chinese-Native` `Writing` `Humanization`  
-  Nguồn: SkillsMP · Độ phổ biến: SkillsMP báo cáo kho repo nguồn khoảng 488 stars.  
-  Cài đặt: `npx skills add https://github.com/OUBIGFA/De-AI-Prompt-Enhancer-Writer-Booster-SKILL -a codex -g`  
-  Ghi chú: Trong bối cảnh học thuật hoặc bị ràng buộc chính sách, cần rà soát tính liêm chính; không dùng để né chính sách phát hiện.
-
-- **[Chinese Writing](https://github.com/miantiao-me/aigc-weekly)**  
-  Hướng dẫn viết tiếng Trung cho newsletter, blog và bài công nghệ, nhấn mạnh rõ ràng, tự nhiên và ít dấu vết AI.  
-  Thẻ: `Chinese-Native` `Writing` `Newsletter`  
-  Nguồn: SkillsMP · Độ phổ biến: SkillsMP báo cáo miantiao-me/aigc-weekly khoảng 544 stars.  
-  Cài đặt: `npx skills add https://github.com/miantiao-me/aigc-weekly --skill chinese-writing -a codex -g`  
-  Ghi chú: Do đường dẫn index công khai có thể thay đổi, nên dùng nhánh/đường dẫn chính của repository làm nguồn.
-
-- **[Tech Doc Style Chinese](https://github.com/Fenng/Tech-Doc-Style-Chinese)**  
-  Phong cách tài liệu kỹ thuật tiếng Trung súc tích, chính xác cho product copy, tài liệu API, thuật ngữ, dấu câu và cách viết dễ quét đọc.  
-  Thẻ: `Chinese-Native` `Technical Writing` `Style Guide`  
-  Nguồn: SkillsMP · Độ phổ biến: SkillsMP báo cáo Fenng/Tech-Doc-Style-Chinese khoảng 365 stars.  
-  Cài đặt: `npx skills add https://github.com/Fenng/Tech-Doc-Style-Chinese -a codex -g`  
-  Ghi chú: Dùng như hướng dẫn biên tập; cần giữ nguyên literal trong code, đường dẫn API và văn bản pháp lý.
-
-- **[LaTeX Thesis ZH](https://github.com/bahayonghang/academic-writing-skills/tree/main/academic-writing-skills/latex-thesis-zh)**  
-  Trợ lý luận văn LaTeX tiếng Trung cho chẩn đoán biên dịch, chuẩn trích dẫn GB/T 7714, cấu trúc, công thức và nhất quán thuật ngữ.  
-  Thẻ: `Chinese-Native` `LaTeX` `Academic`  
-  Nguồn: SkillsMP · Độ phổ biến: SkillsMP báo cáo bahayonghang/academic-writing-skills khoảng 365 stars.  
-  Cài đặt: `npx skills add https://github.com/bahayonghang/academic-writing-skills --skill latex-thesis-zh -a codex -g`  
-  Ghi chú: Viết học thuật cần tuân thủ chính sách cơ sở đào tạo và kiểm tra thủ công độ chính xác trích dẫn.
-
-- **[Paper Write](https://github.com/xstongxue/best-skills/tree/main/skills/paper-write)**  
-  Workflow tiếng Trung cho luận văn cử nhân/thạc sĩ: dàn ý, cấu trúc, tài liệu tham khảo, biên tập, mở rộng, rút gọn và dịch thuật.  
-  Thẻ: `Chinese-Native` `Academic` `Writing`  
-  Nguồn: SkillsCat · Độ phổ biến: SkillsCat báo cáo xstongxue/best-skills khoảng 2,149 stars.  
-  Cài đặt: `npx skillscat add xstongxue/best-skills/paper-write`  
-  Ghi chú: Trước khi dùng, bắt buộc rà soát tính liêm chính học thuật và độ chính xác của trích dẫn.
-
-- **[Humanize Chinese](https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/main/skills/49-voidborne-d-humanize-chinese)**  
-  Workflow tiếng Trung để humanize và phát hiện văn bản AI, gồm rule, đặc trưng thống kê và mẫu chỉnh sửa học thuật.  
-  Thẻ: `Chinese-Native` `Writing` `Academic`  
-  Nguồn: SkillsCat · Độ phổ biến: SkillsCat báo cáo brycewang-stanford/auto-empirical-research-skills khoảng 2,677 stars.  
-  Cài đặt: `npx skillscat add brycewang-stanford/auto-empirical-research-skills/humanize-chinese`  
-  Ghi chú: Mức nhạy cảm tuân thủ cao; không dùng để né tránh chính sách phát hiện của học thuật hoặc nền tảng.
-
-- **[EconFin Idea Finder ZH](https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/main/skills/67-econfin-workflow-toolkit)**  
-  Công cụ tiếng Trung dạng funnel để tìm ý tưởng nghiên cứu kinh tế/tài chính doanh nghiệp, tạo giả thuyết, dataset và kế hoạch thực nghiệm.  
-  Thẻ: `Chinese-Native` `Finance` `Research`  
-  Nguồn: SkillsCat · Độ phổ biến: SkillsCat báo cáo kho repo nguồn khoảng 2,677 stars.  
-  Cài đặt: `npx skillscat add brycewang-stanford/auto-empirical-research-skills/econfin-idea-finder`  
-  Ghi chú: Thuộc lĩnh vực tài chính và nghiên cứu; cần rà soát tuân thủ và xác minh nguồn.
-
-- **[Boss](https://github.com/echovic/boss-skill)**  
-  Workflow giao hàng phần mềm đa agent kiểu BMAD bằng tiếng Trung, bao phủ PM, kiến trúc, thiết kế, phát triển, QA và DevOps.  
-  Thẻ: `Chinese-Native` `Multi-Agent` `Project Management`  
-  Nguồn: SkillsCat · Độ phổ biến: Trang SkillsCat công khai có thể truy cập；repo nguồn khoảng 550 stars.  
-  Cài đặt: `npx skillscat add echovic/boss-skill`  
-  Ghi chú: SkillsCat gắn cờ rủi ro bảo mật mức trung bình; trước khi cài sẵn cần rà soát automation, chạy lệnh, ghi file và điều phối agent.
-
-- **[Requirement Analyst](https://github.com/CaoMeiYouRen/momei/tree/master/.github/skills/requirement-analyst)**  
-  Skill phân tích yêu cầu tiếng Trung cho làm rõ yêu cầu, trích xuất ý định người dùng, căn chỉnh roadmap và chấm điểm ưu tiên.  
-  Thẻ: `Chinese-Native` `Requirements` `Product`  
-  Nguồn: SkillMD.ai · Độ phổ biến: SkillMD.ai báo cáo 1,483 lượt xem, 265 lượt tải；GitHub source công khai.  
-  Cài đặt: `npx skills add https://github.com/CaoMeiYouRen/momei --skill requirement-analyst -a codex -g`  
-  Ghi chú: Tham chiếu danh mục: SkillMD.ai Requirement Analyst. Cần xác nhận các giả định sản phẩm với stakeholder.
-
-- **[OB](https://github.com/NeverSight/learn-skills.dev/blob/main/data/skills-md/aibangjuxin/knowledge/ob/SKILL.md)**  
-  Skill kiến trúc onboarding nền tảng GCP API bằng tiếng Trung, bao gồm GitOps, pipeline, Firestore, BigQuery và thiết kế rollout có kiểm toán.  
-  Thẻ: `Chinese-Native` `DevOps` `GCP`  
-  Nguồn: SkillMD.ai · Độ phổ biến: SkillMD.ai báo cáo 1,178 lượt xem, 309 lượt tải；AgentSkill API trỏ tới GitHub công khai.  
-  Cài đặt: `npx skills add https://github.com/NeverSight/learn-skills.dev --skill ob -a codex -g`  
-  Ghi chú: Miền doanh nghiệp GCP chuyên biệt; trước khi cài sẵn cần rà soát quyền cloud, hành động pipeline và hướng dẫn rollback.
-
-- **[NSFC Abstract](https://github.com/huangwb8/ChineseResearchLaTeX)**  
-  Trợ lý abstract Trung-Anh cho hồ sơ NSFC với tóm tắt tiếng Trung có cấu trúc, dịch Anh trung thực, gợi ý tiêu đề và kiểm tra độ dài.  
-  Thẻ: `Chinese-Native` `Academic` `Grant`  
-  Nguồn: Skills Directory · Độ phổ biến: Skills Directory báo cáo repo nguồn khoảng 1,626 stars, điểm bảo mật A.  
-  Cài đặt: `npx skills add https://github.com/huangwb8/ChineseResearchLaTeX -a codex -g`  
-  Ghi chú: Viết hồ sơ xin quỹ cần chuyên gia lĩnh vực rà soát và tuân thủ nghiêm ngặt quy định nộp hồ sơ.
-
-- **[Paper Translation](https://github.com/APLaS-Plus/paper-translation)**  
-  Workflow dịch PDF học thuật sang Markdown tiếng Trung bằng MinerU, giữ nguyên công thức, hình ảnh, bảng, mã và thuật ngữ.  
-  Thẻ: `Chinese-Native` `Translation` `Academic`  
-  Nguồn: Skills Directory · Độ phổ biến: Trang Skills Directory công khai có thể truy cập, điểm bảo mật A.  
-  Cài đặt: `npx skills add https://github.com/APLaS-Plus/paper-translation -a codex -g`  
-  Ghi chú: Cần MinerU API Token; phải rà soát rủi ro tải lên bên ngoài, quyền riêng tư, bản quyền và độ chính xác bản dịch.
 
 ## Tất cả Skill
 
@@ -686,7 +539,6 @@ Skill chuyên ngành như y tế, accessibility, bảo mật, bản địa hóa 
 ## Cách đóng góp
 
 - Mở [Submit a Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml) issue với link truy cập được, mô tả ngắn, danh mục, nguồn và bằng chứng phổ biến.
-- Skill gốc tiếng Trung hãy dùng mẫu [Submit a Chinese-Native Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml).
 - Hãy đánh dấu Skill cần API key, điều khiển trình duyệt, chạy lệnh, hoặc cần xem xét y tế/tài chính/pháp lý.
 
 ## Tiêu chí tuyển chọn

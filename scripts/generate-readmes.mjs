@@ -843,12 +843,14 @@ function renderReadme(data, langCode) {
   const featured = skills.filter((skill) => skill.featured);
   const chineseHubSkills = skills.filter((skill) => skill.chineseHub);
 
+  const showChineseHub = langCode === "zh";
+
   const tocItems = [
     t.why,
     t.browse,
     t.stats,
     t.featured,
-    t.chineseHub,
+    ...(showChineseHub ? [t.chineseHub] : []),
     allSection,
     t.customSkillGuide,
     t.contribute,
@@ -865,7 +867,7 @@ function renderReadme(data, langCode) {
     "[![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)",
     "[![GitHub stars](https://img.shields.io/github/stars/flaqai/awesome_codex_skills?style=social)](https://github.com/flaqai/awesome_codex_skills)",
     "[![Submit Skills via Issues](https://img.shields.io/badge/Submit%20Skills-via%20Issues-brightgreen.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml)",
-    t.submitChineseSkillBadge,
+    ...(showChineseHub ? [t.submitChineseSkillBadge] : []),
     "",
     `> ${t.tagline}`,
     "",
@@ -873,7 +875,7 @@ function renderReadme(data, langCode) {
     ""
   ];
 
-  if (t.chineseHubCallout) lines.push(`> ${t.chineseHubCallout}`, "");
+  if (showChineseHub && t.chineseHubCallout) lines.push(`> ${t.chineseHubCallout}`, "");
 
   lines.push(
     `> **[${t.customSkillGuide} →](${langMeta.guideFile})** ${t.customSkillGuideBody}`,
@@ -912,9 +914,9 @@ function renderReadme(data, langCode) {
     "",
     "| Metric | Count |",
     "|---|---:|",
-    `| ${t.totalSkills} | ${skills.length} |`,
+    `| ${t.totalSkills} | ${showChineseHub ? skills.length : skills.length - chineseHubSkills.length} |`,
     `| ${t.categories} | ${categories.length} |`,
-    `| ${t.chineseHubCount} | ${chineseHubSkills.length} |`,
+    ...(showChineseHub ? [`| ${t.chineseHubCount} | ${chineseHubSkills.length} |`] : []),
     `| ${t.lastUpdated} | ${data.updatedAt} |`,
     "",
     `## ${t.featured}`,
@@ -925,11 +927,12 @@ function renderReadme(data, langCode) {
     lines.push(renderSkill(skill, langCode, t), "");
   });
 
-  lines.push(`## ${t.chineseHub}`, "", t.chineseHubIntro, "");
-
-  chineseHubSkills.forEach((skill) => {
-    lines.push(renderSkill(skill, langCode, t), "");
-  });
+  if (showChineseHub) {
+    lines.push(`## ${t.chineseHub}`, "", t.chineseHubIntro, "");
+    chineseHubSkills.forEach((skill) => {
+      lines.push(renderSkill(skill, langCode, t), "");
+    });
+  }
 
   lines.push(`## ${allSection}`, "");
 
@@ -951,7 +954,7 @@ function renderReadme(data, langCode) {
     "",
     `## ${t.contribute}`,
     "",
-    ...t.contributeBody.map((line) => `- ${line}`),
+    ...(showChineseHub ? t.contributeBody : t.contributeBody.filter((_, i) => i !== 1)).map((line) => `- ${line}`),
     "",
     `## ${t.curation}`,
     "",

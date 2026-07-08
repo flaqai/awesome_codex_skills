@@ -5,7 +5,6 @@
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 [![GitHub stars](https://img.shields.io/github/stars/flaqai/awesome_codex_skills?style=social)](https://github.com/flaqai/awesome_codex_skills)
 [![Submit Skills via Issues](https://img.shields.io/badge/Submit%20Skills-via%20Issues-brightgreen.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml)
-[![Kirim Skill Tiongkok](https://img.shields.io/badge/Kirim%20Skill%20Tiongkok-via%20Issues-orange.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml)
 
 > Daftar Codex Skill pilihan dan multibahasa untuk kerja kreatif, coding, otomasi, dokumen, dan workflow industri.
 
@@ -25,7 +24,6 @@
 - [Telusuri berdasarkan Kategori](#telusuri-berdasarkan-kategori)
 - [Statistik](#statistik)
 - [Skill Unggulan](#skill-unggulan)
-- [Skills native Tiongkok](#skills-native-tiongkok)
 - [Semua Skill](#semua-skill)
 - [Panduan Custom Skill](#panduan-custom-skill)
 - [Cara Berkontribusi](#cara-berkontribusi)
@@ -53,9 +51,8 @@
 
 | Metric | Count |
 |---|---:|
-| Total Skill | 87 |
+| Total Skill | 67 |
 | Kategori | 8 |
-| Skills native Tiongkok | 20 |
 | Terakhir diperbarui | 2026-07-08 |
 
 ## Skill Unggulan
@@ -151,150 +148,6 @@
   Skill generasi gambar OpenAI untuk prompt, gaya, edit, variasi, dan aset visual.  
   Tag: `Image` `Generation` `OpenAI`  
   Sumber: SkillsMP · Popularitas: SkillsMP menampilkan 23,095 stars, 1,565 forks.
-
-## Skills native Tiongkok
-
-Skill dengan SKILL.md dan workflow native berbahasa Tiongkok untuk dokumentasi, review, penulisan, akademik, fintech, perencanaan produk, dan DevOps.
-
-- **[Chinese Documentation](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-documentation)**  
-  Standar tata letak dan penulisan dokumentasi berbahasa Tionghoa, mencakup spasi Tionghoa/Inggris, tanda baca, terminologi, tautan, dan keterbacaan konten teknis.  
-  Tag: `Chinese-Native` `Documentation` `Technical Writing`  
-  Sumber: SkillsMP · Popularitas: SkillsMP melaporkan jnMetaCode/superpowers-zh sekitar 6,213 stars.  
-  Instal: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-documentation -a codex -g`  
-  Catatan: Referensi direktori: SkillsMP Chinese Documentation. Tinjau lisensi repositori sebelum prainstal.
-
-- **[Chinese Commit Conventions](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-commit-conventions)**  
-  Panduan engineering tim untuk Chinese Conventional Commits, changelog, commitlint, Husky, dan Commitizen.  
-  Tag: `Chinese-Native` `Git` `DevOps`  
-  Sumber: SkillsMP · Popularitas: SkillsMP melaporkan repo sumber sekitar 6,213 stars.  
-  Instal: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-commit-conventions -a codex -g`  
-  Catatan: Cocok untuk standarisasi workflow tim; tetap verifikasi pesan commit yang dihasilkan terhadap aturan proyek.
-
-- **[Chinese Code Review](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-code-review)**  
-  Template komunikasi code review berbahasa Tionghoa dengan label tingkat keparahan, gaya komentar, dan pola kolaborasi tim.  
-  Tag: `Chinese-Native` `Code Review` `Collaboration`  
-  Sumber: SkillsMP · Popularitas: SkillsMP melaporkan repo sumber sekitar 6,213 stars.  
-  Instal: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-code-review -a codex -g`  
-  Catatan: Kesimpulan review harus tetap berdasarkan diff nyata dan hasil pengujian.
-
-- **[Deep Research ZH](https://github.com/LeoYeAI/openclaw-master-skills/tree/main/skills/deep-research-zh)**  
-  Workflow riset mendalam berbahasa Tionghoa untuk riset industri, analisis kompetitor, riset kebijakan, output PDF, dan delivery otomatis.  
-  Tag: `Chinese-Native` `Research` `Reports`  
-  Sumber: SkillsMP · Popularitas: SkillsMP melaporkan LeoYeAI/openclaw-master-skills sekitar 2,076 stars.  
-  Instal: `npx skills add https://github.com/LeoYeAI/openclaw-master-skills --skill deep-research-zh -a codex -g`  
-  Catatan: Sebelum prainstal, tinjau dependensi Tavily, Feishu, skrip PDF, akses jaringan, dan API Key.
-
-- **[Quant Trader Daily](https://github.com/LeoYeAI/openclaw-master-skills/tree/main/skills/trader-daily)**  
-  Workflow harian quant trading berbahasa Tionghoa untuk monitoring posisi, pengingat risiko, laporan, dan jurnal trading.  
-  Tag: `Chinese-Native` `Finance` `Quant`  
-  Sumber: SkillsMP · Popularitas: SkillsMP melaporkan repo sumber sekitar 2,076 stars.  
-  Instal: `npx skills add https://github.com/LeoYeAI/openclaw-master-skills --skill trader-daily -a codex -g`  
-  Catatan: Domain keuangan. Bukan nasihat investasi; perlu tinjauan kepatuhan sebelum digunakan atau prainstal.
-
-- **[ZH Code Reviewer](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-code-reviewer)**  
-  Ahli code review berbahasa Tionghoa dengan temuan terstruktur pada correctness, quality, performance, security, dan design.  
-  Tag: `Chinese-Native` `Code Review` `Quality`  
-  Sumber: SkillsMP · Popularitas: SkillsMP melaporkan laolaoshiren/claude-code-skills-zh sekitar 504 stars.  
-  Instal: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-code-reviewer -a codex -g`  
-  Catatan: Gunakan sebagai bantuan review; maintainer tetap harus memverifikasi temuan sebelum merge.
-
-- **[ZH README](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-readme)**  
-  Menganalisis proyek dan menghasilkan README Tionghoa berkualitas tinggi untuk open-source, tools internal, dan produk AI.  
-  Tag: `Chinese-Native` `README` `Developer Experience`  
-  Sumber: SkillsMP · Popularitas: SkillsMP melaporkan repo sumber sekitar 504 stars.  
-  Instal: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-readme -a codex -g`  
-  Catatan: Dokumen yang dihasilkan perlu ditinjau untuk perintah instalasi, teks lisensi, dan klaim khusus proyek.
-
-- **[ZH Docgen](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-docgen)**  
-  Menghasilkan dokumentasi teknis berbahasa Tionghoa dari codebase, termasuk dokumentasi API, desain modul, dan manual operasi.  
-  Tag: `Chinese-Native` `Documentation` `Codebase`  
-  Sumber: SkillsMP · Popularitas: SkillsMP melaporkan repo sumber sekitar 504 stars.  
-  Instal: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-docgen -a codex -g`  
-  Catatan: Dokumen yang dihasilkan harus ditinjau terhadap kondisi repository saat ini.
-
-- **[De-AI Writing](https://github.com/OUBIGFA/De-AI-Prompt-Enhancer-Writer-Booster-SKILL)**  
-  Workflow bahasa Tionghoa untuk menulis ulang, polishing, menerjemahkan, dan review guna mengurangi frasa template serta gaya mirip AI.  
-  Tag: `Chinese-Native` `Writing` `Humanization`  
-  Sumber: SkillsMP · Popularitas: SkillsMP melaporkan repo sumber sekitar 488 stars.  
-  Instal: `npx skills add https://github.com/OUBIGFA/De-AI-Prompt-Enhancer-Writer-Booster-SKILL -a codex -g`  
-  Catatan: Untuk konteks akademik atau terikat kebijakan, wajib ada tinjauan integritas; jangan gunakan untuk menghindari kebijakan deteksi.
-
-- **[Chinese Writing](https://github.com/miantiao-me/aigc-weekly)**  
-  Panduan menulis bahasa Tionghoa untuk newsletter, blog, dan artikel teknologi dengan fokus pada kejelasan, nuansa manusiawi, dan minim gaya AI.  
-  Tag: `Chinese-Native` `Writing` `Newsletter`  
-  Sumber: SkillsMP · Popularitas: SkillsMP melaporkan miantiao-me/aigc-weekly sekitar 544 stars.  
-  Instal: `npx skills add https://github.com/miantiao-me/aigc-weekly --skill chinese-writing -a codex -g`  
-  Catatan: Karena path indeks publik bisa berubah, sumber yang dipakai di sini adalah jalur utama repositori.
-
-- **[Tech Doc Style Chinese](https://github.com/Fenng/Tech-Doc-Style-Chinese)**  
-  Gaya dokumentasi teknis Tionghoa yang ringkas dan presisi untuk product copy, dokumen API, terminologi, tanda baca, dan tulisan mudah dipindai.  
-  Tag: `Chinese-Native` `Technical Writing` `Style Guide`  
-  Sumber: SkillsMP · Popularitas: SkillsMP melaporkan Fenng/Tech-Doc-Style-Chinese sekitar 365 stars.  
-  Instal: `npx skills add https://github.com/Fenng/Tech-Doc-Style-Chinese -a codex -g`  
-  Catatan: Gunakan sebagai panduan editorial; pertahankan code literal, path API, dan teks legal apa adanya.
-
-- **[LaTeX Thesis ZH](https://github.com/bahayonghang/academic-writing-skills/tree/main/academic-writing-skills/latex-thesis-zh)**  
-  Asisten tesis LaTeX berbahasa Tionghoa untuk diagnosis kompilasi, referensi GB/T 7714, struktur bab, persamaan, dan konsistensi terminologi.  
-  Tag: `Chinese-Native` `LaTeX` `Academic`  
-  Sumber: SkillsMP · Popularitas: SkillsMP melaporkan bahayonghang/academic-writing-skills sekitar 365 stars.  
-  Instal: `npx skills add https://github.com/bahayonghang/academic-writing-skills --skill latex-thesis-zh -a codex -g`  
-  Catatan: Penulisan akademik harus mengikuti kebijakan institusi dan memverifikasi sitasi secara manual.
-
-- **[Paper Write](https://github.com/xstongxue/best-skills/tree/main/skills/paper-write)**  
-  Workflow bahasa Tionghoa untuk skripsi/tesis S1-S2, mendukung outline, struktur, referensi, polishing, ekspansi, ringkasan, dan terjemahan.  
-  Tag: `Chinese-Native` `Academic` `Writing`  
-  Sumber: SkillsCat · Popularitas: SkillsCat melaporkan xstongxue/best-skills sekitar 2,149 stars.  
-  Instal: `npx skillscat add xstongxue/best-skills/paper-write`  
-  Catatan: Sebelum digunakan, integritas akademik dan akurasi sitasi wajib ditinjau.
-
-- **[Humanize Chinese](https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/main/skills/49-voidborne-d-humanize-chinese)**  
-  Workflow Tionghoa untuk humanisasi dan deteksi teks AI, mencakup aturan, fitur statistik, dan pola revisi akademik.  
-  Tag: `Chinese-Native` `Writing` `Academic`  
-  Sumber: SkillsCat · Popularitas: SkillsCat melaporkan brycewang-stanford/auto-empirical-research-skills sekitar 2,677 stars.  
-  Instal: `npx skillscat add brycewang-stanford/auto-empirical-research-skills/humanize-chinese`  
-  Catatan: Sensitivitas kepatuhan tinggi; jangan gunakan untuk mengakali kebijakan deteksi akademik atau platform.
-
-- **[EconFin Idea Finder ZH](https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/main/skills/67-econfin-workflow-toolkit)**  
-  Alat pencari ide riset ekonomi/keuangan korporat berbahasa Tionghoa berbasis funnel untuk membuat hipotesis, dataset, dan rencana empiris.  
-  Tag: `Chinese-Native` `Finance` `Research`  
-  Sumber: SkillsCat · Popularitas: SkillsCat melaporkan repo sumber sekitar 2,677 stars.  
-  Instal: `npx skillscat add brycewang-stanford/auto-empirical-research-skills/econfin-idea-finder`  
-  Catatan: Domain keuangan dan riset; memerlukan tinjauan kepatuhan serta verifikasi sumber.
-
-- **[Boss](https://github.com/echovic/boss-skill)**  
-  Workflow delivery software multi-agent gaya BMAD berbahasa Tionghoa yang mencakup PM, arsitektur, desain, development, QA, dan DevOps.  
-  Tag: `Chinese-Native` `Multi-Agent` `Project Management`  
-  Sumber: SkillsCat · Popularitas: Halaman SkillsCat publik dapat diakses；repo sumber sekitar 550 stars.  
-  Instal: `npx skillscat add echovic/boss-skill`  
-  Catatan: SkillsCat menandai risiko keamanan menengah; sebelum prainstal, tinjau otomasi, eksekusi perintah, penulisan file, dan orkestrasi agent.
-
-- **[Requirement Analyst](https://github.com/CaoMeiYouRen/momei/tree/master/.github/skills/requirement-analyst)**  
-  Skill analisis kebutuhan berbahasa Tionghoa untuk klarifikasi requirement, ekstraksi intent pengguna, penyelarasan roadmap, dan scoring prioritas.  
-  Tag: `Chinese-Native` `Requirements` `Product`  
-  Sumber: SkillMD.ai · Popularitas: SkillMD.ai melaporkan 1,483 views dan 265 downloads；path GitHub publik.  
-  Instal: `npx skills add https://github.com/CaoMeiYouRen/momei --skill requirement-analyst -a codex -g`  
-  Catatan: Referensi direktori: SkillMD.ai Requirement Analyst. Asumsi produk harus diverifikasi dengan para pemangku kepentingan.
-
-- **[OB](https://github.com/NeverSight/learn-skills.dev/blob/main/data/skills-md/aibangjuxin/knowledge/ob/SKILL.md)**  
-  Skill arsitek onboarding platform GCP API berbahasa Tionghoa, mencakup GitOps, pipeline, Firestore, BigQuery, dan desain rilis yang dapat diaudit.  
-  Tag: `Chinese-Native` `DevOps` `GCP`  
-  Sumber: SkillMD.ai · Popularitas: SkillMD.ai melaporkan 1,178 views dan 309 downloads；AgentSkill API menunjuk ke GitHub publik.  
-  Instal: `npx skills add https://github.com/NeverSight/learn-skills.dev --skill ob -a codex -g`  
-  Catatan: Domain enterprise GCP yang spesifik; sebelum prainstal, tinjau izin cloud, aksi pipeline, dan panduan rollback.
-
-- **[NSFC Abstract](https://github.com/huangwb8/ChineseResearchLaTeX)**  
-  Asisten abstrak Tionghoa-Inggris untuk proposal NSFC dengan ringkasan terstruktur, terjemahan Inggris yang setia, saran judul, dan cek panjang.  
-  Tag: `Chinese-Native` `Academic` `Grant`  
-  Sumber: Skills Directory · Popularitas: Skills Directory melaporkan repo sumber ~1,626 stars, skor keamanan A.  
-  Instal: `npx skills add https://github.com/huangwb8/ChineseResearchLaTeX -a codex -g`  
-  Catatan: Penulisan proposal hibah memerlukan review ahli domain dan kepatuhan ketat pada aturan pengajuan.
-
-- **[Paper Translation](https://github.com/APLaS-Plus/paper-translation)**  
-  Workflow terjemahan PDF akademik ke Markdown Tionghoa berbasis MinerU dengan mempertahankan rumus, gambar, tabel, kode, dan terminologi.  
-  Tag: `Chinese-Native` `Translation` `Academic`  
-  Sumber: Skills Directory · Popularitas: Halaman Skills Directory publik dapat diakses, skor keamanan A.  
-  Instal: `npx skills add https://github.com/APLaS-Plus/paper-translation -a codex -g`  
-  Catatan: Membutuhkan MinerU API Token; tinjau risiko upload eksternal, privasi, hak cipta, dan akurasi terjemahan.
 
 ## Semua Skill
 
@@ -686,7 +539,6 @@ Skill domain untuk kesehatan, aksesibilitas, keamanan, lokalisasi, dan bidang la
 ## Cara Berkontribusi
 
 - Buka issue [Submit a Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml) dengan link yang dapat diakses, deskripsi singkat, kategori, platform sumber, dan bukti popularitas.
-- Untuk Skill native Tiongkok, gunakan template [Submit a Chinese-Native Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml).
 - Tandai Skill yang memerlukan API key, kontrol browser, eksekusi command, atau review kesehatan/keuangan/hukum.
 
 ## Kriteria Kurasi

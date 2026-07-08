@@ -5,7 +5,6 @@
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 [![GitHub stars](https://img.shields.io/github/stars/flaqai/awesome_codex_skills?style=social)](https://github.com/flaqai/awesome_codex_skills)
 [![Submit Skills via Issues](https://img.shields.io/badge/Submit%20Skills-via%20Issues-brightgreen.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml)
-[![중국어 Skill 제출](https://img.shields.io/badge/%EC%A4%91%EA%B5%AD%EC%96%B4%20Skill%20%EC%A0%9C%EC%B6%9C-via%20Issues-orange.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml)
 
 > 창작, 코딩, 자동화, 문서, 산업 워크플로에 유용한 Codex Skill을 다국어로 큐레이션한 목록입니다.
 
@@ -25,7 +24,6 @@
 - [카테고리별 보기](#카테고리별-보기)
 - [통계](#통계)
 - [추천 Skill](#추천-skill)
-- [중국어 네이티브 Skills](#중국어-네이티브-skills)
 - [전체 Skill](#전체-skill)
 - [커스텀 Skill 가이드](#커스텀-skill-가이드)
 - [기여 방법](#기여-방법)
@@ -53,9 +51,8 @@
 
 | Metric | Count |
 |---|---:|
-| Skill 수 | 87 |
+| Skill 수 | 67 |
 | 카테고리 수 | 8 |
-| 중국어 네이티브 Skills | 20 |
 | 마지막 업데이트 | 2026-07-08 |
 
 ## 추천 Skill
@@ -151,150 +148,6 @@
   프롬프트, 스타일, 편집, 변형, 비주얼 에셋을 위한 OpenAI 이미지 생성 Skill.  
   태그: `Image` `Generation` `OpenAI`  
   출처: SkillsMP · 인기 지표: SkillsMP에서 23,095 stars, 1,565 forks.
-
-## 중국어 네이티브 Skills
-
-중국어 SKILL.md와 워크플로를 갖춘 Skill로 문서, 리뷰, 글쓰기, 학술, 핀테크, 제품 기획, DevOps를 다룹니다.
-
-- **[Chinese Documentation](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-documentation)**  
-  중국어 문서 타이포그래피와 작성 규범으로, 중영문 공백·문장부호·용어·링크·기술 문서 가독성을 다룹니다.  
-  태그: `Chinese-Native` `Documentation` `Technical Writing`  
-  출처: SkillsMP · 인기 지표: SkillsMP에서 jnMetaCode/superpowers-zh는 약 6,213 stars.  
-  설치: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-documentation -a codex -g`  
-  참고: 디렉터리 참고: SkillsMP Chinese Documentation. 사전 설치 전에 저장소 라이선스를 검토하세요.
-
-- **[Chinese Commit Conventions](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-commit-conventions)**  
-  중국어 Conventional Commits, changelog, commitlint, Husky, Commitizen 팀 엔지니어링 가이드입니다.  
-  태그: `Chinese-Native` `Git` `DevOps`  
-  출처: SkillsMP · 인기 지표: SkillsMP에서 소스 저장소는 약 6,213 stars.  
-  설치: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-commit-conventions -a codex -g`  
-  참고: 팀 워크플로 표준화에 유용하지만, 생성된 커밋 메시지는 프로젝트 규칙으로 다시 확인해야 합니다.
-
-- **[Chinese Code Review](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-code-review)**  
-  심각도 라벨, 리뷰 표현, 협업 패턴을 포함한 중국어 코드 리뷰 커뮤니케이션 템플릿입니다.  
-  태그: `Chinese-Native` `Code Review` `Collaboration`  
-  출처: SkillsMP · 인기 지표: SkillsMP에서 소스 저장소는 약 6,213 stars.  
-  설치: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-code-review -a codex -g`  
-  참고: 리뷰 결론은 실제 diff와 테스트 결과에 근거해야 합니다.
-
-- **[Deep Research ZH](https://github.com/LeoYeAI/openclaw-master-skills/tree/main/skills/deep-research-zh)**  
-  산업 조사, 경쟁사 분석, 정책 연구, PDF 출력, 자동 전달을 위한 중국어 딥리서치 워크플로입니다.  
-  태그: `Chinese-Native` `Research` `Reports`  
-  출처: SkillsMP · 인기 지표: SkillsMP에서 LeoYeAI/openclaw-master-skills는 약 2,076 stars.  
-  설치: `npx skills add https://github.com/LeoYeAI/openclaw-master-skills --skill deep-research-zh -a codex -g`  
-  참고: 사전 설치 전에 Tavily, Feishu, PDF 스크립트, 네트워크 접근, API 키 의존성을 검토해야 합니다.
-
-- **[Quant Trader Daily](https://github.com/LeoYeAI/openclaw-master-skills/tree/main/skills/trader-daily)**  
-  포지션 모니터링, 리스크 알림, 보고서, 트레이딩 저널을 포함한 중국어 퀀트 트레이딩 일일 워크플로입니다.  
-  태그: `Chinese-Native` `Finance` `Quant`  
-  출처: SkillsMP · 인기 지표: SkillsMP에서 소스 저장소는 약 2,076 stars.  
-  설치: `npx skills add https://github.com/LeoYeAI/openclaw-master-skills --skill trader-daily -a codex -g`  
-  참고: 금융 영역입니다. 투자 자문이 아니며, 사용/사전 설치 전에 컴플라이언스 검토가 필요합니다.
-
-- **[ZH Code Reviewer](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-code-reviewer)**  
-  정확성, 품질, 성능, 보안, 설계 관점에서 구조화된 결과를 제공하는 중국어 코드 리뷰 전문가 스킬입니다.  
-  태그: `Chinese-Native` `Code Review` `Quality`  
-  출처: SkillsMP · 인기 지표: SkillsMP에서 laolaoshiren/claude-code-skills-zh는 약 504 stars.  
-  설치: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-code-reviewer -a codex -g`  
-  참고: 리뷰 보조 도구로 사용하고, 병합 전 유지관리자가 결론을 검증해야 합니다.
-
-- **[ZH README](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-readme)**  
-  프로젝트를 분석해 오픈소스, 내부 도구, AI 제품에 맞는 고품질 중국어 README를 생성합니다.  
-  태그: `Chinese-Native` `README` `Developer Experience`  
-  출처: SkillsMP · 인기 지표: SkillsMP에서 소스 저장소는 약 504 stars.  
-  설치: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-readme -a codex -g`  
-  참고: 생성된 문서는 설치 명령, 라이선스 문구, 프로젝트별 주장 내용을 검토해야 합니다.
-
-- **[ZH Docgen](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-docgen)**  
-  코드베이스에서 중국어 기술 문서를 생성하며 API 문서, 모듈 설계, 운영 매뉴얼을 포함합니다.  
-  태그: `Chinese-Native` `Documentation` `Codebase`  
-  출처: SkillsMP · 인기 지표: SkillsMP에서 소스 저장소는 약 504 stars.  
-  설치: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-docgen -a codex -g`  
-  참고: 생성 문서는 현재 저장소 상태와 대조해 검토해야 합니다.
-
-- **[De-AI Writing](https://github.com/OUBIGFA/De-AI-Prompt-Enhancer-Writer-Booster-SKILL)**  
-  템플릿 문장과 AI 티를 줄이기 위한 중국어 리라이팅, 다듬기, 번역, 리뷰 워크플로입니다.  
-  태그: `Chinese-Native` `Writing` `Humanization`  
-  출처: SkillsMP · 인기 지표: SkillsMP에서 소스 저장소는 약 488 stars.  
-  설치: `npx skills add https://github.com/OUBIGFA/De-AI-Prompt-Enhancer-Writer-Booster-SKILL -a codex -g`  
-  참고: 학술 또는 정책 제약 환경에서는 윤리 검토가 필요하며, 탐지 정책 우회 목적으로 사용하면 안 됩니다.
-
-- **[Chinese Writing](https://github.com/miantiao-me/aigc-weekly)**  
-  뉴스레터, 블로그, 기술 글을 위한 중국어 글쓰기 가이드로, 명확성·인간적인 톤·낮은 AI 흔적을 강조합니다.  
-  태그: `Chinese-Native` `Writing` `Newsletter`  
-  출처: SkillsMP · 인기 지표: SkillsMP에서 miantiao-me/aigc-weekly는 약 544 stars.  
-  설치: `npx skills add https://github.com/miantiao-me/aigc-weekly --skill chinese-writing -a codex -g`  
-  참고: 공개 인덱서 경로가 변할 수 있어, 여기서는 저장소 메인 경로를 소스로 사용합니다.
-
-- **[Tech Doc Style Chinese](https://github.com/Fenng/Tech-Doc-Style-Chinese)**  
-  제품 카피, API 문서, 용어, 문장부호, 스캔 친화적 문체를 다루는 절제된 중국어 기술 문서 스타일입니다.  
-  태그: `Chinese-Native` `Technical Writing` `Style Guide`  
-  출처: SkillsMP · 인기 지표: SkillsMP에서 Fenng/Tech-Doc-Style-Chinese는 약 365 stars.  
-  설치: `npx skills add https://github.com/Fenng/Tech-Doc-Style-Chinese -a codex -g`  
-  참고: 편집 스타일 가이드로 활용하되, 코드 리터럴·API 경로·법적 문구는 정확히 유지해야 합니다.
-
-- **[LaTeX Thesis ZH](https://github.com/bahayonghang/academic-writing-skills/tree/main/academic-writing-skills/latex-thesis-zh)**  
-  컴파일 진단, GB/T 7714 참고문헌, 구조, 수식, 용어 일관성을 지원하는 중국어 LaTeX 학위논문 도우미입니다.  
-  태그: `Chinese-Native` `LaTeX` `Academic`  
-  출처: SkillsMP · 인기 지표: SkillsMP에서 bahayonghang/academic-writing-skills는 약 365 stars.  
-  설치: `npx skills add https://github.com/bahayonghang/academic-writing-skills --skill latex-thesis-zh -a codex -g`  
-  참고: 학술 글쓰기는 기관 정책을 준수해야 하며, 인용은 수동으로 검증해야 합니다.
-
-- **[Paper Write](https://github.com/xstongxue/best-skills/tree/main/skills/paper-write)**  
-  학부/석사 논문용 중국어 워크플로로, 개요·구조·참고문헌·교정·확장·축약·번역을 지원합니다.  
-  태그: `Chinese-Native` `Academic` `Writing`  
-  출처: SkillsCat · 인기 지표: SkillsCat에서 xstongxue/best-skills는 약 2,149 stars.  
-  설치: `npx skillscat add xstongxue/best-skills/paper-write`  
-  참고: 사용 전에 학술 윤리와 인용 정확성을 반드시 점검해야 합니다.
-
-- **[Humanize Chinese](https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/main/skills/49-voidborne-d-humanize-chinese)**  
-  규칙, 통계 특징, 학술 리라이팅 패턴을 포함한 중국어 AI 텍스트 인간화 및 탐지 워크플로입니다.  
-  태그: `Chinese-Native` `Writing` `Academic`  
-  출처: SkillsCat · 인기 지표: SkillsCat에서 brycewang-stanford/auto-empirical-research-skills는 약 2,677 stars.  
-  설치: `npx skillscat add brycewang-stanford/auto-empirical-research-skills/humanize-chinese`  
-  참고: 컴플라이언스 민감도가 높습니다. 학술/플랫폼 탐지 정책 우회 용도로 사용하면 안 됩니다.
-
-- **[EconFin Idea Finder ZH](https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/main/skills/67-econfin-workflow-toolkit)**  
-  가설, 데이터셋, 실증 계획 생성을 위한 중국어 퍼널형 경제·기업금융 연구 아이디어 탐색 도구입니다.  
-  태그: `Chinese-Native` `Finance` `Research`  
-  출처: SkillsCat · 인기 지표: SkillsCat에서 소스 저장소는 약 2,677 stars.  
-  설치: `npx skillscat add brycewang-stanford/auto-empirical-research-skills/econfin-idea-finder`  
-  참고: 금융 및 연구 영역으로, 컴플라이언스 검토와 출처 검증이 필요합니다.
-
-- **[Boss](https://github.com/echovic/boss-skill)**  
-  PM, 아키텍처, 설계, 개발, QA, DevOps 전 과정을 아우르는 중국어 BMAD형 멀티 에이전트 소프트웨어 전달 워크플로입니다.  
-  태그: `Chinese-Native` `Multi-Agent` `Project Management`  
-  출처: SkillsCat · 인기 지표: SkillsCat 공개 페이지 접근 가능；소스 저장소 약 550 stars.  
-  설치: `npx skillscat add echovic/boss-skill`  
-  참고: SkillsCat에서 중간 보안 위험으로 표시됩니다. 사전 설치 전에 자동화, 명령 실행, 파일 쓰기, 에이전트 오케스트레이션을 검토하세요.
-
-- **[Requirement Analyst](https://github.com/CaoMeiYouRen/momei/tree/master/.github/skills/requirement-analyst)**  
-  요구사항 명확화, 의도 추출, 로드맵 정렬, 우선순위 점수화를 위한 중국어 요구분석 스킬입니다.  
-  태그: `Chinese-Native` `Requirements` `Product`  
-  출처: SkillMD.ai · 인기 지표: SkillMD.ai 1,483 views, 265 downloads；GitHub 소스 경로 공개.  
-  설치: `npx skills add https://github.com/CaoMeiYouRen/momei --skill requirement-analyst -a codex -g`  
-  참고: 디렉터리 참고: SkillMD.ai Requirement Analyst. 제품 가정은 이해관계자와 확인해야 합니다.
-
-- **[OB](https://github.com/NeverSight/learn-skills.dev/blob/main/data/skills-md/aibangjuxin/knowledge/ob/SKILL.md)**  
-  GitOps, 파이프라인, Firestore, BigQuery, 감사 가능한 배포 설계를 다루는 중국어 GCP API 플랫폼 온보딩 아키텍트 스킬입니다.  
-  태그: `Chinese-Native` `DevOps` `GCP`  
-  출처: SkillMD.ai · 인기 지표: SkillMD.ai 1,178 views, 309 downloads；AgentSkill API가 공개 GitHub 소스를 가리킴.  
-  설치: `npx skills add https://github.com/NeverSight/learn-skills.dev --skill ob -a codex -g`  
-  참고: GCP 엔터프라이즈 특화 영역입니다. 사전 설치 전에 클라우드 권한, 파이프라인 동작, 롤백 가이드를 검토하세요.
-
-- **[NSFC Abstract](https://github.com/huangwb8/ChineseResearchLaTeX)**  
-  NSFC 제안서용 중영문 초록 도우미로, 구조화된 중국어 요약, 충실한 영문 번역, 제목 제안, 분량 점검을 지원합니다.  
-  태그: `Chinese-Native` `Academic` `Grant`  
-  출처: Skills Directory · 인기 지표: Skills Directory 소스 저장소 약 1,626 stars, 보안 등급 A.  
-  설치: `npx skills add https://github.com/huangwb8/ChineseResearchLaTeX -a codex -g`  
-  참고: 연구비 신청 문서는 분야 전문가 검토가 필요하며, 신청 규정을 엄격히 준수해야 합니다.
-
-- **[Paper Translation](https://github.com/APLaS-Plus/paper-translation)**  
-  MinerU 기반 학술 PDF를 중국어 Markdown으로 번역하는 워크플로로, 수식·이미지·표·코드·용어를 보존합니다.  
-  태그: `Chinese-Native` `Translation` `Academic`  
-  출처: Skills Directory · 인기 지표: Skills Directory 공개 페이지 접근 가능, 보안 등급 A.  
-  설치: `npx skills add https://github.com/APLaS-Plus/paper-translation -a codex -g`  
-  참고: MinerU API 토큰이 필요하며, 외부 업로드·개인정보·저작권·번역 정확성 위험을 검토해야 합니다.
 
 ## 전체 Skill
 
@@ -686,7 +539,6 @@ SEO, 카피, 출시 자료, 캠페인, 성장 워크플로를 위한 Skill입니
 ## 기여 방법
 
 - [Submit a Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml) issue로 접근 가능한 링크, 짧은 설명, 카테고리, 출처, 인기 근거를 제출하세요.
-- 중국어 네이티브 Skill은 [Submit a Chinese-Native Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml) 전용 템플릿을 사용하세요.
 - API Key, 브라우저 제어, 명령 실행, 의료/금융/법률 검토가 필요한 경우 명확히 표시하세요.
 
 ## 선정 기준

@@ -843,7 +843,7 @@ function renderReadme(data, langCode) {
   const featured = skills.filter((skill) => skill.featured);
   const chineseHubSkills = skills.filter((skill) => skill.chineseHub);
 
-  const showChineseHub = langCode === "zh";
+  const showChineseHub = langCode === "zh" || langCode === "tw";
 
   const tocItems = [
     t.why,

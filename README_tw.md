@@ -5,10 +5,13 @@
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 [![GitHub stars](https://img.shields.io/github/stars/flaqai/awesome_codex_skills?style=social)](https://github.com/flaqai/awesome_codex_skills)
 [![Submit Skills via Issues](https://img.shields.io/badge/Submit%20Skills-via%20Issues-brightgreen.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml)
+[![提交中文 Skill](https://img.shields.io/badge/%E6%8F%90%E4%BA%A4%E4%B8%AD%E6%96%87%20Skill-via%20Issues-orange.svg)](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml)
 
 > 精選、多語言、按場景分類的 Codex Skill 合集，幫助使用者快速找到適合創作、程式開發、自動化、文件與產業工作流的 Skill。
 
 > Skill 來自公開目錄和開源倉庫，僅用於探索和學習。如果連結失效或需要移除，請提交 issue。
+
+> 面向中文開發者：參見 [中文 Skill 專區](#中文-skill-專區)
 
 > **[自訂 Skill 指南 →](GUIDE_tw.md)** 學習如何建立、改編並安裝你自己的 Codex Skill。
 
@@ -24,6 +27,7 @@
 - [按分類瀏覽](#按分類瀏覽)
 - [統計](#統計)
 - [精選 Skill](#精選-skill)
+- [中文 Skill 專區](#中文-skill-專區)
 - [全部 Skill](#全部-skill)
 - [自訂 Skill 指南](#自訂-skill-指南)
 - [如何貢獻](#如何貢獻)
@@ -51,8 +55,9 @@
 
 | Metric | Count |
 |---|---:|
-| Skill 總數 | 67 |
+| Skill 總數 | 87 |
 | 分類數 | 8 |
+| 中文原生 Skill | 20 |
 | 最後更新 | 2026-07-08 |
 
 ## 精選 Skill
@@ -148,6 +153,150 @@
   OpenAI 圖像生成 Skill，用於提示詞、風格、編輯、變體和視覺資產工作流。  
   標籤: `Image` `Generation` `OpenAI`  
   來源: SkillsMP · 熱度: SkillsMP 顯示 23,095 stars、1,565 forks。
+
+## 中文 Skill 專區
+
+面向中文開發者與中文工作流的原生 Skill，涵蓋文件排版、程式碼審查、寫作潤飾、學術研究、金融量化、產品規劃與 DevOps。
+
+- **[Chinese Documentation](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-documentation)**  
+  中文文件排版與寫作規範，涵蓋中英文空格、標點、術語、連結與技術文案可讀性。  
+  標籤: `Chinese-Native` `Documentation` `Technical Writing`  
+  來源: SkillsMP · 熱度: SkillsMP 顯示 jnMetaCode/superpowers-zh 約 6,213 stars。  
+  安裝: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-documentation -a codex -g`  
+  注意: 目錄參考：SkillsMP Chinese Documentation。預裝前請審查倉庫授權。
+
+- **[Chinese Commit Conventions](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-commit-conventions)**  
+  中文 Conventional Commits、changelog、commitlint、Husky 與 Commitizen 工程規範指南。  
+  標籤: `Chinese-Native` `Git` `DevOps`  
+  來源: SkillsMP · 熱度: SkillsMP 顯示來源倉庫約 6,213 stars。  
+  安裝: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-commit-conventions -a codex -g`  
+  注意: 適合統一團隊工程流程；提交前仍需按專案規則複核生成資訊。
+
+- **[Chinese Code Review](https://github.com/jnMetaCode/superpowers-zh/tree/main/skills/chinese-code-review)**  
+  中文程式碼審查溝通模板，包含分級標註、評審話術與團隊協作模式。  
+  標籤: `Chinese-Native` `Code Review` `Collaboration`  
+  來源: SkillsMP · 熱度: SkillsMP 顯示來源倉庫約 6,213 stars。  
+  安裝: `npx skills add https://github.com/jnMetaCode/superpowers-zh --skill chinese-code-review -a codex -g`  
+  注意: 評審結論仍應基於真實 diff 與測試結果。
+
+- **[Deep Research ZH](https://github.com/LeoYeAI/openclaw-master-skills/tree/main/skills/deep-research-zh)**  
+  中文深度調研工作流，適用於產業研究、競品分析、政策研究、PDF 輸出與自動交付。  
+  標籤: `Chinese-Native` `Research` `Reports`  
+  來源: SkillsMP · 熱度: SkillsMP 顯示 LeoYeAI/openclaw-master-skills 約 2,076 stars。  
+  安裝: `npx skills add https://github.com/LeoYeAI/openclaw-master-skills --skill deep-research-zh -a codex -g`  
+  注意: 預裝前需審查 Tavily、飛書、PDF 腳本、網路存取與 API Key 依賴。
+
+- **[Quant Trader Daily](https://github.com/LeoYeAI/openclaw-master-skills/tree/main/skills/trader-daily)**  
+  量化交易日常中文工作流，涵蓋持倉監控、風控提醒、匯報與交易日誌。  
+  標籤: `Chinese-Native` `Finance` `Quant`  
+  來源: SkillsMP · 熱度: SkillsMP 顯示來源倉庫約 2,076 stars。  
+  安裝: `npx skills add https://github.com/LeoYeAI/openclaw-master-skills --skill trader-daily -a codex -g`  
+  注意: 金融領域。非投資建議；使用或預裝前需要合規審查。
+
+- **[ZH Code Reviewer](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-code-reviewer)**  
+  中文程式碼審查專家，按正確性、品質、效能、安全與設計輸出結構化評審。  
+  標籤: `Chinese-Native` `Code Review` `Quality`  
+  來源: SkillsMP · 熱度: SkillsMP 顯示 laolaoshiren/claude-code-skills-zh 約 504 stars。  
+  安裝: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-code-reviewer -a codex -g`  
+  注意: 作為評審輔助使用；合併前維護者仍需核實結論。
+
+- **[ZH README](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-readme)**  
+  分析專案結構並生成高品質中文 README，適合開源專案、內部工具與 AI 產品。  
+  標籤: `Chinese-Native` `README` `Developer Experience`  
+  來源: SkillsMP · 熱度: SkillsMP 顯示來源倉庫約 504 stars。  
+  安裝: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-readme -a codex -g`  
+  注意: 生成文件需複核安裝命令、授權文本與專案相關敘述。
+
+- **[ZH Docgen](https://github.com/laolaoshiren/claude-code-skills-zh/tree/main/skills/zh-docgen)**  
+  從程式碼庫生成中文技術文件，包括 API 說明、模組設計與運維手冊。  
+  標籤: `Chinese-Native` `Documentation` `Codebase`  
+  來源: SkillsMP · 熱度: SkillsMP 顯示來源倉庫約 504 stars。  
+  安裝: `npx skills add https://github.com/laolaoshiren/claude-code-skills-zh --skill zh-docgen -a codex -g`  
+  注意: 需依當前倉庫實際狀態複核生成文件。
+
+- **[De-AI Writing](https://github.com/OUBIGFA/De-AI-Prompt-Enhancer-Writer-Booster-SKILL)**  
+  中文改寫、潤飾、翻譯與審閱工作流，用於減少模板句式與 AI 味表達。  
+  標籤: `Chinese-Native` `Writing` `Humanization`  
+  來源: SkillsMP · 熱度: SkillsMP 顯示來源倉庫約 488 stars。  
+  安裝: `npx skills add https://github.com/OUBIGFA/De-AI-Prompt-Enhancer-Writer-Booster-SKILL -a codex -g`  
+  注意: 學術或受政策約束情境需做誠信審查，不應用於規避檢測規則。
+
+- **[Chinese Writing](https://github.com/miantiao-me/aigc-weekly)**  
+  中文寫作指南，適用於週刊、部落格與科技文章，強調清晰、人性化與低 AI 味。  
+  標籤: `Chinese-Native` `Writing` `Newsletter`  
+  來源: SkillsMP · 熱度: SkillsMP 顯示 miantiao-me/aigc-weekly 約 544 stars。  
+  安裝: `npx skills add https://github.com/miantiao-me/aigc-weekly --skill chinese-writing -a codex -g`  
+  注意: 因公開索引路徑可能變化，此處使用倉庫主鏈作為來源。
+
+- **[Tech Doc Style Chinese](https://github.com/Fenng/Tech-Doc-Style-Chinese)**  
+  克制精準的中文技術文件風格，覆蓋產品文案、API 文件、術語、標點與可掃讀寫作。  
+  標籤: `Chinese-Native` `Technical Writing` `Style Guide`  
+  來源: SkillsMP · 熱度: SkillsMP 顯示 Fenng/Tech-Doc-Style-Chinese 約 365 stars。  
+  安裝: `npx skills add https://github.com/Fenng/Tech-Doc-Style-Chinese -a codex -g`  
+  注意: 作為編輯風格指南使用；程式碼字面量、API 路徑與法律文本需原樣保留。
+
+- **[LaTeX Thesis ZH](https://github.com/bahayonghang/academic-writing-skills/tree/main/academic-writing-skills/latex-thesis-zh)**  
+  中文 LaTeX 學位論文助手，涵蓋編譯診斷、GB/T 7714、章節結構、公式與術語一致性。  
+  標籤: `Chinese-Native` `LaTeX` `Academic`  
+  來源: SkillsMP · 熱度: SkillsMP 顯示 bahayonghang/academic-writing-skills 約 365 stars。  
+  安裝: `npx skills add https://github.com/bahayonghang/academic-writing-skills --skill latex-thesis-zh -a codex -g`  
+  注意: 學術寫作需遵守學校政策，並人工核驗引用。
+
+- **[Paper Write](https://github.com/xstongxue/best-skills/tree/main/skills/paper-write)**  
+  本碩學位論文中文工作流，支援大綱、結構、參考文獻、潤飾、擴寫、縮寫與翻譯。  
+  標籤: `Chinese-Native` `Academic` `Writing`  
+  來源: SkillsCat · 熱度: SkillsCat 顯示 xstongxue/best-skills 約 2,149 stars。  
+  安裝: `npx skillscat add xstongxue/best-skills/paper-write`  
+  注意: 使用前必須審查學術誠信與引用準確性。
+
+- **[Humanize Chinese](https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/main/skills/49-voidborne-d-humanize-chinese)**  
+  中文 AI 文本人性化與檢測工作流，包含規則、統計特徵與學術改寫模式。  
+  標籤: `Chinese-Native` `Writing` `Academic`  
+  來源: SkillsCat · 熱度: SkillsCat 顯示 brycewang-stanford/auto-empirical-research-skills 約 2,677 stars。  
+  安裝: `npx skillscat add brycewang-stanford/auto-empirical-research-skills/humanize-chinese`  
+  注意: 合規敏感度高；不得用於規避學術或平台檢測政策。
+
+- **[EconFin Idea Finder ZH](https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/main/skills/67-econfin-workflow-toolkit)**  
+  中文漏斗式經濟金融實證選題工具，用於生成假設、資料集與實證研究計畫。  
+  標籤: `Chinese-Native` `Finance` `Research`  
+  來源: SkillsCat · 熱度: SkillsCat 顯示來源倉庫約 2,677 stars。  
+  安裝: `npx skillscat add brycewang-stanford/auto-empirical-research-skills/econfin-idea-finder`  
+  注意: 金融與研究領域；需要合規審查與來源核驗。
+
+- **[Boss](https://github.com/echovic/boss-skill)**  
+  中文 BMAD 式多 Agent 軟體交付工作流，覆蓋 PM、架構、設計、開發、QA 與 DevOps。  
+  標籤: `Chinese-Native` `Multi-Agent` `Project Management`  
+  來源: SkillsCat · 熱度: SkillsCat 公開頁可訪問；來源倉庫約 550 stars。  
+  安裝: `npx skillscat add echovic/boss-skill`  
+  注意: SkillsCat 標記中等安全風險；預裝前需審查自動化、命令執行、檔案寫入與 Agent 編排。
+
+- **[Requirement Analyst](https://github.com/CaoMeiYouRen/momei/tree/master/.github/skills/requirement-analyst)**  
+  中文需求分析 Skill，用於需求澄清、意圖抽離、roadmap 對齊與優先級評分。  
+  標籤: `Chinese-Native` `Requirements` `Product`  
+  來源: SkillMD.ai · 熱度: SkillMD.ai 顯示 1,483 次瀏覽、265 次下載；GitHub 源路徑公開可訪問。  
+  安裝: `npx skills add https://github.com/CaoMeiYouRen/momei --skill requirement-analyst -a codex -g`  
+  注意: 目錄參考：SkillMD.ai Requirement Analyst。產品假設需與相關方確認。
+
+- **[OB](https://github.com/NeverSight/learn-skills.dev/blob/main/data/skills-md/aibangjuxin/knowledge/ob/SKILL.md)**  
+  中文 GCP API 平台 Onboarding 架構 Skill，涵蓋 GitOps、Pipeline、Firestore、BigQuery 與可審計發布。  
+  標籤: `Chinese-Native` `DevOps` `GCP`  
+  來源: SkillMD.ai · 熱度: SkillMD.ai 顯示 1,178 次瀏覽、309 次下載；AgentSkill API 指向公開 GitHub 來源。  
+  安裝: `npx skills add https://github.com/NeverSight/learn-skills.dev --skill ob -a codex -g`  
+  注意: 垂直 GCP 企業場景；預裝前需審查雲權限、Pipeline 動作與回滾指引。
+
+- **[NSFC Abstract](https://github.com/huangwb8/ChineseResearchLaTeX)**  
+  NSFC 標書中英文摘要助手，支援中文摘要、忠實英文翻譯、標題建議與長度自檢。  
+  標籤: `Chinese-Native` `Academic` `Grant`  
+  來源: Skills Directory · 熱度: Skills Directory 顯示來源倉庫約 1,626 stars，安全評分 A。  
+  安裝: `npx skills add https://github.com/huangwb8/ChineseResearchLaTeX -a codex -g`  
+  注意: 基金申請需領域專家複核，並嚴格遵守申報規則。
+
+- **[Paper Translation](https://github.com/APLaS-Plus/paper-translation)**  
+  學術論文 PDF 中譯 Markdown 工作流，基於 MinerU 保留公式、圖片、表格、程式碼與術語。  
+  標籤: `Chinese-Native` `Translation` `Academic`  
+  來源: Skills Directory · 熱度: Skills Directory 公開頁可訪問，並顯示安全評分 A。  
+  安裝: `npx skills add https://github.com/APLaS-Plus/paper-translation -a codex -g`  
+  注意: 需要 MinerU API Token；需審查外部上傳、隱私、版權與翻譯準確性風險。
 
 ## 全部 Skill
 
@@ -539,6 +688,7 @@
 ## 如何貢獻
 
 - 透過 [Submit a Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-skill.yml) Issue 提交，請提供可訪問連結、簡短介紹、分類、來源平台和熱度依據。
+- 中文原生 Skill 請使用 [Submit a Chinese-Native Skill](https://github.com/flaqai/awesome_codex_skills/issues/new?template=submit-chinese-skill.yml) 專用模板。
 - 如果 Skill 需要 API Key、瀏覽器控制、命令執行，或涉及醫療/金融/法律等敏感場景，請明確標註。
 
 ## 收錄標準

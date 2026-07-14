@@ -779,12 +779,32 @@ const chineseHubUi = {
   }
 };
 
+const recommendedProjectsUi = {
+  en: { recommendedProjects: "Recommended Open-Source Projects" },
+  zh: { recommendedProjects: "推荐的开源项目" },
+  tw: { recommendedProjects: "推薦的開源專案" },
+  ja: { recommendedProjects: "おすすめのオープンソースプロジェクト" },
+  ko: { recommendedProjects: "추천 오픈 소스 프로젝트" },
+  th: { recommendedProjects: "โปรเจกต์โอเพนซอร์สแนะนำ" },
+  vi: { recommendedProjects: "Dự án mã nguồn mở đề xuất" },
+  id: { recommendedProjects: "Proyek Open-Source Rekomendasi" },
+  es: { recommendedProjects: "Proyectos open source recomendados" },
+  fr: { recommendedProjects: "Projets open source recommandés" },
+  de: { recommendedProjects: "Empfohlene Open-Source-Projekte" },
+  it: { recommendedProjects: "Progetti open source consigliati" },
+  pt: { recommendedProjects: "Projetos open source recomendados" },
+  ru: { recommendedProjects: "Рекомендуемые open-source проекты" },
+  ar: { recommendedProjects: "مشاريع مفتوحة المصدر موصى بها" }
+};
+
 function strings(lang) {
   return {
     ...ui.en,
     ...chineseHubUi.en,
+    ...recommendedProjectsUi.en,
     ...(ui[lang] ?? {}),
-    ...(chineseHubUi[lang] ?? {})
+    ...(chineseHubUi[lang] ?? {}),
+    ...(recommendedProjectsUi[lang] ?? {})
   };
 }
 
@@ -813,6 +833,14 @@ function renderSkill(skill, langCode, t) {
 }
 
 function validateData(data) {
+  if (!Array.isArray(data.recommendedProjects) || data.recommendedProjects.length === 0) {
+    throw new Error("recommendedProjects must contain at least one project");
+  }
+  for (const project of data.recommendedProjects) {
+    if (!project.name || !project.url?.startsWith("https://github.com/")) {
+      throw new Error("Each recommended project must have a name and GitHub URL");
+    }
+  }
   const categoryIds = new Set(data.categories.map((category) => category.id));
   for (const skill of data.skills) {
     if (!categoryIds.has(skill.category)) {
@@ -856,7 +884,8 @@ function renderReadme(data, langCode) {
     t.contribute,
     t.curation,
     t.license,
-    t.acknowledgements
+    t.acknowledgements,
+    t.recommendedProjects
   ];
 
   const lines = [
@@ -967,6 +996,10 @@ function renderReadme(data, langCode) {
     `## ${t.acknowledgements}`,
     "",
     t.acknowledgementsBody,
+    "",
+    `## ${t.recommendedProjects}`,
+    "",
+    ...data.recommendedProjects.map((project) => `- [${project.name}](${project.url})`),
     "",
     "---",
     "",

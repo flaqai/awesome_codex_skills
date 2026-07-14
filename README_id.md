@@ -30,6 +30,7 @@
 - [Kriteria Kurasi](#kriteria-kurasi)
 - [Lisensi](#lisensi)
 - [Ucapan Terima Kasih](#ucapan-terima-kasih)
+- [Proyek Open-Source Rekomendasi](#proyek-open-source-rekomendasi)
 
 ## Mengapa Daftar Ini Ada
 
@@ -51,9 +52,9 @@
 
 | Metric | Count |
 |---|---:|
-| Total Skill | 67 |
+| Total Skill | 68 |
 | Kategori | 8 |
-| Terakhir diperbarui | 2026-07-08 |
+| Terakhir diperbarui | 2026-07-14 |
 
 ## Skill Unggulan
 
@@ -477,6 +478,11 @@ Skill untuk SEO, copy, aset peluncuran, kampanye, dan workflow pertumbuhan.
   Tag: `Marketing` `Screenshots` `Launch`  
   Sumber: OrangeBot · Popularitas: OrangeBot skill page with usage, stars, and forks metadata.
 
+- **[Awesome SEO Writing Skill](https://github.com/flaqai/Awesome_SEO_Writing_Skill)**  
+  Mengubah brief konten menjadi workflow SEO untuk outline, penulisan, pemeriksaan fakta, audit, pengemasan gambar, dan pengiriman opsional melalui Cloudflare R2.  
+  Tag: `SEO` `Writing` `Content`  
+  Sumber: GitHub flaqai/Awesome_SEO_Writing_Skill · Popularitas: Repositori open-source dengan dokumentasi multibahasa dan workflow writer yang dapat digunakan kembali untuk Codex dan Claude Code.
+
 - **[SEO Audit](https://orangebot.ai/s/seo-audit)**  
   Memeriksa struktur halaman, judul, kualitas konten, indexing, SEO teknis, dan peluang optimasi.  
   Tag: `SEO` `Marketing` `Content`  
@@ -556,6 +562,13 @@ Repository ini dirilis di bawah lisensi repository. Nama Skill dan konten tertau
 ## Ucapan Terima Kasih
 
 Terima kasih kepada pembuat direktori Skill, maintainer open-source, dan komunitas Codex yang membuat workflow Agent mudah ditemukan.
+
+## Proyek Open-Source Rekomendasi
+
+- [flaqai/Awesome_SEO_Writing_Skill](https://github.com/flaqai/Awesome_SEO_Writing_Skill)
+- [flaqai/awesome_claude_code_skills](https://github.com/flaqai/awesome_claude_code_skills)
+- [flaqai/awesome_codex_skills](https://github.com/flaqai/awesome_codex_skills)
+- [flaqai/flaq-saas-template](https://github.com/flaqai/flaq-saas-template)
 
 ---
 

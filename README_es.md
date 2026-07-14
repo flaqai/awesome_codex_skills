@@ -30,6 +30,7 @@
 - [Criterios de curación](#criterios-de-curación)
 - [Licencia](#licencia)
 - [Agradecimientos](#agradecimientos)
+- [Proyectos open source recomendados](#proyectos-open-source-recomendados)
 
 ## Por qué existe esta lista
 
@@ -51,9 +52,9 @@
 
 | Metric | Count |
 |---|---:|
-| Total de Skills | 67 |
+| Total de Skills | 68 |
 | Categorías | 8 |
-| Última actualización | 2026-07-08 |
+| Última actualización | 2026-07-14 |
 
 ## Skills destacados
 
@@ -477,6 +478,11 @@ Skills para SEO, copy, materiales de lanzamiento, campañas y flujos de crecimie
   Etiquetas: `Marketing` `Screenshots` `Launch`  
   Fuente: OrangeBot · Popularidad: OrangeBot skill page with usage, stars, and forks metadata.
 
+- **[Awesome SEO Writing Skill](https://github.com/flaqai/Awesome_SEO_Writing_Skill)**  
+  Convierte un brief de contenido en un flujo SEO de esquema, redacción, verificación, auditoría, empaquetado de imágenes y entrega opcional por Cloudflare R2.  
+  Etiquetas: `SEO` `Writing` `Content`  
+  Fuente: GitHub flaqai/Awesome_SEO_Writing_Skill · Popularidad: Repositorio open source con documentación multilingüe y un flujo writer reutilizable para Codex y Claude Code.
+
 - **[SEO Audit](https://orangebot.ai/s/seo-audit)**  
   Revisa estructura de página, títulos, calidad de contenido, indexación, SEO técnico y oportunidades.  
   Etiquetas: `SEO` `Marketing` `Content`  
@@ -556,6 +562,13 @@ Este repositorio se publica bajo la licencia del repositorio. Los nombres de Ski
 ## Agradecimientos
 
 Gracias a los creadores de directorios de Skills, mantenedores open-source y comunidad Codex por facilitar el descubrimiento de workflows reutilizables.
+
+## Proyectos open source recomendados
+
+- [flaqai/Awesome_SEO_Writing_Skill](https://github.com/flaqai/Awesome_SEO_Writing_Skill)
+- [flaqai/awesome_claude_code_skills](https://github.com/flaqai/awesome_claude_code_skills)
+- [flaqai/awesome_codex_skills](https://github.com/flaqai/awesome_codex_skills)
+- [flaqai/flaq-saas-template](https://github.com/flaqai/flaq-saas-template)
 
 ---
 

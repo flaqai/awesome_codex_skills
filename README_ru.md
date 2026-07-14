@@ -30,6 +30,7 @@
 - [Критерии отбора](#критерии-отбора)
 - [Лицензия](#лицензия)
 - [Благодарности](#благодарности)
+- [Рекомендуемые open-source проекты](#рекомендуемые-open-source-проекты)
 
 ## Зачем этот список
 
@@ -51,9 +52,9 @@
 
 | Metric | Count |
 |---|---:|
-| Всего Skills | 67 |
+| Всего Skills | 68 |
 | Категории | 8 |
-| Последнее обновление | 2026-07-08 |
+| Последнее обновление | 2026-07-14 |
 
 ## Избранные Skills
 
@@ -477,6 +478,11 @@ Skill для SEO, текстов, launch-материалов, кампаний 
   Теги: `Marketing` `Screenshots` `Launch`  
   Источник: OrangeBot · Популярность: OrangeBot skill page with usage, stars, and forks metadata.
 
+- **[Awesome SEO Writing Skill](https://github.com/flaqai/Awesome_SEO_Writing_Skill)**  
+  Преобразует контент-бриф в SEO-процесс: структура, написание, проверка фактов, аудит, упаковка изображений и опциональная доставка через Cloudflare R2.  
+  Теги: `SEO` `Writing` `Content`  
+  Источник: GitHub flaqai/Awesome_SEO_Writing_Skill · Популярность: Open-source репозиторий с многоязычной документацией и переиспользуемым writer-процессом для Codex и Claude Code.
+
 - **[SEO Audit](https://orangebot.ai/s/seo-audit)**  
   Проверяет структуру страниц, заголовки, качество контента, индексацию, техническое SEO и возможности оптимизации.  
   Теги: `SEO` `Marketing` `Content`  
@@ -556,6 +562,13 @@ Skill для SEO, текстов, launch-материалов, кампаний 
 ## Благодарности
 
 Спасибо создателям каталогов Skill, open-source мейнтейнерам и сообществу Codex за то, что переиспользуемые Agent workflows легче находить.
+
+## Рекомендуемые open-source проекты
+
+- [flaqai/Awesome_SEO_Writing_Skill](https://github.com/flaqai/Awesome_SEO_Writing_Skill)
+- [flaqai/awesome_claude_code_skills](https://github.com/flaqai/awesome_claude_code_skills)
+- [flaqai/awesome_codex_skills](https://github.com/flaqai/awesome_codex_skills)
+- [flaqai/flaq-saas-template](https://github.com/flaqai/flaq-saas-template)
 
 ---
 

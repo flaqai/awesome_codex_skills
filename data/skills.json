@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-07-08",
+  "updatedAt": "2026-07-14",
   "repository": "https://github.com/flaqai/awesome_codex_skills",
+  "recommendedProjects": [
+    {
+      "name": "flaqai/Awesome_SEO_Writing_Skill",
+      "url": "https://github.com/flaqai/Awesome_SEO_Writing_Skill"
+    },
+    {
+      "name": "flaqai/awesome_claude_code_skills",
+      "url": "https://github.com/flaqai/awesome_claude_code_skills"
+    },
+    {
+      "name": "flaqai/awesome_codex_skills",
+      "url": "https://github.com/flaqai/awesome_codex_skills"
+    },
+    {
+      "name": "flaqai/flaq-saas-template",
+      "url": "https://github.com/flaqai/flaq-saas-template"
+    }
+  ],
   "categories": [
     {
       "id": "agent-tooling",
@@ -1004,6 +1022,51 @@
         "pt": "Ajuda a criar screenshots de produto, gráficos promocionais, assets de lançamento, previews sociais e visuais de campanha.",
         "ru": "Помогает создавать скриншоты продукта, промо-графику, launch-ассеты, social previews и визуалы кампаний.",
         "ar": "يساعد في إنشاء لقطات شاشة المنتج ورسومات الترويج ومواد الإطلاق ومعاينات التواصل ومرئيات الحملات."
+      }
+    },
+    {
+      "name": "Awesome SEO Writing Skill",
+      "url": "https://github.com/flaqai/Awesome_SEO_Writing_Skill",
+      "source": "GitHub flaqai/Awesome_SEO_Writing_Skill",
+      "category": "marketing-growth",
+      "tags": [
+        "SEO",
+        "Writing",
+        "Content"
+      ],
+      "popularity": {
+        "en": "Open-source repository with multilingual documentation and a reusable writer workflow for Codex and Claude Code.",
+        "zh": "开源仓库，提供多语言文档以及可供 Codex 和 Claude Code 复用的 writer 工作流。",
+        "tw": "開源儲存庫，提供多語言文件，以及可供 Codex 和 Claude Code 重用的 writer 工作流程。",
+        "ja": "多言語ドキュメントと、Codex／Claude Code で再利用できる writer ワークフローを備えたオープンソースリポジトリ。",
+        "ko": "다국어 문서와 Codex 및 Claude Code에서 재사용할 수 있는 writer 워크플로를 제공하는 오픈 소스 저장소입니다.",
+        "th": "รีโพซิทอรีโอเพนซอร์สที่มีเอกสารหลายภาษาและ workflow writer ที่นำกลับมาใช้กับ Codex และ Claude Code ได้",
+        "vi": "Kho mã nguồn mở có tài liệu đa ngôn ngữ và quy trình writer tái sử dụng cho Codex và Claude Code.",
+        "id": "Repositori open-source dengan dokumentasi multibahasa dan workflow writer yang dapat digunakan kembali untuk Codex dan Claude Code.",
+        "es": "Repositorio open source con documentación multilingüe y un flujo writer reutilizable para Codex y Claude Code.",
+        "fr": "Dépôt open source avec documentation multilingue et workflow writer réutilisable pour Codex et Claude Code.",
+        "de": "Open-Source-Repository mit mehrsprachiger Dokumentation und einem wiederverwendbaren Writer-Workflow für Codex und Claude Code.",
+        "it": "Repository open source con documentazione multilingue e workflow writer riutilizzabile per Codex e Claude Code.",
+        "pt": "Repositório open source com documentação multilíngue e workflow writer reutilizável para Codex e Claude Code.",
+        "ru": "Open-source репозиторий с многоязычной документацией и переиспользуемым writer-процессом для Codex и Claude Code.",
+        "ar": "مستودع مفتوح المصدر بوثائق متعددة اللغات وسير عمل writer قابل لإعادة الاستخدام مع Codex وClaude Code."
+      },
+      "description": {
+        "en": "Turns a content brief into an SEO-focused workflow for outlining, writing, fact-checking, auditing, image packaging, and optional Cloudflare R2 delivery.",
+        "zh": "将内容需求转化为 SEO 写作工作流，覆盖大纲、撰写、事实核查、SEO 审计、图片打包和可选的 Cloudflare R2 交付。",
+        "tw": "將內容需求轉化為 SEO 寫作工作流程，涵蓋大綱、撰寫、事實查核、SEO 稽核、圖片打包和可選的 Cloudflare R2 交付。",
+        "ja": "コンテンツ要件を、構成、執筆、ファクトチェック、SEO監査、画像パッケージング、任意のCloudflare R2配信まで含むワークフローに変換します。",
+        "ko": "콘텐츠 요구사항을 개요 작성, 집필, 팩트 체크, SEO 감사, 이미지 패키징 및 선택적 Cloudflare R2 전달을 포함하는 SEO 워크플로로 전환합니다.",
+        "th": "เปลี่ยน brief เนื้อหาเป็น workflow SEO ที่ครอบคลุมการวางโครง เขียน ตรวจสอบข้อเท็จจริง audit จัดแพ็กภาพ และส่งผ่าน Cloudflare R2 แบบเลือกใช้",
+        "vi": "Chuyển brief nội dung thành quy trình SEO gồm lập dàn ý, viết, kiểm chứng, audit, đóng gói hình ảnh và tùy chọn phân phối qua Cloudflare R2.",
+        "id": "Mengubah brief konten menjadi workflow SEO untuk outline, penulisan, pemeriksaan fakta, audit, pengemasan gambar, dan pengiriman opsional melalui Cloudflare R2.",
+        "es": "Convierte un brief de contenido en un flujo SEO de esquema, redacción, verificación, auditoría, empaquetado de imágenes y entrega opcional por Cloudflare R2.",
+        "fr": "Transforme un brief en workflow SEO couvrant plan, rédaction, vérification, audit, packaging d’images et livraison Cloudflare R2 facultative.",
+        "de": "Überführt Content-Briefings in einen SEO-Workflow für Gliederung, Schreiben, Faktenprüfung, Audit, Bildpaketierung und optionale Cloudflare-R2-Auslieferung.",
+        "it": "Trasforma un brief in un workflow SEO per scaletta, scrittura, fact-checking, audit, packaging immagini e consegna opzionale tramite Cloudflare R2.",
+        "pt": "Transforma um briefing em workflow SEO para estrutura, redação, verificação, auditoria, empacotamento de imagens e entrega opcional via Cloudflare R2.",
+        "ru": "Преобразует контент-бриф в SEO-процесс: структура, написание, проверка фактов, аудит, упаковка изображений и опциональная доставка через Cloudflare R2.",
+        "ar": "يحوّل موجز المحتوى إلى سير عمل SEO يشمل التخطيط والكتابة والتحقق من الحقائق والتدقيق وتجهيز الصور والتسليم الاختياري عبر Cloudflare R2."
       }
     },
     {

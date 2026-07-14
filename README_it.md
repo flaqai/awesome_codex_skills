@@ -30,6 +30,7 @@
 - [Criteri di selezione](#criteri-di-selezione)
 - [Licenza](#licenza)
 - [Ringraziamenti](#ringraziamenti)
+- [Progetti open source consigliati](#progetti-open-source-consigliati)
 
 ## Perché questa lista
 
@@ -51,9 +52,9 @@
 
 | Metric | Count |
 |---|---:|
-| Skill totali | 67 |
+| Skill totali | 68 |
 | Categorie | 8 |
-| Ultimo aggiornamento | 2026-07-08 |
+| Ultimo aggiornamento | 2026-07-14 |
 
 ## Skill in evidenza
 
@@ -477,6 +478,11 @@ Skill per SEO, copy, asset di lancio, campagne e workflow di crescita.
   Tag: `Marketing` `Screenshots` `Launch`  
   Fonte: OrangeBot · Popolarità: OrangeBot skill page with usage, stars, and forks metadata.
 
+- **[Awesome SEO Writing Skill](https://github.com/flaqai/Awesome_SEO_Writing_Skill)**  
+  Trasforma un brief in un workflow SEO per scaletta, scrittura, fact-checking, audit, packaging immagini e consegna opzionale tramite Cloudflare R2.  
+  Tag: `SEO` `Writing` `Content`  
+  Fonte: GitHub flaqai/Awesome_SEO_Writing_Skill · Popolarità: Repository open source con documentazione multilingue e workflow writer riutilizzabile per Codex e Claude Code.
+
 - **[SEO Audit](https://orangebot.ai/s/seo-audit)**  
   Controlla struttura pagina, titoli, qualità contenuto, indicizzazione, SEO tecnico e opportunità.  
   Tag: `SEO` `Marketing` `Content`  
@@ -556,6 +562,13 @@ Questo repository è rilasciato sotto la licenza del repository. Nomi Skill e co
 ## Ringraziamenti
 
 Grazie ai creatori di directory Skill, maintainer open-source e community Codex che rendono più scopribili workflow Agent riutilizzabili.
+
+## Progetti open source consigliati
+
+- [flaqai/Awesome_SEO_Writing_Skill](https://github.com/flaqai/Awesome_SEO_Writing_Skill)
+- [flaqai/awesome_claude_code_skills](https://github.com/flaqai/awesome_claude_code_skills)
+- [flaqai/awesome_codex_skills](https://github.com/flaqai/awesome_codex_skills)
+- [flaqai/flaq-saas-template](https://github.com/flaqai/flaq-saas-template)
 
 ---
 

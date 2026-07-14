@@ -30,6 +30,7 @@
 - [선정 기준](#선정-기준)
 - [라이선스](#라이선스)
 - [감사의 말](#감사의-말)
+- [추천 오픈 소스 프로젝트](#추천-오픈-소스-프로젝트)
 
 ## 이 목록을 만든 이유
 
@@ -51,9 +52,9 @@
 
 | Metric | Count |
 |---|---:|
-| Skill 수 | 67 |
+| Skill 수 | 68 |
 | 카테고리 수 | 8 |
-| 마지막 업데이트 | 2026-07-08 |
+| 마지막 업데이트 | 2026-07-14 |
 
 ## 추천 Skill
 
@@ -477,6 +478,11 @@ SEO, 카피, 출시 자료, 캠페인, 성장 워크플로를 위한 Skill입니
   태그: `Marketing` `Screenshots` `Launch`  
   출처: OrangeBot · 인기 지표: OrangeBot skill page with usage, stars, and forks metadata.
 
+- **[Awesome SEO Writing Skill](https://github.com/flaqai/Awesome_SEO_Writing_Skill)**  
+  콘텐츠 요구사항을 개요 작성, 집필, 팩트 체크, SEO 감사, 이미지 패키징 및 선택적 Cloudflare R2 전달을 포함하는 SEO 워크플로로 전환합니다.  
+  태그: `SEO` `Writing` `Content`  
+  출처: GitHub flaqai/Awesome_SEO_Writing_Skill · 인기 지표: 다국어 문서와 Codex 및 Claude Code에서 재사용할 수 있는 writer 워크플로를 제공하는 오픈 소스 저장소입니다.
+
 - **[SEO Audit](https://orangebot.ai/s/seo-audit)**  
   페이지 구조, 제목, 콘텐츠 품질, 색인, 기술 SEO, 최적화 기회를 점검합니다.  
   태그: `SEO` `Marketing` `Content`  
@@ -556,6 +562,13 @@ SEO, 카피, 출시 자료, 캠페인, 성장 워크플로를 위한 Skill입니
 ## 감사의 말
 
 재사용 가능한 Agent 워크플로를 쉽게 찾을 수 있게 해 준 Skill 디렉터리 운영자, 오픈소스 메인테이너, Codex 커뮤니티에 감사합니다.
+
+## 추천 오픈 소스 프로젝트
+
+- [flaqai/Awesome_SEO_Writing_Skill](https://github.com/flaqai/Awesome_SEO_Writing_Skill)
+- [flaqai/awesome_claude_code_skills](https://github.com/flaqai/awesome_claude_code_skills)
+- [flaqai/awesome_codex_skills](https://github.com/flaqai/awesome_codex_skills)
+- [flaqai/flaq-saas-template](https://github.com/flaqai/flaq-saas-template)
 
 ---
 

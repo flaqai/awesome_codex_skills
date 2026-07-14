@@ -34,6 +34,7 @@
 - [收录标准](#收录标准)
 - [许可证](#许可证)
 - [致谢](#致谢)
+- [推荐的开源项目](#推荐的开源项目)
 
 ## 为什么做这个列表
 
@@ -55,10 +56,10 @@
 
 | Metric | Count |
 |---|---:|
-| Skill 总数 | 87 |
+| Skill 总数 | 88 |
 | 分类数 | 8 |
 | 中文原生 Skill | 20 |
-| 最后更新 | 2026-07-08 |
+| 最后更新 | 2026-07-14 |
 
 ## 精选 Skill
 
@@ -626,6 +627,11 @@
   标签: `Marketing` `Screenshots` `Launch`  
   来源: OrangeBot · 热度: OrangeBot 页面提供使用量、stars、forks 等指标。
 
+- **[Awesome SEO Writing Skill](https://github.com/flaqai/Awesome_SEO_Writing_Skill)**  
+  将内容需求转化为 SEO 写作工作流，覆盖大纲、撰写、事实核查、SEO 审计、图片打包和可选的 Cloudflare R2 交付。  
+  标签: `SEO` `Writing` `Content`  
+  来源: GitHub flaqai/Awesome_SEO_Writing_Skill · 热度: 开源仓库，提供多语言文档以及可供 Codex 和 Claude Code 复用的 writer 工作流。
+
 - **[SEO Audit](https://orangebot.ai/s/seo-audit)**  
   检查页面结构、标题、内容质量、索引、技术 SEO 和优化机会。  
   标签: `SEO` `Marketing` `Content`  
@@ -706,6 +712,13 @@
 ## 致谢
 
 感谢各类 Skill 目录、开源维护者和 Codex 社区，让可复用 Agent 工作流更容易被发现。
+
+## 推荐的开源项目
+
+- [flaqai/Awesome_SEO_Writing_Skill](https://github.com/flaqai/Awesome_SEO_Writing_Skill)
+- [flaqai/awesome_claude_code_skills](https://github.com/flaqai/awesome_claude_code_skills)
+- [flaqai/awesome_codex_skills](https://github.com/flaqai/awesome_codex_skills)
+- [flaqai/flaq-saas-template](https://github.com/flaqai/flaq-saas-template)
 
 ---
 
